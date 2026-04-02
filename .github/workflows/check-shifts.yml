@@ -1,0 +1,45 @@
+name: Check PSFC Shifts
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # Every 10 minutes
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install .
+
+      - name: Download state
+        uses: actions/download-artifact@v4
+        with:
+          name: shift-monitor-state
+          path: .
+        continue-on-error: true  # First run won't have state
+
+      - name: Run shift monitor
+        env:
+          COOP_USERNAME: ${{ secrets.COOP_USERNAME }}
+          COOP_PASSWORD: ${{ secrets.COOP_PASSWORD }}
+          MIKE_SMTP_USER: ${{ secrets.MIKE_SMTP_USER }}
+          MIKE_SMTP_PASS: ${{ secrets.MIKE_SMTP_PASS }}
+          NANCY_SMTP_USER: ${{ secrets.NANCY_SMTP_USER }}
+          NANCY_SMTP_PASS: ${{ secrets.NANCY_SMTP_PASS }}
+        run: python -m coop_shift_monitor.main --config config.yaml --state state.json
+
+      - name: Upload state
+        uses: actions/upload-artifact@v4
+        with:
+          name: shift-monitor-state
+          path: state.json
+          retention-days: 90
+          overwrite: true

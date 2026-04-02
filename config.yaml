@@ -1,0 +1,52 @@
+site:
+  base_url: "https://members.foodcoop.com"
+  shift_path_template: "/services/shifts/{week_offset}/{committee_id}/{time_of_day}/{date}/"
+  max_weeks: 6
+
+# Available shift types (from real site):
+#   Lifting, Dairy Lifting, Bulk Lifting, Meat Processing & Lifting,
+#   Stocking, Producer, Flex, Office, Cleaning, Bathroom, Bins,
+#   Case Maintenance, Food Processing, Soup: Food Services,
+#   Soup: Guest Services- Outdoor, Produce Processing
+
+# SMTP credentials use $ENV_VAR syntax to reference GitHub Actions secrets.
+# Each user has their own smtp block so different people can use different
+# Gmail accounts (or any SMTP provider).
+
+users:
+  - name: "Mike"
+    shift_types:
+      - "Meat Processing"
+    availability:
+      - day: "Saturday"
+      - day: "Sunday"
+        after: "17:00"
+    notify:
+      sms: "+9175356420"
+      carrier: "t-mobile"
+      smtp:
+        host: "smtp.gmail.com"
+        port: 587
+        username: "$MIKE_SMTP_USER"
+        password: "$MIKE_SMTP_PASS"
+
+  - name: "Nancy"
+    shift_types:
+      - "Office"
+      - "Flex"
+      - "Cleaning"
+    availability:
+      - day: "Thursday"
+        after: "18:00"
+      - day: "Sunday"
+        start: "09:00"
+        end: "14:00"
+    notify:
+      email: "nancy@example.com"
+      sms: "+15559876543"
+      carrier: "t-mobile"
+      smtp:
+        host: "smtp.gmail.com"
+        port: 587
+        username: "$NANCY_SMTP_USER"
+        password: "$NANCY_SMTP_PASS"

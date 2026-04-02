@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "coop-shift-monitor"
+version = "0.1.0"
+description = "Monitor Park Slope Food Coop shift calendar for open shifts"
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+coop-shift-monitor = "coop_shift_monitor.main:main"
