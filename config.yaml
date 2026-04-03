@@ -46,7 +46,7 @@ users:
   - name: "Nancy"
     shift_types:
       - "Checkout"
-\    availability:
+    availability:
       - day: "Saturday"
       - day: "Sunday"
     notify:
@@ -56,5 +56,5 @@ users:
       smtp:
         host: "smtp.gmail.com"
         port: 587
-        username: "$NANCY_SMTP_USER"
-        password: "$NANCY_SMTP_PASS"
+        username: "$MIKE_SMTP_USER"
+        password: "$MIKE_SMTP_PASS"
