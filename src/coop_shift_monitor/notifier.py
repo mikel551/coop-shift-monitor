@@ -9,13 +9,19 @@ from .models import Shift, SmtpCredentials, User
 log = logging.getLogger(__name__)
 
 
-def format_shift_list(shifts: list[Shift]) -> str:
+BASE_URL = "https://members.foodcoop.com"
+
+
+def format_shift_list(shifts: list[Shift], include_links: bool = False) -> str:
     lines: list[str] = []
     for s in sorted(shifts, key=lambda s: (s.date, s.start_time)):
         day = s.date.strftime("%A %b %d")
         start = s.start_time.strftime("%-I:%M %p")
         carrot = " [carrot]" if s.is_carrot else ""
-        lines.append(f"  - {day}: {s.description} ({start}){carrot}")
+        line = f"  - {day}: {s.description} ({start}){carrot}"
+        if include_links:
+            line += f"\n    {BASE_URL}/services/shift_claim/{s.shift_id}/"
+        lines.append(line)
     return "\n".join(lines)
 
 
@@ -40,8 +46,7 @@ def send_email(user: User, shifts: list[Shift], dry_run: bool = False) -> None:
     body = (
         f"Hi {user.name},\n\n"
         f"New open shifts matching your preferences:\n\n"
-        f"{format_shift_list(shifts)}\n\n"
-        f"Sign up at https://members.foodcoop.com\n"
+        f"{format_shift_list(shifts, include_links=True)}\n"
     )
     if dry_run:
         log.info("DRY RUN email to %s:\n%s", user.notify.email, body)
@@ -64,8 +69,7 @@ def send_sms(user: User, shifts: list[Shift], dry_run: bool = False) -> None:
 
     body = (
         f"PSFC shifts for {user.name}:\n"
-        f"{format_shift_list(shifts)}\n"
-        f"Sign up: members.foodcoop.com"
+        f"{format_shift_list(shifts, include_links=True)}\n"
     )
     if dry_run:
         log.info("DRY RUN SMS to %s (%s):\n%s", user.notify.sms, sms_addr, body)
