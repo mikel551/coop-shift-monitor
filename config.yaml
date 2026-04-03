@@ -45,18 +45,13 @@ users:
 
   - name: "Nancy"
     shift_types:
-      - "Office"
-      - "Flex"
-      - "Cleaning"
-    availability:
-      - day: "Thursday"
-        after: "18:00"
+      - "Checkout"
+\    availability:
+      - day: "Saturday"
       - day: "Sunday"
-        start: "09:00"
-        end: "14:00"
     notify:
       email: "nancy@example.com"
-      sms: "+15559876543"
+      sms: "+9175356468"
       carrier: "t-mobile"
       smtp:
         host: "smtp.gmail.com"
