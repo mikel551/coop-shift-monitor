@@ -16,10 +16,23 @@ site:
 users:
   - name: "Mike"
     shift_types:
-      - "Meat Processing"
+      - "Cart Return"
     availability:
       - day: "Saturday"
+        after: "17:00"
       - day: "Sunday"
+        before: "10:00"
+      - day: "Sunday"
+        after: "17:00"
+      - day: "Monday"
+        after: "17:00"
+      - day: "Tuesday"
+        after: "18:00"
+      - day: "Wednesday"
+        after: "18:00"
+      - day: "Thursday"
+        after: "18:00"
+      - day: "Friday"
         after: "17:00"
     notify:
       sms: "$MIKE_SMS_NUMBER"
@@ -32,21 +45,15 @@ users:
 
   - name: "Nancy"
     shift_types:
-      - "Office"
-      - "Flex"
-      - "Cleaning"
+      - "Checkout"
     availability:
-      - day: "Thursday"
-        after: "18:00"
+      - day: "Monday"
       - day: "Sunday"
-        start: "09:00"
-        end: "14:00"
     notify:
-      email: "nancy@example.com"
-      sms: "+15559876543"
+      sms: "$NANCY_SMS_NUMBER"
       carrier: "t-mobile"
       smtp:
         host: "smtp.gmail.com"
         port: 587
-        username: "$NANCY_SMTP_USER"
-        password: "$NANCY_SMTP_PASS"
+        username: "$MIKE_SMTP_USER"
+        password: "$MIKE_SMTP_PASS"
