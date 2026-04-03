@@ -1,43 +1,54 @@
-  name: Check PSFC Shifts
+name: Check PSFC Shifts
 
-  on:
-    workflow_dispatch: {}
+on:
+  workflow_dispatch: {}
 
-  jobs:
-    check:
-      runs-on: ubuntu-latest
+permissions:
+  contents: write
 
-      steps:
-        - uses: actions/checkout@v4
+jobs:
+  check:
+    runs-on: ubuntu-latest
 
-        - uses: actions/setup-python@v5
-          with:
-            python-version: '3.12'
+    steps:
+      - uses: actions/checkout@v4
 
-        - name: Install dependencies
-          run: pip install .
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-        - name: Download state
-          uses: actions/download-artifact@v4
-          with:
-            name: shift-monitor-state
-            path: .
-          continue-on-error: true
+      - name: Install dependencies
+        run: pip install .
 
-        - name: Run shift monitor
-          env:
-            COOP_USERNAME: ${{ secrets.COOP_USERNAME }}
-            COOP_PASSWORD: ${{ secrets.COOP_PASSWORD }}
-            MIKE_SMTP_USER: ${{ secrets.MIKE_SMTP_USER }}
-            MIKE_SMTP_PASS: ${{ secrets.MIKE_SMTP_PASS }}
-            NANCY_SMTP_USER: ${{ secrets.NANCY_SMTP_USER }}
-            NANCY_SMTP_PASS: ${{ secrets.NANCY_SMTP_PASS }}
-          run: python -m coop_shift_monitor.main --config config.yaml --state state.json
+      - name: Download state
+        uses: actions/download-artifact@v4
+        with:
+          name: shift-monitor-state
+          path: .
+        continue-on-error: true
 
-        - name: Upload state
-          uses: actions/upload-artifact@v4
-          with:
-            name: shift-monitor-state
-            path: state.json
-            retention-days: 90
-            overwrite: true
+      - name: Run shift monitor
+        env:
+          COOP_USERNAME: ${{ secrets.COOP_USERNAME }}
+          COOP_PASSWORD: ${{ secrets.COOP_PASSWORD }}
+          MIKE_SMTP_USER: ${{ secrets.MIKE_SMTP_USER }}
+          MIKE_SMTP_PASS: ${{ secrets.MIKE_SMTP_PASS }}
+          NANCY_SMTP_USER: ${{ secrets.NANCY_SMTP_USER }}
+          NANCY_SMTP_PASS: ${{ secrets.NANCY_SMTP_PASS }}
+        run: python -m coop_shift_monitor.main --config config.yaml --state state.json --stats-out docs/stats.json
+
+      - name: Commit updated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state.json docs/stats.json
+          git diff --cached --quiet || git commit -m "Update shift stats [skip ci]"
+          git push
+
+      - name: Upload state
+        uses: actions/upload-artifact@v4
+        with:
+          name: shift-monitor-state
+          path: state.json
+          retention-days: 90
+          overwrite: true

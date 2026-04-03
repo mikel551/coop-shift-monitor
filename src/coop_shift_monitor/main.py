@@ -9,7 +9,16 @@ from .matcher import filter_shifts_for_user
 from .notifier import notify_user
 from .parser import parse_shifts_page
 from .scraper import create_session, fetch_shift_pages, login
-from .state import get_new_shifts, load_state, mark_notified, save_state
+from .state import (
+    append_run_stats,
+    export_stats_json,
+    get_new_shifts,
+    load_state,
+    mark_notified,
+    migrate_state,
+    print_stats,
+    save_state,
+)
 
 log = logging.getLogger(__name__)
 
@@ -19,6 +28,8 @@ def main() -> None:
     parser.add_argument("--config", default="config.yaml", help="Path to config file")
     parser.add_argument("--state", default="state.json", help="Path to state file")
     parser.add_argument("--dry-run", action="store_true", help="Log notifications instead of sending")
+    parser.add_argument("--stats", action="store_true", help="Print stats summary and exit")
+    parser.add_argument("--stats-out", default="docs/stats.json", help="Path to write dashboard stats JSON")
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -26,12 +37,18 @@ def main() -> None:
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
 
+    state_path = Path(args.state)
+    state = load_state(state_path)
+    state = migrate_state(state)
+
+    # --stats: just print and exit
+    if args.stats:
+        print_stats(state)
+        return
+
     config = load_config(args.config)
     site = config["site"]
     users = parse_users(config["users"])
-
-    state_path = Path(args.state)
-    state = load_state(state_path)
 
     # Login and fetch shift pages
     session = create_session()
@@ -51,10 +68,14 @@ def main() -> None:
 
     log.info("Found %d total shifts across %d pages", len(all_shifts), len(pages))
 
-    # Process each user
+    # Process each user, collecting stats
+    user_stats: dict[str, dict[str, int]] = {}
+
     for user in users:
         matched = filter_shifts_for_user(all_shifts, user)
         new = get_new_shifts(user.name, matched, state)
+
+        user_stats[user.name] = {"matched": len(matched), "notified": 0}
 
         if not new:
             log.info("No new shifts for %s", user.name)
@@ -65,9 +86,23 @@ def main() -> None:
         success = notify_user(user, new, dry_run=args.dry_run)
         if success or args.dry_run:
             mark_notified(user.name, new, state)
+            user_stats[user.name]["notified"] = len(new)
 
+    # Record stats and save
+    append_run_stats(state, len(all_shifts), user_stats)
     save_state(state, state_path)
-    log.info("Done")
+
+    # Export dashboard JSON
+    stats_out = Path(args.stats_out)
+    export_stats_json(state, stats_out)
+    log.info("Dashboard stats written to %s", stats_out)
+
+    # Print summary to logs
+    log.info(
+        "Run complete: %d shifts, %s",
+        len(all_shifts),
+        ", ".join(f"{u}: {s['matched']}m/{s['notified']}n" for u, s in user_stats.items()),
+    )
 
 
 if __name__ == "__main__":
