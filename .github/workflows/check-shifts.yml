@@ -35,6 +35,7 @@ jobs:
           MIKE_SMTP_PASS: ${{ secrets.MIKE_SMTP_PASS }}
           NANCY_SMTP_USER: ${{ secrets.NANCY_SMTP_USER }}
           NANCY_SMTP_PASS: ${{ secrets.NANCY_SMTP_PASS }}
+          MIKE_SMS_NUMBER: ${{ secrets.MIKE_SMS_NUMBER }}
         run: python -m coop_shift_monitor.main --config config.yaml --state state.json --stats-out docs/stats.json
 
       - name: Commit updated stats

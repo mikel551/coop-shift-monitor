@@ -16,27 +16,13 @@ site:
 users:
   - name: "Mike"
     shift_types:
-      - "Cart Return"
+      - "Meat Processing"
     availability:
       - day: "Saturday"
-        after: "17:00"
       - day: "Sunday"
-        before: "10:00"
-      - day: "Sunday"
-        after: "17:00"
-      - day: "Monday"
-        after: "17:00"
-      - day: "Tuesday"
-        after: "18:00"
-      - day: "Wednesday"
-        after: "18:00"
-      - day: "Thursday"
-        after: "18:00"
-      - day: "Friday"
         after: "17:00"
     notify:
-      email: "mike.liebskind@gmail.com"
-      sms: "+9175356420"
+      sms: "$MIKE_SMS_NUMBER"
       carrier: "t-mobile"
       smtp:
         host: "smtp.gmail.com"
@@ -46,15 +32,21 @@ users:
 
   - name: "Nancy"
     shift_types:
-      - "Checkout"
+      - "Office"
+      - "Flex"
+      - "Cleaning"
     availability:
-      - day: "Monday"
+      - day: "Thursday"
+        after: "18:00"
       - day: "Sunday"
+        start: "09:00"
+        end: "14:00"
     notify:
-      sms: "+9175356468"
+      email: "nancy@example.com"
+      sms: "+15559876543"
       carrier: "t-mobile"
       smtp:
         host: "smtp.gmail.com"
         port: 587
-        username: "$MIKE_SMTP_USER"
-        password: "$MIKE_SMTP_PASS"
+        username: "$NANCY_SMTP_USER"
+        password: "$NANCY_SMTP_PASS"

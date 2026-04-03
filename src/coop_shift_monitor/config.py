@@ -52,9 +52,12 @@ def parse_users(raw: list[dict]) -> list[User]:
         notify_raw = u.get("notify", {})
         smtp = _parse_smtp(notify_raw.get("smtp", {}))
 
+        raw_email = notify_raw.get("email")
+        raw_sms = notify_raw.get("sms")
+
         notify = NotifyConfig(
-            email=notify_raw.get("email"),
-            sms=notify_raw.get("sms"),
+            email=_resolve_env(raw_email) if raw_email else None,
+            sms=_resolve_env(raw_sms) if raw_sms else None,
             carrier=notify_raw.get("carrier"),
             smtp=smtp,
         )
