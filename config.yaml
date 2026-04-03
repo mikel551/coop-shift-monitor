@@ -35,6 +35,7 @@ users:
       - day: "Friday"
         after: "18:00"
     notify:
+      email: "mike.liebskind@gmail.com"
       sms: "+9175356420"
       carrier: "t-mobile"
       smtp:
@@ -50,7 +51,6 @@ users:
       - day: "Saturday"
       - day: "Sunday"
     notify:
-      email: "nancy@example.com"
       sms: "+9175356468"
       carrier: "t-mobile"
       smtp:
