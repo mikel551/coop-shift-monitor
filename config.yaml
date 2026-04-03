@@ -16,11 +16,24 @@ site:
 users:
   - name: "Mike"
     shift_types:
-      - "Meat Processing"
+      - "Cart Return and Sidwalk Maintenance"
     availability:
       - day: "Saturday"
+        after: "17:00"
+      - day: "Sunday"
+        end: "10:00"
       - day: "Sunday"
         after: "17:00"
+      - day: "Monday"
+        after: "18:00"
+      - day: "Tuesday"
+        after: "18:00"
+      - day: "Wednesday"
+        after: "18:00"
+      - day: "Thursday"
+        after: "18:00"
+      - day: "Friday"
+        after: "18:00"
     notify:
       sms: "+9175356420"
       carrier: "t-mobile"
