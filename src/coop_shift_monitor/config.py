@@ -45,7 +45,8 @@ def parse_users(raw: list[dict]) -> list[User]:
             end = parse_time(av["end"]) if "end" in av else None
             if "after" in av:
                 start = parse_time(av["after"])
-                end = None
+            if "before" in av:
+                end = parse_time(av["before"])
             windows.append(TimeWindow(day=av["day"], start=start, end=end))
 
         notify_raw = u.get("notify", {})

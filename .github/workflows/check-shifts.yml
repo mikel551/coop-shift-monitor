@@ -5,6 +5,9 @@ on:
     - cron: '*/10 * * * *'  # Every 10 minutes
   workflow_dispatch: {}
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -20,11 +23,13 @@ jobs:
         run: pip install .
 
       - name: Download state
-        uses: actions/download-artifact@v4
+        uses: dawidd6/action-download-artifact@v6
         with:
           name: shift-monitor-state
           path: .
-        continue-on-error: true  # First run won't have state
+          if_no_artifact_found: warn
+          workflow_conclusion: ""
+          search_artifacts: true
 
       - name: Run shift monitor
         env:
