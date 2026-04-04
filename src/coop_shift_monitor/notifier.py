@@ -82,12 +82,13 @@ def _send_sms_twilio(
 
 
 def send_sms(user: User, shifts: list[Shift], dry_run: bool = False) -> None:
+    use_twilio = bool(os.environ.get("TWILIO_ACCOUNT_SID"))
+
+    # Twilio has a 1600 char limit — skip links for SMS
     body = (
         f"PSFC shifts for {user.name}:\n"
-        f"{format_shift_list(shifts, include_links=True)}\n"
+        f"{format_shift_list(shifts, include_links=not use_twilio)}\n"
     )
-
-    use_twilio = bool(os.environ.get("TWILIO_ACCOUNT_SID"))
 
     if dry_run:
         method = "Twilio" if use_twilio else "email gateway"
@@ -95,6 +96,9 @@ def send_sms(user: User, shifts: list[Shift], dry_run: bool = False) -> None:
         return
 
     if use_twilio:
+        # Truncate to 1600 chars if still too long
+        if len(body) > 1600:
+            body = body[:1597] + "..."
         _send_sms_twilio(user.notify.sms, body)
     else:
         sms_addr = user.notify.sms_email
