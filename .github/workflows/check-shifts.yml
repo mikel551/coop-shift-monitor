@@ -1,7 +1,13 @@
 name: Check PSFC Shifts
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      reset_notifications:
+        description: 'Reset notification history (will re-notify all matching shifts)'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -26,6 +32,19 @@ jobs:
           name: shift-monitor-state
           path: .
         continue-on-error: true
+
+      - name: Reset notification state
+        if: ${{ github.event.inputs.reset_notifications == 'true' }}
+        run: |
+          if [ -f state.json ]; then
+            python -c "
+          import json
+          state = json.load(open('state.json'))
+          state['notified'] = {}
+          json.dump(state, open('state.json', 'w'), indent=2)
+          "
+            echo "Notification history cleared"
+          fi
 
       - name: Run shift monitor
         env:
