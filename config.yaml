@@ -17,6 +17,7 @@ users:
   - name: "Mike"
     shift_types:
       - "Cart Return"
+      - "Meat Processing"
     availability:
       - day: "Saturday"
         after: "17:00"
@@ -34,11 +35,6 @@ users:
         after: "18:00"
       - day: "Friday"
         after: "17:00"
-    shift_types:
-      - "Meat"
-    availability:
-      - day: "Sunday"
-      - after: "20:30"
     notify:
       sms: "$MIKE_SMS_NUMBER"
       carrier: "t-mobile"
