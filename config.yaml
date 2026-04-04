@@ -43,6 +43,21 @@ users:
         username: "$MIKE_SMTP_USER"
         password: "$MIKE_SMTP_PASS"
 
+  - name: "Mike"
+    shift_types:
+      - "Case Maintenance"
+    availability:
+      - day: "Monday"
+        after: "20:30"
+    notify:
+      sms: "$MIKE_SMS_NUMBER"
+      carrier: "t-mobile"
+      smtp:
+        host: "smtp.gmail.com"
+        port: 587
+        username: "$MIKE_SMTP_USER"
+        password: "$MIKE_SMTP_PASS"
+
   - name: "Nancy"
     shift_types:
       - "Checkout"
