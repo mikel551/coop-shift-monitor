@@ -45,10 +45,10 @@ users:
 
   - name: "Mike"
     shift_types:
-      - "Case Maintenance"
+      - "Bins"
     availability:
-      - day: "Monday"
-        after: "20:30"
+      - day: "Wednesday"
+        after: "20:45"
     notify:
       sms: "$MIKE_SMS_NUMBER"
       carrier: "t-mobile"
