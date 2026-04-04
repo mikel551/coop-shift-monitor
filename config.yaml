@@ -45,10 +45,9 @@ users:
 
   - name: "Mike"
     shift_types:
-      - "Bins"
+      - "Dairy Lifting"
     availability:
-      - day: "Wednesday"
-        after: "20:45"
+      - day: "Friday"
     notify:
       sms: "$MIKE_SMS_NUMBER"
       carrier: "t-mobile"
