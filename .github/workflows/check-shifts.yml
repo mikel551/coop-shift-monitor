@@ -35,6 +35,9 @@ jobs:
           MIKE_SMTP_PASS: ${{ secrets.MIKE_SMTP_PASS }}
           MIKE_SMS_NUMBER: ${{ secrets.MIKE_SMS_NUMBER }}
           NANCY_SMS_NUMBER: ${{ secrets.NANCY_SMS_NUMBER }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_FROM_NUMBER: ${{ secrets.TWILIO_FROM_NUMBER }}
         run: python -m coop_shift_monitor.main --config config.yaml --state state.json --stats-out docs/stats.json
 
       - name: Commit updated stats

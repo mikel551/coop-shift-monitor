@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import os
 import smtplib
 from email.mime.text import MIMEText
 
@@ -61,27 +62,52 @@ def send_email(user: User, shifts: list[Shift], dry_run: bool = False) -> None:
     log.info("Email sent to %s (%d shifts)", user.notify.email, len(shifts))
 
 
-def send_sms(user: User, shifts: list[Shift], dry_run: bool = False) -> None:
-    sms_addr = user.notify.sms_email
-    if not sms_addr:
-        log.warning("No SMS gateway for %s (carrier=%s)", user.name, user.notify.carrier)
-        return
+def _send_sms_twilio(
+    to_number: str,
+    body: str,
+) -> None:
+    from twilio.rest import Client
 
+    account_sid = os.environ["TWILIO_ACCOUNT_SID"]
+    auth_token = os.environ["TWILIO_AUTH_TOKEN"]
+    from_number = os.environ["TWILIO_FROM_NUMBER"]
+
+    client = Client(account_sid, auth_token)
+    message = client.messages.create(
+        body=body,
+        from_=from_number,
+        to=to_number,
+    )
+    log.info("Twilio SMS sent to %s (sid=%s)", to_number, message.sid)
+
+
+def send_sms(user: User, shifts: list[Shift], dry_run: bool = False) -> None:
     body = (
         f"PSFC shifts for {user.name}:\n"
         f"{format_shift_list(shifts, include_links=True)}\n"
     )
+
+    use_twilio = bool(os.environ.get("TWILIO_ACCOUNT_SID"))
+
     if dry_run:
-        log.info("DRY RUN SMS to %s (%s):\n%s", user.notify.sms, sms_addr, body)
+        method = "Twilio" if use_twilio else "email gateway"
+        log.info("DRY RUN SMS (%s) to %s:\n%s", method, user.notify.sms, body)
         return
 
-    _send_via_smtp(
-        user.notify.smtp,
-        sms_addr,
-        "",  # SMS gateway ignores subject
-        body,
-    )
-    log.info("SMS sent to %s via %s (%d shifts)", user.notify.sms, sms_addr, len(shifts))
+    if use_twilio:
+        _send_sms_twilio(user.notify.sms, body)
+    else:
+        sms_addr = user.notify.sms_email
+        if not sms_addr:
+            log.warning("No SMS gateway for %s (carrier=%s)", user.name, user.notify.carrier)
+            return
+        _send_via_smtp(
+            user.notify.smtp,
+            sms_addr,
+            "",  # SMS gateway ignores subject
+            body,
+        )
+        log.info("SMS sent to %s via %s (%d shifts)", user.notify.sms, sms_addr, len(shifts))
 
 
 def notify_user(user: User, shifts: list[Shift], dry_run: bool = False) -> bool:
