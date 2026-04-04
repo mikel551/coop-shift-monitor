@@ -43,20 +43,6 @@ users:
         username: "$MIKE_SMTP_USER"
         password: "$MIKE_SMTP_PASS"
 
-  - name: "Mike"
-    shift_types:
-      - "Dairy Lifting"
-    availability:
-      - day: "Friday"
-    notify:
-      sms: "$MIKE_SMS_NUMBER"
-      carrier: "t-mobile"
-      smtp:
-        host: "smtp.gmail.com"
-        port: 587
-        username: "$MIKE_SMTP_USER"
-        password: "$MIKE_SMTP_PASS"
-
   - name: "Nancy"
     shift_types:
       - "Checkout"
