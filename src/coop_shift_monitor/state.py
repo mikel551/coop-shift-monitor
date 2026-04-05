@@ -78,6 +78,7 @@ def append_run_stats(
     state: dict,
     total_shifts: int,
     user_stats: dict[str, dict[str, int]],
+    pruned: int = 0,
 ) -> None:
     """Append a run record to state['stats'].
 
@@ -88,19 +89,23 @@ def append_run_stats(
         "ts": datetime.now(timezone.utc).isoformat(),
         "total": total_shifts,
         "users": user_stats,
+        "pruned": pruned,
     }
     state.setdefault("stats", []).append(record)
 
 
-def prune_notified(state: dict, current_shift_ids: set[str]) -> None:
-    """Remove shift IDs that are no longer in the current calendar."""
+def prune_notified(state: dict, current_shift_ids: set[str]) -> int:
+    """Remove shift IDs that are no longer in the current calendar. Returns total pruned."""
     notified = state.get("notified", {})
+    total_pruned = 0
     for user in notified:
         before = len(notified[user])
         notified[user] = [sid for sid in notified[user] if sid in current_shift_ids]
         removed = before - len(notified[user])
         if removed:
+            total_pruned += removed
             log.info("Pruned %d stale shift IDs for %s (%d -> %d)", removed, user, before, len(notified[user]))
+    return total_pruned
 
 
 def prune_stats(state: dict, weeks: int = 6) -> None:

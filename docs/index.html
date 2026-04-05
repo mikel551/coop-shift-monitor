@@ -133,6 +133,7 @@ function renderTimeChart(stats) {
     for (const u of Object.values(r.users || {})) n += u.notified || 0;
     return n;
   });
+  const pruneData = last288.map(r => r.pruned || 0);
   new Chart(document.getElementById('timeChart'), {
     type: 'line',
     data: {
@@ -140,6 +141,7 @@ function renderTimeChart(stats) {
       datasets: [
         { label: 'Matched', data: matchData, borderColor: '#74c69d', backgroundColor: 'rgba(116,198,157,0.1)', fill: true, tension: 0.3 },
         { label: 'Notified', data: notifyData, borderColor: '#2d6a4f', backgroundColor: 'rgba(45,106,79,0.1)', fill: true, tension: 0.3 },
+        { label: 'Pruned', data: pruneData, borderColor: '#e76f51', backgroundColor: 'rgba(231,111,81,0.1)', fill: true, tension: 0.3 },
       ]
     },
     options: { responsive: true, plugins: { legend: { position: 'bottom' } }, scales: { x: { display: false } } }

@@ -72,7 +72,7 @@ def main() -> None:
 
     # Prune state to current window
     current_shift_ids = {s.shift_id for s in all_shifts}
-    prune_notified(state, current_shift_ids)
+    pruned = prune_notified(state, current_shift_ids)
     prune_stats(state)
 
     # Process each user, collecting stats
@@ -96,7 +96,7 @@ def main() -> None:
             user_stats[user.name]["notified"] = len(new)
 
     # Record stats and save
-    append_run_stats(state, len(all_shifts), user_stats)
+    append_run_stats(state, len(all_shifts), user_stats, pruned=pruned)
     save_state(state, state_path)
 
     # Export dashboard JSON
