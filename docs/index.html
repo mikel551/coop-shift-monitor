@@ -23,7 +23,7 @@
   th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; }
   th { color: #888; font-weight: 600; font-size: 12px; text-transform: uppercase; }
   .empty { text-align: center; color: #999; padding: 40px; }
-  .heatmap-grid { display: grid; grid-template-columns: auto repeat(16, 1fr); gap: 2px; font-size: 11px; }
+  .heatmap-grid { display: grid; grid-template-columns: auto repeat(24, 1fr); gap: 2px; font-size: 11px; }
   .heatmap-grid .day-label { text-align: right; padding-right: 6px; line-height: 22px; color: #666; }
   .heatmap-grid .hour-label { text-align: center; color: #999; font-size: 10px; }
   .heatmap-cell { width: 100%; aspect-ratio: 1; border-radius: 3px; min-height: 18px; }
@@ -49,7 +49,7 @@
     <canvas id="timeChart"></canvas>
   </div>
   <div class="card full-width">
-    <h2>Shift Activity Heatmap (day/hour of run)</h2>
+    <h2>Shift Match Heatmap (day/hour of run)</h2>
     <div id="heatmap"></div>
   </div>
   <div class="card full-width" id="comparison-card" style="display:none">
@@ -150,18 +150,18 @@ function renderTimeChart(stats) {
 
 function renderHeatmap(stats) {
   const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-  const startHour = 7, endHour = 23; // 7am to 10:59pm ET
+  const startHour = 0, endHour = 24; // all 24 hours
   const numHours = endHour - startHour;
   const grid = Array.from({ length: 7 }, () => Array(numHours).fill(0));
   for (const r of stats) {
     // Convert UTC to Eastern time
     const d = new Date(r.ts);
     const et = new Date(d.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-    let totalNotified = 0;
-    for (const u of Object.values(r.users || {})) totalNotified += u.notified || 0;
+    let totalMatched = 0;
+    for (const u of Object.values(r.users || {})) totalMatched += u.matched || 0;
     const hour = et.getHours();
-    if (totalNotified > 0 && hour >= startHour && hour < endHour) {
-      grid[et.getDay()][hour - startHour] += totalNotified;
+    if (totalMatched > 0 && hour >= startHour && hour < endHour) {
+      grid[et.getDay()][hour - startHour] += totalMatched;
     }
   }
   const maxVal = Math.max(1, ...grid.flat());
@@ -180,7 +180,7 @@ function renderHeatmap(stats) {
       const bg = intensity === 0 ? '#f0f0f0' : `rgba(45,106,79,${0.15 + intensity * 0.85})`;
       const displayHour = h + startHour;
       const label = displayHour <= 12 ? `${displayHour}${displayHour < 12 ? 'am' : 'pm'}` : `${displayHour-12}pm`;
-      html += `<div class="heatmap-cell" style="background:${bg}" title="${days[d]} ${label} - ${grid[d][h]} notifications"></div>`;
+      html += `<div class="heatmap-cell" style="background:${bg}" title="${days[d]} ${label} - ${grid[d][h]} matched"></div>`;
     }
   }
   html += '</div>';

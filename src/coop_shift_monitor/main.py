@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import argparse
 import logging
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from .config import load_config, parse_users
 from .matcher import filter_shifts_for_user
@@ -23,6 +25,19 @@ from .state import (
 )
 
 log = logging.getLogger(__name__)
+
+
+def is_quiet_hours(site_config: dict) -> bool:
+    """Check if current time falls within configured quiet hours."""
+    qh = site_config.get("quiet_hours")
+    if not qh:
+        return False
+    tz = ZoneInfo(qh.get("timezone", "America/New_York"))
+    hour = datetime.now(tz).hour
+    start, end = qh["start"], qh["end"]
+    if start > end:  # crosses midnight (e.g. 23 -> 7)
+        return hour >= start or hour < end
+    return start <= hour < end
 
 
 def main() -> None:
@@ -77,6 +92,9 @@ def main() -> None:
 
     # Process each user, collecting stats
     user_stats: dict[str, dict[str, int]] = {}
+    quiet = is_quiet_hours(site)
+    if quiet:
+        log.info("Quiet hours — notifications suppressed")
 
     for user in users:
         matched = filter_shifts_for_user(all_shifts, user)
@@ -89,6 +107,9 @@ def main() -> None:
             continue
 
         log.info("%d new shifts for %s", len(new), user.name)
+
+        if quiet:
+            continue
 
         success = notify_user(user, new, dry_run=args.dry_run)
         if success or args.dry_run:
