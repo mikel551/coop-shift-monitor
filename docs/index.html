@@ -23,7 +23,7 @@
   th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; }
   th { color: #888; font-weight: 600; font-size: 12px; text-transform: uppercase; }
   .empty { text-align: center; color: #999; padding: 40px; }
-  .heatmap-grid { display: grid; grid-template-columns: auto repeat(24, 1fr); gap: 2px; font-size: 11px; }
+  .heatmap-grid { display: grid; grid-template-columns: auto repeat(16, 1fr); gap: 2px; font-size: 11px; }
   .heatmap-grid .day-label { text-align: right; padding-right: 6px; line-height: 22px; color: #666; }
   .heatmap-grid .hour-label { text-align: center; color: #999; font-size: 10px; }
   .heatmap-cell { width: 100%; aspect-ratio: 1; border-radius: 3px; min-height: 18px; }
@@ -52,6 +52,10 @@
     <h2>Shift Activity Heatmap (day/hour of run)</h2>
     <div id="heatmap"></div>
   </div>
+  <div class="card full-width" id="comparison-card" style="display:none">
+    <h2>Current vs Previous Period</h2>
+    <div id="comparison-table"></div>
+  </div>
   <div class="card full-width">
     <h2>Recent Run History</h2>
     <div id="history-table"></div>
@@ -65,9 +69,12 @@ async function loadStats() {
   try {
     const resp = await fetch('stats.json');
     if (!resp.ok) throw new Error('No stats.json found');
-    return await resp.json();
+    const data = await resp.json();
+    // Support both old (array) and new ({stats, previous_period}) formats
+    if (Array.isArray(data)) return { stats: data, previous_period: {} };
+    return data;
   } catch {
-    return [];
+    return { stats: [], previous_period: {} };
   }
 }
 
@@ -114,14 +121,14 @@ function renderUserChart(stats) {
 }
 
 function renderTimeChart(stats) {
-  const last30 = stats.slice(-30);
-  const labels = last30.map(r => formatTs(r.ts));
-  const matchData = last30.map(r => {
+  const last288 = stats.slice(-288);
+  const labels = last288.map(r => formatTs(r.ts));
+  const matchData = last288.map(r => {
     let m = 0;
     for (const u of Object.values(r.users || {})) m += u.matched || 0;
     return m;
   });
-  const notifyData = last30.map(r => {
+  const notifyData = last288.map(r => {
     let n = 0;
     for (const u of Object.values(r.users || {})) n += u.notified || 0;
     return n;
@@ -141,25 +148,37 @@ function renderTimeChart(stats) {
 
 function renderHeatmap(stats) {
   const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-  const grid = Array.from({ length: 7 }, () => Array(24).fill(0));
+  const startHour = 7, endHour = 23; // 7am to 10:59pm ET
+  const numHours = endHour - startHour;
+  const grid = Array.from({ length: 7 }, () => Array(numHours).fill(0));
   for (const r of stats) {
+    // Convert UTC to Eastern time
     const d = new Date(r.ts);
+    const et = new Date(d.toLocaleString('en-US', { timeZone: 'America/New_York' }));
     let totalNotified = 0;
     for (const u of Object.values(r.users || {})) totalNotified += u.notified || 0;
-    if (totalNotified > 0) grid[d.getUTCDay()][d.getUTCHours()] += totalNotified;
+    const hour = et.getHours();
+    if (totalNotified > 0 && hour >= startHour && hour < endHour) {
+      grid[et.getDay()][hour - startHour] += totalNotified;
+    }
   }
   const maxVal = Math.max(1, ...grid.flat());
   const container = document.getElementById('heatmap');
   let html = '<div class="heatmap-grid">';
   // Hour labels row
   html += '<div></div>';
-  for (let h = 0; h < 24; h++) html += `<div class="hour-label">${h}</div>`;
+  for (let h = startHour; h < endHour; h++) {
+    const label = h <= 12 ? `${h}${h < 12 ? 'a' : 'p'}` : `${h-12}p`;
+    html += `<div class="hour-label">${label}</div>`;
+  }
   for (let d = 0; d < 7; d++) {
     html += `<div class="day-label">${days[d]}</div>`;
-    for (let h = 0; h < 24; h++) {
+    for (let h = 0; h < numHours; h++) {
       const intensity = grid[d][h] / maxVal;
       const bg = intensity === 0 ? '#f0f0f0' : `rgba(45,106,79,${0.15 + intensity * 0.85})`;
-      html += `<div class="heatmap-cell" style="background:${bg}" title="${days[d]} ${h}:00 - ${grid[d][h]} notifications"></div>`;
+      const displayHour = h + startHour;
+      const label = displayHour <= 12 ? `${displayHour}${displayHour < 12 ? 'am' : 'pm'}` : `${displayHour-12}pm`;
+      html += `<div class="heatmap-cell" style="background:${bg}" title="${days[d]} ${label} - ${grid[d][h]} notifications"></div>`;
     }
   }
   html += '</div>';
@@ -190,7 +209,35 @@ function renderHistory(stats) {
   document.getElementById('history-table').innerHTML = html;
 }
 
-loadStats().then(stats => {
+function renderComparison(stats, previousPeriod) {
+  if (!previousPeriod || !previousPeriod.total_runs) return;
+  document.getElementById('comparison-card').style.display = '';
+  // Current period totals
+  const current = { total_runs: stats.length, users: {} };
+  for (const r of stats) {
+    for (const [user, c] of Object.entries(r.users || {})) {
+      if (!current.users[user]) current.users[user] = { matched: 0, notified: 0 };
+      current.users[user].matched += c.matched || 0;
+      current.users[user].notified += c.notified || 0;
+    }
+  }
+  const allUsers = new Set([...Object.keys(current.users), ...Object.keys(previousPeriod.users || {})]);
+  const users = [...allUsers].sort();
+  let html = '<table><thead><tr><th>User</th><th colspan="2">Current Period</th><th colspan="2">Previous Period</th></tr>';
+  html += '<tr><th></th><th>Matched</th><th>Notified</th><th>Matched</th><th>Notified</th></tr></thead><tbody>';
+  for (const u of users) {
+    const cur = current.users[u] || { matched: 0, notified: 0 };
+    const prev = (previousPeriod.users || {})[u] || { matched: 0, notified: 0 };
+    html += `<tr><td>${u}</td><td>${cur.matched}</td><td>${cur.notified}</td><td>${prev.matched}</td><td>${prev.notified}</td></tr>`;
+  }
+  html += `<tr style="font-weight:600;border-top:2px solid #ccc"><td>Total Runs</td><td colspan="2">${current.total_runs}</td><td colspan="2">${previousPeriod.total_runs}</td></tr>`;
+  html += '</tbody></table>';
+  document.getElementById('comparison-table').innerHTML = html;
+}
+
+loadStats().then(data => {
+  const stats = data.stats;
+  const previousPeriod = data.previous_period || {};
   if (stats.length === 0) {
     document.querySelector('.grid').innerHTML = '<div class="card full-width"><div class="empty">No stats data yet. Run the shift monitor to start collecting data.</div></div>';
     return;
@@ -199,6 +246,7 @@ loadStats().then(stats => {
   renderUserChart(stats);
   renderTimeChart(stats);
   renderHeatmap(stats);
+  renderComparison(stats, previousPeriod);
   renderHistory(stats);
 });
 </script>

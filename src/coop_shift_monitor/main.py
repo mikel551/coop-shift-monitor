@@ -17,6 +17,8 @@ from .state import (
     mark_notified,
     migrate_state,
     print_stats,
+    prune_notified,
+    prune_stats,
     save_state,
 )
 
@@ -67,6 +69,11 @@ def main() -> None:
         all_shifts.extend(parse_shifts_page(page_html))
 
     log.info("Found %d total shifts across %d pages", len(all_shifts), len(pages))
+
+    # Prune state to current window
+    current_shift_ids = {s.shift_id for s in all_shifts}
+    prune_notified(state, current_shift_ids)
+    prune_stats(state)
 
     # Process each user, collecting stats
     user_stats: dict[str, dict[str, int]] = {}

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .models import Shift
@@ -89,12 +89,50 @@ def append_run_stats(
     state.setdefault("stats", []).append(record)
 
 
-def export_stats_json(state: dict, output_path: Path) -> None:
-    """Write stats list to a JSON file for the web dashboard."""
+def prune_notified(state: dict, current_shift_ids: set[str]) -> None:
+    """Remove shift IDs that are no longer in the current calendar."""
+    notified = state.get("notified", {})
+    for user in notified:
+        notified[user] = [sid for sid in notified[user] if sid in current_shift_ids]
+
+
+def prune_stats(state: dict, weeks: int = 6) -> None:
+    """Keep only recent stats, aggregate older ones into previous_period."""
     stats = state.get("stats", [])
+    cutoff = (datetime.now(timezone.utc) - timedelta(weeks=weeks)).isoformat()
+
+    old_records = [r for r in stats if r["ts"] < cutoff]
+    if old_records:
+        prev = {"total_runs": len(old_records), "users": {}}
+        for r in old_records:
+            for user, counts in r.get("users", {}).items():
+                if user not in prev["users"]:
+                    prev["users"][user] = {"matched": 0, "notified": 0}
+                prev["users"][user]["matched"] += counts.get("matched", 0)
+                prev["users"][user]["notified"] += counts.get("notified", 0)
+        # Merge with any existing previous_period data
+        existing = state.get("previous_period", {})
+        if existing:
+            prev["total_runs"] += existing.get("total_runs", 0)
+            for user, counts in existing.get("users", {}).items():
+                if user not in prev["users"]:
+                    prev["users"][user] = {"matched": 0, "notified": 0}
+                prev["users"][user]["matched"] += counts.get("matched", 0)
+                prev["users"][user]["notified"] += counts.get("notified", 0)
+        state["previous_period"] = prev
+
+    state["stats"] = [r for r in stats if r["ts"] >= cutoff]
+
+
+def export_stats_json(state: dict, output_path: Path) -> None:
+    """Write stats and previous_period to a JSON file for the web dashboard."""
+    data = {
+        "stats": state.get("stats", []),
+        "previous_period": state.get("previous_period", {}),
+    }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w") as f:
-        json.dump(stats, f, indent=2)
+        json.dump(data, f, indent=2)
 
 
 def print_stats(state: dict) -> None:
