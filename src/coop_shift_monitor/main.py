@@ -100,7 +100,20 @@ def main() -> None:
         matched = filter_shifts_for_user(all_shifts, user)
         new = get_new_shifts(user.name, matched, state)
 
-        user_stats[user.name] = {"matched": len(matched), "notified": 0}
+        user_stats[user.name] = {
+            "matched": len(matched),
+            "notified": 0,
+            "shifts": [
+                {
+                    "id": s.shift_id,
+                    "date": s.date.isoformat(),
+                    "start": s.start_time.strftime("%H:%M"),
+                    "end": s.end_time.strftime("%H:%M"),
+                    "type": s.description,
+                }
+                for s in matched
+            ],
+        }
 
         if not new:
             log.info("No new shifts for %s", user.name)

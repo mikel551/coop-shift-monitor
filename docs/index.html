@@ -57,6 +57,10 @@
     <div id="comparison-table"></div>
   </div>
   <div class="card full-width">
+    <h2>Recent Matched Shifts (48h)</h2>
+    <div id="recent-shifts-table"></div>
+  </div>
+  <div class="card full-width">
     <h2>Recent Run History</h2>
     <div id="history-table"></div>
   </div>
@@ -211,6 +215,37 @@ function renderHistory(stats) {
   document.getElementById('history-table').innerHTML = html;
 }
 
+function renderRecentShifts(stats) {
+  const cutoff = Date.now() - 48 * 60 * 60 * 1000;
+  const recent = stats.filter(r => new Date(r.ts).getTime() >= cutoff);
+  const seen = new Set();
+  const shifts = [];
+  for (const r of recent) {
+    for (const [user, u] of Object.entries(r.users || {})) {
+      for (const s of (u.shifts || [])) {
+        const key = s.id + '|' + user;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        shifts.push({ ...s, user });
+      }
+    }
+  }
+  const container = document.getElementById('recent-shifts-table');
+  if (shifts.length === 0) {
+    container.innerHTML = '<div class="empty">No matched shifts in the last 48 hours.</div>';
+    return;
+  }
+  shifts.sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
+  let html = '<table><thead><tr><th>Date</th><th>Time</th><th>Type</th><th>User</th></tr></thead><tbody>';
+  for (const s of shifts) {
+    const d = new Date(s.date + 'T00:00:00');
+    const dateStr = d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+    html += `<tr><td>${dateStr}</td><td>${s.start} – ${s.end}</td><td>${s.type}</td><td>${s.user}</td></tr>`;
+  }
+  html += '</tbody></table>';
+  container.innerHTML = html;
+}
+
 function renderComparison(stats, previousPeriod) {
   if (!previousPeriod || !previousPeriod.total_runs) return;
   document.getElementById('comparison-card').style.display = '';
@@ -248,6 +283,7 @@ loadStats().then(data => {
   renderUserChart(stats);
   renderTimeChart(stats);
   renderHeatmap(stats);
+  renderRecentShifts(stats);
   renderComparison(stats, previousPeriod);
   renderHistory(stats);
 });
