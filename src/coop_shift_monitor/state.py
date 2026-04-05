@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import json
+import logging
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .models import Shift
+
+log = logging.getLogger(__name__)
 
 STATE_FILE = Path("state.json")
 
@@ -93,7 +96,11 @@ def prune_notified(state: dict, current_shift_ids: set[str]) -> None:
     """Remove shift IDs that are no longer in the current calendar."""
     notified = state.get("notified", {})
     for user in notified:
+        before = len(notified[user])
         notified[user] = [sid for sid in notified[user] if sid in current_shift_ids]
+        removed = before - len(notified[user])
+        if removed:
+            log.info("Pruned %d stale shift IDs for %s (%d -> %d)", removed, user, before, len(notified[user]))
 
 
 def prune_stats(state: dict, weeks: int = 6) -> None:
@@ -122,6 +129,8 @@ def prune_stats(state: dict, weeks: int = 6) -> None:
         state["previous_period"] = prev
 
     state["stats"] = [r for r in stats if r["ts"] >= cutoff]
+    if old_records:
+        log.info("Pruned %d old stats records (before %s), %d remaining", len(old_records), cutoff[:10], len(state["stats"]))
 
 
 def export_stats_json(state: dict, output_path: Path) -> None:
