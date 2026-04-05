@@ -4,33 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PSFC Shift Monitor Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='none' stroke='%2310b981' stroke-width='3'/%3E%3Cpath d='M20 20h2l3 18h16l3-14H26' fill='none' stroke='%2310b981' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='28' cy='44' r='2.5' fill='%2310b981'/%3E%3Ccircle cx='40' cy='44' r='2.5' fill='%2310b981'/%3E%3Ccircle cx='44' cy='18' r='10' fill='%230f172a' stroke='%2310b981' stroke-width='2.5'/%3E%3Cline x1='44' y1='12' x2='44' y2='18' stroke='%2310b981' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='44' y1='18' x2='48' y2='21' stroke='%2310b981' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; padding: 20px; }
-  h1 { text-align: center; margin-bottom: 8px; color: #1a1a2e; }
-  .subtitle { text-align: center; color: #666; margin-bottom: 24px; font-size: 14px; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; padding: 20px; }
+  .header-row { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
+  .header-icon { width: 32px; height: 32px; flex-shrink: 0; }
+  h1 { text-align: center; color: #f1f5f9; }
+  .subtitle { text-align: center; color: #64748b; margin-bottom: 24px; font-size: 14px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
-  .card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-  .card h2 { font-size: 16px; color: #555; margin-bottom: 12px; }
+  .card {
+    background: #1e293b; border-radius: 12px; padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    opacity: 0; transform: translateY(16px);
+    animation: fadeSlideUp 0.4s ease-out forwards;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.45); }
+  .card:nth-child(1) { animation-delay: 0.05s; }
+  .card:nth-child(2) { animation-delay: 0.1s; }
+  .card:nth-child(3) { animation-delay: 0.15s; }
+  .card:nth-child(4) { animation-delay: 0.2s; }
+  .card:nth-child(5) { animation-delay: 0.25s; }
+  .card:nth-child(6) { animation-delay: 0.3s; }
+  .card h2 { font-size: 16px; color: #94a3b8; margin-bottom: 12px; }
   .stat-row { display: flex; gap: 20px; margin-bottom: 20px; max-width: 1200px; margin: 0 auto 20px; }
-  .stat-box { flex: 1; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; }
-  .stat-box .number { font-size: 36px; font-weight: 700; color: #2d6a4f; }
-  .stat-box .label { font-size: 13px; color: #888; margin-top: 4px; }
+  .stat-box {
+    flex: 1; background: #1e293b; border-radius: 12px; padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3); text-align: center;
+    opacity: 0; transform: translateY(16px);
+    animation: fadeSlideUp 0.4s ease-out forwards;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .stat-box:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.45); }
+  .stat-box:nth-child(1) { animation-delay: 0s; }
+  .stat-box:nth-child(2) { animation-delay: 0.05s; }
+  .stat-box:nth-child(3) { animation-delay: 0.1s; }
+  .stat-box .number { font-size: 36px; font-weight: 700; color: #10b981; }
+  .stat-box .label { font-size: 13px; color: #64748b; margin-top: 4px; }
   .full-width { grid-column: 1 / -1; }
   canvas { max-height: 300px; }
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
-  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; }
-  th { color: #888; font-weight: 600; font-size: 12px; text-transform: uppercase; }
-  .empty { text-align: center; color: #999; padding: 40px; }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  th { color: #94a3b8; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+  tr:hover td { background: rgba(255,255,255,0.03); }
+  .empty { text-align: center; color: #64748b; padding: 40px; }
   .heatmap-grid { display: grid; grid-template-columns: auto repeat(24, 1fr); gap: 2px; font-size: 11px; }
-  .heatmap-grid .day-label { text-align: right; padding-right: 6px; line-height: 22px; color: #666; }
-  .heatmap-grid .hour-label { text-align: center; color: #999; font-size: 10px; }
+  .heatmap-grid .day-label { text-align: right; padding-right: 6px; line-height: 22px; color: #64748b; }
+  .heatmap-grid .hour-label { text-align: center; color: #64748b; font-size: 10px; }
   .heatmap-cell { width: 100%; aspect-ratio: 1; border-radius: 3px; min-height: 18px; }
+  @keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 </style>
 </head>
 <body>
-<h1>PSFC Shift Monitor</h1>
+<div class="header-row">
+  <svg class="header-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="32" cy="32" r="30" stroke="#10b981" stroke-width="3"/>
+    <path d="M20 20h2l3 18h16l3-14H26" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="28" cy="44" r="2.5" fill="#10b981"/>
+    <circle cx="40" cy="44" r="2.5" fill="#10b981"/>
+    <circle cx="44" cy="18" r="10" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+    <line x1="44" y1="12" x2="44" y2="18" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+    <line x1="44" y1="18" x2="48" y2="21" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <h1>PSFC Shift Monitor</h1>
+</div>
 <p class="subtitle">Auto-updated by GitHub Actions</p>
 
 <div class="stat-row" id="summary-stats">
@@ -67,7 +109,12 @@
 </div>
 
 <script>
-const COLORS = ['#2d6a4f','#40916c','#52b788','#74c69d','#95d5b2','#b7e4c7'];
+const COLORS = ['#10b981','#34d399','#6ee7b7','#14b8a6','#2dd4bf','#5eead4'];
+
+// Chart.js dark mode defaults
+Chart.defaults.color = '#94a3b8';
+Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
+Chart.defaults.scale.grid = { color: 'rgba(255,255,255,0.06)' };
 
 async function loadStats() {
   try {
@@ -116,8 +163,8 @@ function renderUserChart(stats) {
     data: {
       labels: users,
       datasets: [
-        { label: 'Matched', data: users.map(u => totals[u].matched), backgroundColor: '#74c69d' },
-        { label: 'Notified', data: users.map(u => totals[u].notified), backgroundColor: '#2d6a4f' },
+        { label: 'Matched', data: users.map(u => totals[u].matched), backgroundColor: '#34d399' },
+        { label: 'Notified', data: users.map(u => totals[u].notified), backgroundColor: '#10b981' },
       ]
     },
     options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
@@ -143,9 +190,9 @@ function renderTimeChart(stats) {
     data: {
       labels,
       datasets: [
-        { label: 'Matched', data: matchData, borderColor: '#74c69d', backgroundColor: 'rgba(116,198,157,0.1)', fill: true, tension: 0.3 },
-        { label: 'Notified', data: notifyData, borderColor: '#2d6a4f', backgroundColor: 'rgba(45,106,79,0.1)', fill: true, tension: 0.3 },
-        { label: 'Pruned', data: pruneData, borderColor: '#e76f51', backgroundColor: 'rgba(231,111,81,0.1)', fill: true, tension: 0.3 },
+        { label: 'Matched', data: matchData, borderColor: '#34d399', backgroundColor: 'rgba(52,211,153,0.1)', fill: true, tension: 0.3 },
+        { label: 'Notified', data: notifyData, borderColor: '#10b981', backgroundColor: 'rgba(16,185,129,0.1)', fill: true, tension: 0.3 },
+        { label: 'Pruned', data: pruneData, borderColor: '#f87171', backgroundColor: 'rgba(248,113,113,0.1)', fill: true, tension: 0.3 },
       ]
     },
     options: { responsive: true, plugins: { legend: { position: 'bottom' } }, scales: { x: { display: false } } }
@@ -181,7 +228,7 @@ function renderHeatmap(stats) {
     html += `<div class="day-label">${days[d]}</div>`;
     for (let h = 0; h < numHours; h++) {
       const intensity = grid[d][h] / maxVal;
-      const bg = intensity === 0 ? '#f0f0f0' : `rgba(45,106,79,${0.15 + intensity * 0.85})`;
+      const bg = intensity === 0 ? 'rgba(255,255,255,0.04)' : `rgba(16,185,129,${0.15 + intensity * 0.85})`;
       const displayHour = h + startHour;
       const label = displayHour <= 12 ? `${displayHour}${displayHour < 12 ? 'am' : 'pm'}` : `${displayHour-12}pm`;
       html += `<div class="heatmap-cell" style="background:${bg}" title="${days[d]} ${label} - ${grid[d][h]} matched"></div>`;
@@ -267,7 +314,7 @@ function renderComparison(stats, previousPeriod) {
     const prev = (previousPeriod.users || {})[u] || { matched: 0, notified: 0 };
     html += `<tr><td>${u}</td><td>${cur.matched}</td><td>${cur.notified}</td><td>${prev.matched}</td><td>${prev.notified}</td></tr>`;
   }
-  html += `<tr style="font-weight:600;border-top:2px solid #ccc"><td>Total Runs</td><td colspan="2">${current.total_runs}</td><td colspan="2">${previousPeriod.total_runs}</td></tr>`;
+  html += `<tr style="font-weight:600;border-top:2px solid rgba(255,255,255,0.1)"><td>Total Runs</td><td colspan="2">${current.total_runs}</td><td colspan="2">${previousPeriod.total_runs}</td></tr>`;
   html += '</tbody></table>';
   document.getElementById('comparison-table').innerHTML = html;
 }
