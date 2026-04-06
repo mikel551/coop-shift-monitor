@@ -105,6 +105,9 @@ log = logging.getLogger(__name__)
 def parse_member_status(html: str) -> dict:
     """Extract member status, scheduled shifts, and credit bank from /services/ page.
 
+    The page uses a table layout: labels like "MEMBER STATUS:" in one <td>,
+    values in the next <td>.
+
     Returns a dict with keys: member_status, scheduled_shifts, credit_bank.
     Missing fields are set to None.
     """
@@ -115,53 +118,64 @@ def parse_member_status(html: str) -> dict:
         "credit_bank": None,
     }
 
-    # Search for text patterns in the page
     for label_text, key in [
-        ("Member status", "member_status"),
-        ("Scheduled shifts", "scheduled_shifts"),
-        ("Shift Credit Bank", "credit_bank"),
+        ("member status", "member_status"),
+        ("scheduled shifts", "scheduled_shifts"),
+        ("shift credit bank", "credit_bank"),
     ]:
-        # Try finding a label element containing the text
+        # Find any element whose text matches the label (case-insensitive)
         label_el = soup.find(string=re.compile(re.escape(label_text), re.IGNORECASE))
         if not label_el:
             log.warning("Could not find '%s' on /services/ page", label_text)
             continue
 
-        # The value is typically in a sibling or parent's next sibling
-        parent = label_el.find_parent()
-        if parent is None:
-            continue
-
-        # Strategy 1: value is in a sibling element after the label
-        next_sib = parent.find_next_sibling()
-        if next_sib:
-            value = next_sib.get_text(strip=True)
-            if value:
-                result[key] = value
-                continue
-
-        # Strategy 2: value is in the same parent, after the label text
-        parent_text = parent.get_text(strip=True)
-        if parent_text and parent_text != label_text:
-            # Remove the label portion
-            value = parent_text.replace(label_text, "").strip().lstrip(":").strip()
-            if value:
-                result[key] = value
-                continue
-
-        # Strategy 3: look at parent's parent next sibling
-        grandparent = parent.find_parent()
-        if grandparent:
-            next_sib = grandparent.find_next_sibling()
-            if next_sib:
-                value = next_sib.get_text(strip=True)
+        # Walk up to the nearest <td> or <th> (table cell containing the label)
+        cell = label_el.find_parent(["td", "th"])
+        if cell:
+            # Value is in the next sibling <td> in the same row
+            value_cell = cell.find_next_sibling("td")
+            if value_cell:
+                value = value_cell.get_text(" ", strip=True)
                 if value:
                     result[key] = value
+                    log.info("Parsed '%s' = '%s'", label_text, value)
+                    continue
+
+        # Fallback: walk up to <dt> (definition list)
+        dt = label_el.find_parent("dt")
+        if dt:
+            dd = dt.find_next_sibling("dd")
+            if dd:
+                value = dd.get_text(" ", strip=True)
+                if value:
+                    result[key] = value
+                    log.info("Parsed '%s' = '%s' (from dl)", label_text, value)
+                    continue
+
+        # Fallback: walk up to any parent and check its next sibling
+        parent = label_el.find_parent()
+        if parent:
+            next_sib = parent.find_next_sibling()
+            if next_sib:
+                value = next_sib.get_text(" ", strip=True)
+                if value:
+                    result[key] = value
+                    log.info("Parsed '%s' = '%s' (from sibling)", label_text, value)
                     continue
 
         log.warning("Found '%s' label but could not extract value", label_text)
 
     return result
+
+
+def save_member_status_html(html: str, name: str) -> None:
+    """Save raw member status HTML for debugging."""
+    from pathlib import Path
+    debug_dir = Path("docs")
+    debug_dir.mkdir(parents=True, exist_ok=True)
+    path = debug_dir / f"debug_member_status_{name.lower()}.html"
+    path.write_text(html)
+    log.info("Saved member status HTML for %s to %s", name, path)
 
 
 def _parse_time(s: str) -> time | None:
