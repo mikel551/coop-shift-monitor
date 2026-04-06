@@ -831,24 +831,41 @@ function renderMemberStatus(memberStatus) {
       </div>`;
     }
 
-    // Scheduled shifts
-    if (info.scheduled_shifts) {
+    // Scheduled shifts (now an array of objects)
+    if (info.scheduled_shifts && info.scheduled_shifts.length > 0) {
+      const shiftsHtml = info.scheduled_shifts.map(s => {
+        const parts = [s.date, s.start_time, s.description].filter(Boolean);
+        return `<div>${parts.join(' \u2014 ')}</div>`;
+      }).join('');
       html += `<div class="member-field">
         <div class="member-field-label">Scheduled Shifts</div>
-        <div class="member-field-value">${info.scheduled_shifts}</div>
+        <div class="member-field-value">${shiftsHtml}</div>
+      </div>`;
+    } else if (info.scheduled_shifts !== undefined && info.scheduled_shifts !== null) {
+      html += `<div class="member-field">
+        <div class="member-field-label">Scheduled Shifts</div>
+        <div class="member-field-value" style="color:var(--text-muted);">None</div>
       </div>`;
     }
 
     // Credit bank
-    if (info.credit_bank) {
+    if (info.credit_bank != null) {
       html += `<div class="member-field">
         <div class="member-field-label">Shift Credit Bank</div>
         <div class="member-field-value">${info.credit_bank}</div>
       </div>`;
     }
 
+    // Cancel tickets
+    if (info.cancel_tickets != null) {
+      html += `<div class="member-field">
+        <div class="member-field-label">Cancel Tickets</div>
+        <div class="member-field-value">${info.cancel_tickets}</div>
+      </div>`;
+    }
+
     // If nothing was found
-    if (!info.member_status && !info.scheduled_shifts && !info.credit_bank) {
+    if (!info.member_status && !info.scheduled_shifts && info.credit_bank == null && info.cancel_tickets == null) {
       html += '<div class="member-field"><div class="member-field-value" style="color:var(--text-muted);">No data available</div></div>';
     }
 
