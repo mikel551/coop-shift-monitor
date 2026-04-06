@@ -7122,9 +7122,37 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-06T20:35:07.464806+00:00",
+      "total": 3303,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
   "available_shifts": {},
-  "member_status": {}
+  "member_status": {
+    "Mike": {
+      "member_status": "Member Status:",
+      "scheduled_shifts": "Scheduled Shifts:",
+      "credit_bank": null
+    },
+    "Nancy": {
+      "member_status": "Member Status:",
+      "scheduled_shifts": "Scheduled Shifts:",
+      "credit_bank": null
+    }
+  }
 }
