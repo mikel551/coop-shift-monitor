@@ -6730,8 +6730,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-06T18:00:27.343392+00:00",
+      "total": 3329,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1122017",
+              "date": "2026-05-17",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {}
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1122017",
+        "date": "2026-05-17",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  }
 }
