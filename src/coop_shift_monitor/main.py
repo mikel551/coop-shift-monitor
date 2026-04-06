@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 from .config import load_config, parse_users
 from .matcher import filter_shifts_for_user
 from .notifier import notify_user
-from .parser import parse_member_status, parse_shifts_page
+from .parser import parse_member_status, parse_shifts_page, save_member_status_html
 from .scraper import create_session, fetch_member_status, fetch_shift_pages, login, login_as
 from .state import (
     append_run_stats,
@@ -142,6 +142,7 @@ def main() -> None:
             ms_session = create_session()
             login_as(ms_session, site["base_url"], user.credentials[0], user.credentials[1])
             status_html = fetch_member_status(ms_session, site["base_url"])
+            save_member_status_html(status_html, user.name)
             member_status[user.name] = parse_member_status(status_html)
             log.info("Fetched member status for %s: %s", user.name, member_status[user.name])
         except Exception:
