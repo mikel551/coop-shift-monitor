@@ -122,6 +122,10 @@ def main() -> None:
         log.info("%d new shifts for %s", len(new), user.name)
 
         if quiet:
+            # Still track shifts as notified so dashboard shows them as available
+            mark_notified(user.name, new, state)
+            user_stats[user.name]["notified"] = len(new)
+            log.info("Quiet hours — marked %d shifts for %s (no text sent)", len(new), user.name)
             continue
 
         success = notify_user(user, new, dry_run=args.dry_run)
@@ -148,3 +152,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    
