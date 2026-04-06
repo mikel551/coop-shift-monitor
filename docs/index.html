@@ -149,6 +149,18 @@
   .heatmap-grid .day-label { text-align: right; padding-right: 6px; line-height: 22px; color: var(--text-muted); }
   .heatmap-grid .hour-label { text-align: center; color: var(--text-muted); font-size: 10px; }
   .heatmap-cell { width: 100%; aspect-ratio: 1; border-radius: 3px; min-height: 18px; }
+  .user-bar-group { margin-bottom: 16px; }
+  .user-bar-group:last-child { margin-bottom: 0; }
+  .user-bar-label { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
+  .user-bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .user-bar-track { flex: 1; height: 22px; background: var(--heatmap-empty); border-radius: 4px; overflow: hidden; }
+  .user-bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease-out; min-width: 2px; }
+  .user-bar-fill.matched { background: #34d399; }
+  .user-bar-fill.notified { background: #f59e0b; }
+  .user-bar-val { font-size: 12px; color: var(--text-muted); min-width: 60px; }
+  .user-bar-legend { display: flex; gap: 16px; margin-top: 12px; font-size: 12px; color: var(--text-muted); }
+  .user-bar-legend span { display: flex; align-items: center; gap: 4px; }
+  .user-bar-legend .swatch { width: 10px; height: 10px; border-radius: 2px; }
   @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
@@ -253,7 +265,7 @@
 <div class="grid">
   <div class="card">
     <h2>Notifications per User</h2>
-    <canvas id="userChart"></canvas>
+    <div id="userBars"></div>
   </div>
   <div class="card">
     <h2>Matches vs Notifications Over Time</h2>
@@ -268,7 +280,7 @@
     <div id="comparison-table"></div>
   </div>
   <div class="card full-width">
-    <h2>Recent Matched Shifts (48h)</h2>
+    <h2>Recent Notifications (48h)</h2>
     <div id="recent-shifts-table"></div>
   </div>
   <div class="card full-width">
@@ -337,7 +349,6 @@ function toggleTheme() {
   applyTheme(current === 'dark' ? 'light' : 'dark');
   // Re-render charts with new theme colors
   if (window._dashboardStats) {
-    renderUserChart(window._dashboardStats);
     renderTimeChart(window._dashboardStats);
   }
 }
@@ -396,14 +407,6 @@ function renderSummary(stats) {
   }
 }
 
-function getOrCreateChart(canvasId, config) {
-  const canvas = document.getElementById(canvasId);
-  // Destroy existing chart on this canvas if any
-  const existing = Chart.getChart(canvas);
-  if (existing) existing.destroy();
-  return new Chart(canvas, config);
-}
-
 function renderUserChart(stats) {
   const totals = {};
   for (const r of stats) {
@@ -414,34 +417,25 @@ function renderUserChart(stats) {
     }
   }
   const users = Object.keys(totals).sort();
-  const matchedData = users.map(u => totals[u].matched);
-  const notifiedData = users.map(u => totals[u].notified);
-
-  // Replace canvas to ensure clean state
-  const oldCanvas = document.getElementById('userChart');
-  const newCanvas = document.createElement('canvas');
-  newCanvas.id = 'userChart';
-  oldCanvas.parentNode.replaceChild(newCanvas, oldCanvas);
-
-  new Chart(newCanvas, {
-    type: 'bar',
-    data: {
-      labels: users,
-      datasets: [
-        { label: 'Matched', data: matchedData, backgroundColor: 'rgba(52,211,153,0.85)', borderColor: '#34d399', borderWidth: 1 },
-        { label: 'Notified', data: notifiedData, backgroundColor: 'rgba(245,158,11,0.85)', borderColor: '#f59e0b', borderWidth: 1 },
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: true,
-      plugins: { legend: { position: 'bottom' } },
-      scales: {
-        x: { grid: { display: false } },
-        y: { beginAtZero: true }
-      }
-    }
-  });
+  const maxVal = Math.max(1, ...users.map(u => Math.max(totals[u].matched, totals[u].notified)));
+  let html = '';
+  for (const u of users) {
+    const mPct = (totals[u].matched / maxVal * 100).toFixed(1);
+    const nPct = (totals[u].notified / maxVal * 100).toFixed(1);
+    html += `<div class="user-bar-group">
+      <div class="user-bar-label">${u}</div>
+      <div class="user-bar-row">
+        <div class="user-bar-track"><div class="user-bar-fill matched" style="width:${mPct}%"></div></div>
+        <div class="user-bar-val">${totals[u].matched} matched</div>
+      </div>
+      <div class="user-bar-row">
+        <div class="user-bar-track"><div class="user-bar-fill notified" style="width:${nPct}%"></div></div>
+        <div class="user-bar-val">${totals[u].notified} notified</div>
+      </div>
+    </div>`;
+  }
+  html += '<div class="user-bar-legend"><span><span class="swatch" style="background:#34d399"></span>Matched</span><span><span class="swatch" style="background:#f59e0b"></span>Notified</span></div>';
+  document.getElementById('userBars').innerHTML = html;
 }
 
 function renderTimeChart(stats) {
@@ -458,7 +452,9 @@ function renderTimeChart(stats) {
     return n;
   });
   const pruneData = last288.map(r => r.pruned || 0);
-  getOrCreateChart('timeChart', {
+  const existing = Chart.getChart(document.getElementById('timeChart'));
+  if (existing) existing.destroy();
+  new Chart(document.getElementById('timeChart'), {
     type: 'line',
     data: {
       labels,
@@ -540,6 +536,8 @@ function renderRecentShifts(stats) {
   const shifts = [];
   for (const r of recent) {
     for (const [user, u] of Object.entries(r.users || {})) {
+      // Only include shifts from runs where a notification was sent
+      if ((u.notified || 0) === 0) continue;
       for (const s of (u.shifts || [])) {
         const key = s.id + '|' + user;
         if (seen.has(key)) continue;
@@ -550,11 +548,11 @@ function renderRecentShifts(stats) {
   }
   const container = document.getElementById('recent-shifts-table');
   if (shifts.length === 0) {
-    container.innerHTML = '<div class="empty">No matched shifts in the last 48 hours.</div>';
+    container.innerHTML = '<div class="empty">No notifications in the last 48 hours.</div>';
     return;
   }
   shifts.sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
-  let html = '<table><thead><tr><th>Date</th><th>Time</th><th>Type</th><th>User</th><th>Found At</th></tr></thead><tbody>';
+  let html = '<table><thead><tr><th>Date</th><th>Time</th><th>Type</th><th>User</th><th>Notified At</th></tr></thead><tbody>';
   for (const s of shifts) {
     const d = new Date(s.date + 'T00:00:00');
     const dateStr = d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
