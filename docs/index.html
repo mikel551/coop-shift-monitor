@@ -195,8 +195,6 @@
     40%, 80% { transform: translateX(6px); }
   }
   .shake { animation: shake 0.4s ease; }
-  .dashboard-content { display: none; }
-  .dashboard-content.visible { display: block; }
 </style>
 </head>
 <body>
@@ -222,8 +220,6 @@
     <div class="login-error" id="login-error"></div>
   </div>
 </div>
-
-<div class="dashboard-content" id="dashboard-content">
 
 <!-- Theme toggle -->
 <div class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark theme">
@@ -281,8 +277,6 @@
   </div>
 </div>
 
-</div><!-- end dashboard-content -->
-
 <script>
 const PASS_HASH = 'a7cdf5d0586b392473dd0cd08c9ba833240006a8a7310bf9bc8bf1aefdfaeadb';
 
@@ -313,15 +307,15 @@ function unlockDashboard() {
   const overlay = document.getElementById('login-overlay');
   overlay.classList.add('hidden');
   setTimeout(() => overlay.style.display = 'none', 400);
-  document.getElementById('dashboard-content').classList.add('visible');
-  // Delay chart init so browser can layout the now-visible containers
-  requestAnimationFrame(() => requestAnimationFrame(() => initDashboard()));
+  initDashboard();
 }
 
-// Check if already authenticated this session
-if (sessionStorage.getItem('dashboard-auth') === '1') {
-  unlockDashboard();
-}
+// Check if already authenticated this session — wait for DOM
+document.addEventListener('DOMContentLoaded', () => {
+  if (sessionStorage.getItem('dashboard-auth') === '1') {
+    unlockDashboard();
+  }
+});
 
 const COLORS = ['#10b981','#34d399','#6ee7b7','#14b8a6','#2dd4bf','#5eead4','#0d9488','#a7f3d0'];
 
