@@ -203,20 +203,6 @@
   .pref-name { font-weight: 700; color: var(--accent); font-size: 14px; min-width: 55px; }
   .pref-chip { display: inline-block; padding: 3px 10px; font-size: 12px; border-radius: 20px; background: var(--countdown-bg); border: 1px solid var(--countdown-border); color: var(--text-primary); }
 
-  /* Option 2: Tooltip popover */
-  .info-trigger { position: relative; display: inline-flex; align-items: center; cursor: pointer; margin-left: 10px; }
-  .info-dot { width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; }
-  .info-dot:hover { transform: scale(1.15); }
-  .info-popover { display: none; position: absolute; top: 36px; left: 50%; transform: translateX(-50%); width: 340px; background: var(--bg-card); border: 1px solid var(--countdown-border); border-radius: 12px; padding: 16px 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.35); z-index: 100; font-size: 13px; line-height: 1.6; }
-  .info-popover::before { content: ''; position: absolute; top: -6px; left: 50%; transform: translateX(-50%) rotate(45deg); width: 12px; height: 12px; background: var(--bg-card); border-left: 1px solid var(--countdown-border); border-top: 1px solid var(--countdown-border); }
-  .info-trigger:hover .info-popover, .info-trigger.active .info-popover { display: block; animation: fadeSlideUp 0.25s ease; }
-
-  /* Option 3: Inline chips under user bars */
-  .user-pref-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; margin-bottom: 4px; }
-  .user-pref-chip { display: inline-block; padding: 2px 8px; font-size: 11px; border-radius: 12px; background: var(--countdown-bg); border: 1px solid var(--countdown-border); color: var(--text-muted); }
-
-  /* Demo labels (remove later) */
-  .demo-label { display: inline-block; background: var(--accent); color: #fff; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
   @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
@@ -312,24 +298,6 @@
     <line x1="44" y1="18" x2="48" y2="21" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
   </svg>
   <h1>PSFC Shift Monitor</h1>
-  <!-- OPTION 2: Tooltip/popover -->
-  <div class="info-trigger" onclick="this.classList.toggle('active')">
-    <div class="info-dot">i</div>
-    <div class="info-popover">
-      <div style="font-size:14px;font-weight:700;margin-bottom:10px;color:var(--text-primary);">&#128270; What We're Looking For</div>
-      <div style="margin-bottom:10px;">
-        <span style="font-weight:700;color:var(--accent);">Mike</span> &mdash; <strong>Cart Return</strong><br>
-        Sat 5pm+ &middot; Sun &lt;10am &amp; 5pm+ &middot; Mon 5pm+<br>
-        Tue&ndash;Thu 6pm+ &middot; Fri 5pm+
-      </div>
-      <div>
-        <span style="font-weight:700;color:var(--accent);">Nancy</span> &mdash; <strong>Checkout</strong><br>
-        Sunday all day &middot; Monday all day
-      </div>
-      <div style="font-size:10px;color:var(--text-muted);margin-top:10px;">Tap anywhere to close</div>
-    </div>
-  </div>
-  <span class="demo-label">Option 2: Tooltip</span>
 </div>
 <p class="subtitle">Auto-updated by GitHub Actions</p>
 <div class="countdown-row">
@@ -342,9 +310,7 @@
   <div class="stat-box"><div class="number" id="last-run">-</div><div class="label">Last Run</div></div>
 </div>
 
-<!-- OPTION 1: Collapsible accordion -->
-<div class="card full-width" style="margin-bottom:1.5rem;">
-  <span class="demo-label">Option 1: Accordion</span>
+<div class="card full-width" style="max-width:1200px;margin:0 auto 20px;">
   <div class="accordion-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
     <span class="accordion-arrow">&#9654;</span>
     <h2 style="margin:0">&#128270; What We're Looking For</h2>
@@ -528,21 +494,14 @@ function renderUserChart(stats) {
       totals[user].notified += c.notified || 0;
     }
   }
-  // Option 3: Inline preference chips per user
-  const userPrefs = {
-    'Mike': ['Cart Return', 'Sat 5pm+', 'Sun <10am & 5pm+', 'Mon 5pm+', 'Tue\u2013Thu 6pm+', 'Fri 5pm+'],
-    'Nancy': ['Checkout', 'Sun all day', 'Mon all day']
-  };
   const users = Object.keys(totals).sort();
   const maxVal = Math.max(1, ...users.map(u => Math.max(totals[u].matched, totals[u].notified)));
-  let html = '<span class="demo-label">Option 3: Inline chips</span>';
+  let html = '';
   for (const u of users) {
     const mPct = (totals[u].matched / maxVal * 100).toFixed(1);
     const nPct = (totals[u].notified / maxVal * 100).toFixed(1);
-    const chips = (userPrefs[u] || []).map(p => `<span class="user-pref-chip">${p}</span>`).join('');
     html += `<div class="user-bar-group">
       <div class="user-bar-label">${u}</div>
-      <div class="user-pref-chips">${chips}</div>
       <div class="user-bar-row">
         <div class="user-bar-track"><div class="user-bar-fill matched" style="width:${mPct}%"></div></div>
         <div class="user-bar-val">${totals[u].matched} matched</div>
