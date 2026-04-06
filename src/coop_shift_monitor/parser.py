@@ -105,8 +105,12 @@ log = logging.getLogger(__name__)
 def parse_member_status(html: str) -> dict:
     """Extract member status, scheduled shifts, and credit bank from /services/ page.
 
-    The page uses a table layout: labels like "MEMBER STATUS:" in one <td>,
-    values in the next <td>.
+    The page uses Bootstrap grid rows with <span class="category"> labels in one
+    column and values in the sibling column:
+        <div class="row">
+          <div class="col-..."><span class="category">Member Status:</span></div>
+          <div class="col-...">Active</div>
+        </div>
 
     Returns a dict with keys: member_status, scheduled_shifts, credit_bank.
     Missing fields are set to None.
@@ -118,64 +122,44 @@ def parse_member_status(html: str) -> dict:
         "credit_bank": None,
     }
 
+    # Find all <span class="category"> labels and build a lookup
     for label_text, key in [
-        ("member status", "member_status"),
-        ("scheduled shifts", "scheduled_shifts"),
-        ("shift credit bank", "credit_bank"),
+        ("Member Status:", "member_status"),
+        ("Scheduled Shifts:", "scheduled_shifts"),
+        ("Shift Credit Bank:", "credit_bank"),
     ]:
-        # Find any element whose text matches the label (case-insensitive)
-        label_el = soup.find(string=re.compile(re.escape(label_text), re.IGNORECASE))
-        if not label_el:
-            log.warning("Could not find '%s' on /services/ page", label_text)
+        # Find the <span class="category"> containing this label
+        label_span = soup.find("span", class_="category", string=re.compile(re.escape(label_text), re.IGNORECASE))
+        if not label_span:
+            # Also check <p class="category"> (used for some fields)
+            label_span = soup.find("p", class_="category", string=re.compile(re.escape(label_text), re.IGNORECASE))
+        if not label_span:
+            log.warning("Could not find category label '%s' on /services/ page", label_text)
             continue
 
-        # Walk up to the nearest <td> or <th> (table cell containing the label)
-        cell = label_el.find_parent(["td", "th"])
-        if cell:
-            # Value is in the next sibling <td> in the same row
-            value_cell = cell.find_next_sibling("td")
-            if value_cell:
-                value = value_cell.get_text(" ", strip=True)
-                if value:
-                    result[key] = value
-                    log.info("Parsed '%s' = '%s'", label_text, value)
-                    continue
+        # Walk up to the parent .row div
+        row = label_span.find_parent("div", class_="row")
+        if not row:
+            log.warning("Found '%s' label but no parent .row div", label_text)
+            continue
 
-        # Fallback: walk up to <dt> (definition list)
-        dt = label_el.find_parent("dt")
-        if dt:
-            dd = dt.find_next_sibling("dd")
-            if dd:
-                value = dd.get_text(" ", strip=True)
-                if value:
-                    result[key] = value
-                    log.info("Parsed '%s' = '%s' (from dl)", label_text, value)
-                    continue
+        # The value is in the sibling column (col-sm-9 / col-md-10)
+        label_col = label_span.find_parent("div", class_=re.compile(r"col-"))
+        if not label_col:
+            log.warning("Found '%s' label but no parent col div", label_text)
+            continue
 
-        # Fallback: walk up to any parent and check its next sibling
-        parent = label_el.find_parent()
-        if parent:
-            next_sib = parent.find_next_sibling()
-            if next_sib:
-                value = next_sib.get_text(" ", strip=True)
-                if value:
-                    result[key] = value
-                    log.info("Parsed '%s' = '%s' (from sibling)", label_text, value)
-                    continue
+        value_col = label_col.find_next_sibling("div", class_=re.compile(r"col-"))
+        if not value_col:
+            log.warning("Found '%s' label but no sibling value col", label_text)
+            continue
 
-        log.warning("Found '%s' label but could not extract value", label_text)
+        value = value_col.get_text(" ", strip=True)
+        if value:
+            result[key] = value
+            log.info("Parsed '%s' -> '%s'", label_text, value[:80])
 
     return result
-
-
-def save_member_status_html(html: str, name: str) -> None:
-    """Save raw member status HTML for debugging."""
-    from pathlib import Path
-    debug_dir = Path("docs")
-    debug_dir.mkdir(parents=True, exist_ok=True)
-    path = debug_dir / f"debug_member_status_{name.lower()}.html"
-    path.write_text(html)
-    log.info("Saved member status HTML for %s to %s", name, path)
 
 
 def _parse_time(s: str) -> time | None:
