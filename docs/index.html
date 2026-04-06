@@ -361,6 +361,10 @@
     <div id="comparison-table"></div>
   </div>
   <div class="card full-width">
+    <h2>Open Shifts Over Time (2 weeks)</h2>
+    <canvas id="openShiftsChart"></canvas>
+  </div>
+  <div class="card full-width">
     <div class="accordion-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
       <span class="accordion-arrow">&#9654;</span>
       <h2 style="margin:0">Recent Notifications (48h)</h2>
@@ -556,6 +560,50 @@ function renderTimeChart(stats) {
       ]
     },
     options: { responsive: true, plugins: { legend: { position: 'bottom' } }, scales: { x: { display: false } } }
+  });
+}
+
+function renderOpenShiftsChart(stats) {
+  // Filter to last 2 weeks, sample ~1 per hour
+  const twoWeeksAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString();
+  const recent = stats.filter(r => r.ts >= twoWeeksAgo);
+  // Sample one point per hour (pick the last run in each hour)
+  const byHour = {};
+  for (const r of recent) {
+    const hourKey = r.ts.slice(0, 13); // YYYY-MM-DDTHH
+    byHour[hourKey] = r;
+  }
+  const sampled = Object.values(byHour).sort((a, b) => a.ts.localeCompare(b.ts));
+  const labels = sampled.map(r => {
+    const d = new Date(r.ts);
+    return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) + ' ' + d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+  });
+  const data = sampled.map(r => r.total || 0);
+  const existing = Chart.getChart(document.getElementById('openShiftsChart'));
+  if (existing) existing.destroy();
+  new Chart(document.getElementById('openShiftsChart'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Open Shifts',
+        data,
+        borderColor: '#6366f1',
+        backgroundColor: 'rgba(99,102,241,0.1)',
+        fill: true,
+        tension: 0.3,
+        pointRadius: 1,
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { position: 'bottom' } },
+      scales: {
+        x: { display: true, ticks: { maxTicksLimit: 14, maxRotation: 45, font: { size: 10 } } },
+        y: { beginAtZero: true, title: { display: true, text: 'Total Open Shifts', font: { size: 11 } } }
+      }
+    }
   });
 }
 
@@ -773,6 +821,7 @@ function initDashboard() {
     renderTimeChart(stats);
     renderAvailableShifts(data.available_shifts || {});
     renderHeatmap(stats);
+    renderOpenShiftsChart(stats);
     renderRecentShifts(stats);
     renderComparison(stats, previousPeriod);
     renderHistory(stats);
