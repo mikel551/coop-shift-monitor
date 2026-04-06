@@ -190,6 +190,33 @@
   }
   .pager a:hover { background: var(--countdown-bg); }
   .pager .pager-info { color: var(--text-muted); margin: 0 8px; }
+
+  /* Option 1: Collapsible accordion */
+  .accordion-toggle { cursor: pointer; display: flex; align-items: center; gap: 8px; user-select: none; }
+  .accordion-toggle h2 { margin: 0; }
+  .accordion-arrow { transition: transform 0.25s ease; font-size: 0.8em; color: var(--text-muted); }
+  .accordion-body { overflow: hidden; max-height: 0; transition: max-height 0.35s ease, opacity 0.3s ease; opacity: 0; }
+  .accordion-body.open { max-height: 500px; opacity: 1; }
+  .accordion-toggle.open .accordion-arrow { transform: rotate(90deg); }
+  .pref-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 10px; }
+  .pref-row:last-child { margin-bottom: 0; }
+  .pref-name { font-weight: 700; color: var(--accent); font-size: 14px; min-width: 55px; }
+  .pref-chip { display: inline-block; padding: 3px 10px; font-size: 12px; border-radius: 20px; background: var(--countdown-bg); border: 1px solid var(--countdown-border); color: var(--text-primary); }
+
+  /* Option 2: Tooltip popover */
+  .info-trigger { position: relative; display: inline-flex; align-items: center; cursor: pointer; margin-left: 10px; }
+  .info-dot { width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; transition: transform 0.2s ease; }
+  .info-dot:hover { transform: scale(1.15); }
+  .info-popover { display: none; position: absolute; top: 36px; left: 50%; transform: translateX(-50%); width: 340px; background: var(--bg-card); border: 1px solid var(--countdown-border); border-radius: 12px; padding: 16px 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.35); z-index: 100; font-size: 13px; line-height: 1.6; }
+  .info-popover::before { content: ''; position: absolute; top: -6px; left: 50%; transform: translateX(-50%) rotate(45deg); width: 12px; height: 12px; background: var(--bg-card); border-left: 1px solid var(--countdown-border); border-top: 1px solid var(--countdown-border); }
+  .info-trigger:hover .info-popover, .info-trigger.active .info-popover { display: block; animation: fadeSlideUp 0.25s ease; }
+
+  /* Option 3: Inline chips under user bars */
+  .user-pref-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; margin-bottom: 4px; }
+  .user-pref-chip { display: inline-block; padding: 2px 8px; font-size: 11px; border-radius: 12px; background: var(--countdown-bg); border: 1px solid var(--countdown-border); color: var(--text-muted); }
+
+  /* Demo labels (remove later) */
+  .demo-label { display: inline-block; background: var(--accent); color: #fff; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
   @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
@@ -285,6 +312,24 @@
     <line x1="44" y1="18" x2="48" y2="21" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
   </svg>
   <h1>PSFC Shift Monitor</h1>
+  <!-- OPTION 2: Tooltip/popover -->
+  <div class="info-trigger" onclick="this.classList.toggle('active')">
+    <div class="info-dot">i</div>
+    <div class="info-popover">
+      <div style="font-size:14px;font-weight:700;margin-bottom:10px;color:var(--text-primary);">&#128270; What We're Looking For</div>
+      <div style="margin-bottom:10px;">
+        <span style="font-weight:700;color:var(--accent);">Mike</span> &mdash; <strong>Cart Return</strong><br>
+        Sat 5pm+ &middot; Sun &lt;10am &amp; 5pm+ &middot; Mon 5pm+<br>
+        Tue&ndash;Thu 6pm+ &middot; Fri 5pm+
+      </div>
+      <div>
+        <span style="font-weight:700;color:var(--accent);">Nancy</span> &mdash; <strong>Checkout</strong><br>
+        Sunday all day &middot; Monday all day
+      </div>
+      <div style="font-size:10px;color:var(--text-muted);margin-top:10px;">Tap anywhere to close</div>
+    </div>
+  </div>
+  <span class="demo-label">Option 2: Tooltip</span>
 </div>
 <p class="subtitle">Auto-updated by GitHub Actions</p>
 <div class="countdown-row">
@@ -297,31 +342,30 @@
   <div class="stat-box"><div class="number" id="last-run">-</div><div class="label">Last Run</div></div>
 </div>
 
+<!-- OPTION 1: Collapsible accordion -->
 <div class="card full-width" style="margin-bottom:1.5rem;">
-  <h2>&#128270; What We're Looking For</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:0.75rem;">
-    <div style="border:1px solid var(--border-table);border-radius:10px;padding:1.25rem;">
-      <div style="font-size:1.1rem;font-weight:700;margin-bottom:0.6rem;color:var(--accent);">Mike</div>
-      <div style="margin-bottom:0.5rem;"><span style="font-weight:600;color:var(--text-muted);">Shift type:</span> Cart Return</div>
-      <div style="font-weight:600;color:var(--text-muted);margin-bottom:0.3rem;">Available times:</div>
-      <ul style="margin:0 0 0 1.2rem;padding:0;line-height:1.7;">
-        <li>Saturday after 5:00 PM</li>
-        <li>Sunday before 10:00 AM or after 5:00 PM</li>
-        <li>Monday after 5:00 PM</li>
-        <li>Tuesday after 6:00 PM</li>
-        <li>Wednesday after 6:00 PM</li>
-        <li>Thursday after 6:00 PM</li>
-        <li>Friday after 5:00 PM</li>
-      </ul>
-    </div>
-    <div style="border:1px solid var(--border-table);border-radius:10px;padding:1.25rem;">
-      <div style="font-size:1.1rem;font-weight:700;margin-bottom:0.6rem;color:var(--accent);">Nancy</div>
-      <div style="margin-bottom:0.5rem;"><span style="font-weight:600;color:var(--text-muted);">Shift type:</span> Checkout</div>
-      <div style="font-weight:600;color:var(--text-muted);margin-bottom:0.3rem;">Available times:</div>
-      <ul style="margin:0 0 0 1.2rem;padding:0;line-height:1.7;">
-        <li>Monday — all day</li>
-        <li>Sunday — all day</li>
-      </ul>
+  <span class="demo-label">Option 1: Accordion</span>
+  <div class="accordion-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+    <span class="accordion-arrow">&#9654;</span>
+    <h2 style="margin:0">&#128270; What We're Looking For</h2>
+  </div>
+  <div class="accordion-body">
+    <div style="padding-top:14px;">
+      <div class="pref-row">
+        <span class="pref-name">Mike</span>
+        <span class="pref-chip">Cart Return</span>
+        <span class="pref-chip">Sat 5pm+</span>
+        <span class="pref-chip">Sun &lt;10am &amp; 5pm+</span>
+        <span class="pref-chip">Mon 5pm+</span>
+        <span class="pref-chip">Tue&ndash;Thu 6pm+</span>
+        <span class="pref-chip">Fri 5pm+</span>
+      </div>
+      <div class="pref-row">
+        <span class="pref-name">Nancy</span>
+        <span class="pref-chip">Checkout</span>
+        <span class="pref-chip">Sun all day</span>
+        <span class="pref-chip">Mon all day</span>
+      </div>
     </div>
   </div>
 </div>
@@ -484,14 +528,21 @@ function renderUserChart(stats) {
       totals[user].notified += c.notified || 0;
     }
   }
+  // Option 3: Inline preference chips per user
+  const userPrefs = {
+    'Mike': ['Cart Return', 'Sat 5pm+', 'Sun <10am & 5pm+', 'Mon 5pm+', 'Tue\u2013Thu 6pm+', 'Fri 5pm+'],
+    'Nancy': ['Checkout', 'Sun all day', 'Mon all day']
+  };
   const users = Object.keys(totals).sort();
   const maxVal = Math.max(1, ...users.map(u => Math.max(totals[u].matched, totals[u].notified)));
-  let html = '';
+  let html = '<span class="demo-label">Option 3: Inline chips</span>';
   for (const u of users) {
     const mPct = (totals[u].matched / maxVal * 100).toFixed(1);
     const nPct = (totals[u].notified / maxVal * 100).toFixed(1);
+    const chips = (userPrefs[u] || []).map(p => `<span class="user-pref-chip">${p}</span>`).join('');
     html += `<div class="user-bar-group">
       <div class="user-bar-label">${u}</div>
+      <div class="user-pref-chips">${chips}</div>
       <div class="user-bar-row">
         <div class="user-bar-track"><div class="user-bar-fill matched" style="width:${mPct}%"></div></div>
         <div class="user-bar-val">${totals[u].matched} matched</div>
