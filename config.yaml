@@ -19,6 +19,9 @@ site:
 
 users:
   - name: "Mike"
+    credentials:
+      username: "$COOP_USERNAME_MIKE"
+      password: "$COOP_PASSWORD_MIKE"
     shift_types:
       - "Cart Return"
     availability:
@@ -48,6 +51,9 @@ users:
         password: "$MIKE_SMTP_PASS"
 
   - name: "Nancy"
+    credentials:
+      username: "$COOP_USERNAME_NANCY"
+      password: "$COOP_PASSWORD_NANCY"
     shift_types:
       - "Checkout"
     availability:
