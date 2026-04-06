@@ -7173,20 +7173,37 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-06T20:50:29.701529+00:00",
+      "total": 3301,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
   "available_shifts": {},
   "member_status": {
     "Mike": {
-      "member_status": null,
-      "scheduled_shifts": null,
-      "credit_bank": null
+      "member_status": "Active",
+      "scheduled_shifts": "April 19 Sunday 6:00pm - \n                        8:45pm Cart Return and Sidewalk Maintenance \ud83d\uded2 View in Shift Calendar \u29c9",
+      "credit_bank": "0 You're doing OK, but please try to complete a shift before Monday April 27, 2026 ."
     },
     "Nancy": {
-      "member_status": null,
-      "scheduled_shifts": null,
-      "credit_bank": null
+      "member_status": "Alert Work",
+      "scheduled_shifts": "April 27 Monday 6:00pm - \n                        8:45pm Checkout \ud83d\udcb3 View in Shift Calendar \u29c9 May 11 Monday 10:30am - \n                        1:15pm Checkout \ud83d\udcb3 View in Shift Calendar \u29c9",
+      "credit_bank": "-1 You're behind. Please try to complete a shift before Monday April 27, 2026 ."
     }
   }
 }
