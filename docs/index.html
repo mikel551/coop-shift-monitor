@@ -819,17 +819,13 @@ function renderMemberStatus(memberStatus) {
   let html = '<div class="member-status-grid">';
   for (const [user, info] of Object.entries(memberStatus).sort()) {
     html += '<div class="member-col">';
-    html += `<div class="member-col-name">${user}</div>`;
-
-    // Member status with badge
+    let nameLine = user;
     if (info.member_status) {
       const isActive = info.member_status.toLowerCase().includes('active');
       const badgeClass = isActive ? 'active' : 'other';
-      html += `<div class="member-field">
-        <div class="member-field-label">Member Status</div>
-        <div class="member-field-value"><span class="status-badge ${badgeClass}">${info.member_status}</span></div>
-      </div>`;
+      nameLine += ` <span class="status-badge ${badgeClass}" style="margin-left:8px;vertical-align:middle;">${info.member_status}</span>`;
     }
+    html += `<div class="member-col-name">${nameLine}</div>`;
 
     // Scheduled shifts (now an array of objects)
     if (info.scheduled_shifts && info.scheduled_shifts.length > 0) {
@@ -848,24 +844,18 @@ function renderMemberStatus(memberStatus) {
       </div>`;
     }
 
-    // Credit bank
-    if (info.credit_bank != null) {
+    // Credit bank + cancel tickets on one line
+    if (info.credit_bank != null || info.cancel_tickets != null) {
+      let parts = [];
+      if (info.credit_bank != null) parts.push(`<span><span class="member-field-label" style="display:inline;margin-right:4px;">Credit Bank:</span>${info.credit_bank}</span>`);
+      if (info.cancel_tickets != null) parts.push(`<span><span class="member-field-label" style="display:inline;margin-right:4px;">Cancel Tickets:</span>${info.cancel_tickets}</span>`);
       html += `<div class="member-field">
-        <div class="member-field-label">Shift Credit Bank</div>
-        <div class="member-field-value">${info.credit_bank}</div>
-      </div>`;
-    }
-
-    // Cancel tickets
-    if (info.cancel_tickets != null) {
-      html += `<div class="member-field">
-        <div class="member-field-label">Cancel Tickets</div>
-        <div class="member-field-value">${info.cancel_tickets}</div>
+        <div class="member-field-value" style="display:flex;gap:16px;">${parts.join('')}</div>
       </div>`;
     }
 
     // If nothing was found
-    if (!info.member_status && !info.scheduled_shifts && info.credit_bank == null && info.cancel_tickets == null) {
+    if (!info.member_status && !info.scheduled_shifts && info.credit_bank == null) {
       html += '<div class="member-field"><div class="member-field-value" style="color:var(--text-muted);">No data available</div></div>';
     }
 
@@ -914,7 +904,7 @@ function initDashboard() {
     renderSummary(stats);
     renderUserChart(stats);
     renderTimeChart(stats);
-    renderMemberStatus(data.member_status || {});
+    try { renderMemberStatus(data.member_status || {}); } catch(e) { console.error('renderMemberStatus error:', e); }
     renderAvailableShifts(data.available_shifts || {});
     renderHeatmap(stats);
     renderOpenShiftsChart(stats);
