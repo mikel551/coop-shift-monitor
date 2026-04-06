@@ -50,6 +50,10 @@ jobs:
         env:
           COOP_USERNAME: ${{ secrets.COOP_USERNAME }}
           COOP_PASSWORD: ${{ secrets.COOP_PASSWORD }}
+          COOP_USERNAME_MIKE: ${{ secrets.COOP_USERNAME_MIKE }}
+          COOP_PASSWORD_MIKE: ${{ secrets.COOP_PASSWORD_MIKE }}
+          COOP_USERNAME_NANCY: ${{ secrets.COOP_USERNAME_NANCY }}
+          COOP_PASSWORD_NANCY: ${{ secrets.COOP_PASSWORD_NANCY }}
           MIKE_SMTP_USER: ${{ secrets.MIKE_SMTP_USER }}
           MIKE_SMTP_PASS: ${{ secrets.MIKE_SMTP_PASS }}
           MIKE_SMS_NUMBER: ${{ secrets.MIKE_SMS_NUMBER }}
