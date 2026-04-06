@@ -326,7 +326,6 @@ function applyTheme(theme) {
   // Update chart colors
   const isDark = theme === 'dark';
   Chart.defaults.color = isDark ? '#94a3b8' : '#6b7280';
-  Chart.defaults.borderColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
   Chart.defaults.scale.grid = { color: isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)' };
   // Update SVG icon clock fill
   const clockCircle = document.querySelector('.header-icon circle:nth-child(5)');
@@ -364,7 +363,6 @@ setInterval(updateCountdown, 1000);
 // --- Chart.js defaults (set for initial theme) ---
 const isDarkInit = (localStorage.getItem('dashboard-theme') || 'dark') === 'dark';
 Chart.defaults.color = isDarkInit ? '#94a3b8' : '#6b7280';
-Chart.defaults.borderColor = isDarkInit ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
 Chart.defaults.scale.grid = { color: isDarkInit ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)' };
 
 async function loadStats() {
@@ -416,16 +414,33 @@ function renderUserChart(stats) {
     }
   }
   const users = Object.keys(totals).sort();
-  getOrCreateChart('userChart', {
+  const matchedData = users.map(u => totals[u].matched);
+  const notifiedData = users.map(u => totals[u].notified);
+
+  // Replace canvas to ensure clean state
+  const oldCanvas = document.getElementById('userChart');
+  const newCanvas = document.createElement('canvas');
+  newCanvas.id = 'userChart';
+  oldCanvas.parentNode.replaceChild(newCanvas, oldCanvas);
+
+  new Chart(newCanvas, {
     type: 'bar',
     data: {
       labels: users,
       datasets: [
-        { label: 'Matched', data: users.map(u => totals[u].matched), backgroundColor: '#34d399' },
-        { label: 'Notified', data: users.map(u => totals[u].notified), backgroundColor: '#f59e0b' },
+        { label: 'Matched', data: matchedData, backgroundColor: 'rgba(52,211,153,0.85)', borderColor: '#34d399', borderWidth: 1 },
+        { label: 'Notified', data: notifiedData, backgroundColor: 'rgba(245,158,11,0.85)', borderColor: '#f59e0b', borderWidth: 1 },
       ]
     },
-    options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: { legend: { position: 'bottom' } },
+      scales: {
+        x: { grid: { display: false } },
+        y: { beginAtZero: true }
+      }
+    }
   });
 }
 
