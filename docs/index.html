@@ -616,11 +616,11 @@ function renderRecentShifts(stats, page) {
   const totalPages = Math.ceil(shifts.length / PAGE_SIZE);
   const paged = shifts.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
 
-  let html = '<table><thead><tr><th>Date</th><th>Time</th><th>Type</th><th>User</th><th>Notified At</th></tr></thead><tbody>';
+  let html = '<table><thead><tr><th>Shift Date/Time</th><th>Type</th><th>User</th><th>Notified At</th></tr></thead><tbody>';
   for (const s of paged) {
     const d = new Date(s.date + 'T00:00:00');
     const dateStr = d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
-    html += `<tr><td>${dateStr}</td><td>${s.start} – ${s.end}</td><td>${s.type}</td><td>${s.user}</td><td>${formatTs(s.foundAt)}</td></tr>`;
+    html += `<tr><td>${dateStr} ${s.start}</td><td>${s.type}</td><td>${s.user}</td><td>${formatTs(s.foundAt)}</td></tr>`;
   }
   html += '</tbody></table>';
   if (totalPages > 1) {
