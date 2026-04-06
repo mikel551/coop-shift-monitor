@@ -7377,10 +7377,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-06T22:50:30.528171+00:00",
+      "total": 3291,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1097321",
+              "date": "2026-04-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1097321",
+        "date": "2026-04-09",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
