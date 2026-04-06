@@ -198,6 +198,7 @@
   .accordion-arrow { transition: transform 0.25s ease; font-size: 0.8em; color: var(--text-muted); }
   .accordion-body { overflow: hidden; max-height: 0; transition: max-height 0.35s ease, opacity 0.3s ease; opacity: 0; }
   .accordion-body.open { max-height: 500px; opacity: 1; }
+  .accordion-body.open.tall { max-height: 2000px; }
   .accordion-toggle.open .accordion-arrow { transform: rotate(90deg); }
   .pref-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 10px; }
   .pref-row:last-child { margin-bottom: 0; }
@@ -360,12 +361,22 @@
     <div id="comparison-table"></div>
   </div>
   <div class="card full-width">
-    <h2>Recent Notifications (48h)</h2>
-    <div id="recent-shifts-table"></div>
+    <div class="accordion-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="accordion-arrow">&#9654;</span>
+      <h2 style="margin:0">Recent Notifications (48h)</h2>
+    </div>
+    <div class="accordion-body tall">
+      <div id="recent-shifts-table" style="padding-top:14px;"></div>
+    </div>
   </div>
   <div class="card full-width">
-    <h2>Recent Run History (24h)</h2>
-    <div id="history-table"></div>
+    <div class="accordion-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="accordion-arrow">&#9654;</span>
+      <h2 style="margin:0">Recent Run History (24h)</h2>
+    </div>
+    <div class="accordion-body tall">
+      <div id="history-table" style="padding-top:14px;"></div>
+    </div>
   </div>
 </div>
 
@@ -594,7 +605,7 @@ function renderHeatmap(stats) {
 
 function renderHistory(stats, page) {
   page = page || 0;
-  const PAGE_SIZE = 10;
+  const PAGE_SIZE = 20;
   const cutoff = Date.now() - 24 * 60 * 60 * 1000;
   const all = stats.filter(r => new Date(r.ts).getTime() >= cutoff).reverse();
   if (all.length === 0) {
@@ -653,7 +664,7 @@ function getRecentShifts(stats) {
 
 function renderRecentShifts(stats, page) {
   page = page || 0;
-  const PAGE_SIZE = 10;
+  const PAGE_SIZE = 20;
   const shifts = getRecentShifts(stats);
   const container = document.getElementById('recent-shifts-table');
   if (shifts.length === 0) {
