@@ -161,6 +161,17 @@
   .user-bar-legend { display: flex; gap: 16px; margin-top: 12px; font-size: 12px; color: var(--text-muted); }
   .user-bar-legend span { display: flex; align-items: center; gap: 4px; }
   .user-bar-legend .swatch { width: 10px; height: 10px; border-radius: 2px; }
+  .shift-link {
+    display: inline-block; padding: 8px 14px; margin: 4px;
+    background: var(--countdown-bg); border: 1px solid var(--countdown-border);
+    border-radius: 8px; color: var(--accent); text-decoration: none;
+    font-size: 13px; transition: background 0.2s ease, transform 0.15s ease;
+  }
+  .shift-link:hover { background: var(--accent); color: #fff; transform: translateY(-1px); }
+  .shift-link .shift-date { font-weight: 600; }
+  .shift-link .shift-detail { opacity: 0.8; }
+  .available-user { margin-bottom: 12px; }
+  .available-user-label { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
   @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
@@ -274,6 +285,10 @@
   <div class="card full-width">
     <h2>Shift Match Heatmap (day/hour of run)</h2>
     <div id="heatmap"></div>
+  </div>
+  <div class="card full-width" id="available-card" style="display:none">
+    <h2>Still Available Shifts</h2>
+    <div id="available-shifts"></div>
   </div>
   <div class="card full-width" id="comparison-card" style="display:none">
     <h2>Current vs Previous Period</h2>
@@ -562,6 +577,38 @@ function renderRecentShifts(stats) {
   container.innerHTML = html;
 }
 
+function renderAvailableShifts(availableShifts) {
+  const BASE_URL = 'https://members.foodcoop.com/services/shift_claim/';
+  if (!availableShifts || Object.keys(availableShifts).length === 0) return;
+  // Check if there are any shifts with details (not just bare IDs)
+  let hasDetails = false;
+  for (const shifts of Object.values(availableShifts)) {
+    if (shifts.some(s => s.date)) { hasDetails = true; break; }
+  }
+  if (!hasDetails) return;
+
+  document.getElementById('available-card').style.display = '';
+  const container = document.getElementById('available-shifts');
+  let html = '';
+  for (const [user, shifts] of Object.entries(availableShifts).sort()) {
+    const withDetails = shifts.filter(s => s.date);
+    if (withDetails.length === 0) continue;
+    html += `<div class="available-user"><div class="available-user-label">${user}</div>`;
+    for (const s of withDetails) {
+      const d = new Date(s.date + 'T00:00:00');
+      const dateStr = d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+      const url = BASE_URL + s.id + '/';
+      html += `<a class="shift-link" href="${url}" target="_blank" rel="noopener">
+        <span class="shift-date">${dateStr}</span>
+        <span class="shift-detail">${s.start} – ${s.end}</span>
+        <span class="shift-detail">${s.type}</span>
+      </a>`;
+    }
+    html += '</div>';
+  }
+  container.innerHTML = html;
+}
+
 function renderComparison(stats, previousPeriod) {
   if (!previousPeriod || !previousPeriod.total_runs) return;
   document.getElementById('comparison-card').style.display = '';
@@ -601,6 +648,7 @@ function initDashboard() {
     renderSummary(stats);
     renderUserChart(stats);
     renderTimeChart(stats);
+    renderAvailableShifts(data.available_shifts || {});
     renderHeatmap(stats);
     renderRecentShifts(stats);
     renderComparison(stats, previousPeriod);

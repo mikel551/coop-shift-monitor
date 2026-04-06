@@ -139,10 +139,34 @@ def prune_stats(state: dict, weeks: int = 6) -> None:
 
 
 def export_stats_json(state: dict, output_path: Path) -> None:
-    """Write stats and previous_period to a JSON file for the web dashboard."""
+    """Write stats, previous_period, and available shifts to a JSON file for the web dashboard."""
+    # Build available shifts: notified IDs matched with shift details from latest run
+    available: dict[str, list[dict]] = {}
+    notified = state.get("notified", {})
+    stats = state.get("stats", [])
+    # Get shift details from the latest run
+    latest_shifts: dict[str, dict] = {}
+    if stats:
+        latest = stats[-1]
+        for user, u in latest.get("users", {}).items():
+            for s in u.get("shifts", []):
+                latest_shifts[s["id"]] = s
+
+    for user, ids in notified.items():
+        user_shifts = []
+        for sid in ids:
+            if sid in latest_shifts:
+                user_shifts.append(latest_shifts[sid])
+            else:
+                # ID is notified but no details in latest run — include with ID only
+                user_shifts.append({"id": sid})
+        if user_shifts:
+            available[user] = sorted(user_shifts, key=lambda s: (s.get("date", ""), s.get("start", "")))
+
     data = {
-        "stats": state.get("stats", []),
+        "stats": stats,
         "previous_period": state.get("previous_period", {}),
+        "available_shifts": available,
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w") as f:
