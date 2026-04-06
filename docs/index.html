@@ -157,9 +157,73 @@
     0%, 100% { filter: drop-shadow(0 0 0px rgba(16,185,129,0)); }
     50% { filter: drop-shadow(0 0 10px rgba(16,185,129,0.6)); }
   }
+
+  /* Login overlay */
+  .login-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    background: var(--bg-body);
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.4s ease;
+  }
+  .login-overlay.hidden { opacity: 0; pointer-events: none; }
+  .login-box {
+    background: var(--bg-card); border-radius: 16px; padding: 40px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4); text-align: center;
+    max-width: 360px; width: 90%;
+    animation: fadeSlideUp 0.5s ease-out;
+  }
+  .login-box .login-icon { width: 48px; height: 48px; margin-bottom: 16px; animation: iconPulse 3s ease-in-out infinite; }
+  .login-box h2 { color: var(--text-heading); margin-bottom: 8px; font-size: 20px; }
+  .login-box p { color: var(--text-muted); font-size: 13px; margin-bottom: 20px; }
+  .login-box input {
+    width: 100%; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border-table);
+    background: var(--bg-body); color: var(--text-primary); font-size: 15px;
+    outline: none; margin-bottom: 12px; text-align: center;
+    transition: border-color 0.2s ease;
+  }
+  .login-box input:focus { border-color: var(--accent); }
+  .login-box button {
+    width: 100%; padding: 10px; border-radius: 8px; border: none;
+    background: var(--accent); color: #fff; font-size: 15px; font-weight: 600;
+    cursor: pointer; transition: opacity 0.2s ease;
+  }
+  .login-box button:hover { opacity: 0.85; }
+  .login-error { color: #f87171; font-size: 13px; margin-top: 8px; min-height: 20px; }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+  }
+  .shake { animation: shake 0.4s ease; }
+  .dashboard-content { display: none; }
+  .dashboard-content.visible { display: block; }
 </style>
 </head>
 <body>
+
+<!-- Login overlay -->
+<div class="login-overlay" id="login-overlay">
+  <div class="login-box" id="login-box">
+    <svg class="login-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="30" stroke="#10b981" stroke-width="3"/>
+      <path d="M20 20h2l3 18h16l3-14H26" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="28" cy="44" r="2.5" fill="#10b981"/>
+      <circle cx="40" cy="44" r="2.5" fill="#10b981"/>
+      <circle cx="44" cy="18" r="10" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+      <line x1="44" y1="12" x2="44" y2="18" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+      <line x1="44" y1="18" x2="48" y2="21" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <h2>PSFC Shift Monitor</h2>
+    <p>Enter password to view dashboard</p>
+    <form id="login-form" onsubmit="return handleLogin(event)">
+      <input type="password" id="login-password" placeholder="Password" autocomplete="off" autofocus>
+      <button type="submit">Unlock</button>
+    </form>
+    <div class="login-error" id="login-error"></div>
+  </div>
+</div>
+
+<div class="dashboard-content" id="dashboard-content">
 
 <!-- Theme toggle -->
 <div class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark theme">
@@ -217,7 +281,48 @@
   </div>
 </div>
 
+</div><!-- end dashboard-content -->
+
 <script>
+const PASS_HASH = 'a7cdf5d0586b392473dd0cd08c9ba833240006a8a7310bf9bc8bf1aefdfaeadb';
+
+async function sha256(text) {
+  const data = new TextEncoder().encode(text);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function handleLogin(e) {
+  e.preventDefault();
+  const input = document.getElementById('login-password').value;
+  const hash = await sha256(input);
+  if (hash === PASS_HASH) {
+    sessionStorage.setItem('dashboard-auth', '1');
+    unlockDashboard();
+  } else {
+    document.getElementById('login-error').textContent = 'Incorrect password';
+    document.getElementById('login-box').classList.add('shake');
+    setTimeout(() => document.getElementById('login-box').classList.remove('shake'), 400);
+    document.getElementById('login-password').value = '';
+    document.getElementById('login-password').focus();
+  }
+  return false;
+}
+
+function unlockDashboard() {
+  const overlay = document.getElementById('login-overlay');
+  overlay.classList.add('hidden');
+  setTimeout(() => overlay.style.display = 'none', 400);
+  document.getElementById('dashboard-content').classList.add('visible');
+  // Delay chart init so browser can layout the now-visible containers
+  requestAnimationFrame(() => requestAnimationFrame(() => initDashboard()));
+}
+
+// Check if already authenticated this session
+if (sessionStorage.getItem('dashboard-auth') === '1') {
+  unlockDashboard();
+}
+
 const COLORS = ['#10b981','#34d399','#6ee7b7','#14b8a6','#2dd4bf','#5eead4','#0d9488','#a7f3d0'];
 
 // --- Theme toggle ---
@@ -470,22 +575,26 @@ function renderComparison(stats, previousPeriod) {
   document.getElementById('comparison-table').innerHTML = html;
 }
 
-loadStats().then(data => {
-  const stats = data.stats;
-  window._dashboardStats = stats;
-  const previousPeriod = data.previous_period || {};
-  if (stats.length === 0) {
-    document.querySelector('.grid').innerHTML = '<div class="card full-width"><div class="empty">No stats data yet. Run the shift monitor to start collecting data.</div></div>';
-    return;
-  }
-  renderSummary(stats);
-  renderUserChart(stats);
-  renderTimeChart(stats);
-  renderHeatmap(stats);
-  renderRecentShifts(stats);
-  renderComparison(stats, previousPeriod);
-  renderHistory(stats);
-});
+function initDashboard() {
+  if (window._dashboardLoaded) return;
+  window._dashboardLoaded = true;
+  loadStats().then(data => {
+    const stats = data.stats;
+    window._dashboardStats = stats;
+    const previousPeriod = data.previous_period || {};
+    if (stats.length === 0) {
+      document.querySelector('.grid').innerHTML = '<div class="card full-width"><div class="empty">No stats data yet. Run the shift monitor to start collecting data.</div></div>';
+      return;
+    }
+    renderSummary(stats);
+    renderUserChart(stats);
+    renderTimeChart(stats);
+    renderHeatmap(stats);
+    renderRecentShifts(stats);
+    renderComparison(stats, previousPeriod);
+    renderHistory(stats);
+  });
+}
 </script>
 </body>
 </html>
