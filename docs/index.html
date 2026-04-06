@@ -777,7 +777,7 @@ function renderAvailableShifts(availableShifts) {
       const url = BASE_URL + s.id + '/';
       html += `<a class="shift-link" href="${url}" target="_blank" rel="noopener">
         <span class="shift-date">${dateStr}</span>
-        <span class="shift-detail">${s.start} – ${s.end}</span>
+        <span class="shift-detail">${s.start}</span>
         <span class="shift-detail">${s.type}</span>
       </a>`;
     }
