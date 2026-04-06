@@ -174,11 +174,11 @@
   .user-bar-legend .swatch { width: 10px; height: 10px; border-radius: 2px; }
   .shift-link {
     display: inline-block; padding: 8px 14px; margin: 4px;
-    background: var(--countdown-bg); border: 1px solid var(--countdown-border);
+    background: rgba(16,185,129,0.1); border: 1px solid var(--accent);
     border-radius: 8px; color: var(--accent); text-decoration: none;
-    font-size: 13px; transition: background 0.2s ease, transform 0.15s ease;
+    font-size: 13px; font-weight: 500; transition: all 0.2s ease;
   }
-  .shift-link:hover { background: var(--accent); color: #fff; transform: translateY(-1px); }
+  .shift-link:hover { background: var(--accent); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(16,185,129,0.3); }
   .shift-link .shift-date { font-weight: 600; }
   .shift-link .shift-detail { opacity: 0.8; }
   .available-user { margin-bottom: 12px; }
@@ -338,8 +338,8 @@
   </div>
 </div>
 
-<div class="card full-width" id="available-card" style="max-width:1200px;margin:0 auto 20px;">
-  <h2>Still Available Shifts</h2>
+<div class="card full-width" id="available-card" style="max-width:1200px;margin:0 auto 20px;border:2px solid var(--accent);box-shadow:0 0 20px rgba(16,185,129,0.15);">
+  <h2 style="display:flex;align-items:center;gap:8px;"><span style="font-size:1.4rem;">&#9889;</span> Still Available Shifts</h2>
   <div id="available-shifts"></div>
 </div>
 
