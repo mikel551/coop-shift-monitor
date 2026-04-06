@@ -324,6 +324,18 @@
   <div class="stat-box"><div class="number" id="last-run">-</div><div class="label">Last Run</div></div>
 </div>
 
+<div class="card full-width" id="member-status-card" style="max-width:1200px;margin:0 auto 20px;">
+  <div class="accordion-toggle open" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+    <span class="accordion-arrow">&#9654;</span>
+    <h2 style="margin:0">&#128100; Member Status</h2>
+  </div>
+  <div class="accordion-body open">
+    <div id="member-status" style="padding-top:14px;">
+      <div class="empty" style="padding:20px;">Loading...</div>
+    </div>
+  </div>
+</div>
+
 <div class="card full-width" style="max-width:1200px;margin:0 auto 20px;">
   <div class="accordion-toggle open" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
     <span class="accordion-arrow">&#9654;</span>
@@ -346,18 +358,6 @@
         <span class="pref-chip">Sun all day</span>
         <span class="pref-chip">Mon all day</span>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="card full-width" id="member-status-card" style="max-width:1200px;margin:0 auto 20px;">
-  <div class="accordion-toggle open" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
-    <span class="accordion-arrow">&#9654;</span>
-    <h2 style="margin:0">&#128100; Member Status</h2>
-  </div>
-  <div class="accordion-body open">
-    <div id="member-status" style="padding-top:14px;">
-      <div class="empty" style="padding:20px;">Loading...</div>
     </div>
   </div>
 </div>
