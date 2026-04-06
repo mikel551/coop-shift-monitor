@@ -102,62 +102,140 @@ import logging
 log = logging.getLogger(__name__)
 
 
+def _find_category_value_col(soup: BeautifulSoup, label_text: str) -> Tag | None:
+    """Find the value column div for a given <span class="category"> label."""
+    label_span = soup.find("span", class_="category", string=re.compile(re.escape(label_text), re.IGNORECASE))
+    if not label_span:
+        label_span = soup.find("p", class_="category", string=re.compile(re.escape(label_text), re.IGNORECASE))
+    if not label_span:
+        log.warning("Could not find category label '%s' on /services/ page", label_text)
+        return None
+
+    label_col = label_span.find_parent("div", class_=re.compile(r"col-"))
+    if not label_col:
+        return None
+
+    return label_col.find_next_sibling("div", class_=re.compile(r"col-"))
+
+
+def _parse_scheduled_shifts(soup: BeautifulSoup) -> list[dict] | None:
+    """Parse scheduled shifts into a list of {date, start_time, description}."""
+    value_col = _find_category_value_col(soup, "Scheduled Shifts:")
+    if not value_col:
+        return None
+
+    shifts = []
+    for card in value_col.select(".shiftcard"):
+        datecard = card.select_one(".datecard")
+        if not datecard:
+            continue
+
+        month = datecard.select_one(".month")
+        day = datecard.select_one(".date")
+        weekday = datecard.select_one(".day")
+        date_str = ""
+        if weekday and month and day:
+            date_str = f"{weekday.get_text(strip=True)} {month.get_text(strip=True)} {day.get_text(strip=True)}"
+
+        # Get start time from timecard (just the start, before the dash)
+        start_time = ""
+        timecard = card.select_one(".timecard")
+        if timecard:
+            time_text = timecard.get_text(strip=True)
+            # "6:00pm - 8:45pm" -> "6:00pm"
+            start_time = time_text.split("-")[0].strip()
+
+        # Description: text in the shift detail col, excluding the timecard and links
+        detail_col = timecard.find_parent("div") if timecard else None
+        description = ""
+        if detail_col:
+            # Get text nodes and spans, skip .small divs (which have "View in Shift Calendar")
+            parts = []
+            for child in detail_col.children:
+                if isinstance(child, Tag):
+                    if "small" in child.get("class", []):
+                        continue
+                    if child.name == "span" and "timecard" in child.get("class", []):
+                        continue
+                    if child.name == "br":
+                        continue
+                    parts.append(child.get_text(strip=True))
+                else:
+                    text = child.strip()
+                    if text:
+                        parts.append(text)
+            description = " ".join(parts).strip()
+
+        shifts.append({
+            "date": date_str,
+            "start_time": start_time,
+            "description": description,
+        })
+
+    log.info("Parsed %d scheduled shift(s)", len(shifts))
+    return shifts if shifts else None
+
+
+def _parse_cancel_tickets(soup: BeautifulSoup) -> int | None:
+    """Parse cancel tickets count from the Cancel Tickets row."""
+    value_col = _find_category_value_col(soup, "Cancel Tickets:")
+    if not value_col:
+        return None
+
+    # Look for bold text like "1 cancel ticket"
+    bold = value_col.find("b")
+    if bold:
+        text = bold.get_text(strip=True)
+        match = re.search(r"(\d+)\s+cancel\s+ticket", text, re.IGNORECASE)
+        if match:
+            count = int(match.group(1))
+            log.info("Parsed cancel tickets: %d", count)
+            return count
+
+    return None
+
+
 def parse_member_status(html: str) -> dict:
-    """Extract member status, scheduled shifts, and credit bank from /services/ page.
+    """Extract member status, scheduled shifts, credit bank, and cancel tickets
+    from the /services/ page.
 
     The page uses Bootstrap grid rows with <span class="category"> labels in one
-    column and values in the sibling column:
-        <div class="row">
-          <div class="col-..."><span class="category">Member Status:</span></div>
-          <div class="col-...">Active</div>
-        </div>
-
-    Returns a dict with keys: member_status, scheduled_shifts, credit_bank.
-    Missing fields are set to None.
+    column and values in the sibling column.
     """
     soup = BeautifulSoup(html, "html.parser")
     result: dict = {
         "member_status": None,
         "scheduled_shifts": None,
         "credit_bank": None,
+        "cancel_tickets": None,
     }
 
-    # Find all <span class="category"> labels and build a lookup
-    for label_text, key in [
-        ("Member Status:", "member_status"),
-        ("Scheduled Shifts:", "scheduled_shifts"),
-        ("Shift Credit Bank:", "credit_bank"),
-    ]:
-        # Find the <span class="category"> containing this label
-        label_span = soup.find("span", class_="category", string=re.compile(re.escape(label_text), re.IGNORECASE))
-        if not label_span:
-            # Also check <p class="category"> (used for some fields)
-            label_span = soup.find("p", class_="category", string=re.compile(re.escape(label_text), re.IGNORECASE))
-        if not label_span:
-            log.warning("Could not find category label '%s' on /services/ page", label_text)
-            continue
+    # Member Status: simple text extraction
+    value_col = _find_category_value_col(soup, "Member Status:")
+    if value_col:
+        # Get status text (e.g. "Active") from the <span class="status ...">
+        status_span = value_col.find("span", class_="status")
+        if status_span:
+            result["member_status"] = status_span.get_text(strip=True)
+        else:
+            result["member_status"] = value_col.get_text(" ", strip=True)
+        log.info("Parsed Member Status: %s", result["member_status"])
 
-        # Walk up to the parent .row div
-        row = label_span.find_parent("div", class_="row")
-        if not row:
-            log.warning("Found '%s' label but no parent .row div", label_text)
-            continue
+    # Shift Credit Bank: get the number from <span class="membernumber">
+    value_col = _find_category_value_col(soup, "Shift Credit Bank:")
+    if value_col:
+        num_span = value_col.find("span", class_="membernumber")
+        if num_span:
+            result["credit_bank"] = num_span.get_text(strip=True)
+        else:
+            result["credit_bank"] = value_col.get_text(" ", strip=True)
+        log.info("Parsed Shift Credit Bank: %s", result["credit_bank"])
 
-        # The value is in the sibling column (col-sm-9 / col-md-10)
-        label_col = label_span.find_parent("div", class_=re.compile(r"col-"))
-        if not label_col:
-            log.warning("Found '%s' label but no parent col div", label_text)
-            continue
+    # Scheduled Shifts: structured extraction
+    result["scheduled_shifts"] = _parse_scheduled_shifts(soup)
 
-        value_col = label_col.find_next_sibling("div", class_=re.compile(r"col-"))
-        if not value_col:
-            log.warning("Found '%s' label but no sibling value col", label_text)
-            continue
-
-        value = value_col.get_text(" ", strip=True)
-        if value:
-            result[key] = value
-            log.info("Parsed '%s' -> '%s'", label_text, value[:80])
+    # Cancel Tickets: just the number
+    result["cancel_tickets"] = _parse_cancel_tickets(soup)
 
     return result
 
