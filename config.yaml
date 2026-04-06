@@ -3,8 +3,8 @@ site:
   shift_path_template: "/services/shifts/{week_offset}/{committee_id}/{time_of_day}/{date}/"
   max_weeks: 6
   quiet_hours:
-    start: 23
-    end: 7
+    start: 0
+    end: 24
     timezone: "America/New_York"
 
 # Available shift types (from real site):
