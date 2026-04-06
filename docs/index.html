@@ -336,11 +336,8 @@ function applyTheme(theme) {
 function toggleTheme() {
   const current = document.documentElement.getAttribute('data-theme');
   applyTheme(current === 'dark' ? 'light' : 'dark');
-  // Re-render charts with new colors
+  // Re-render charts with new theme colors
   if (window._dashboardStats) {
-    // Collect all instances first, then destroy (avoid mutating during iteration)
-    const instances = Object.values(Chart.instances);
-    instances.forEach(instance => instance.destroy());
     renderUserChart(window._dashboardStats);
     renderTimeChart(window._dashboardStats);
   }
@@ -401,6 +398,14 @@ function renderSummary(stats) {
   }
 }
 
+function getOrCreateChart(canvasId, config) {
+  const canvas = document.getElementById(canvasId);
+  // Destroy existing chart on this canvas if any
+  const existing = Chart.getChart(canvas);
+  if (existing) existing.destroy();
+  return new Chart(canvas, config);
+}
+
 function renderUserChart(stats) {
   const totals = {};
   for (const r of stats) {
@@ -411,7 +416,7 @@ function renderUserChart(stats) {
     }
   }
   const users = Object.keys(totals).sort();
-  new Chart(document.getElementById('userChart'), {
+  getOrCreateChart('userChart', {
     type: 'bar',
     data: {
       labels: users,
@@ -438,7 +443,7 @@ function renderTimeChart(stats) {
     return n;
   });
   const pruneData = last288.map(r => r.pruned || 0);
-  new Chart(document.getElementById('timeChart'), {
+  getOrCreateChart('timeChart', {
     type: 'line',
     data: {
       labels,
@@ -524,7 +529,7 @@ function renderRecentShifts(stats) {
         const key = s.id + '|' + user;
         if (seen.has(key)) continue;
         seen.add(key);
-        shifts.push({ ...s, user });
+        shifts.push({ ...s, user, foundAt: r.ts });
       }
     }
   }
@@ -534,11 +539,11 @@ function renderRecentShifts(stats) {
     return;
   }
   shifts.sort((a, b) => a.date.localeCompare(b.date) || a.start.localeCompare(b.start));
-  let html = '<table><thead><tr><th>Date</th><th>Time</th><th>Type</th><th>User</th></tr></thead><tbody>';
+  let html = '<table><thead><tr><th>Date</th><th>Time</th><th>Type</th><th>User</th><th>Found At</th></tr></thead><tbody>';
   for (const s of shifts) {
     const d = new Date(s.date + 'T00:00:00');
     const dateStr = d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
-    html += `<tr><td>${dateStr}</td><td>${s.start} – ${s.end}</td><td>${s.type}</td><td>${s.user}</td></tr>`;
+    html += `<tr><td>${dateStr}</td><td>${s.start} – ${s.end}</td><td>${s.type}</td><td>${s.user}</td><td>${formatTs(s.foundAt)}</td></tr>`;
   }
   html += '</tbody></table>';
   container.innerHTML = html;
@@ -570,8 +575,8 @@ function renderComparison(stats, previousPeriod) {
 }
 
 function initDashboard() {
-  if (window._dashboardLoaded) return;
-  window._dashboardLoaded = true;
+  if (window._dashboardLoading) return;
+  window._dashboardLoading = true;
   loadStats().then(data => {
     const stats = data.stats;
     window._dashboardStats = stats;
