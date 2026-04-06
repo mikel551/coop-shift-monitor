@@ -149,11 +149,6 @@
   .heatmap-grid .day-label { text-align: right; padding-right: 6px; line-height: 22px; color: var(--text-muted); }
   .heatmap-grid .hour-label { text-align: center; color: var(--text-muted); font-size: 10px; }
   .heatmap-cell { width: 100%; aspect-ratio: 1; border-radius: 3px; min-height: 18px; }
-  .donut-wrapper { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
-  .donut-wrapper canvas { max-width: 260px; max-height: 260px; }
-  .donut-legend { font-size: 13px; line-height: 2; }
-  .donut-legend-item { display: flex; align-items: center; gap: 8px; }
-  .donut-legend-swatch { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
   @keyframes fadeSlideUp {
     from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
@@ -204,13 +199,6 @@
     <h2>Matches vs Notifications Over Time</h2>
     <canvas id="timeChart"></canvas>
   </div>
-  <div class="card">
-    <h2>Shift Type Breakdown</h2>
-    <div class="donut-wrapper">
-      <canvas id="donutChart"></canvas>
-      <div class="donut-legend" id="donut-legend"></div>
-    </div>
-  </div>
   <div class="card full-width">
     <h2>Shift Match Heatmap (day/hour of run)</h2>
     <div id="heatmap"></div>
@@ -251,11 +239,11 @@ function toggleTheme() {
   applyTheme(current === 'dark' ? 'light' : 'dark');
   // Re-render charts with new colors
   if (window._dashboardStats) {
-    // Destroy existing charts
-    Chart.helpers.each(Chart.instances, (instance) => { instance.destroy(); });
+    // Collect all instances first, then destroy (avoid mutating during iteration)
+    const instances = Object.values(Chart.instances);
+    instances.forEach(instance => instance.destroy());
     renderUserChart(window._dashboardStats);
     renderTimeChart(window._dashboardStats);
-    renderDonutChart(window._dashboardStats);
   }
 }
 // Load saved theme
@@ -329,8 +317,8 @@ function renderUserChart(stats) {
     data: {
       labels: users,
       datasets: [
-        { label: 'Matched', data: users.map(u => totals[u].matched), backgroundColor: '#6ee7b7' },
-        { label: 'Notified', data: users.map(u => totals[u].notified), backgroundColor: '#0d9488' },
+        { label: 'Matched', data: users.map(u => totals[u].matched), backgroundColor: '#34d399' },
+        { label: 'Notified', data: users.map(u => totals[u].notified), backgroundColor: '#f59e0b' },
       ]
     },
     options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
@@ -363,37 +351,6 @@ function renderTimeChart(stats) {
     },
     options: { responsive: true, plugins: { legend: { position: 'bottom' } }, scales: { x: { display: false } } }
   });
-}
-
-function renderDonutChart(stats) {
-  const typeCounts = {};
-  for (const r of stats) {
-    for (const u of Object.values(r.users || {})) {
-      for (const s of (u.shifts || [])) {
-        const t = s.type || 'Unknown';
-        typeCounts[t] = (typeCounts[t] || 0) + 1;
-      }
-    }
-  }
-  const labels = Object.keys(typeCounts).sort();
-  const data = labels.map(l => typeCounts[l]);
-  const legendEl = document.getElementById('donut-legend');
-  if (labels.length === 0) {
-    legendEl.innerHTML = '<span style="color:var(--text-muted)">No shift data yet</span>';
-    return;
-  }
-  const bgColors = labels.map((_, i) => COLORS[i % COLORS.length]);
-  new Chart(document.getElementById('donutChart'), {
-    type: 'doughnut',
-    data: { labels, datasets: [{ data, backgroundColor: bgColors, borderWidth: 0 }] },
-    options: {
-      responsive: true, cutout: '60%',
-      plugins: { legend: { display: false } }
-    }
-  });
-  legendEl.innerHTML = labels.map((l, i) =>
-    `<div class="donut-legend-item"><span class="donut-legend-swatch" style="background:${bgColors[i]}"></span>${l} (${data[i]})</div>`
-  ).join('');
 }
 
 function renderHeatmap(stats) {
@@ -524,7 +481,6 @@ loadStats().then(data => {
   renderSummary(stats);
   renderUserChart(stats);
   renderTimeChart(stats);
-  renderDonutChart(stats);
   renderHeatmap(stats);
   renderRecentShifts(stats);
   renderComparison(stats, previousPeriod);
