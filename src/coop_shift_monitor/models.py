@@ -78,3 +78,4 @@ class User:
     shift_types: list[str] = field(default_factory=list)
     availability: list[TimeWindow] = field(default_factory=list)
     notify: NotifyConfig = field(default_factory=NotifyConfig)
+    credentials: tuple[str, str] | None = None

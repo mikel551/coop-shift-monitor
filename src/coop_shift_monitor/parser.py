@@ -97,6 +97,73 @@ def _parse_shift_link(link: Tag, shift_date: date) -> Shift | None:
     )
 
 
+import logging
+
+log = logging.getLogger(__name__)
+
+
+def parse_member_status(html: str) -> dict:
+    """Extract member status, scheduled shifts, and credit bank from /services/ page.
+
+    Returns a dict with keys: member_status, scheduled_shifts, credit_bank.
+    Missing fields are set to None.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    result: dict = {
+        "member_status": None,
+        "scheduled_shifts": None,
+        "credit_bank": None,
+    }
+
+    # Search for text patterns in the page
+    for label_text, key in [
+        ("Member status", "member_status"),
+        ("Scheduled shifts", "scheduled_shifts"),
+        ("Shift Credit Bank", "credit_bank"),
+    ]:
+        # Try finding a label element containing the text
+        label_el = soup.find(string=re.compile(re.escape(label_text), re.IGNORECASE))
+        if not label_el:
+            log.warning("Could not find '%s' on /services/ page", label_text)
+            continue
+
+        # The value is typically in a sibling or parent's next sibling
+        parent = label_el.find_parent()
+        if parent is None:
+            continue
+
+        # Strategy 1: value is in a sibling element after the label
+        next_sib = parent.find_next_sibling()
+        if next_sib:
+            value = next_sib.get_text(strip=True)
+            if value:
+                result[key] = value
+                continue
+
+        # Strategy 2: value is in the same parent, after the label text
+        parent_text = parent.get_text(strip=True)
+        if parent_text and parent_text != label_text:
+            # Remove the label portion
+            value = parent_text.replace(label_text, "").strip().lstrip(":").strip()
+            if value:
+                result[key] = value
+                continue
+
+        # Strategy 3: look at parent's parent next sibling
+        grandparent = parent.find_parent()
+        if grandparent:
+            next_sib = grandparent.find_next_sibling()
+            if next_sib:
+                value = next_sib.get_text(strip=True)
+                if value:
+                    result[key] = value
+                    continue
+
+        log.warning("Found '%s' label but could not extract value", label_text)
+
+    return result
+
+
 def _parse_time(s: str) -> time | None:
     s = s.strip().lower()
     match = re.match(r"(\d{1,2}):(\d{2})(am|pm)", s)

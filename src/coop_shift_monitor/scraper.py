@@ -15,11 +15,8 @@ log = logging.getLogger(__name__)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-def login(session: requests.Session, base_url: str) -> None:
-    """Log into the PSFC member site."""
-    username = os.environ["COOP_USERNAME"]
-    password = os.environ["COOP_PASSWORD"]
-
+def login_as(session: requests.Session, base_url: str, username: str, password: str) -> None:
+    """Log into the PSFC member site with explicit credentials."""
     login_url = f"{base_url}/services/login/"
 
     # Fetch login page to get CSRF token
@@ -49,6 +46,22 @@ def login(session: requests.Session, base_url: str) -> None:
         raise RuntimeError("Login appears to have failed — still on login page")
 
     log.info("Logged in successfully")
+
+
+def login(session: requests.Session, base_url: str) -> None:
+    """Log into the PSFC member site using env var credentials."""
+    username = os.environ["COOP_USERNAME"]
+    password = os.environ["COOP_PASSWORD"]
+    login_as(session, base_url, username, password)
+
+
+def fetch_member_status(session: requests.Session, base_url: str) -> str:
+    """Fetch the /services/ page HTML (member status info)."""
+    url = f"{base_url}/services/"
+    resp = session.get(url, verify=False)
+    resp.raise_for_status()
+    log.info("Fetched member status page: %s", url)
+    return resp.text
 
 
 def fetch_shift_pages(

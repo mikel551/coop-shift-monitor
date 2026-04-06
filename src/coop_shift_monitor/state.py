@@ -138,8 +138,12 @@ def prune_stats(state: dict, weeks: int = 6) -> None:
         log.info("Pruned %d old stats records (before %s), %d remaining", len(old_records), cutoff[:10], len(state["stats"]))
 
 
-def export_stats_json(state: dict, output_path: Path) -> None:
-    """Write stats, previous_period, and available shifts to a JSON file for the web dashboard."""
+def export_stats_json(
+    state: dict,
+    output_path: Path,
+    member_status: dict[str, dict] | None = None,
+) -> None:
+    """Write stats, previous_period, available shifts, and member status to a JSON file for the web dashboard."""
     # Build available shifts: notified IDs matched with shift details from latest run
     available: dict[str, list[dict]] = {}
     notified = state.get("notified", {})
@@ -167,6 +171,7 @@ def export_stats_json(state: dict, output_path: Path) -> None:
         "stats": stats,
         "previous_period": state.get("previous_period", {}),
         "available_shifts": available,
+        "member_status": member_status or {},
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w") as f:

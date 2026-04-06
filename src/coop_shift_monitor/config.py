@@ -62,10 +62,19 @@ def parse_users(raw: list[dict]) -> list[User]:
             smtp=smtp,
         )
 
+        creds_raw = u.get("credentials")
+        credentials = None
+        if creds_raw:
+            cred_user = _resolve_env(creds_raw.get("username", ""))
+            cred_pass = _resolve_env(creds_raw.get("password", ""))
+            if cred_user and cred_pass:
+                credentials = (cred_user, cred_pass)
+
         users.append(User(
             name=u["name"],
             shift_types=u.get("shift_types", []),
             availability=windows,
             notify=notify,
+            credentials=credentials,
         ))
     return users

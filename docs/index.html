@@ -200,6 +200,18 @@
   .accordion-body.open { max-height: 500px; opacity: 1; }
   .accordion-body.open.tall { max-height: 2000px; }
   .accordion-toggle.open .accordion-arrow { transform: rotate(90deg); }
+  .member-status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .member-col { }
+  .member-col-name { font-weight: 700; color: var(--accent); font-size: 15px; margin-bottom: 10px; }
+  .member-field { margin-bottom: 8px; }
+  .member-field-label { font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; letter-spacing: 0.5px; }
+  .member-field-value { font-size: 14px; color: var(--text-primary); margin-top: 2px; }
+  .status-badge {
+    display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;
+  }
+  .status-badge.active { background: rgba(16,185,129,0.15); color: var(--accent); border: 1px solid rgba(16,185,129,0.3); }
+  .status-badge.other { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+
   .pref-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 10px; }
   .pref-row:last-child { margin-bottom: 0; }
   .pref-name { font-weight: 700; color: var(--accent); font-size: 14px; min-width: 55px; }
@@ -334,6 +346,18 @@
         <span class="pref-chip">Sun all day</span>
         <span class="pref-chip">Mon all day</span>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="card full-width" id="member-status-card" style="max-width:1200px;margin:0 auto 20px;">
+  <div class="accordion-toggle open" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+    <span class="accordion-arrow">&#9654;</span>
+    <h2 style="margin:0">&#128100; Member Status</h2>
+  </div>
+  <div class="accordion-body open">
+    <div id="member-status" style="padding-top:14px;">
+      <div class="empty" style="padding:20px;">Loading...</div>
     </div>
   </div>
 </div>
@@ -786,6 +810,54 @@ function renderAvailableShifts(availableShifts) {
   container.innerHTML = html;
 }
 
+function renderMemberStatus(memberStatus) {
+  const container = document.getElementById('member-status');
+  if (!memberStatus || Object.keys(memberStatus).length === 0) {
+    container.innerHTML = '<div class="empty" style="padding:20px;">No member status data yet.</div>';
+    return;
+  }
+  let html = '<div class="member-status-grid">';
+  for (const [user, info] of Object.entries(memberStatus).sort()) {
+    html += '<div class="member-col">';
+    html += `<div class="member-col-name">${user}</div>`;
+
+    // Member status with badge
+    if (info.member_status) {
+      const isActive = info.member_status.toLowerCase().includes('active');
+      const badgeClass = isActive ? 'active' : 'other';
+      html += `<div class="member-field">
+        <div class="member-field-label">Member Status</div>
+        <div class="member-field-value"><span class="status-badge ${badgeClass}">${info.member_status}</span></div>
+      </div>`;
+    }
+
+    // Scheduled shifts
+    if (info.scheduled_shifts) {
+      html += `<div class="member-field">
+        <div class="member-field-label">Scheduled Shifts</div>
+        <div class="member-field-value">${info.scheduled_shifts}</div>
+      </div>`;
+    }
+
+    // Credit bank
+    if (info.credit_bank) {
+      html += `<div class="member-field">
+        <div class="member-field-label">Shift Credit Bank</div>
+        <div class="member-field-value">${info.credit_bank}</div>
+      </div>`;
+    }
+
+    // If nothing was found
+    if (!info.member_status && !info.scheduled_shifts && !info.credit_bank) {
+      html += '<div class="member-field"><div class="member-field-value" style="color:var(--text-muted);">No data available</div></div>';
+    }
+
+    html += '</div>';
+  }
+  html += '</div>';
+  container.innerHTML = html;
+}
+
 function renderComparison(stats, previousPeriod) {
   if (!previousPeriod || !previousPeriod.total_runs) return;
   document.getElementById('comparison-card').style.display = '';
@@ -825,6 +897,7 @@ function initDashboard() {
     renderSummary(stats);
     renderUserChart(stats);
     renderTimeChart(stats);
+    renderMemberStatus(data.member_status || {});
     renderAvailableShifts(data.available_shifts || {});
     renderHeatmap(stats);
     renderOpenShiftsChart(stats);
