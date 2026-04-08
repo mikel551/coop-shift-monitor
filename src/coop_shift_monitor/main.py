@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -85,6 +86,9 @@ def main() -> None:
 
     log.info("Found %d total shifts across %d pages", len(all_shifts), len(pages))
 
+    # Count shift types across entire calendar
+    shift_type_counts = dict(Counter(s.description for s in all_shifts).most_common())
+
     # Prune state to current window
     current_shift_ids = {s.shift_id for s in all_shifts}
     pruned = prune_notified(state, current_shift_ids)
@@ -153,7 +157,7 @@ def main() -> None:
 
     # Export dashboard JSON
     stats_out = Path(args.stats_out)
-    export_stats_json(state, stats_out, member_status=member_status)
+    export_stats_json(state, stats_out, member_status=member_status, shift_type_counts=shift_type_counts)
     log.info("Dashboard stats written to %s", stats_out)
 
     # Print summary to logs
