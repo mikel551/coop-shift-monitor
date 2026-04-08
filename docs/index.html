@@ -906,7 +906,8 @@ function renderAdvancedStats(stats) {
   for (const id of Object.keys(shiftFirstSeen)) {
     const first = new Date(shiftFirstSeen[id]).getTime();
     const last = new Date(shiftLastSeen[id]).getTime();
-    if (last > first) durations.push(last - first);
+    // If only seen once, count as 10 minutes (one check interval)
+    durations.push(last > first ? last - first : 10 * 60 * 1000);
   }
   let avgAvail = 'N/A';
   if (durations.length > 0) {
@@ -915,10 +916,16 @@ function renderAdvancedStats(stats) {
     avgAvail = avgHrs < 1 ? `${Math.round(avgMs / 60000)}m` : `${avgHrs.toFixed(1)}h`;
   }
 
-  // 2. Fastest grab (shortest availability, daytime only)
+  // 2. Fastest grab (shortest availability among shifts seen in 2+ runs, daytime only)
   let fastestGrab = 'N/A';
-  if (durations.length > 0) {
-    const minMs = Math.min(...durations);
+  const multiRunDurations = [];
+  for (const id of Object.keys(shiftFirstSeen)) {
+    const first = new Date(shiftFirstSeen[id]).getTime();
+    const last = new Date(shiftLastSeen[id]).getTime();
+    if (last > first) multiRunDurations.push(last - first);
+  }
+  if (multiRunDurations.length > 0) {
+    const minMs = Math.min(...multiRunDurations);
     const minMins = Math.round(minMs / 60000);
     fastestGrab = minMins < 60 ? `${minMins}m` : `${(minMins / 60).toFixed(1)}h`;
   }
