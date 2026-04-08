@@ -887,11 +887,14 @@ function renderAdvancedStats(stats) {
     return;
   }
 
-  // 1. Avg shift availability time
-  // Track each shift ID: first seen ts -> last seen ts
+  // 1. Avg shift availability time (daytime only: 8am-10pm ET for consistent 10-min resolution)
   const shiftFirstSeen = {};
   const shiftLastSeen = {};
   for (const r of stats) {
+    const d = new Date(r.ts);
+    const et = new Date(d.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    const h = et.getHours();
+    if (h < 8 || h >= 22) continue; // skip overnight runs
     for (const u of Object.values(r.users || {})) {
       for (const s of (u.shifts || [])) {
         if (!shiftFirstSeen[s.id]) shiftFirstSeen[s.id] = r.ts;
@@ -912,7 +915,7 @@ function renderAdvancedStats(stats) {
     avgAvail = avgHrs < 1 ? `${Math.round(avgMs / 60000)}m` : `${avgHrs.toFixed(1)}h`;
   }
 
-  // 2. Fastest grab (shortest availability)
+  // 2. Fastest grab (shortest availability, daytime only)
   let fastestGrab = 'N/A';
   if (durations.length > 0) {
     const minMs = Math.min(...durations);
@@ -979,8 +982,8 @@ function renderAdvancedStats(stats) {
   const successRate = `${Math.round(runsWithMatch / stats.length * 100)}%`;
 
   container.innerHTML = `<div class="adv-stats-grid">
-    <div class="adv-stat"><div class="adv-val">${avgAvail}</div><div class="adv-label">Avg Shift Availability</div><div class="adv-sub">How long shifts stay open</div></div>
-    <div class="adv-stat"><div class="adv-val">${fastestGrab}</div><div class="adv-label">Fastest Disappearance</div><div class="adv-sub">Shortest time a shift was seen</div></div>
+    <div class="adv-stat"><div class="adv-val">${avgAvail}</div><div class="adv-label">Avg Shift Availability</div><div class="adv-sub">Daytime only (8am\u201310pm)</div></div>
+    <div class="adv-stat"><div class="adv-val">${fastestGrab}</div><div class="adv-label">Fastest Disappearance</div><div class="adv-sub">Daytime only (8am\u201310pm)</div></div>
     <div class="adv-stat"><div class="adv-val">${notifyRatio}</div><div class="adv-label">Notify Rate</div><div class="adv-sub">${totalNotified} of ${totalMatched} matches notified</div></div>
     <div class="adv-stat"><div class="adv-val">${successRate}</div><div class="adv-label">Hit Rate</div><div class="adv-sub">${runsWithMatch} of ${stats.length} runs found matches</div></div>
     <div class="adv-stat"><div class="adv-val">${weekTrend}</div><div class="adv-label">Weekly Open Shifts</div><div class="adv-sub">Avg total per run (4 wk trend)</div></div>
