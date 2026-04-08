@@ -384,6 +384,10 @@
     <div id="userBars"></div>
   </div>
   <div class="card">
+    <h2>Shift Types on Calendar</h2>
+    <canvas id="shiftTypeChart"></canvas>
+  </div>
+  <div class="card full-width">
     <h2>Matches vs Notifications Over Time</h2>
     <canvas id="timeChart"></canvas>
   </div>
@@ -842,11 +846,44 @@ function renderMemberStatus(memberStatus) {
     }
     html += `<div class="member-col-name">${nameLine}</div>`;
 
-    // Scheduled shifts (now an array of objects)
+    // Scheduled shifts with countdown
     if (info.scheduled_shifts && info.scheduled_shifts.length > 0) {
       const shiftsHtml = info.scheduled_shifts.map(s => {
         const parts = [s.date, s.start_time, s.description].filter(Boolean);
-        return `<div>${parts.join(' \u2014 ')}</div>`;
+        // Build countdown if we have date and start_time
+        let countdownHtml = '';
+        if (s.date && s.start_time) {
+          // Parse "Sunday April 19" + "6:00pm" into a Date
+          const dateMatch = s.date.match(/\w+\s+(\w+)\s+(\d+)/);
+          const timeMatch = s.start_time.match(/(\d+):(\d+)(am|pm)/i);
+          if (dateMatch && timeMatch) {
+            const year = new Date().getFullYear();
+            const monthStr = dateMatch[1];
+            const day = parseInt(dateMatch[2]);
+            let hour = parseInt(timeMatch[1]);
+            const min = parseInt(timeMatch[2]);
+            const ampm = timeMatch[3].toLowerCase();
+            if (ampm === 'pm' && hour !== 12) hour += 12;
+            if (ampm === 'am' && hour === 12) hour = 0;
+            const shiftDate = new Date(`${monthStr} ${day}, ${year} ${hour}:${String(min).padStart(2,'0')}:00`);
+            // If date is in the past, try next year
+            if (shiftDate < new Date()) shiftDate.setFullYear(year + 1);
+            const diffMs = shiftDate - new Date();
+            if (diffMs > 0) {
+              const diffDays = Math.floor(diffMs / (1000*60*60*24));
+              const diffHrs = Math.floor((diffMs % (1000*60*60*24)) / (1000*60*60));
+              const diffMins = Math.floor((diffMs % (1000*60*60)) / (1000*60));
+              let cdText = '';
+              if (diffDays > 0) cdText = `in ${diffDays}d ${diffHrs}h`;
+              else if (diffHrs > 0) cdText = `in ${diffHrs}h ${diffMins}m`;
+              else cdText = `in ${diffMins}m`;
+              const urgent = diffDays === 0 && diffHrs < 24;
+              const cdStyle = urgent ? 'color:#f59e0b;font-weight:600;' : 'color:var(--text-muted);';
+              countdownHtml = ` <span class="shift-countdown" data-shift-time="${shiftDate.toISOString()}" style="font-size:12px;${cdStyle}">\u23f0 ${cdText}</span>`;
+            }
+          }
+        }
+        return `<div>${parts.join(' \u2014 ')}${countdownHtml}</div>`;
       }).join('');
       html += `<div class="member-field">
         <div class="member-field-label">Scheduled Shifts</div>
@@ -879,6 +916,61 @@ function renderMemberStatus(memberStatus) {
   html += '</div>';
   container.innerHTML = html;
 }
+
+function renderShiftTypeChart(shiftTypeCounts) {
+  const ctx = document.getElementById('shiftTypeChart');
+  if (!shiftTypeCounts || Object.keys(shiftTypeCounts).length === 0) {
+    ctx.parentElement.querySelector('h2').insertAdjacentHTML('afterend', '<div class="empty">No data yet.</div>');
+    ctx.style.display = 'none';
+    return;
+  }
+  // Sort by count descending, take top 12, group rest as "Other"
+  const sorted = Object.entries(shiftTypeCounts).sort((a, b) => b[1] - a[1]);
+  const top = sorted.slice(0, 12);
+  const otherCount = sorted.slice(12).reduce((sum, e) => sum + e[1], 0);
+  if (otherCount > 0) top.push(['Other', otherCount]);
+  const labels = top.map(e => e[0].length > 25 ? e[0].slice(0, 23) + '...' : e[0]);
+  const data = top.map(e => e[1]);
+  const palette = ['#6366f1','#10b981','#f59e0b','#f87171','#a78bfa','#34d399','#fb923c','#38bdf8','#e879f9','#14b8a6','#fbbf24','#64748b','#94a3b8'];
+  const existing = Chart.getChart(ctx);
+  if (existing) existing.destroy();
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels,
+      datasets: [{ data, backgroundColor: palette.slice(0, data.length), borderWidth: 0 }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { position: 'right', labels: { boxWidth: 12, font: { size: 11 } } },
+        tooltip: { callbacks: { label: (item) => `${item.label}: ${item.raw} shifts` } }
+      }
+    }
+  });
+}
+
+// Live countdown updater for scheduled shifts (runs every minute)
+function updateShiftCountdowns() {
+  document.querySelectorAll('.shift-countdown').forEach(el => {
+    const shiftTime = el.dataset.shiftTime;
+    if (!shiftTime) return;
+    const diffMs = new Date(shiftTime) - new Date();
+    if (diffMs <= 0) { el.textContent = '\u23f0 now!'; return; }
+    const diffDays = Math.floor(diffMs / (1000*60*60*24));
+    const diffHrs = Math.floor((diffMs % (1000*60*60*24)) / (1000*60*60));
+    const diffMins = Math.floor((diffMs % (1000*60*60)) / (1000*60));
+    let cdText = '';
+    if (diffDays > 0) cdText = `in ${diffDays}d ${diffHrs}h`;
+    else if (diffHrs > 0) cdText = `in ${diffHrs}h ${diffMins}m`;
+    else cdText = `in ${diffMins}m`;
+    el.textContent = '\u23f0 ' + cdText;
+    const urgent = diffDays === 0;
+    el.style.color = urgent ? '#f59e0b' : 'var(--text-muted)';
+    el.style.fontWeight = urgent ? '600' : 'normal';
+  });
+}
+setInterval(updateShiftCountdowns, 60000);
 
 function renderAdvancedStats(stats) {
   const container = document.getElementById('advanced-stats');
@@ -1042,6 +1134,7 @@ function initDashboard() {
     renderHeatmap(stats);
     renderOpenShiftsChart(stats);
     renderRecentShifts(stats);
+    renderShiftTypeChart(data.shift_type_counts || {});
     renderAdvancedStats(stats);
     renderComparison(stats, previousPeriod);
     renderHistory(stats);
