@@ -10885,20 +10885,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-08T14:20:31.770335+00:00",
+      "total": 3388,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1108321",
-        "date": "2026-04-26",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
