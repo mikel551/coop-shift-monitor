@@ -212,6 +212,12 @@
   .status-badge.active { background: rgba(16,185,129,0.15); color: var(--accent); border: 1px solid rgba(16,185,129,0.3); }
   .status-badge.other { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
 
+  .adv-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .adv-stat { text-align: center; padding: 12px; border-radius: 8px; background: var(--bg-body); }
+  .adv-stat .adv-val { font-size: 24px; font-weight: 700; color: var(--accent); }
+  .adv-stat .adv-label { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+  .adv-stat .adv-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; font-style: italic; }
+
   .pref-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-bottom: 10px; }
   .pref-row:last-child { margin-bottom: 0; }
   .pref-name { font-weight: 700; color: var(--accent); font-size: 14px; min-width: 55px; }
@@ -388,6 +394,15 @@
   <div class="card full-width" id="comparison-card" style="display:none">
     <h2>Current vs Previous Period</h2>
     <div id="comparison-table"></div>
+  </div>
+  <div class="card full-width">
+    <div class="accordion-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
+      <span class="accordion-arrow">&#9654;</span>
+      <h2 style="margin:0">&#128200; Advanced Stats</h2>
+    </div>
+    <div class="accordion-body tall">
+      <div id="advanced-stats" style="padding-top:14px;"></div>
+    </div>
   </div>
   <div class="card full-width">
     <div class="accordion-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
@@ -865,6 +880,114 @@ function renderMemberStatus(memberStatus) {
   container.innerHTML = html;
 }
 
+function renderAdvancedStats(stats) {
+  const container = document.getElementById('advanced-stats');
+  if (stats.length < 2) {
+    container.innerHTML = '<div class="empty">Not enough data yet.</div>';
+    return;
+  }
+
+  // 1. Avg shift availability time
+  // Track each shift ID: first seen ts -> last seen ts
+  const shiftFirstSeen = {};
+  const shiftLastSeen = {};
+  for (const r of stats) {
+    for (const u of Object.values(r.users || {})) {
+      for (const s of (u.shifts || [])) {
+        if (!shiftFirstSeen[s.id]) shiftFirstSeen[s.id] = r.ts;
+        shiftLastSeen[s.id] = r.ts;
+      }
+    }
+  }
+  const durations = [];
+  for (const id of Object.keys(shiftFirstSeen)) {
+    const first = new Date(shiftFirstSeen[id]).getTime();
+    const last = new Date(shiftLastSeen[id]).getTime();
+    if (last > first) durations.push(last - first);
+  }
+  let avgAvail = 'N/A';
+  if (durations.length > 0) {
+    const avgMs = durations.reduce((a, b) => a + b, 0) / durations.length;
+    const avgHrs = avgMs / (1000 * 60 * 60);
+    avgAvail = avgHrs < 1 ? `${Math.round(avgMs / 60000)}m` : `${avgHrs.toFixed(1)}h`;
+  }
+
+  // 2. Fastest grab (shortest availability)
+  let fastestGrab = 'N/A';
+  if (durations.length > 0) {
+    const minMs = Math.min(...durations);
+    const minMins = Math.round(minMs / 60000);
+    fastestGrab = minMins < 60 ? `${minMins}m` : `${(minMins / 60).toFixed(1)}h`;
+  }
+
+  // 3. Busiest match hours (top 3 day+hour combos)
+  const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const hourCounts = {};
+  for (const r of stats) {
+    let totalMatched = 0;
+    for (const u of Object.values(r.users || {})) totalMatched += u.matched || 0;
+    if (totalMatched > 0) {
+      const d = new Date(r.ts);
+      const et = new Date(d.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+      const key = `${days[et.getDay()]} ${et.getHours() <= 12 ? et.getHours() : et.getHours()-12}${et.getHours() < 12 ? 'am' : 'pm'}`;
+      hourCounts[key] = (hourCounts[key] || 0) + totalMatched;
+    }
+  }
+  const topHours = Object.entries(hourCounts).sort((a, b) => b[1] - a[1]).slice(0, 3).map(e => e[0]);
+  const busiestStr = topHours.length > 0 ? topHours.join(', ') : 'N/A';
+
+  // 4. Match-to-notify ratio
+  let totalMatched = 0, totalNotified = 0;
+  for (const r of stats) {
+    for (const u of Object.values(r.users || {})) {
+      totalMatched += u.matched || 0;
+      totalNotified += u.notified || 0;
+    }
+  }
+  const notifyRatio = totalMatched > 0 ? `${Math.round(totalNotified / totalMatched * 100)}%` : 'N/A';
+
+  // 5. Shifts per week trend (last 4 weeks, avg total per run grouped by week)
+  const fourWeeksAgo = Date.now() - 28 * 24 * 60 * 60 * 1000;
+  const recentRuns = stats.filter(r => new Date(r.ts).getTime() >= fourWeeksAgo);
+  const weekBuckets = {};
+  for (const r of recentRuns) {
+    const d = new Date(r.ts);
+    // Week number: days since epoch / 7
+    const weekKey = Math.floor(d.getTime() / (7 * 24 * 60 * 60 * 1000));
+    if (!weekBuckets[weekKey]) weekBuckets[weekKey] = [];
+    weekBuckets[weekKey].push(r.total || 0);
+  }
+  const weekAvgs = Object.entries(weekBuckets).sort((a, b) => a[0] - b[0]).map(([, vals]) => Math.round(vals.reduce((a, b) => a + b, 0) / vals.length));
+  let weekTrend = 'N/A';
+  if (weekAvgs.length >= 2) {
+    const diff = weekAvgs[weekAvgs.length - 1] - weekAvgs[0];
+    const arrow = diff > 0 ? '\u2197' : diff < 0 ? '\u2198' : '\u2192';
+    weekTrend = `${weekAvgs[weekAvgs.length - 1]} avg ${arrow}`;
+  } else if (weekAvgs.length === 1) {
+    weekTrend = `${weekAvgs[0]} avg`;
+  }
+
+  // 6. Success rate (% of runs with at least one match)
+  let runsWithMatch = 0;
+  for (const r of stats) {
+    let anyMatch = false;
+    for (const u of Object.values(r.users || {})) {
+      if ((u.matched || 0) > 0) { anyMatch = true; break; }
+    }
+    if (anyMatch) runsWithMatch++;
+  }
+  const successRate = `${Math.round(runsWithMatch / stats.length * 100)}%`;
+
+  container.innerHTML = `<div class="adv-stats-grid">
+    <div class="adv-stat"><div class="adv-val">${avgAvail}</div><div class="adv-label">Avg Shift Availability</div><div class="adv-sub">How long shifts stay open</div></div>
+    <div class="adv-stat"><div class="adv-val">${fastestGrab}</div><div class="adv-label">Fastest Disappearance</div><div class="adv-sub">Shortest time a shift was seen</div></div>
+    <div class="adv-stat"><div class="adv-val">${notifyRatio}</div><div class="adv-label">Notify Rate</div><div class="adv-sub">${totalNotified} of ${totalMatched} matches notified</div></div>
+    <div class="adv-stat"><div class="adv-val">${successRate}</div><div class="adv-label">Hit Rate</div><div class="adv-sub">${runsWithMatch} of ${stats.length} runs found matches</div></div>
+    <div class="adv-stat"><div class="adv-val">${weekTrend}</div><div class="adv-label">Weekly Open Shifts</div><div class="adv-sub">Avg total per run (4 wk trend)</div></div>
+    <div class="adv-stat"><div class="adv-val" style="font-size:16px;">${busiestStr}</div><div class="adv-label">Busiest Match Hours</div><div class="adv-sub">Top 3 day/hour combos</div></div>
+  </div>`;
+}
+
 function renderComparison(stats, previousPeriod) {
   if (!previousPeriod || !previousPeriod.total_runs) return;
   document.getElementById('comparison-card').style.display = '';
@@ -909,6 +1032,7 @@ function initDashboard() {
     renderHeatmap(stats);
     renderOpenShiftsChart(stats);
     renderRecentShifts(stats);
+    renderAdvancedStats(stats);
     renderComparison(stats, previousPeriod);
     renderHistory(stats);
   });
