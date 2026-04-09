@@ -13366,6 +13366,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-09T15:50:36.213326+00:00",
+      "total": 3405,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1104447",
+              "date": "2026-04-20",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -13417,31 +13442,31 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1157,
-    "Lifting \ud83d\ude9a": 836,
+    "Stocking \ud83d\udce6": 1155,
+    "Lifting \ud83d\ude9a": 834,
     "Producer \ud83e\udd66": 365,
     "Flex \ud83e\udd6b": 198,
     "Produce Processing \ud83e\udd6c": 172,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 131,
     "Meat Processing & Lifting \ud83c\udf56": 93,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 68,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 69,
     "Inventory \ud83d\udccb": 52,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Bathroom \ud83d\udebd": 35,
-    "Case Maintenance \ud83e\uddfd": 35,
+    "Case Maintenance \ud83e\uddfd": 34,
     "Bulk Lifting \ud83e\uded8": 19,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bins \ud83e\uddfc": 15,
-    "Checkout \ud83d\udcb3": 11,
+    "Checkout \ud83d\udcb3": 10,
     "Office \ud83d\udcd7": 8,
-    "Bread Stocking \ud83c\udf5e": 4,
+    "Bread Stocking \ud83c\udf5e": 5,
     "Soup Cleaning": 3,
     "CHiPS Volunteer Party": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Cart Return \ud83d\uded2": 2,
+    "Entrance/Greeter \ud83c\udf9f": 2,
     "Inventory: Produce \ud83c\udf40": 2,
-    "Health & Beauty \ud83e\uddf4": 1,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Health & Beauty \ud83e\uddf4": 1
   }
 }
