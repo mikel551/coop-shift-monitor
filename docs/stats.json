@@ -13741,6 +13741,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-09T18:20:33.839985+00:00",
+      "total": 3368,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1098617",
+              "date": "2026-04-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -13792,9 +13817,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1145,
+    "Stocking \ud83d\udce6": 1144,
     "Lifting \ud83d\ude9a": 831,
-    "Producer \ud83e\udd66": 365,
+    "Producer \ud83e\udd66": 364,
     "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 171,
     "Cleaning \ud83c\udfdd": 131,
@@ -13809,7 +13834,7 @@
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
     "Office \ud83d\udcd7": 9,
-    "Checkout \ud83d\udcb3": 7,
+    "Checkout \ud83d\udcb3": 6,
     "Bread Stocking \ud83c\udf5e": 4,
     "Soup Cleaning": 3,
     "Vitamins \ud83c\udf6c": 3,
