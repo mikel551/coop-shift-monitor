@@ -4,7 +4,6 @@
       "1113497"
     ],
     "Mike": [
-      "1100071",
       "1106495"
     ]
   },
@@ -13017,6 +13016,39 @@
               "end": "18:00",
               "type": "Cart Return \ud83d\uded2"
             },
+            {
+              "id": "1106495",
+              "date": "2026-04-23",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1113497",
+              "date": "2026-05-04",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
+    },
+    {
+      "ts": "2026-04-09T13:30:33.454753+00:00",
+      "total": 3438,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
             {
               "id": "1106495",
               "date": "2026-04-23",
