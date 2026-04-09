@@ -13098,6 +13098,39 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-09T13:50:35.803163+00:00",
+      "total": 3435,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1100071",
+              "date": "2026-04-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1113497",
+              "date": "2026-05-04",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -13113,8 +13146,8 @@
     ],
     "Mike": [
       {
-        "id": "1106495",
-        "date": "2026-04-23",
+        "id": "1100071",
+        "date": "2026-04-13",
         "start": "18:00",
         "end": "18:00",
         "type": "Cart Return \ud83d\uded2"
@@ -13176,7 +13209,7 @@
     "Soup: Food Services \ud83c\udf72": 17,
     "Bins \ud83e\uddfc": 15,
     "Office \ud83d\udcd7": 8,
-    "Cart Return \ud83d\uded2": 6,
+    "Cart Return \ud83d\uded2": 4,
     "Bread Stocking \ud83c\udf5e": 4,
     "Soup Cleaning": 3,
     "CHiPS Volunteer Party": 3,
