@@ -12555,6 +12555,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-09T11:30:32.154693+00:00",
+      "total": 3466,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1106495",
+              "date": "2026-04-23",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1115673",
+              "date": "2026-05-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -12608,7 +12640,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1165,
+    "Stocking \ud83d\udce6": 1164,
     "Lifting \ud83d\ude9a": 843,
     "Producer \ud83e\udd66": 370,
     "Flex \ud83e\udd6b": 201,
@@ -12633,7 +12665,6 @@
     "Entrance/Greeter \ud83c\udf9f": 3,
     "CHiPS Volunteer Party": 3,
     "Inventory: Produce \ud83c\udf40": 2,
-    "Health & Beauty \ud83e\uddf4": 1,
-    "Vouchers \ud83e\uddfe": 1
+    "Health & Beauty \ud83e\uddf4": 1
   }
 }
