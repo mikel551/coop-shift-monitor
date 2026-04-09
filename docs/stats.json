@@ -12811,11 +12811,65 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-09T12:40:37.796088+00:00",
+      "total": 3452,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1106495",
+              "date": "2026-04-23",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1115673",
+              "date": "2026-05-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1098889",
+              "date": "2026-04-12",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1113497",
+              "date": "2026-05-04",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
+      {
+        "id": "1098889",
+        "date": "2026-04-12",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
       {
         "id": "1113497",
         "date": "2026-05-04",
@@ -12876,7 +12930,7 @@
     "Stocking \ud83d\udce6": 1162,
     "Lifting \ud83d\ude9a": 840,
     "Producer \ud83e\udd66": 370,
-    "Flex \ud83e\udd6b": 200,
+    "Flex \ud83e\udd6b": 198,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 132,
