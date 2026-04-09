@@ -13232,20 +13232,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-09T14:50:38.410832+00:00",
+      "total": 3417,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1099023",
-        "date": "2026-04-12",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -13283,27 +13290,27 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1155,
-    "Lifting \ud83d\ude9a": 838,
-    "Producer \ud83e\udd66": 370,
-    "Flex \ud83e\udd6b": 196,
-    "Produce Processing \ud83e\udd6c": 171,
+    "Stocking \ud83d\udce6": 1156,
+    "Lifting \ud83d\ude9a": 839,
+    "Producer \ud83e\udd66": 369,
+    "Flex \ud83e\udd6b": 197,
+    "Produce Processing \ud83e\udd6c": 172,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 131,
     "Meat Processing & Lifting \ud83c\udf56": 93,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 67,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 68,
     "Inventory \ud83d\udccb": 52,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 47,
     "Bathroom \ud83d\udebd": 35,
     "Case Maintenance \ud83e\uddfd": 35,
-    "Bulk Lifting \ud83e\uded8": 20,
+    "Bulk Lifting \ud83e\uded8": 19,
     "Soup: Food Services \ud83c\udf72": 17,
     "Bins \ud83e\uddfc": 15,
-    "Checkout \ud83d\udcb3": 13,
+    "Checkout \ud83d\udcb3": 12,
     "Office \ud83d\udcd7": 8,
-    "Cart Return \ud83d\uded2": 4,
     "Bread Stocking \ud83c\udf5e": 4,
     "Soup Cleaning": 3,
+    "Cart Return \ud83d\uded2": 3,
     "CHiPS Volunteer Party": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Inventory: Produce \ud83c\udf40": 2,
