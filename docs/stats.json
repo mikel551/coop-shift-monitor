@@ -16772,6 +16772,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-10T23:40:37.474207+00:00",
+      "total": 3322,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1098905",
+              "date": "2026-04-12",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -16826,7 +16851,7 @@
     "Stocking \ud83d\udce6": 1116,
     "Lifting \ud83d\ude9a": 817,
     "Producer \ud83e\udd66": 362,
-    "Flex \ud83e\udd6b": 202,
+    "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 132,
