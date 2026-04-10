@@ -15901,10 +15901,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-10T16:00:36.809201+00:00",
+      "total": 3378,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1113497",
+              "date": "2026-05-04",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1113497",
+        "date": "2026-05-04",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -15942,7 +15977,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1136,
+    "Stocking \ud83d\udce6": 1137,
     "Lifting \ud83d\ude9a": 824,
     "Producer \ud83e\udd66": 364,
     "Flex \ud83e\udd6b": 206,
@@ -15950,7 +15985,7 @@
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 131,
     "Meat Processing & Lifting \ud83c\udf56": 97,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 79,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 78,
     "Inventory \ud83d\udccb": 51,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Bathroom \ud83d\udebd": 35,
@@ -15964,6 +15999,7 @@
     "Entrance/Greeter \ud83c\udf9f": 2,
     "Vitamins \ud83c\udf6c": 2,
     "CHiPS Volunteer Party": 2,
-    "Inventory: Produce \ud83c\udf40": 2
+    "Inventory: Produce \ud83c\udf40": 2,
+    "Checkout \ud83d\udcb3": 1
   }
 }
