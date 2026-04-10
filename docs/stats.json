@@ -15460,6 +15460,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-10T13:00:39.625696+00:00",
+      "total": 3446,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1116325",
+              "date": "2026-05-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -15511,7 +15536,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1149,
+    "Stocking \ud83d\udce6": 1148,
     "Lifting \ud83d\ude9a": 837,
     "Producer \ud83e\udd66": 367,
     "Flex \ud83e\udd6b": 213,
