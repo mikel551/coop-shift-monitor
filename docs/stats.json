@@ -15335,6 +15335,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-10T12:10:28.654238+00:00",
+      "total": 3460,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1116325",
+              "date": "2026-05-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -15386,7 +15411,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1154,
+    "Stocking \ud83d\udce6": 1155,
     "Lifting \ud83d\ude9a": 838,
     "Producer \ud83e\udd66": 367,
     "Flex \ud83e\udd6b": 212,
@@ -15396,15 +15421,15 @@
     "Meat Processing & Lifting \ud83c\udf56": 97,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 88,
     "Inventory \ud83d\udccb": 50,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 48,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 46,
     "Bathroom \ud83d\udebd": 35,
     "Case Maintenance \ud83e\uddfd": 33,
-    "Checkout \ud83d\udcb3": 22,
+    "Checkout \ud83d\udcb3": 21,
     "Bulk Lifting \ud83e\uded8": 20,
+    "Soup: Food Services \ud83c\udf72": 16,
     "Bins \ud83e\uddfc": 15,
-    "Soup: Food Services \ud83c\udf72": 15,
     "Cart Return \ud83d\uded2": 5,
-    "Office \ud83d\udcd7": 5,
+    "Office \ud83d\udcd7": 4,
     "Soup Cleaning": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "CHiPS Volunteer Party": 2,
