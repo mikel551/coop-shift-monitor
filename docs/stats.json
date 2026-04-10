@@ -16018,6 +16018,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-10T16:40:33.977874+00:00",
+      "total": 3369,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1101927",
+              "date": "2026-04-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -16069,11 +16094,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1137,
+    "Stocking \ud83d\udce6": 1136,
     "Lifting \ud83d\ude9a": 823,
     "Producer \ud83e\udd66": 364,
     "Flex \ud83e\udd6b": 206,
-    "Produce Processing \ud83e\udd6c": 176,
+    "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 132,
     "Meat Processing & Lifting \ud83c\udf56": 97,
@@ -16091,7 +16116,6 @@
     "CHiPS Volunteer Party": 2,
     "Inventory: Produce \ud83c\udf40": 2,
     "Office \ud83d\udcd7": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1
   }
 }
