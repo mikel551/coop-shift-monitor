@@ -15926,6 +15926,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-10T16:10:32.657779+00:00",
+      "total": 3377,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1113497",
+              "date": "2026-05-04",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -15994,12 +16019,12 @@
     "Soup: Food Services \ud83c\udf72": 15,
     "Bins \ud83e\uddfc": 15,
     "Soup Cleaning": 3,
-    "Office \ud83d\udcd7": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
     "Vitamins \ud83c\udf6c": 2,
     "CHiPS Volunteer Party": 2,
     "Inventory: Produce \ud83c\udf40": 2,
+    "Office \ud83d\udcd7": 2,
     "Checkout \ud83d\udcb3": 1
   }
 }
