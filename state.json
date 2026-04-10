@@ -5,8 +5,7 @@
       "1108317"
     ],
     "Mike": [
-      "1116325",
-      "1107147"
+      "1116325"
     ]
   },
   "stats": [
@@ -15007,6 +15006,46 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-10T06:00:39.053433+00:00",
+      "total": 3517,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1116325",
+              "date": "2026-05-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1099133",
+              "date": "2026-04-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1108317",
+              "date": "2026-04-26",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ]
 }
