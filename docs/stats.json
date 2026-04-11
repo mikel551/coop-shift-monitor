@@ -19654,6 +19654,52 @@
         }
       },
       "pruned": 4
+    },
+    {
+      "ts": "2026-04-11T23:30:28.819197+00:00",
+      "total": 3344,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1098785",
+              "date": "2026-04-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1098789",
+              "date": "2026-04-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099265",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099879",
+              "date": "2026-04-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
@@ -19674,21 +19720,7 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1099027",
-        "date": "2026-04-12",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
         "id": "1099265",
-        "date": "2026-04-12",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1099261",
         "date": "2026-04-12",
         "start": "18:00",
         "end": "18:00",
@@ -19740,7 +19772,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1128,
+    "Stocking \ud83d\udce6": 1131,
     "Lifting \ud83d\ude9a": 835,
     "Producer \ud83e\udd66": 357,
     "Flex \ud83e\udd6b": 202,
@@ -19748,7 +19780,7 @@
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 130,
     "Meat Processing & Lifting \ud83c\udf56": 97,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 73,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 72,
     "Inventory \ud83d\udccb": 50,
     "Case Maintenance \ud83e\uddfd": 34,
     "Bathroom \ud83d\udebd": 34,
@@ -19756,7 +19788,7 @@
     "Bulk Lifting \ud83e\uded8": 19,
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 13,
-    "Checkout \ud83d\udcb3": 6,
+    "Checkout \ud83d\udcb3": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 2,
