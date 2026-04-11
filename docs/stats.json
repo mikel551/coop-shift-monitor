@@ -18935,20 +18935,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-11T19:10:29.070707+00:00",
+      "total": 3378,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1104183",
-        "date": "2026-04-20",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -18986,7 +18993,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1142,
+    "Stocking \ud83d\udce6": 1141,
     "Lifting \ud83d\ude9a": 841,
     "Producer \ud83e\udd66": 360,
     "Flex \ud83e\udd6b": 208,
@@ -19004,8 +19011,9 @@
     "Soup: Food Services \ud83c\udf72": 13,
     "Bread Stocking \ud83c\udf5e": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Inventory: Produce \ud83c\udf40": 2,
+    "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1,
     "CHiPS Volunteer Party": 1,
     "Office \ud83d\udcd7": 1
   }
