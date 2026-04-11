@@ -756,6 +756,29 @@ function getRecentShifts(stats) {
       }
     }
   }
+  // Find when each shift disappeared: last run it was seen in any user's shifts,
+  // then the next run after that is when it was gone
+  const shiftLastSeen = {};
+  for (const r of stats) {
+    for (const u of Object.values(r.users || {})) {
+      for (const s of (u.shifts || [])) {
+        if (!shiftLastSeen[s.id] || r.ts > shiftLastSeen[s.id]) {
+          shiftLastSeen[s.id] = r.ts;
+        }
+      }
+    }
+  }
+  const lastRunTs = stats.length > 0 ? stats[stats.length - 1].ts : null;
+  for (const s of shifts) {
+    const lastSeenTs = shiftLastSeen[s.id];
+    if (!lastSeenTs || lastSeenTs === lastRunTs) {
+      s.goneBy = null; // still available or unknown
+    } else {
+      // Find the first run after lastSeenTs
+      const nextRun = stats.find(r => r.ts > lastSeenTs);
+      s.goneBy = nextRun ? nextRun.ts : lastSeenTs;
+    }
+  }
   shifts.sort((a, b) => b.foundAt.localeCompare(a.foundAt) || a.date.localeCompare(b.date));
   window._recentShiftsCache = shifts;
   return shifts;
@@ -773,11 +796,12 @@ function renderRecentShifts(stats, page) {
   const totalPages = Math.ceil(shifts.length / PAGE_SIZE);
   const paged = shifts.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
 
-  let html = '<table><thead><tr><th>Shift</th><th>User</th><th>Notified At</th></tr></thead><tbody>';
+  let html = '<table><thead><tr><th>Shift</th><th>User</th><th>Notified At</th><th>Gone By</th></tr></thead><tbody>';
   for (const s of paged) {
     const d = new Date(s.date + 'T00:00:00');
     const dateStr = d.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
-    html += `<tr><td>${dateStr} ${s.start} – ${s.type}</td><td>${s.user}</td><td>${formatTs(s.foundAt)}</td></tr>`;
+    const goneStr = s.goneBy ? formatTs(s.goneBy) : '<span style="color:var(--accent);font-weight:600;">Still Open</span>';
+    html += `<tr><td>${dateStr} ${s.start} – ${s.type}</td><td>${s.user}</td><td>${formatTs(s.foundAt)}</td><td>${goneStr}</td></tr>`;
   }
   html += '</tbody></table>';
   if (totalPages > 1) {
