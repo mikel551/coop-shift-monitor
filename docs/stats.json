@@ -19190,10 +19190,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-11T21:40:33.643983+00:00",
+      "total": 3345,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1098781",
+              "date": "2026-04-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1098781",
+        "date": "2026-04-12",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -19231,10 +19266,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1132,
-    "Lifting \ud83d\ude9a": 839,
+    "Stocking \ud83d\udce6": 1126,
+    "Lifting \ud83d\ude9a": 838,
     "Producer \ud83e\udd66": 358,
-    "Flex \ud83e\udd6b": 204,
+    "Flex \ud83e\udd6b": 203,
     "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 130,
@@ -19250,6 +19285,7 @@
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1,
     "CHiPS Volunteer Party": 1,
     "Office \ud83d\udcd7": 1
