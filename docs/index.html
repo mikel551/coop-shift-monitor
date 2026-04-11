@@ -94,6 +94,35 @@
     font-variant-numeric: tabular-nums;
   }
   .countdown-badge .countdown-value { color: var(--accent); font-weight: 600; }
+  .countdown-badge.refreshing {
+    background: linear-gradient(135deg, var(--countdown-bg), rgba(16,185,129,0.2));
+    border-color: var(--accent);
+    animation: refreshPulse 1.5s ease-in-out infinite;
+  }
+  .countdown-badge.refreshing .countdown-label { color: var(--accent-light); }
+  .countdown-badge .refresh-dot {
+    display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent); margin-right: 6px; vertical-align: middle;
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .countdown-badge.refreshing .refresh-dot { opacity: 1; animation: dotBlink 1s ease-in-out infinite; }
+  .countdown-badge.reloading {
+    background: linear-gradient(135deg, rgba(16,185,129,0.25), rgba(16,185,129,0.35));
+    border-color: var(--accent-light);
+  }
+  .countdown-badge.reloading .countdown-value { animation: none; }
+  @keyframes refreshPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+    50% { box-shadow: 0 0 12px 2px rgba(16,185,129,0.25); }
+  }
+  @keyframes dotBlink {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+  @keyframes spinRefresh {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 
   /* Theme toggle */
   .theme-toggle {
@@ -322,7 +351,7 @@
 </div>
 <p class="subtitle">Auto-updated by GitHub Actions</p>
 <div class="countdown-row">
-  <span class="countdown-badge">Next run in <span class="countdown-value" id="countdown">--:--</span></span>
+  <span class="countdown-badge" id="countdown-badge"><span class="refresh-dot"></span><span class="countdown-label" id="countdown-label">Next run in </span><span class="countdown-value" id="countdown">--:--</span></span>
 </div>
 
 <div class="stat-row" id="summary-stats">
@@ -495,18 +524,59 @@ function toggleTheme() {
 // Load saved theme
 applyTheme(localStorage.getItem('dashboard-theme') || 'dark');
 
-// --- Countdown timer ---
+// --- Countdown timer with auto-refresh ---
+let refreshSecsLeft = -1; // -1 = not in refresh mode
+const REFRESH_WAIT = 60; // seconds to wait before refreshing data
+
 function updateCountdown() {
+  const badge = document.getElementById('countdown-badge');
+  const label = document.getElementById('countdown-label');
+  const value = document.getElementById('countdown');
+
+  // Refresh countdown mode
+  if (refreshSecsLeft > 0) {
+    refreshSecsLeft--;
+    const m = Math.floor(refreshSecsLeft / 60);
+    const s = refreshSecsLeft % 60;
+    value.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    return;
+  }
+  if (refreshSecsLeft === 0) {
+    // Time to reload data
+    refreshSecsLeft = -1;
+    label.textContent = 'Updating... ';
+    value.textContent = '';
+    badge.classList.remove('refreshing');
+    badge.classList.add('reloading');
+    initDashboard(true).then(() => {
+      badge.classList.remove('reloading');
+      label.textContent = 'Next run in ';
+      updateCountdown(); // immediately show next countdown
+    });
+    return;
+  }
+
+  // Normal countdown mode
   const now = new Date();
   const min = now.getMinutes();
   const sec = now.getSeconds();
-  // Runs every 10 minutes (at :00, :10, :20, :30, :40, :50)
   const minsUntilNext = (10 - (min % 10)) % 10 || 10;
   const totalSecs = minsUntilNext * 60 - sec;
+
+  if (totalSecs <= 1) {
+    // Run just triggered — switch to refresh countdown
+    refreshSecsLeft = REFRESH_WAIT;
+    badge.classList.add('refreshing');
+    label.textContent = 'Refreshing in ';
+    value.textContent = '01:00';
+    return;
+  }
+
+  badge.classList.remove('refreshing', 'reloading');
+  label.textContent = 'Next run in ';
   const m = Math.floor(totalSecs / 60);
   const s = totalSecs % 60;
-  document.getElementById('countdown').textContent =
-    `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  value.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
 }
 updateCountdown();
 setInterval(updateCountdown, 1000);
@@ -1140,10 +1210,10 @@ function renderComparison(stats, previousPeriod) {
   document.getElementById('comparison-table').innerHTML = html;
 }
 
-function initDashboard() {
-  if (window._dashboardLoading) return;
+function initDashboard(isRefresh) {
+  if (!isRefresh && window._dashboardLoading) return;
   window._dashboardLoading = true;
-  loadStats().then(data => {
+  return loadStats().then(data => {
     const stats = data.stats;
     window._dashboardStats = stats;
     const previousPeriod = data.previous_period || {};
@@ -1163,6 +1233,8 @@ function initDashboard() {
     renderAdvancedStats(stats);
     renderComparison(stats, previousPeriod);
     renderHistory(stats);
+  }).finally(() => {
+    window._dashboardLoading = false;
   });
 }
 </script>
