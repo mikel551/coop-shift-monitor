@@ -19594,6 +19594,66 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-11T23:20:35.022628+00:00",
+      "total": 3344,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 6,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1098785",
+              "date": "2026-04-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1098789",
+              "date": "2026-04-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099027",
+              "date": "2026-04-12",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099261",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099265",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099879",
+              "date": "2026-04-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 4
     }
   ],
   "previous_period": {},
@@ -19607,21 +19667,14 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1098901",
+        "id": "1098789",
         "date": "2026-04-12",
-        "start": "10:30",
-        "end": "10:30",
+        "start": "08:00",
+        "end": "08:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
         "id": "1099027",
-        "date": "2026-04-12",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1099019",
         "date": "2026-04-12",
         "start": "13:00",
         "end": "13:00",
@@ -19644,20 +19697,6 @@
       {
         "id": "1099879",
         "date": "2026-04-13",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1099991",
-        "date": "2026-04-13",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1104445",
-        "date": "2026-04-20",
         "start": "13:00",
         "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
@@ -19701,9 +19740,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1125,
+    "Stocking \ud83d\udce6": 1128,
     "Lifting \ud83d\ude9a": 835,
-    "Producer \ud83e\udd66": 356,
+    "Producer \ud83e\udd66": 357,
     "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 133,
@@ -19717,7 +19756,7 @@
     "Bulk Lifting \ud83e\uded8": 19,
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 13,
-    "Checkout \ud83d\udcb3": 9,
+    "Checkout \ud83d\udcb3": 6,
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 2,
