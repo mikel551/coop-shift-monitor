@@ -586,9 +586,10 @@ const isDarkInit = (localStorage.getItem('dashboard-theme') || 'dark') === 'dark
 Chart.defaults.color = isDarkInit ? '#94a3b8' : '#6b7280';
 Chart.defaults.scale.grid = { color: isDarkInit ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)' };
 
-async function loadStats() {
+async function loadStats(bustCache) {
   try {
-    const resp = await fetch('stats.json');
+    const url = bustCache ? `stats.json?t=${Date.now()}` : 'stats.json';
+    const resp = await fetch(url);
     if (!resp.ok) throw new Error('No stats.json found');
     const data = await resp.json();
     if (Array.isArray(data)) return { stats: data, previous_period: {} };
@@ -1242,7 +1243,7 @@ function hasAvailableShifts(availableShifts) {
 function initDashboard(isRefresh) {
   if (!isRefresh && window._dashboardLoading) return;
   window._dashboardLoading = true;
-  return loadStats().then(data => {
+  return loadStats(isRefresh).then(data => {
     const stats = data.stats;
     window._dashboardStats = stats;
     const previousPeriod = data.previous_period || {};
