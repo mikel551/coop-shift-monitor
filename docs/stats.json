@@ -17427,6 +17427,74 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-11T09:00:38.769116+00:00",
+      "total": 3527,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1107793",
+              "date": "2026-04-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1116979",
+              "date": "2026-05-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 5,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1098895",
+              "date": "2026-04-12",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1098907",
+              "date": "2026-04-12",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099135",
+              "date": "2026-04-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1103741",
+              "date": "2026-04-19",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122281",
+              "date": "2026-05-17",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -17523,7 +17591,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1173,
-    "Lifting \ud83d\ude9a": 852,
+    "Lifting \ud83d\ude9a": 850,
     "Producer \ud83e\udd66": 372,
     "Flex \ud83e\udd6b": 220,
     "Produce Processing \ud83e\udd6c": 181,
@@ -17532,7 +17600,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 98,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 92,
     "Inventory \ud83d\udccb": 51,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 39,
     "Checkout \ud83d\udcb3": 37,
     "Bathroom \ud83d\udebd": 35,
     "Case Maintenance \ud83e\uddfd": 32,
