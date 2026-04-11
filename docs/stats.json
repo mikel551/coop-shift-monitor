@@ -17690,11 +17690,79 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-11T11:30:35.530635+00:00",
+      "total": 3499,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1107793",
+              "date": "2026-04-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1116979",
+              "date": "2026-05-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1098781",
+              "date": "2026-04-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1100111",
+              "date": "2026-04-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122281",
+              "date": "2026-05-17",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
+      {
+        "id": "1098781",
+        "date": "2026-04-12",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1100111",
+        "date": "2026-04-13",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      },
       {
         "id": "1122281",
         "date": "2026-05-17",
@@ -17760,17 +17828,17 @@
     "Stocking \ud83d\udce6": 1166,
     "Lifting \ud83d\ude9a": 849,
     "Producer \ud83e\udd66": 372,
-    "Flex \ud83e\udd6b": 217,
+    "Flex \ud83e\udd6b": 216,
     "Produce Processing \ud83e\udd6c": 181,
     "Dairy Lifting \ud83e\udd5b": 137,
     "Cleaning \ud83c\udfdd": 134,
     "Meat Processing & Lifting \ud83c\udf56": 98,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 91,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 90,
     "Inventory \ud83d\udccb": 51,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
     "Bathroom \ud83d\udebd": 35,
     "Case Maintenance \ud83e\uddfd": 32,
-    "Checkout \ud83d\udcb3": 27,
+    "Checkout \ud83d\udcb3": 25,
     "Bulk Lifting \ud83e\uded8": 20,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bins \ud83e\uddfc": 15,
