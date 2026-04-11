@@ -19343,13 +19343,59 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-11T22:30:37.162712+00:00",
+      "total": 3343,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1099139",
+              "date": "2026-04-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099879",
+              "date": "2026-04-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099991",
+              "date": "2026-04-13",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1104445",
+              "date": "2026-04-20",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1099145",
+        "id": "1099139",
         "date": "2026-04-12",
         "start": "15:30",
         "end": "15:30",
@@ -19423,7 +19469,7 @@
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 130,
     "Meat Processing & Lifting \ud83c\udf56": 97,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 75,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 74,
     "Inventory \ud83d\udccb": 50,
     "Case Maintenance \ud83e\uddfd": 34,
     "Bathroom \ud83d\udebd": 34,
