@@ -24291,6 +24291,52 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-12T20:30:35.750483+00:00",
+      "total": 3368,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1099265",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128222",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099867",
+              "date": "2026-04-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1100105",
+              "date": "2026-04-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -24371,7 +24417,7 @@
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 130,
     "Meat Processing & Lifting \ud83c\udf56": 95,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 78,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 79,
     "Inventory \ud83d\udccb": 51,
     "Bathroom \ud83d\udebd": 34,
     "Case Maintenance \ud83e\uddfd": 32,
