@@ -23861,6 +23861,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-12T17:50:27.332734+00:00",
+      "total": 3384,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1100065",
+              "date": "2026-04-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -23914,13 +23939,13 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1167,
     "Lifting \ud83d\ude9a": 844,
-    "Producer \ud83e\udd66": 363,
-    "Flex \ud83e\udd6b": 190,
+    "Producer \ud83e\udd66": 362,
+    "Flex \ud83e\udd6b": 189,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 131,
     "Meat Processing & Lifting \ud83c\udf56": 95,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 83,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 81,
     "Inventory \ud83d\udccb": 51,
     "Bathroom \ud83d\udebd": 35,
     "Case Maintenance \ud83e\uddfd": 32,
@@ -23930,9 +23955,9 @@
     "Soup: Food Services \ud83c\udf72": 13,
     "Vitamins \ud83c\udf6c": 7,
     "Bread Stocking \ud83c\udf5e": 4,
-    "Office \ud83d\udcd7": 2,
     "Inventory: Produce \ud83c\udf40": 2,
     "Cart Return \ud83d\uded2": 1,
-    "CHiPS Volunteer Party": 1
+    "CHiPS Volunteer Party": 1,
+    "Office \ud83d\udcd7": 1
   }
 }
