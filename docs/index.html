@@ -690,7 +690,7 @@ function sparkleShiftLinks() {
 
 // --- Countdown timer with auto-refresh ---
 let refreshSecsLeft = -1; // -1 = not in refresh mode
-const REFRESH_WAIT = 60; // seconds to wait before refreshing data
+const REFRESH_WAIT = 120; // seconds to wait before refreshing data
 
 function updateCountdown() {
   const badge = document.getElementById('countdown-badge');
@@ -732,7 +732,7 @@ function updateCountdown() {
     refreshSecsLeft = REFRESH_WAIT;
     badge.classList.add('refreshing');
     label.textContent = 'Refreshing in ';
-    value.textContent = '01:00';
+    value.textContent = '02:00';
     return;
   }
 
