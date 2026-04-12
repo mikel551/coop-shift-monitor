@@ -1228,19 +1228,25 @@ function playCheckoutDing() {
   try {
     const ctx = getAudioCtx();
     if (ctx.state === 'suspended') return; // still locked, skip
-    // Double ding like a checkout scanner
-    [0, 0.15].forEach(offset => {
+    // Soft cheerful chime — three gentle ascending notes
+    const t = ctx.currentTime;
+    const notes = [
+      { freq: 523.25, time: 0,    dur: 0.4  }, // C5
+      { freq: 659.25, time: 0.12, dur: 0.35 }, // E5
+      { freq: 783.99, time: 0.24, dur: 0.5  }, // G5
+    ];
+    notes.forEach(n => {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.connect(gain);
       gain.connect(ctx.destination);
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(1318.5, ctx.currentTime + offset); // E6
-      osc.frequency.setValueAtTime(1568, ctx.currentTime + offset + 0.06); // G6
-      gain.gain.setValueAtTime(0.3, ctx.currentTime + offset);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + offset + 0.25);
-      osc.start(ctx.currentTime + offset);
-      osc.stop(ctx.currentTime + offset + 0.25);
+      osc.type = 'triangle'; // softer than sine
+      osc.frequency.setValueAtTime(n.freq, t + n.time);
+      gain.gain.setValueAtTime(0, t + n.time);
+      gain.gain.linearRampToValueAtTime(0.18, t + n.time + 0.03); // gentle attack
+      gain.gain.exponentialRampToValueAtTime(0.001, t + n.time + n.dur); // slow fade
+      osc.start(t + n.time);
+      osc.stop(t + n.time + n.dur);
     });
   } catch(e) { /* audio not supported */ }
 }
