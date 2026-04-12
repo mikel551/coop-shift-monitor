@@ -24504,6 +24504,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-12T21:30:30.513151+00:00",
+      "total": 3359,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1099265",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128222",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -24562,19 +24594,19 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1156,
+    "Stocking \ud83d\udce6": 1155,
     "Lifting \ud83d\ude9a": 844,
     "Producer \ud83e\udd66": 359,
-    "Flex \ud83e\udd6b": 188,
+    "Flex \ud83e\udd6b": 187,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 130,
-    "Meat Processing & Lifting \ud83c\udf56": 95,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 78,
+    "Meat Processing & Lifting \ud83c\udf56": 93,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 79,
     "Inventory \ud83d\udccb": 51,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 31,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 28,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 27,
     "Bulk Lifting \ud83e\uded8": 18,
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
@@ -24583,6 +24615,7 @@
     "Office \ud83d\udcd7": 2,
     "Inventory: Produce \ud83c\udf40": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "CHiPS Volunteer Party": 1,
     "General Meeting \ud83d\uddf3\ufe0f": 1
   }
