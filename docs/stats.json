@@ -20204,20 +20204,27 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-04-12T02:00:30.617072+00:00",
+      "total": 3325,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1098775",
-        "date": "2026-04-12",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -20258,15 +20265,15 @@
     "Stocking \ud83d\udce6": 1132,
     "Lifting \ud83d\ude9a": 831,
     "Producer \ud83e\udd66": 358,
-    "Flex \ud83e\udd6b": 194,
+    "Flex \ud83e\udd6b": 193,
     "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 96,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 74,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 73,
     "Inventory \ud83d\udccb": 52,
-    "Case Maintenance \ud83e\uddfd": 34,
     "Bathroom \ud83d\udebd": 34,
+    "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
     "Bulk Lifting \ud83e\uded8": 19,
     "Bins \ud83e\uddfc": 15,
@@ -20274,7 +20281,6 @@
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 2,
-    "Checkout \ud83d\udcb3": 1,
     "CHiPS Volunteer Party": 1,
     "Office \ud83d\udcd7": 1
   }
