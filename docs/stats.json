@@ -24536,27 +24536,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-12T21:40:28.390220+00:00",
+      "total": 3354,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1128222",
-        "date": "2026-04-12",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1099265",
-        "date": "2026-04-12",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -24594,15 +24594,15 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1155,
+    "Stocking \ud83d\udce6": 1153,
     "Lifting \ud83d\ude9a": 844,
     "Producer \ud83e\udd66": 359,
-    "Flex \ud83e\udd6b": 187,
+    "Flex \ud83e\udd6b": 185,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 130,
     "Meat Processing & Lifting \ud83c\udf56": 93,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 79,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 80,
     "Inventory \ud83d\udccb": 51,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 31,
@@ -24611,12 +24611,12 @@
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
     "Vitamins \ud83c\udf6c": 7,
-    "Checkout \ud83d\udcb3": 3,
     "Office \ud83d\udcd7": 2,
     "Inventory: Produce \ud83c\udf40": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "CHiPS Volunteer Party": 1,
-    "General Meeting \ud83d\uddf3\ufe0f": 1
+    "General Meeting \ud83d\uddf3\ufe0f": 1,
+    "Checkout \ud83d\udcb3": 1
   }
 }
