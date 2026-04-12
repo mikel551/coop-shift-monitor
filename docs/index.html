@@ -147,8 +147,11 @@
   }
   [data-theme="light"] .toggle-knob { transform: translateX(16px); }
 
-  .sound-toggle {
+  .sound-controls {
     position: fixed; top: 16px; right: 110px; z-index: 100;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .sound-toggle {
     display: flex; align-items: center; gap: 8px;
     background: var(--bg-card); border-radius: 24px; padding: 6px 12px;
     box-shadow: 0 2px 8px var(--shadow-card);
@@ -160,6 +163,19 @@
   .sound-toggle .toggle-track { background: var(--toggle-bg); }
   .sound-toggle.on .toggle-knob { transform: translateX(16px); }
   .sound-toggle.on .toggle-track { background: var(--accent); }
+  .sound-user-select {
+    background: var(--bg-card); border: 1px solid var(--countdown-border);
+    border-radius: 20px; padding: 5px 10px; font-size: 12px;
+    color: var(--text-primary); cursor: pointer;
+    box-shadow: 0 2px 8px var(--shadow-card);
+    outline: none; appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2394a3b8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 8px center;
+    padding-right: 22px;
+    transition: box-shadow 0.3s ease;
+  }
+  .sound-user-select:hover { box-shadow: 0 4px 14px var(--shadow-hover); }
+  .sound-controls:not(.on) .sound-user-select { opacity: 0.4; pointer-events: none; }
 
   .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: min(95vw, 1600px); margin: 0 auto; }
   @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
@@ -374,10 +390,17 @@
   </div>
 </div>
 
-<!-- Sound toggle -->
-<div class="sound-toggle" id="sound-toggle" onclick="toggleSound()" title="Toggle shift alert sound">
-  <span class="toggle-icon" id="sound-icon">&#128264;</span>
-  <div class="toggle-track"><div class="toggle-knob"></div></div>
+<!-- Sound controls -->
+<div class="sound-controls" id="sound-controls">
+  <div class="sound-toggle" id="sound-toggle" onclick="toggleSound()" title="Toggle shift alert sound">
+    <span class="toggle-icon" id="sound-icon">&#128264;</span>
+    <div class="toggle-track"><div class="toggle-knob"></div></div>
+  </div>
+  <select class="sound-user-select" id="sound-user" onchange="saveSoundUser()" title="Alert for which user?">
+    <option value="all">Everyone</option>
+    <option value="mike">Mike</option>
+    <option value="nancy">Nancy</option>
+  </select>
 </div>
 
 <!-- Theme toggle -->
@@ -1354,22 +1377,31 @@ function renderComparison(stats, previousPeriod) {
 
 // --- Sound toggle ---
 let _soundEnabled = localStorage.getItem('dashboard-sound') === 'on';
+let _soundUser = localStorage.getItem('dashboard-sound-user') || 'all';
 function applySoundToggle() {
   const el = document.getElementById('sound-toggle');
+  const controls = document.getElementById('sound-controls');
   const icon = document.getElementById('sound-icon');
   if (_soundEnabled) {
     el.classList.add('on');
-    icon.innerHTML = '&#128266;'; // speaker loud
+    controls.classList.add('on');
+    icon.innerHTML = '&#128266;';
   } else {
     el.classList.remove('on');
-    icon.innerHTML = '&#128264;'; // speaker quiet
+    controls.classList.remove('on');
+    icon.innerHTML = '&#128264;';
   }
+  document.getElementById('sound-user').value = _soundUser;
 }
 function toggleSound() {
   _soundEnabled = !_soundEnabled;
   localStorage.setItem('dashboard-sound', _soundEnabled ? 'on' : 'off');
   applySoundToggle();
-  if (_soundEnabled) playCheckoutDing(); // preview sound when turning on
+  if (_soundEnabled) playCheckoutDing();
+}
+function saveSoundUser() {
+  _soundUser = document.getElementById('sound-user').value;
+  localStorage.setItem('dashboard-sound-user', _soundUser);
 }
 applySoundToggle();
 
@@ -1414,9 +1446,10 @@ function playCheckoutDing() {
   } catch(e) { /* audio not supported */ }
 }
 
-function hasAvailableShifts(availableShifts) {
+function hasAvailableShifts(availableShifts, userFilter) {
   if (!availableShifts || Object.keys(availableShifts).length === 0) return false;
-  for (const shifts of Object.values(availableShifts)) {
+  for (const [user, shifts] of Object.entries(availableShifts)) {
+    if (userFilter && userFilter !== 'all' && user.toLowerCase() !== userFilter.toLowerCase()) continue;
     if (shifts.some(s => s.date)) return true;
   }
   return false;
@@ -1438,20 +1471,21 @@ function initDashboard(isRefresh) {
     renderTimeChart(stats);
     try { renderMemberStatus(data.member_status || {}); } catch(e) { console.error('renderMemberStatus error:', e); }
     renderAvailableShifts(data.available_shifts || {});
-    const shiftsAvailable = hasAvailableShifts(data.available_shifts || {});
+    const anyShiftsAvailable = hasAvailableShifts(data.available_shifts || {});
+    const userShiftsAvailable = hasAvailableShifts(data.available_shifts || {}, _soundUser);
     // Count total available shifts for tab title
     let shiftCount = 0;
-    if (shiftsAvailable) {
+    if (anyShiftsAvailable) {
       for (const shifts of Object.values(data.available_shifts || {})) {
         shiftCount += shifts.filter(s => s.date).length;
       }
     }
     updateTabTitle(shiftCount);
-    if (shiftsAvailable) {
-      playCheckoutDing();
+    if (anyShiftsAvailable) {
       sparkleShiftLinks();
       if (isRefresh) launchConfetti();
     }
+    if (userShiftsAvailable) playCheckoutDing();
     renderHeatmap(stats);
     renderOpenShiftsChart(stats);
     renderRecentShifts(stats);
