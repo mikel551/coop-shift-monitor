@@ -147,6 +147,20 @@
   }
   [data-theme="light"] .toggle-knob { transform: translateX(16px); }
 
+  .sound-toggle {
+    position: fixed; top: 16px; right: 110px; z-index: 100;
+    display: flex; align-items: center; gap: 8px;
+    background: var(--bg-card); border-radius: 24px; padding: 6px 12px;
+    box-shadow: 0 2px 8px var(--shadow-card);
+    cursor: pointer; user-select: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  .sound-toggle:hover { box-shadow: 0 4px 14px var(--shadow-hover); }
+  .sound-toggle .toggle-icon { font-size: 16px; line-height: 1; }
+  .sound-toggle .toggle-track { background: var(--toggle-bg); }
+  .sound-toggle.on .toggle-knob { transform: translateX(16px); }
+  .sound-toggle.on .toggle-track { background: var(--accent); }
+
   .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: min(95vw, 1600px); margin: 0 auto; }
   @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
   .card {
@@ -207,8 +221,37 @@
     background: rgba(16,185,129,0.1); border: 1px solid var(--accent);
     border-radius: 8px; color: var(--accent); text-decoration: none;
     font-size: 13px; font-weight: 500; transition: all 0.2s ease;
+    position: relative; overflow: hidden;
   }
   .shift-link:hover { background: var(--accent); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(16,185,129,0.3); }
+
+  /* Sparkle on shift links */
+  .shift-link.sparkle::before, .shift-link.sparkle::after {
+    content: ''; position: absolute; width: 4px; height: 4px; border-radius: 50%;
+    background: var(--accent-lighter); pointer-events: none;
+    animation: sparkleFloat 1.5s ease-out forwards;
+  }
+  .shift-link.sparkle::before { top: 30%; left: 20%; animation-delay: 0s; }
+  .shift-link.sparkle::after { top: 50%; left: 70%; animation-delay: 0.3s; }
+  @keyframes sparkleFloat {
+    0% { opacity: 1; transform: scale(0) translateY(0); }
+    50% { opacity: 1; transform: scale(1.5) translateY(-8px); }
+    100% { opacity: 0; transform: scale(0) translateY(-16px); }
+  }
+  .shift-link.sparkle-in {
+    animation: sparkleAppear 0.5s ease-out forwards;
+  }
+  @keyframes sparkleAppear {
+    0% { opacity: 0; transform: scale(0.8) translateY(8px); }
+    60% { transform: scale(1.05) translateY(-2px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  /* Confetti canvas */
+  .confetti-canvas {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 9999;
+  }
   .shift-link .shift-date { font-weight: 600; }
   .shift-link .shift-detail { opacity: 0.8; }
   .available-user { margin-bottom: 12px; }
@@ -329,6 +372,12 @@
     </form>
     <div class="login-error" id="login-error"></div>
   </div>
+</div>
+
+<!-- Sound toggle -->
+<div class="sound-toggle" id="sound-toggle" onclick="toggleSound()" title="Toggle shift alert sound">
+  <span class="toggle-icon" id="sound-icon">&#128264;</span>
+  <div class="toggle-track"><div class="toggle-knob"></div></div>
 </div>
 
 <!-- Theme toggle -->
@@ -523,6 +572,98 @@ function toggleTheme() {
 }
 // Load saved theme
 applyTheme(localStorage.getItem('dashboard-theme') || 'dark');
+
+// --- Confetti burst ---
+function launchConfetti() {
+  const canvas = document.createElement('canvas');
+  canvas.className = 'confetti-canvas';
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const colors = ['#10b981','#34d399','#6ee7b7','#a7f3d0','#fbbf24','#f472b6','#818cf8','#38bdf8'];
+  const pieces = [];
+  // Burst from the available-shifts card area
+  const card = document.getElementById('available-card');
+  const rect = card ? card.getBoundingClientRect() : { left: canvas.width/2, top: canvas.height/3, width: 200 };
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top;
+
+  for (let i = 0; i < 80; i++) {
+    const angle = (Math.random() * Math.PI * 2);
+    const speed = 3 + Math.random() * 6;
+    pieces.push({
+      x: cx, y: cy,
+      vx: Math.cos(angle) * speed * (0.5 + Math.random()),
+      vy: Math.sin(angle) * speed * -1.2 - Math.random() * 2,
+      size: 4 + Math.random() * 6,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rotation: Math.random() * 360,
+      rotSpeed: (Math.random() - 0.5) * 10,
+      life: 1,
+      shape: Math.random() > 0.5 ? 'rect' : 'circle',
+    });
+  }
+
+  let frame = 0;
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    let alive = false;
+    for (const p of pieces) {
+      if (p.life <= 0) continue;
+      alive = true;
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vy += 0.15; // gravity
+      p.vx *= 0.99;
+      p.rotation += p.rotSpeed;
+      p.life -= 0.008;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation * Math.PI / 180);
+      ctx.globalAlpha = Math.max(0, p.life);
+      ctx.fillStyle = p.color;
+      if (p.shape === 'rect') {
+        ctx.fillRect(-p.size/2, -p.size/4, p.size, p.size/2);
+      } else {
+        ctx.beginPath();
+        ctx.arc(0, 0, p.size/2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.restore();
+    }
+    frame++;
+    if (alive && frame < 300) {
+      requestAnimationFrame(animate);
+    } else {
+      canvas.remove();
+    }
+  }
+  requestAnimationFrame(animate);
+}
+
+// --- Tab title with shift count ---
+function updateTabTitle(count) {
+  document.title = count > 0
+    ? `(${count}) PSFC Shift Monitor`
+    : 'PSFC Shift Monitor Dashboard';
+}
+
+// --- Sparkle shift links ---
+function sparkleShiftLinks() {
+  const links = document.querySelectorAll('#available-shifts .shift-link');
+  links.forEach((link, i) => {
+    link.classList.add('sparkle-in');
+    link.style.animationDelay = `${i * 0.08}s`;
+    // Add the sparkle pseudo-element animation after appear
+    setTimeout(() => {
+      link.classList.add('sparkle');
+      // Remove sparkle class after animation completes so hover still works clean
+      setTimeout(() => link.classList.remove('sparkle'), 1600);
+    }, 300 + i * 80);
+  });
+}
 
 // --- Countdown timer with auto-refresh ---
 let refreshSecsLeft = -1; // -1 = not in refresh mode
@@ -1211,7 +1352,28 @@ function renderComparison(stats, previousPeriod) {
   document.getElementById('comparison-table').innerHTML = html;
 }
 
-// --- Supermarket checkout ding ---
+// --- Sound toggle ---
+let _soundEnabled = localStorage.getItem('dashboard-sound') === 'on';
+function applySoundToggle() {
+  const el = document.getElementById('sound-toggle');
+  const icon = document.getElementById('sound-icon');
+  if (_soundEnabled) {
+    el.classList.add('on');
+    icon.innerHTML = '&#128266;'; // speaker loud
+  } else {
+    el.classList.remove('on');
+    icon.innerHTML = '&#128264;'; // speaker quiet
+  }
+}
+function toggleSound() {
+  _soundEnabled = !_soundEnabled;
+  localStorage.setItem('dashboard-sound', _soundEnabled ? 'on' : 'off');
+  applySoundToggle();
+  if (_soundEnabled) playCheckoutDing(); // preview sound when turning on
+}
+applySoundToggle();
+
+// --- Checkout chime ---
 // Pre-create and unlock AudioContext on first user interaction
 let _audioCtx = null;
 function getAudioCtx() {
@@ -1225,6 +1387,7 @@ function getAudioCtx() {
 );
 
 function playCheckoutDing() {
+  if (!_soundEnabled) return;
   try {
     const ctx = getAudioCtx();
     if (ctx.state === 'suspended') return; // still locked, skip
@@ -1275,7 +1438,20 @@ function initDashboard(isRefresh) {
     renderTimeChart(stats);
     try { renderMemberStatus(data.member_status || {}); } catch(e) { console.error('renderMemberStatus error:', e); }
     renderAvailableShifts(data.available_shifts || {});
-    if (hasAvailableShifts(data.available_shifts || {})) playCheckoutDing();
+    const shiftsAvailable = hasAvailableShifts(data.available_shifts || {});
+    // Count total available shifts for tab title
+    let shiftCount = 0;
+    if (shiftsAvailable) {
+      for (const shifts of Object.values(data.available_shifts || {})) {
+        shiftCount += shifts.filter(s => s.date).length;
+      }
+    }
+    updateTabTitle(shiftCount);
+    if (shiftsAvailable) {
+      playCheckoutDing();
+      sparkleShiftLinks();
+      if (isRefresh) launchConfetti();
+    }
     renderHeatmap(stats);
     renderOpenShiftsChart(stats);
     renderRecentShifts(stats);
