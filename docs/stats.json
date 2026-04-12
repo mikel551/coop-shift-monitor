@@ -24337,6 +24337,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-12T20:40:30.445627+00:00",
+      "total": 3366,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1099265",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128222",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099867",
+              "date": "2026-04-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -24361,13 +24400,6 @@
         "date": "2026-04-13",
         "start": "13:00",
         "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1100105",
-        "date": "2026-04-13",
-        "start": "18:00",
-        "end": "18:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -24409,9 +24441,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1158,
+    "Stocking \ud83d\udce6": 1157,
     "Lifting \ud83d\ude9a": 842,
-    "Producer \ud83e\udd66": 360,
+    "Producer \ud83e\udd66": 359,
     "Flex \ud83e\udd6b": 189,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 132,
@@ -24426,10 +24458,11 @@
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
     "Vitamins \ud83c\udf6c": 7,
-    "Checkout \ud83d\udcb3": 5,
+    "Checkout \ud83d\udcb3": 4,
     "Inventory: Produce \ud83c\udf40": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "CHiPS Volunteer Party": 1,
+    "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Office \ud83d\udcd7": 1
   }
 }

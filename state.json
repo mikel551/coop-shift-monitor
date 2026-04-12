@@ -2,7 +2,6 @@
   "notified": {
     "Nancy": [
       "1128222",
-      "1100105",
       "1099265",
       "1099867"
     ],
@@ -24346,6 +24345,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-12T20:40:30.445627+00:00",
+      "total": 3366,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1099265",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128222",
+              "date": "2026-04-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1099867",
+              "date": "2026-04-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ]
 }
