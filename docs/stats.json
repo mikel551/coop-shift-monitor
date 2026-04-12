@@ -24638,10 +24638,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-12T22:40:35.677061+00:00",
+      "total": 3348,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1099989",
+              "date": "2026-04-13",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1099989",
+        "date": "2026-04-13",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -24697,10 +24732,10 @@
     "Soup: Food Services \ud83c\udf72": 14,
     "Vitamins \ud83c\udf6c": 7,
     "Office \ud83d\udcd7": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Inventory: Produce \ud83c\udf40": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "CHiPS Volunteer Party": 1,
-    "General Meeting \ud83d\uddf3\ufe0f": 1,
-    "Checkout \ud83d\udcb3": 1
+    "General Meeting \ud83d\uddf3\ufe0f": 1
   }
 }
