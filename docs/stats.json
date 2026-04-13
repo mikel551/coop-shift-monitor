@@ -29085,6 +29085,45 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-13T14:10:38.846406+00:00",
+      "total": 3442,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118135",
+              "date": "2026-05-11",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122766",
+              "date": "2026-05-18",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123138",
+              "date": "2026-05-18",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -29095,13 +29134,6 @@
         "date": "2026-05-11",
         "start": "08:00",
         "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1118389",
-        "date": "2026-05-11",
-        "start": "13:00",
-        "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -29157,27 +29189,83 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1201,
+    "Stocking \ud83d\udce6": 1200,
     "Lifting \ud83d\ude9a": 838,
     "Producer \ud83e\udd66": 373,
-    "Flex \ud83e\udd6b": 202,
+    "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 173,
     "Cleaning \ud83c\udfdd": 130,
     "Dairy Lifting \ud83e\udd5b": 125,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 94,
-    "Meat Processing & Lifting \ud83c\udf56": 84,
+    "Meat Processing & Lifting \ud83c\udf56": 83,
     "Inventory \ud83d\udccb": 62,
     "Case Maintenance \ud83e\uddfd": 35,
     "Bathroom \ud83d\udebd": 32,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 28,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 29,
+    "Soup: Food Services \ud83c\udf72": 17,
     "Bulk Lifting \ud83e\uded8": 17,
-    "Soup: Food Services \ud83c\udf72": 16,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 6,
-    "Checkout \ud83d\udcb3": 4,
     "Office \ud83d\udcd7": 3,
     "Inventory: Produce \ud83c\udf40": 3,
+    "Checkout \ud83d\udcb3": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "CHiPS Volunteer Party": 1
-  }
+  },
+  "user_config": [
+    {
+      "name": "Mike",
+      "shift_types": [
+        "Cart Return"
+      ],
+      "availability": [
+        {
+          "day": "Saturday",
+          "start": "17:00"
+        },
+        {
+          "day": "Sunday",
+          "end": "10:00"
+        },
+        {
+          "day": "Sunday",
+          "start": "17:00"
+        },
+        {
+          "day": "Monday",
+          "start": "17:00"
+        },
+        {
+          "day": "Tuesday",
+          "start": "18:00"
+        },
+        {
+          "day": "Wednesday",
+          "start": "18:00"
+        },
+        {
+          "day": "Thursday",
+          "start": "18:00"
+        },
+        {
+          "day": "Friday",
+          "start": "17:00"
+        }
+      ]
+    },
+    {
+      "name": "Nancy",
+      "shift_types": [
+        "Checkout"
+      ],
+      "availability": [
+        {
+          "day": "Monday"
+        },
+        {
+          "day": "Sunday"
+        }
+      ]
+    }
+  ]
 }
