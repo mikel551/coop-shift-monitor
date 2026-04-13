@@ -29628,6 +29628,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-13T18:50:38.713347+00:00",
+      "total": 3362,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1100107",
+              "date": "2026-04-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -29682,7 +29707,7 @@
     "Stocking \ud83d\udce6": 1182,
     "Lifting \ud83d\ude9a": 826,
     "Producer \ud83e\udd66": 365,
-    "Flex \ud83e\udd6b": 193,
+    "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 167,
     "Cleaning \ud83c\udfdd": 128,
     "Dairy Lifting \ud83e\udd5b": 125,
@@ -29699,6 +29724,7 @@
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Checkout \ud83d\udcb3": 1,
+    "Office \ud83d\udcd7": 1,
     "CHiPS Volunteer Party": 1
   },
   "user_config": [
