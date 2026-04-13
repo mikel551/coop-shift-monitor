@@ -25190,6 +25190,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-13T02:00:33.855870+00:00",
+      "total": 3341,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1100069",
+              "date": "2026-04-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -25241,15 +25266,15 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1152,
+    "Stocking \ud83d\udce6": 1151,
     "Lifting \ud83d\ude9a": 842,
-    "Producer \ud83e\udd66": 360,
+    "Producer \ud83e\udd66": 361,
     "Flex \ud83e\udd6b": 186,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 93,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 76,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 74,
     "Inventory \ud83d\udccb": 51,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 32,
