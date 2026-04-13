@@ -29124,6 +29124,45 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-13T14:20:33.293851+00:00",
+      "total": 3444,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118135",
+              "date": "2026-05-11",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122766",
+              "date": "2026-05-18",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123138",
+              "date": "2026-05-18",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -29192,7 +29231,7 @@
     "Stocking \ud83d\udce6": 1200,
     "Lifting \ud83d\ude9a": 838,
     "Producer \ud83e\udd66": 373,
-    "Flex \ud83e\udd6b": 200,
+    "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 173,
     "Cleaning \ud83c\udfdd": 130,
     "Dairy Lifting \ud83e\udd5b": 125,
@@ -29206,9 +29245,9 @@
     "Bulk Lifting \ud83e\uded8": 17,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 6,
-    "Office \ud83d\udcd7": 3,
+    "Checkout \ud83d\udcb3": 5,
+    "Office \ud83d\udcd7": 4,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Checkout \ud83d\udcb3": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "CHiPS Volunteer Party": 1
   },
