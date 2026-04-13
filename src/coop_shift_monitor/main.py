@@ -155,9 +155,31 @@ def main() -> None:
     append_run_stats(state, len(all_shifts), user_stats, pruned=pruned)
     save_state(state, state_path)
 
+    # Build user config for dashboard
+    user_config = []
+    for user in users:
+        uc = {
+            "name": user.name,
+            "shift_types": user.shift_types,
+            "availability": [
+                {
+                    "day": w.day,
+                    **({"start": w.start.strftime("%H:%M")} if w.start else {}),
+                    **({"end": w.end.strftime("%H:%M")} if w.end else {}),
+                }
+                for w in user.availability
+            ],
+        }
+        if user.date_range:
+            uc["date_range"] = {
+                "start": user.date_range[0].isoformat(),
+                "end": user.date_range[1].isoformat(),
+            }
+        user_config.append(uc)
+
     # Export dashboard JSON
     stats_out = Path(args.stats_out)
-    export_stats_json(state, stats_out, member_status=member_status, shift_type_counts=shift_type_counts)
+    export_stats_json(state, stats_out, member_status=member_status, shift_type_counts=shift_type_counts, user_config=user_config)
     log.info("Dashboard stats written to %s", stats_out)
 
     # Print summary to logs

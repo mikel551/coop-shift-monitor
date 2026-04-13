@@ -79,3 +79,4 @@ class User:
     availability: list[TimeWindow] = field(default_factory=list)
     notify: NotifyConfig = field(default_factory=NotifyConfig)
     credentials: tuple[str, str] | None = None
+    date_range: tuple[date, date] | None = None

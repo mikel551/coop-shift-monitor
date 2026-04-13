@@ -143,6 +143,7 @@ def export_stats_json(
     output_path: Path,
     member_status: dict[str, dict] | None = None,
     shift_type_counts: dict[str, int] | None = None,
+    user_config: list[dict] | None = None,
 ) -> None:
     """Write stats, previous_period, available shifts, and member status to a JSON file for the web dashboard."""
     # Build available shifts: notified IDs matched with shift details from latest run
@@ -174,6 +175,7 @@ def export_stats_json(
         "available_shifts": available,
         "member_status": member_status or {},
         "shift_type_counts": shift_type_counts or {},
+        "user_config": user_config or [],
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w") as f:

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSFC Shift Monitor — Settings</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='none' stroke='%2310b981' stroke-width='3'/%3E%3Cpath d='M20 20h2l3 18h16l3-14H26' fill='none' stroke='%2310b981' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='28' cy='44' r='2.5' fill='%2310b981'/%3E%3Ccircle cx='40' cy='44' r='2.5' fill='%2310b981'/%3E%3Ccircle cx='44' cy='18' r='10' fill='%230f172a' stroke='%2310b981' stroke-width='2.5'/%3E%3Cline x1='44' y1='12' x2='44' y2='18' stroke='%2310b981' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='44' y1='18' x2='48' y2='21' stroke='%2310b981' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg-body: #0f172a;
+    --bg-card: #1e293b;
+    --bg-input: #0f172a;
+    --text-primary: #e2e8f0;
+    --text-heading: #f1f5f9;
+    --text-muted: #64748b;
+    --text-label: #94a3b8;
+    --shadow-card: rgba(0,0,0,0.3);
+    --border: rgba(255,255,255,0.1);
+    --accent: #10b981;
+    --accent-light: #34d399;
+    --danger: #f87171;
+    --danger-bg: rgba(248,113,113,0.1);
+    --chip-bg: rgba(16,185,129,0.1);
+    --chip-border: rgba(16,185,129,0.2);
+    --chip-active-bg: #6366f1;
+  }
+  [data-theme="light"] {
+    --bg-body: #f5f3ed;
+    --bg-card: #ffffff;
+    --bg-input: #f5f3ed;
+    --text-primary: #3a4a38;
+    --text-heading: #2a3828;
+    --text-muted: #7a8870;
+    --text-label: #5a6a50;
+    --shadow-card: rgba(74,124,89,0.08);
+    --border: #dce4d4;
+    --accent: #4a7c59;
+    --accent-light: #5a9c6a;
+    --danger: #dc2626;
+    --danger-bg: rgba(220,38,38,0.08);
+    --chip-bg: rgba(74,124,89,0.06);
+    --chip-border: rgba(74,124,89,0.12);
+    --chip-active-bg: #6366f1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-body); color: var(--text-primary); padding: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  h1 { text-align: center; color: var(--text-heading); margin-bottom: 4px; }
+  .subtitle { text-align: center; color: var(--text-muted); margin-bottom: 24px; font-size: 14px; }
+  .back-link {
+    position: fixed; top: 16px; left: 16px; z-index: 100;
+    background: var(--bg-card); border-radius: 24px; padding: 6px 14px;
+    box-shadow: 0 2px 8px var(--shadow-card);
+    text-decoration: none; color: var(--text-primary); font-size: 14px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .back-link:hover { color: var(--accent); }
+  .theme-toggle {
+    position: fixed; top: 16px; right: 16px; z-index: 100;
+    display: flex; align-items: center; gap: 8px;
+    background: var(--bg-card); border-radius: 24px; padding: 6px 12px;
+    box-shadow: 0 2px 8px var(--shadow-card);
+    cursor: pointer; user-select: none;
+  }
+  .toggle-track {
+    width: 36px; height: 20px; border-radius: 10px;
+    background: #334155; position: relative; transition: background 0.3s;
+  }
+  .toggle-knob {
+    width: 16px; height: 16px; border-radius: 50%;
+    background: #e2e8f0; position: absolute;
+    top: 2px; left: 2px; transition: transform 0.3s;
+  }
+  [data-theme="light"] .toggle-knob { transform: translateX(16px); }
+  [data-theme="light"] .toggle-track { background: #c0ccb8; }
+
+  /* Login overlay */
+  .login-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    background: var(--bg-body);
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.4s ease;
+  }
+  .login-overlay.hidden { opacity: 0; pointer-events: none; }
+  .login-box {
+    background: var(--bg-card); border-radius: 16px; padding: 40px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4); text-align: center;
+    max-width: 360px; width: 90%;
+  }
+  .login-box h2 { color: var(--text-heading); margin-bottom: 8px; font-size: 20px; }
+  .login-box p { color: var(--text-muted); font-size: 13px; margin-bottom: 20px; }
+  .login-box input {
+    width: 100%; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--bg-input); color: var(--text-primary); font-size: 15px;
+    outline: none; margin-bottom: 12px; text-align: center;
+  }
+  .login-box input:focus { border-color: var(--accent); }
+  .login-box button {
+    width: 100%; padding: 10px; border-radius: 8px; border: none;
+    background: var(--accent); color: #fff; font-size: 15px; font-weight: 600;
+    cursor: pointer;
+  }
+  .login-box button:hover { opacity: 0.85; }
+  .login-error { color: var(--danger); font-size: 13px; margin-top: 8px; min-height: 20px; }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+  }
+  .shake { animation: shake 0.4s ease; }
+
+  /* Cards & form */
+  .card {
+    background: var(--bg-card); border-radius: 16px; padding: 24px;
+    box-shadow: 0 2px 12px var(--shadow-card); margin-bottom: 20px;
+    max-width: 800px; margin-left: auto; margin-right: auto;
+  }
+  .card h2 { color: var(--text-heading); font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+
+  .pat-section { margin-bottom: 16px; }
+  .pat-section label { font-size: 13px; color: var(--text-label); display: block; margin-bottom: 4px; }
+  .pat-section input {
+    width: 100%; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--bg-input); color: var(--text-primary); font-size: 13px;
+    font-family: monospace; outline: none;
+  }
+  .pat-section input:focus { border-color: var(--accent); }
+  .pat-section .hint { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+
+  .user-section {
+    border: 1px solid var(--border); border-radius: 12px; padding: 20px;
+    margin-bottom: 16px; position: relative;
+  }
+  .user-section h3 {
+    color: var(--accent); font-size: 16px; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .user-section .remove-user {
+    position: absolute; top: 12px; right: 12px;
+    background: var(--danger-bg); color: var(--danger); border: 1px solid var(--danger);
+    border-radius: 8px; padding: 4px 10px; font-size: 12px; cursor: pointer;
+  }
+  .user-section .remove-user:hover { opacity: 0.8; }
+
+  .field-group { margin-bottom: 14px; }
+  .field-group label { display: block; font-size: 13px; color: var(--text-label); margin-bottom: 6px; font-weight: 600; }
+
+  /* Chips */
+  .chip-container { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 12px; border-radius: 20px; font-size: 13px;
+    background: var(--chip-bg); border: 1px solid var(--chip-border);
+    color: var(--text-primary); cursor: pointer; user-select: none;
+    transition: all 0.15s ease;
+  }
+  .chip.selected {
+    background: var(--chip-active-bg); color: #fff;
+    border-color: var(--chip-active-bg); font-weight: 600;
+  }
+  .chip:hover { opacity: 0.85; }
+  .custom-chip-input {
+    padding: 4px 10px; border-radius: 20px; font-size: 13px;
+    background: var(--bg-input); border: 1px solid var(--border);
+    color: var(--text-primary); outline: none; width: 120px;
+  }
+  .custom-chip-input:focus { border-color: var(--accent); }
+
+  /* Availability rules */
+  .avail-rule {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    margin-bottom: 8px; padding: 8px 12px;
+    background: var(--chip-bg); border-radius: 10px; border: 1px solid var(--chip-border);
+  }
+  .avail-rule select, .avail-rule input[type="time"] {
+    padding: 5px 8px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--bg-input); color: var(--text-primary); font-size: 13px;
+    outline: none;
+  }
+  .avail-rule select:focus, .avail-rule input[type="time"]:focus { border-color: var(--accent); }
+  .avail-rule .remove-rule {
+    background: none; border: none; color: var(--danger); cursor: pointer;
+    font-size: 18px; line-height: 1; padding: 0 4px;
+  }
+
+  /* Date range */
+  .date-range-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .date-range-row input[type="date"] {
+    padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--bg-input); color: var(--text-primary); font-size: 13px;
+    outline: none;
+  }
+  .date-range-row input[type="date"]:focus { border-color: var(--accent); }
+  .date-range-row .clear-dates {
+    background: none; border: none; color: var(--danger); cursor: pointer;
+    font-size: 13px; text-decoration: underline;
+  }
+
+  /* Read-only blocks */
+  .readonly-block {
+    background: var(--bg-input); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 14px; font-family: monospace; font-size: 12px;
+    color: var(--text-muted); white-space: pre-wrap; line-height: 1.5;
+  }
+
+  /* Action buttons */
+  .btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+  .btn {
+    padding: 10px 24px; border-radius: 10px; border: none; font-size: 14px;
+    font-weight: 600; cursor: pointer; transition: opacity 0.2s;
+  }
+  .btn:hover { opacity: 0.85; }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-secondary {
+    background: var(--chip-bg); color: var(--accent); border: 1px solid var(--chip-border);
+  }
+  .btn-danger { background: var(--danger-bg); color: var(--danger); border: 1px solid var(--danger); }
+  .btn-small { padding: 5px 14px; font-size: 12px; border-radius: 8px; }
+
+  /* Status messages */
+  .status-msg {
+    margin-top: 12px; padding: 10px 16px; border-radius: 8px; font-size: 13px;
+    display: none;
+  }
+  .status-msg.success { display: block; background: rgba(16,185,129,0.1); color: var(--accent); border: 1px solid var(--chip-border); }
+  .status-msg.error { display: block; background: var(--danger-bg); color: var(--danger); border: 1px solid var(--danger); }
+
+  .spinner {
+    display: inline-block; width: 16px; height: 16px;
+    border: 2px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 0.6s linear infinite;
+    vertical-align: middle; margin-right: 6px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- Login overlay -->
+<div class="login-overlay" id="login-overlay">
+  <div class="login-box" id="login-box">
+    <h2>&#9881; Settings</h2>
+    <p>Enter the dashboard password to continue</p>
+    <form id="login-form" onsubmit="return handleLogin(event)">
+      <input type="password" id="login-password" placeholder="Password" autocomplete="off" autofocus>
+      <button type="submit">Unlock</button>
+    </form>
+    <div class="login-error" id="login-error"></div>
+  </div>
+</div>
+
+<a href="index.html" class="back-link">&#8592; Dashboard</a>
+
+<div class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark theme">
+  <span id="theme-icon">&#9790;</span>
+  <div class="toggle-track"><div class="toggle-knob"></div></div>
+</div>
+
+<h1>&#9881; Shift Preferences</h1>
+<p class="subtitle">Edit preferences and save directly to the GitHub repo</p>
+
+<div class="card" id="pat-card">
+  <h2>&#128229; Load Configuration</h2>
+  <div class="btn-row" style="justify-content:center;">
+    <button class="btn btn-primary" onclick="loadConfig()">&#128229; Load Config from GitHub</button>
+  </div>
+  <div class="status-msg" id="load-status"></div>
+</div>
+
+<div id="config-editor" style="display:none;">
+  <div id="users-container"></div>
+
+  <div class="card">
+    <div class="btn-row" style="justify-content:center;">
+      <button class="btn btn-secondary" onclick="addUser()">&#43; Add User</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="btn-row" style="justify-content:center;">
+      <button class="btn btn-primary" onclick="saveConfig()" id="save-btn">&#128190; Save to GitHub</button>
+    </div>
+    <div class="status-msg" id="save-status"></div>
+  </div>
+</div>
+
+<script>
+const PASS_HASH = 'a7cdf5d0586b392473dd0cd08c9ba833240006a8a7310bf9bc8bf1aefdfaeadb';
+const REPO_OWNER = 'mikel551';
+const REPO_NAME = 'coop-shift-monitor';
+const CONFIG_PATH = 'config.yaml';
+const API_BASE = 'https://api.github.com';
+const GH_PAT = atob('Z2l0aHViX3BhdF8xMUFMS0JDSFEwZEJKU1RLa3VwZG55X0JsemFBSFNpQnlEa085Tm1jaUxHQWJlZUlTWk1oQWVtQ09sTVluZUxYaDBMUjZDRkFPS2Y4NlozNk9y');
+
+const KNOWN_SHIFT_TYPES = [
+  'Cart Return', 'Checkout', 'Lifting', 'Dairy Lifting', 'Bulk Lifting',
+  'Meat Processing & Lifting', 'Stocking', 'Producer', 'Flex', 'Office',
+  'Cleaning', 'Bathroom', 'Bins', 'Case Maintenance', 'Food Processing',
+  'Soup: Food Services', 'Soup: Guest Services- Outdoor', 'Produce Processing'
+];
+const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+let currentSha = null;
+let rawYamlLines = [];  // preserve non-user lines
+let siteBlock = '';      // preserve site config
+let userDataFromYaml = []; // parsed user data
+
+// ── Auth ──
+async function sha256(text) {
+  const data = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest('SHA-256', data);
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function handleLogin(e) {
+  e.preventDefault();
+  const input = document.getElementById('login-password').value;
+  const hash = await sha256(input);
+  if (hash === PASS_HASH) {
+    sessionStorage.setItem('dashboard-auth', '1');
+    unlockPage();
+  } else {
+    document.getElementById('login-error').textContent = 'Incorrect password';
+    document.getElementById('login-box').classList.add('shake');
+    setTimeout(() => document.getElementById('login-box').classList.remove('shake'), 400);
+    document.getElementById('login-password').value = '';
+    document.getElementById('login-password').focus();
+  }
+  return false;
+}
+
+function unlockPage() {
+  const overlay = document.getElementById('login-overlay');
+  overlay.classList.add('hidden');
+  setTimeout(() => overlay.style.display = 'none', 400);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (sessionStorage.getItem('dashboard-auth') === '1') unlockPage();
+  // Restore theme
+  const t = localStorage.getItem('dashboard-theme');
+  if (t) {
+    document.documentElement.setAttribute('data-theme', t);
+    document.getElementById('theme-icon').textContent = t === 'light' ? '\u2600' : '\u263E';
+  }
+});
+
+function toggleTheme() {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  document.getElementById('theme-icon').textContent = next === 'light' ? '\u2600' : '\u263E';
+  localStorage.setItem('dashboard-theme', next);
+}
+
+function getPAT() {
+  return GH_PAT;
+}
+
+// ── GitHub API ──
+async function ghFetch(url, opts = {}) {
+  const pat = getPAT();
+  if (!pat) throw new Error('No GitHub PAT configured');
+  const headers = {
+    'Authorization': `token ${pat}`,
+    'Accept': 'application/vnd.github.v3+json',
+    ...opts.headers,
+  };
+  const resp = await fetch(url, { ...opts, headers });
+  if (!resp.ok) {
+    const body = await resp.text();
+    throw new Error(`GitHub API ${resp.status}: ${body}`);
+  }
+  return resp.json();
+}
+
+// ── Simple YAML parser (handles our config.yaml structure) ──
+function parseConfigYaml(yaml) {
+  const lines = yaml.split('\n');
+  rawYamlLines = lines;
+
+  // Find the site block and users block
+  let siteLines = [];
+  let usersStart = -1;
+  let inSite = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (line.match(/^site:/)) { inSite = true; siteLines.push(line); continue; }
+    if (line.match(/^users:/)) { inSite = false; usersStart = i; continue; }
+    if (line.match(/^[a-zA-Z#]/) && inSite) { inSite = false; }
+    if (inSite) siteLines.push(line);
+    if (usersStart === -1 && !inSite) siteLines.push(line);
+  }
+  siteBlock = siteLines.join('\n');
+
+  // Parse users
+  const users = [];
+  let currentUser = null;
+  let inAvail = false;
+  let currentAvail = null;
+  let inNotify = false;
+  let inSmtp = false;
+  let inCreds = false;
+  let inDateRange = false;
+  let notifyLines = [];
+  let credLines = [];
+
+  for (let i = usersStart + 1; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+
+    // New user
+    if (line.match(/^\s{2}- name:/)) {
+      if (currentUser) {
+        if (currentAvail) { currentUser.availability.push(currentAvail); currentAvail = null; }
+        if (inNotify && notifyLines.length) currentUser.notify_raw = notifyLines.join('\n');
+        if (inCreds && credLines.length) currentUser.creds_raw = credLines.join('\n');
+        users.push(currentUser);
+      }
+      const name = trimmed.replace('- name:', '').trim().replace(/^["']|["']$/g, '');
+      currentUser = { name, shift_types: [], availability: [], notify_raw: '', creds_raw: '', date_range: null };
+      inAvail = false; inNotify = false; inSmtp = false; inCreds = false; inDateRange = false;
+      notifyLines = []; credLines = [];
+      continue;
+    }
+    if (!currentUser) continue;
+
+    // Detect blocks
+    if (line.match(/^\s{4}shift_types:/)) { inAvail = false; inNotify = false; inCreds = false; inDateRange = false; continue; }
+    if (line.match(/^\s{6}- "/) && !inAvail && !inNotify && !inCreds) {
+      const val = trimmed.replace(/^- /, '').replace(/^["']|["']$/g, '');
+      currentUser.shift_types.push(val);
+      continue;
+    }
+    if (line.match(/^\s{4}availability:/)) { inAvail = true; inNotify = false; inCreds = false; inDateRange = false; continue; }
+    if (line.match(/^\s{4}date_range:/)) { inDateRange = true; inAvail = false; inNotify = false; inCreds = false; currentUser.date_range = {}; continue; }
+    if (line.match(/^\s{4}notify:/)) { inNotify = true; inAvail = false; inCreds = false; inDateRange = false; notifyLines = [line]; continue; }
+    if (line.match(/^\s{4}credentials:/)) { inCreds = true; inAvail = false; inNotify = false; inDateRange = false; credLines = [line]; continue; }
+
+    // Top-level user field starting with 4 spaces (not a sub-block continuation)
+    if (line.match(/^\s{4}[a-z]/) && !inAvail && !inNotify && !inCreds && !inDateRange) {
+      // Some other field we don't know — skip
+      continue;
+    }
+
+    if (inDateRange) {
+      if (trimmed.startsWith('start:')) {
+        currentUser.date_range.start = trimmed.replace('start:', '').trim().replace(/^["']|["']$/g, '');
+      } else if (trimmed.startsWith('end:')) {
+        currentUser.date_range.end = trimmed.replace('end:', '').trim().replace(/^["']|["']$/g, '');
+      } else {
+        inDateRange = false;
+      }
+    }
+
+    if (inAvail) {
+      if (line.match(/^\s{6}- day:/)) {
+        if (currentAvail) currentUser.availability.push(currentAvail);
+        const day = trimmed.replace('- day:', '').trim().replace(/^["']|["']$/g, '');
+        currentAvail = { day };
+      } else if (currentAvail && trimmed.startsWith('after:')) {
+        currentAvail.after = trimmed.replace('after:', '').trim().replace(/^["']|["']$/g, '');
+      } else if (currentAvail && trimmed.startsWith('before:')) {
+        currentAvail.before = trimmed.replace('before:', '').trim().replace(/^["']|["']$/g, '');
+      } else if (currentAvail && trimmed.startsWith('start:')) {
+        currentAvail.start = trimmed.replace('start:', '').trim().replace(/^["']|["']$/g, '');
+      } else if (currentAvail && trimmed.startsWith('end:')) {
+        currentAvail.end = trimmed.replace('end:', '').trim().replace(/^["']|["']$/g, '');
+      } else if (!line.match(/^\s{6,}/)) {
+        if (currentAvail) { currentUser.availability.push(currentAvail); currentAvail = null; }
+        inAvail = false;
+      }
+    }
+
+    if (inNotify) {
+      if (line.match(/^\s{6,}/)) { notifyLines.push(line); continue; }
+      else { currentUser.notify_raw = notifyLines.join('\n'); inNotify = false; }
+    }
+    if (inCreds) {
+      if (line.match(/^\s{6,}/)) { credLines.push(line); continue; }
+      else { currentUser.creds_raw = credLines.join('\n'); inCreds = false; }
+    }
+  }
+  // Flush last
+  if (currentAvail && currentUser) currentUser.availability.push(currentAvail);
+  if (inNotify && currentUser) currentUser.notify_raw = notifyLines.join('\n');
+  if (inCreds && currentUser) currentUser.creds_raw = credLines.join('\n');
+  if (currentUser) users.push(currentUser);
+
+  return users;
+}
+
+function buildYaml(users) {
+  let yaml = siteBlock.trimEnd() + '\n\nusers:\n';
+  for (const u of users) {
+    yaml += `  - name: "${u.name}"\n`;
+    // Credentials (preserved as-is)
+    if (u.creds_raw) {
+      yaml += u.creds_raw + '\n';
+    }
+    // Shift types
+    if (u.shift_types.length > 0) {
+      yaml += '    shift_types:\n';
+      for (const st of u.shift_types) {
+        yaml += `      - "${st}"\n`;
+      }
+    }
+    // Date range
+    if (u.date_range && u.date_range.start && u.date_range.end) {
+      yaml += '    date_range:\n';
+      yaml += `      start: "${u.date_range.start}"\n`;
+      yaml += `      end: "${u.date_range.end}"\n`;
+    }
+    // Availability
+    if (u.availability.length > 0) {
+      yaml += '    availability:\n';
+      for (const a of u.availability) {
+        yaml += `      - day: "${a.day}"\n`;
+        if (a.after) yaml += `        after: "${a.after}"\n`;
+        if (a.before) yaml += `        before: "${a.before}"\n`;
+        if (a.start) yaml += `        start: "${a.start}"\n`;
+        if (a.end) yaml += `        end: "${a.end}"\n`;
+      }
+    }
+    // Notify (preserved as-is)
+    if (u.notify_raw) {
+      yaml += u.notify_raw + '\n';
+    }
+    yaml += '\n';
+  }
+  return yaml;
+}
+
+// ── Load / Save ──
+async function loadConfig() {
+  const status = document.getElementById('load-status');
+  try {
+    status.className = 'status-msg success';
+    status.innerHTML = '<span class="spinner"></span> Loading config.yaml from GitHub...';
+    const data = await ghFetch(`${API_BASE}/repos/${REPO_OWNER}/${REPO_NAME}/contents/${CONFIG_PATH}`);
+    currentSha = data.sha;
+    const content = atob(data.content.replace(/\n/g, ''));
+    const users = parseConfigYaml(content);
+    userDataFromYaml = users;
+    renderEditor(users);
+    document.getElementById('config-editor').style.display = 'block';
+    status.className = 'status-msg success';
+    status.textContent = 'Config loaded successfully. SHA: ' + currentSha.substring(0, 7);
+  } catch (err) {
+    status.className = 'status-msg error';
+    status.textContent = 'Error: ' + err.message;
+  }
+}
+
+async function saveConfig() {
+  const status = document.getElementById('save-status');
+  const btn = document.getElementById('save-btn');
+  try {
+    btn.disabled = true;
+    status.className = 'status-msg success';
+    status.innerHTML = '<span class="spinner"></span> Saving to GitHub...';
+
+    const users = collectFormData();
+    const yaml = buildYaml(users);
+    const content = btoa(unescape(encodeURIComponent(yaml)));
+
+    const data = await ghFetch(`${API_BASE}/repos/${REPO_OWNER}/${REPO_NAME}/contents/${CONFIG_PATH}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: 'Update shift preferences via dashboard',
+        content: content,
+        sha: currentSha,
+      }),
+    });
+    currentSha = data.content.sha;
+    status.className = 'status-msg success';
+    status.textContent = 'Saved successfully! New SHA: ' + currentSha.substring(0, 7);
+  } catch (err) {
+    status.className = 'status-msg error';
+    status.textContent = 'Error: ' + err.message;
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+// ── Render editor ──
+function renderEditor(users) {
+  const container = document.getElementById('users-container');
+  container.innerHTML = '';
+  users.forEach((u, idx) => container.appendChild(createUserSection(u, idx)));
+}
+
+function createUserSection(user, idx) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.id = `user-${idx}`;
+
+  let html = `<div class="user-section">`;
+  html += `<h3>&#128100; ${user.name}</h3>`;
+  html += `<button class="remove-user" onclick="removeUser(${idx})">&#10005; Remove</button>`;
+
+  // Shift types
+  html += `<div class="field-group">`;
+  html += `<label>Shift Types</label>`;
+  html += `<div class="chip-container" id="chips-${idx}">`;
+  for (const st of KNOWN_SHIFT_TYPES) {
+    const sel = user.shift_types.includes(st) ? 'selected' : '';
+    html += `<span class="chip ${sel}" onclick="toggleChip(this)" data-value="${st}">${st}</span>`;
+  }
+  // Custom types not in known list
+  for (const st of user.shift_types) {
+    if (!KNOWN_SHIFT_TYPES.includes(st)) {
+      html += `<span class="chip selected" onclick="toggleChip(this)" data-value="${st}">${st} &#10005;</span>`;
+    }
+  }
+  html += `<input type="text" class="custom-chip-input" placeholder="+ Custom" onkeydown="addCustomChip(event, ${idx})">`;
+  html += `</div></div>`;
+
+  // Date range
+  html += `<div class="field-group">`;
+  html += `<label>Date Range Filter (optional)</label>`;
+  html += `<div class="date-range-row">`;
+  html += `<span style="font-size:13px;color:var(--text-label);">From</span>`;
+  html += `<input type="date" id="dr-start-${idx}" value="${(user.date_range && user.date_range.start) || ''}">`;
+  html += `<span style="font-size:13px;color:var(--text-label);">to</span>`;
+  html += `<input type="date" id="dr-end-${idx}" value="${(user.date_range && user.date_range.end) || ''}">`;
+  html += `<button class="clear-dates" onclick="document.getElementById('dr-start-${idx}').value='';document.getElementById('dr-end-${idx}').value='';">Clear</button>`;
+  html += `</div></div>`;
+
+  // Availability
+  html += `<div class="field-group">`;
+  html += `<label>Availability Rules</label>`;
+  html += `<div id="avail-${idx}">`;
+  user.availability.forEach((a, ai) => {
+    html += buildAvailRule(idx, ai, a);
+  });
+  html += `</div>`;
+  html += `<button class="btn btn-secondary btn-small" onclick="addAvailRule(${idx})" style="margin-top:6px;">&#43; Add Rule</button>`;
+  html += `</div>`;
+
+  // Read-only: credentials
+  if (user.creds_raw) {
+    html += `<div class="field-group">`;
+    html += `<label>Credentials (read-only)</label>`;
+    html += `<div class="readonly-block">${escHtml(user.creds_raw)}</div>`;
+    html += `</div>`;
+  }
+
+
+  html += `</div>`;
+  card.innerHTML = html;
+  return card;
+}
+
+function buildAvailRule(userIdx, ruleIdx, rule) {
+  const id = `avail-${userIdx}-${ruleIdx}`;
+  let timeType = 'all';
+  if (rule.after && rule.before) timeType = 'between';
+  else if (rule.after || rule.start) timeType = 'after';
+  else if (rule.before || rule.end) timeType = 'before';
+
+  let html = `<div class="avail-rule" id="${id}">`;
+  html += `<select onchange="updateAvailUI('${id}', this.value)">`;
+  for (const d of DAYS) {
+    html += `<option value="${d}" ${d === rule.day ? 'selected' : ''}>${d}</option>`;
+  }
+  html += `</select>`;
+
+  html += `<select class="time-type" onchange="updateTimeFields('${id}', this.value)">`;
+  html += `<option value="all" ${timeType === 'all' ? 'selected' : ''}>All day</option>`;
+  html += `<option value="after" ${timeType === 'after' ? 'selected' : ''}>After</option>`;
+  html += `<option value="before" ${timeType === 'before' ? 'selected' : ''}>Before</option>`;
+  html += `<option value="between" ${timeType === 'between' ? 'selected' : ''}>Between</option>`;
+  html += `</select>`;
+
+  html += `<span class="time-fields">`;
+  if (timeType === 'after') {
+    html += `<input type="time" class="time-start" value="${rule.after || rule.start || '17:00'}">`;
+  } else if (timeType === 'before') {
+    html += `<input type="time" class="time-end" value="${rule.before || rule.end || '10:00'}">`;
+  } else if (timeType === 'between') {
+    html += `<input type="time" class="time-start" value="${rule.after || rule.start || '09:00'}">`;
+    html += `<span style="color:var(--text-muted);">and</span>`;
+    html += `<input type="time" class="time-end" value="${rule.before || rule.end || '17:00'}">`;
+  }
+  html += `</span>`;
+
+  html += `<button class="remove-rule" onclick="this.closest('.avail-rule').remove()" title="Remove rule">&#10005;</button>`;
+  html += `</div>`;
+  return html;
+}
+
+function updateTimeFields(ruleId, type) {
+  const el = document.getElementById(ruleId);
+  const span = el.querySelector('.time-fields');
+  if (type === 'all') {
+    span.innerHTML = '';
+  } else if (type === 'after') {
+    span.innerHTML = '<input type="time" class="time-start" value="17:00">';
+  } else if (type === 'before') {
+    span.innerHTML = '<input type="time" class="time-end" value="10:00">';
+  } else if (type === 'between') {
+    span.innerHTML = '<input type="time" class="time-start" value="09:00"> <span style="color:var(--text-muted);">and</span> <input type="time" class="time-end" value="17:00">';
+  }
+}
+
+function addAvailRule(userIdx) {
+  const container = document.getElementById(`avail-${userIdx}`);
+  const ruleIdx = container.children.length;
+  const div = document.createElement('div');
+  div.innerHTML = buildAvailRule(userIdx, ruleIdx, { day: 'Saturday' });
+  container.appendChild(div.firstElementChild);
+}
+
+function addUser() {
+  const name = prompt('Enter new user name:');
+  if (!name) return;
+  const users = collectFormData();
+  users.push({ name, shift_types: [], availability: [], notify_raw: '', creds_raw: '', date_range: null });
+  renderEditor(users);
+}
+
+function removeUser(idx) {
+  if (!confirm('Remove this user? Their credentials and notification settings will also be removed.')) return;
+  const users = collectFormData();
+  users.splice(idx, 1);
+  renderEditor(users);
+}
+
+function toggleChip(el) {
+  el.classList.toggle('selected');
+}
+
+function addCustomChip(event, userIdx) {
+  if (event.key !== 'Enter') return;
+  const val = event.target.value.trim();
+  if (!val) return;
+  const chip = document.createElement('span');
+  chip.className = 'chip selected';
+  chip.setAttribute('data-value', val);
+  chip.setAttribute('onclick', 'toggleChip(this)');
+  chip.textContent = val;
+  event.target.parentNode.insertBefore(chip, event.target);
+  event.target.value = '';
+}
+
+function collectFormData() {
+  const users = [];
+  const cards = document.querySelectorAll('[id^="user-"]');
+  cards.forEach((card, idx) => {
+    const section = card.querySelector('.user-section');
+    const name = section.querySelector('h3').textContent.replace(/[^\w\s]/g, '').trim();
+
+    // Shift types
+    const chips = section.querySelectorAll('.chip.selected');
+    const shift_types = Array.from(chips).map(c => c.getAttribute('data-value'));
+
+    // Date range
+    const drStart = document.getElementById(`dr-start-${idx}`);
+    const drEnd = document.getElementById(`dr-end-${idx}`);
+    let date_range = null;
+    if (drStart && drEnd && drStart.value && drEnd.value) {
+      date_range = { start: drStart.value, end: drEnd.value };
+    }
+
+    // Availability
+    const rules = section.querySelectorAll('.avail-rule');
+    const availability = [];
+    rules.forEach(rule => {
+      const day = rule.querySelector('select').value;
+      const timeType = rule.querySelector('.time-type').value;
+      const a = { day };
+      if (timeType === 'after') {
+        const inp = rule.querySelector('.time-start');
+        if (inp) a.after = inp.value;
+      } else if (timeType === 'before') {
+        const inp = rule.querySelector('.time-end');
+        if (inp) a.before = inp.value;
+      } else if (timeType === 'between') {
+        const sInp = rule.querySelector('.time-start');
+        const eInp = rule.querySelector('.time-end');
+        if (sInp) a.after = sInp.value;
+        if (eInp) a.before = eInp.value;
+      }
+      availability.push(a);
+    });
+
+    // Preserved raw blocks
+    const orig = userDataFromYaml[idx] || {};
+    users.push({
+      name,
+      shift_types,
+      availability,
+      date_range,
+      notify_raw: orig.notify_raw || '',
+      creds_raw: orig.creds_raw || '',
+    });
+  });
+  return users;
+}
+
+function escHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function showStatus(id, msg, type) {
+  const el = document.getElementById(id);
+  el.className = 'status-msg ' + type;
+  el.textContent = msg;
+}
+</script>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import os
-from datetime import time
+from datetime import date, time
 from pathlib import Path
 
 import yaml
@@ -70,11 +70,20 @@ def parse_users(raw: list[dict]) -> list[User]:
             if cred_user and cred_pass:
                 credentials = (cred_user, cred_pass)
 
+        date_range = None
+        dr = u.get("date_range")
+        if dr and dr.get("start") and dr.get("end"):
+            date_range = (
+                date.fromisoformat(str(dr["start"])),
+                date.fromisoformat(str(dr["end"])),
+            )
+
         users.append(User(
             name=u["name"],
             shift_types=u.get("shift_types", []),
             availability=windows,
             notify=notify,
             credentials=credentials,
+            date_range=date_range,
         ))
     return users

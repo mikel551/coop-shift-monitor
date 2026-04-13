@@ -403,6 +403,11 @@
   </select>
 </div>
 
+<!-- Settings link -->
+<a href="config.html" class="theme-toggle" style="right:16px;top:56px;text-decoration:none;" title="Edit shift preferences">
+  <span class="toggle-icon">&#9881;</span>
+</a>
+
 <!-- Theme toggle -->
 <div class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark theme">
   <span class="toggle-icon" id="theme-icon">&#9790;</span>
@@ -450,22 +455,8 @@
     <h2 style="margin:0">&#128270; What We're Looking For</h2>
   </div>
   <div class="accordion-body open">
-    <div style="padding-top:14px;">
-      <div class="pref-row">
-        <span class="pref-name">Mike</span>
-        <span class="pref-chip" style="background:#6366f1;color:#fff;font-weight:600;border-color:#6366f1;">Cart Return</span>
-        <span class="pref-chip">Sat 5pm+</span>
-        <span class="pref-chip">Sun &lt;10am &amp; 5pm+</span>
-        <span class="pref-chip">Mon 5pm+</span>
-        <span class="pref-chip">Tue&ndash;Thu 6pm+</span>
-        <span class="pref-chip">Fri 5pm+</span>
-      </div>
-      <div class="pref-row">
-        <span class="pref-name">Nancy</span>
-        <span class="pref-chip" style="background:#6366f1;color:#fff;font-weight:600;border-color:#6366f1;">Checkout</span>
-        <span class="pref-chip">Sun all day</span>
-        <span class="pref-chip">Mon all day</span>
-      </div>
+    <div id="looking-for-prefs" style="padding-top:14px;">
+      <div class="empty" style="padding:10px;">Loading preferences...</div>
     </div>
   </div>
 </div>
@@ -1089,6 +1080,50 @@ function renderAvailableShifts(availableShifts) {
   container.innerHTML = html;
 }
 
+function renderUserPrefs(userConfig) {
+  const el = document.getElementById('looking-for-prefs');
+  if (!userConfig || userConfig.length === 0) {
+    el.innerHTML = '<div class="empty" style="padding:10px;">No preference data available yet.</div>';
+    return;
+  }
+  let html = '';
+  for (const u of userConfig) {
+    html += '<div class="pref-row">';
+    html += `<span class="pref-name">${u.name}</span>`;
+    for (const st of (u.shift_types || [])) {
+      html += `<span class="pref-chip" style="background:#6366f1;color:#fff;font-weight:600;border-color:#6366f1;">${st}</span>`;
+    }
+    if (u.date_range) {
+      html += `<span class="pref-chip" style="background:#f59e0b;color:#fff;font-weight:600;border-color:#f59e0b;">${u.date_range.start} &ndash; ${u.date_range.end}</span>`;
+    }
+    // Group availability into readable chips
+    const avail = u.availability || [];
+    for (const a of avail) {
+      let label = a.day.substring(0, 3);
+      if (a.start && a.end) {
+        label += ` ${formatTime(a.start)}\u2013${formatTime(a.end)}`;
+      } else if (a.start) {
+        label += ` ${formatTime(a.start)}+`;
+      } else if (a.end) {
+        label += ` <${formatTime(a.end)}`;
+      } else {
+        label += ' all day';
+      }
+      html += `<span class="pref-chip">${label}</span>`;
+    }
+    html += '</div>';
+  }
+  el.innerHTML = html;
+}
+
+function formatTime(t) {
+  const [h, m] = t.split(':').map(Number);
+  if (h === 0) return '12am';
+  if (h === 12) return '12pm';
+  if (h > 12) return (h - 12) + (m ? ':' + String(m).padStart(2, '0') : '') + 'pm';
+  return h + (m ? ':' + String(m).padStart(2, '0') : '') + 'am';
+}
+
 function renderMemberStatus(memberStatus) {
   const container = document.getElementById('member-status');
   if (!memberStatus || Object.keys(memberStatus).length === 0) {
@@ -1474,6 +1509,7 @@ function initDashboard(isRefresh) {
     renderUserChart(stats);
     renderTimeChart(stats);
     try { renderMemberStatus(data.member_status || {}); } catch(e) { console.error('renderMemberStatus error:', e); }
+    try { renderUserPrefs(data.user_config || []); } catch(e) { console.error('renderUserPrefs error:', e); }
     renderAvailableShifts(data.available_shifts || {});
     const anyShiftsAvailable = hasAvailableShifts(data.available_shifts || {});
     const userShiftsAvailable = hasAvailableShifts(data.available_shifts || {}, _soundUser);
