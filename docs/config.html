@@ -264,6 +264,11 @@
 
 <div class="card" id="pat-card">
   <h2>&#128229; Load Configuration</h2>
+  <div class="pat-section">
+    <label>GitHub Personal Access Token</label>
+    <input type="password" id="pat-input" placeholder="ghp_xxxxxxxxxxxx" value="">
+    <div class="hint">Fine-grained PAT with Contents read/write on mikel551/coop-shift-monitor. Stored in session memory only — never saved to disk.</div>
+  </div>
   <div class="btn-row" style="justify-content:center;">
     <button class="btn btn-primary" onclick="loadConfig()">&#128229; Load Config from GitHub</button>
   </div>
@@ -293,7 +298,7 @@ const REPO_OWNER = 'mikel551';
 const REPO_NAME = 'coop-shift-monitor';
 const CONFIG_PATH = 'config.yaml';
 const API_BASE = 'https://api.github.com';
-const GH_PAT = atob('Z2l0aHViX3BhdF8xMUFMS0JDSFEwS1VZYzJzY2dvcE9SX091ZTV3R2xyNGRidlVCRUR4WExiQVlxRU1FM1N0c2FEdlVueFRvS1RNZnRZWUVBSkVORzFMT1V5Ymli');
+let GH_PAT = sessionStorage.getItem('coop-gh-pat') || '';
 
 const KNOWN_SHIFT_TYPES = [
   'Cart Return', 'Checkout', 'Lifting', 'Dairy Lifting', 'Bulk Lifting',
@@ -336,6 +341,7 @@ function unlockPage() {
   const overlay = document.getElementById('login-overlay');
   overlay.classList.add('hidden');
   setTimeout(() => overlay.style.display = 'none', 400);
+  if (GH_PAT) document.getElementById('pat-input').value = GH_PAT;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -357,6 +363,11 @@ function toggleTheme() {
 }
 
 function getPAT() {
+  const field = document.getElementById('pat-input').value.trim();
+  if (field) {
+    GH_PAT = field;
+    sessionStorage.setItem('coop-gh-pat', field);
+  }
   return GH_PAT;
 }
 
