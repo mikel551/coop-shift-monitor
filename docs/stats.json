@@ -31192,6 +31192,67 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-14T11:30:32.913383+00:00",
+      "total": 3479,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1100693",
+              "date": "2026-04-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1119205",
+              "date": "2026-05-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1128822",
+              "date": "2026-05-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112547",
+              "date": "2026-05-03",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128376",
+              "date": "2026-05-25",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128504",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -31223,13 +31284,6 @@
       {
         "id": "1100693",
         "date": "2026-04-14",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
-      {
-        "id": "1109835",
-        "date": "2026-04-28",
         "start": "18:00",
         "end": "18:00",
         "type": "Cart Return \ud83d\uded2"
@@ -31300,16 +31354,16 @@
     "Case Maintenance \ud83e\uddfd": 39,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
     "Bathroom \ud83d\udebd": 30,
+    "Checkout \ud83d\udcb3": 19,
     "Bulk Lifting \ud83e\uded8": 19,
-    "Checkout \ud83d\udcb3": 18,
     "Soup: Food Services \ud83c\udf72": 16,
     "Bins \ud83e\uddfc": 15,
-    "Cart Return \ud83d\uded2": 12,
-    "Office \ud83d\udcd7": 7,
+    "Cart Return \ud83d\uded2": 10,
+    "Office \ud83d\udcd7": 8,
     "Vitamins \ud83c\udf6c": 6,
     "Bread Stocking \ud83c\udf5e": 5,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Entrance/Greeter \ud83c\udf9f": 2
+    "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
     {
