@@ -3,9 +3,7 @@
     "Nancy": [
       "1112787"
     ],
-    "Mike": [
-      "1119205"
-    ]
+    "Mike": []
   },
   "stats": [
     {
@@ -33497,6 +33495,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-15T12:00:43.416042+00:00",
+      "total": 3413,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112787",
+              "date": "2026-05-03",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ]
 }
