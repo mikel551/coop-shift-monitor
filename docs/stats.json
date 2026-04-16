@@ -35905,10 +35905,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-16T14:41:09.693864+00:00",
+      "total": 3395,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1103513",
+              "date": "2026-04-19",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1103513",
+        "date": "2026-04-19",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -35953,7 +35988,7 @@
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 127,
     "Dairy Lifting \ud83e\udd5b": 125,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 91,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 90,
     "Meat Processing & Lifting \ud83c\udf56": 81,
     "Inventory \ud83d\udccb": 53,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
