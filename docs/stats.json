@@ -36105,6 +36105,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-16T16:00:52.482664+00:00",
+      "total": 3378,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1107149",
+              "date": "2026-04-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -36156,10 +36181,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1149,
+    "Stocking \ud83d\udce6": 1147,
     "Lifting \ud83d\ude9a": 838,
     "Producer \ud83e\udd66": 373,
-    "Flex \ud83e\udd6b": 184,
+    "Flex \ud83e\udd6b": 183,
     "Produce Processing \ud83e\udd6c": 176,
     "Cleaning \ud83c\udfdd": 126,
     "Dairy Lifting \ud83e\udd5b": 124,
@@ -36173,8 +36198,8 @@
     "Bulk Lifting \ud83e\uded8": 19,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 7,
-    "Checkout \ud83d\udcb3": 4,
     "Bread Stocking \ud83c\udf5e": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 3,
     "Cart Return \ud83d\uded2": 2,
