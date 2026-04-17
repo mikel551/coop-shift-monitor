@@ -37840,6 +37840,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-17T13:10:33.718729+00:00",
+      "total": 3452,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1111721",
+              "date": "2026-05-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -37891,9 +37916,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1159,
+    "Stocking \ud83d\udce6": 1157,
     "Lifting \ud83d\ude9a": 849,
-    "Producer \ud83e\udd66": 371,
+    "Producer \ud83e\udd66": 370,
     "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 178,
     "Cleaning \ud83c\udfdd": 128,
@@ -37910,12 +37935,12 @@
     "Checkout \ud83d\udcb3": 15,
     "Vitamins \ud83c\udf6c": 8,
     "Bread Stocking \ud83c\udf5e": 5,
-    "Office \ud83d\udcd7": 4,
     "Cart Return \ud83d\uded2": 4,
+    "Office \ud83d\udcd7": 4,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 3,
-    "Entrance/Greeter \ud83c\udf9f": 2,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
