@@ -37466,6 +37466,39 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-17T10:00:41.341190+00:00",
+      "total": 3514,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1111721",
+              "date": "2026-05-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112903",
+              "date": "2026-05-03",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -37526,29 +37559,29 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1166,
+    "Stocking \ud83d\udce6": 1165,
     "Lifting \ud83d\ude9a": 861,
-    "Producer \ud83e\udd66": 372,
+    "Producer \ud83e\udd66": 371,
     "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 178,
     "Cleaning \ud83c\udfdd": 128,
     "Dairy Lifting \ud83e\udd5b": 127,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 92,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 91,
     "Meat Processing & Lifting \ud83c\udf56": 85,
     "Inventory \ud83d\udccb": 52,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Checkout \ud83d\udcb3": 38,
+    "Checkout \ud83d\udcb3": 36,
     "Bathroom \ud83d\udebd": 35,
     "Bulk Lifting \ud83e\uded8": 21,
     "Soup: Food Services \ud83c\udf72": 20,
     "Bins \ud83e\uddfc": 15,
     "Cart Return \ud83d\uded2": 10,
     "Vitamins \ud83c\udf6c": 8,
-    "Office \ud83d\udcd7": 7,
+    "Office \ud83d\udcd7": 6,
     "Bread Stocking \ud83c\udf5e": 5,
-    "Entrance/Greeter \ud83c\udf9f": 4,
     "Soup Cleaning": 4,
+    "Entrance/Greeter \ud83c\udf9f": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 3,
     "Health & Beauty \ud83e\uddf4": 1
