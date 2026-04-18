@@ -39949,18 +39949,44 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-18T11:40:32.731367+00:00",
+      "total": 3490,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112375",
+              "date": "2026-05-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1109127",
+              "date": "2026-04-27",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1107963",
-        "date": "2026-04-26",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1109127",
         "date": "2026-04-27",
@@ -40017,7 +40043,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1187,
-    "Lifting \ud83d\ude9a": 853,
+    "Lifting \ud83d\ude9a": 852,
     "Producer \ud83e\udd66": 366,
     "Flex \ud83e\udd6b": 203,
     "Produce Processing \ud83e\udd6c": 177,
@@ -40032,15 +40058,15 @@
     "Soup: Food Services \ud83c\udf72": 23,
     "Bulk Lifting \ud83e\uded8": 21,
     "Bins \ud83e\uddfc": 15,
-    "Checkout \ud83d\udcb3": 13,
+    "Checkout \ud83d\udcb3": 12,
     "Vitamins \ud83c\udf6c": 10,
     "Office \ud83d\udcd7": 7,
-    "Cart Return \ud83d\uded2": 6,
+    "Cart Return \ud83d\uded2": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Bread Stocking \ud83c\udf5e": 3,
     "Repairs \ud83d\udee0": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
+    "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
