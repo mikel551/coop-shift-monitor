@@ -40512,6 +40512,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-18T15:10:32.915928+00:00",
+      "total": 3445,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1103737",
+              "date": "2026-04-19",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -40563,8 +40588,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1175,
-    "Lifting \ud83d\ude9a": 847,
+    "Stocking \ud83d\udce6": 1171,
+    "Lifting \ud83d\ude9a": 848,
     "Producer \ud83e\udd66": 364,
     "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 176,
@@ -40586,7 +40611,6 @@
     "Repairs \ud83d\udee0": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Checkout \ud83d\udcb3": 1,
-    "Entrance/Greeter \ud83c\udf9f": 1,
     "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
