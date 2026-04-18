@@ -40205,6 +40205,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-18T13:10:29.018303+00:00",
+      "total": 3463,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112375",
+              "date": "2026-05-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -40256,7 +40281,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1181,
+    "Stocking \ud83d\udce6": 1179,
     "Lifting \ud83d\ude9a": 849,
     "Producer \ud83e\udd66": 366,
     "Flex \ud83e\udd6b": 201,
@@ -40273,7 +40298,7 @@
     "Bulk Lifting \ud83e\uded8": 21,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 9,
-    "Office \ud83d\udcd7": 8,
+    "Office \ud83d\udcd7": 7,
     "Cart Return \ud83d\uded2": 5,
     "Soup Cleaning": 4,
     "Checkout \ud83d\udcb3": 3,
