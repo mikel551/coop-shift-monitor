@@ -40987,20 +40987,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-18T19:40:31.284725+00:00",
+      "total": 3397,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1103513",
-        "date": "2026-04-19",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -41045,7 +41052,7 @@
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 124,
     "Dairy Lifting \ud83e\udd5b": 123,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 95,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 94,
     "Meat Processing & Lifting \ud83c\udf56": 89,
     "Inventory \ud83d\udccb": 50,
     "Case Maintenance \ud83e\uddfd": 37,
@@ -41060,7 +41067,6 @@
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 3,
     "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
