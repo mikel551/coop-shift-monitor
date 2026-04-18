@@ -40270,18 +40270,44 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-18T13:30:33.511026+00:00",
+      "total": 3464,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112375",
+              "date": "2026-05-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1104561",
+              "date": "2026-04-20",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1103741",
-        "date": "2026-04-19",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1104561",
         "date": "2026-04-20",
@@ -40355,9 +40381,9 @@
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 9,
     "Office \ud83d\udcd7": 7,
-    "Checkout \ud83d\udcb3": 5,
     "Cart Return \ud83d\uded2": 5,
     "Soup Cleaning": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 3,
     "Bread Stocking \ud83c\udf5e": 2,
