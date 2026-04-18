@@ -41384,19 +41384,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-18T23:10:31.297763+00:00",
+      "total": 3382,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1121745",
+              "date": "2026-05-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1103625",
-        "date": "2026-04-19",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1121745",
@@ -41444,10 +41460,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1146,
-    "Lifting \ud83d\ude9a": 844,
+    "Stocking \ud83d\udce6": 1144,
+    "Lifting \ud83d\ude9a": 845,
     "Producer \ud83e\udd66": 352,
-    "Flex \ud83e\udd6b": 196,
+    "Flex \ud83e\udd6b": 198,
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 123,
     "Dairy Lifting \ud83e\udd5b": 123,
@@ -41462,12 +41478,11 @@
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 8,
     "Soup Cleaning": 4,
+    "Bread Stocking \ud83c\udf5e": 3,
+    "Cart Return \ud83d\uded2": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 3,
     "Office \ud83d\udcd7": 3,
-    "Checkout \ud83d\udcb3": 2,
-    "Cart Return \ud83d\uded2": 2,
-    "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
