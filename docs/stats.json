@@ -41301,10 +41301,45 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-18T22:40:28.632396+00:00",
+      "total": 3384,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1121745",
+              "date": "2026-05-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1121745",
+        "date": "2026-05-16",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -41360,10 +41395,10 @@
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 8,
     "Soup Cleaning": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 3,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
