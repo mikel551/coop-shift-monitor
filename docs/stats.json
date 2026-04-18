@@ -39829,23 +39829,63 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-18T11:10:31.732888+00:00",
+      "total": 3499,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112375",
+              "date": "2026-05-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1107963",
+              "date": "2026-04-26",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1109127",
+              "date": "2026-04-27",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1103631",
-        "date": "2026-04-19",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
         "id": "1107963",
         "date": "2026-04-26",
         "start": "08:00",
         "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1109127",
+        "date": "2026-04-27",
+        "start": "15:30",
+        "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
       }
     ],
@@ -39853,13 +39893,6 @@
       {
         "id": "1112375",
         "date": "2026-05-02",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
-      {
-        "id": "1121745",
-        "date": "2026-05-16",
         "start": "18:00",
         "end": "18:00",
         "type": "Cart Return \ud83d\uded2"
@@ -39918,11 +39951,11 @@
     "Bathroom \ud83d\udebd": 33,
     "Soup: Food Services \ud83c\udf72": 23,
     "Bulk Lifting \ud83e\uded8": 21,
-    "Checkout \ud83d\udcb3": 20,
+    "Checkout \ud83d\udcb3": 17,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 9,
-    "Cart Return \ud83d\uded2": 8,
     "Office \ud83d\udcd7": 7,
+    "Cart Return \ud83d\uded2": 7,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 3,
