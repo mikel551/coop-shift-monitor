@@ -45537,6 +45537,46 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-19T22:40:36.740379+00:00",
+      "total": 3366,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1104639",
+              "date": "2026-04-20",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1104301",
+              "date": "2026-04-20",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1104561",
+              "date": "2026-04-20",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -45611,7 +45651,7 @@
     "Produce Processing \ud83e\udd6c": 170,
     "Cleaning \ud83c\udfdd": 123,
     "Dairy Lifting \ud83e\udd5b": 120,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 98,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 97,
     "Meat Processing & Lifting \ud83c\udf56": 86,
     "Inventory \ud83d\udccb": 46,
     "Bathroom \ud83d\udebd": 34,
@@ -45626,7 +45666,6 @@
     "Office \ud83d\udcd7": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Checkout \ud83d\udcb3": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1,
     "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1,
     "Bread Stocking \ud83c\udf5e": 1
