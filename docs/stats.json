@@ -44203,33 +44203,35 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-04-19T13:00:37.205385+00:00",
+      "total": 3484,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112985",
+              "date": "2026-05-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 3
     }
   ],
   "previous_period": {},
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1104443",
-        "date": "2026-04-20",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1104557",
-        "date": "2026-04-20",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1126792",
-        "date": "2026-05-24",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1112985",
@@ -44279,7 +44281,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1202,
     "Lifting \ud83d\ude9a": 856,
-    "Producer \ud83e\udd66": 364,
+    "Producer \ud83e\udd66": 363,
     "Flex \ud83e\udd6b": 197,
     "Produce Processing \ud83e\udd6c": 172,
     "Cleaning \ud83c\udfdd": 128,
@@ -44287,20 +44289,20 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 106,
     "Meat Processing & Lifting \ud83c\udf56": 90,
     "Inventory \ud83d\udccb": 47,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
     "Case Maintenance \ud83e\uddfd": 37,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Bathroom \ud83d\udebd": 35,
     "Soup: Food Services \ud83c\udf72": 21,
     "Bulk Lifting \ud83e\uded8": 21,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 10,
     "Office \ud83d\udcd7": 7,
-    "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Repairs \ud83d\udee0": 3,
     "Cart Return \ud83d\uded2": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
