@@ -45301,6 +45301,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-19T21:10:30.962000+00:00",
+      "total": 3375,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1103867",
+              "date": "2026-04-19",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1104547",
+              "date": "2026-04-20",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1104555",
+              "date": "2026-04-20",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -45367,7 +45406,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1161,
-    "Lifting \ud83d\ude9a": 842,
+    "Lifting \ud83d\ude9a": 840,
     "Producer \ud83e\udd66": 360,
     "Flex \ud83e\udd6b": 184,
     "Produce Processing \ud83e\udd6c": 171,
@@ -45384,8 +45423,8 @@
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 9,
     "Repairs \ud83d\udee0": 5,
+    "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 2,
     "Health & Beauty \ud83e\uddf4": 1,
