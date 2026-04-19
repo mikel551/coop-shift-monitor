@@ -45440,10 +45440,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-19T22:10:27.212895+00:00",
+      "total": 3371,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1104561",
+              "date": "2026-04-20",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1104561",
+        "date": "2026-04-20",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -45451,7 +45486,7 @@
         {
           "date": "Sunday April 19",
           "start_time": "6:00pm",
-          "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2"
+          "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2 \u2705 You checked in April 19, 2026 6:02pm"
         },
         {
           "date": "Thursday May 7",
@@ -45481,19 +45516,19 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1159,
-    "Lifting \ud83d\ude9a": 838,
-    "Producer \ud83e\udd66": 360,
+    "Stocking \ud83d\udce6": 1160,
+    "Lifting \ud83d\ude9a": 839,
+    "Producer \ud83e\udd66": 359,
     "Flex \ud83e\udd6b": 186,
     "Produce Processing \ud83e\udd6c": 170,
-    "Cleaning \ud83c\udfdd": 124,
+    "Cleaning \ud83c\udfdd": 123,
     "Dairy Lifting \ud83e\udd5b": 120,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 99,
     "Meat Processing & Lifting \ud83c\udf56": 86,
     "Inventory \ud83d\udccb": 46,
     "Bathroom \ud83d\udebd": 34,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
     "Case Maintenance \ud83e\uddfd": 33,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Bulk Lifting \ud83e\uded8": 21,
     "Soup: Food Services \ud83c\udf72": 20,
     "Bins \ud83e\uddfc": 15,
@@ -45502,6 +45537,8 @@
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 3,
     "Inventory: Produce \ud83c\udf40": 3,
+    "Checkout \ud83d\udcb3": 1,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Health & Beauty \ud83e\uddf4": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
