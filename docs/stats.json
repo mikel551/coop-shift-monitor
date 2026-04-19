@@ -45742,10 +45742,45 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-19T23:50:28.081716+00:00",
+      "total": 3355,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1104189",
+              "date": "2026-04-20",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1104189",
+        "date": "2026-04-20",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -45786,27 +45821,27 @@
     "Stocking \ud83d\udce6": 1156,
     "Lifting \ud83d\ude9a": 837,
     "Producer \ud83e\udd66": 358,
-    "Flex \ud83e\udd6b": 182,
+    "Flex \ud83e\udd6b": 181,
     "Produce Processing \ud83e\udd6c": 169,
     "Cleaning \ud83c\udfdd": 123,
     "Dairy Lifting \ud83e\udd5b": 121,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 99,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 98,
     "Meat Processing & Lifting \ud83c\udf56": 86,
     "Inventory \ud83d\udccb": 46,
     "Bathroom \ud83d\udebd": 34,
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
-    "Bulk Lifting \ud83e\uded8": 21,
     "Soup: Food Services \ud83c\udf72": 20,
+    "Bulk Lifting \ud83e\uded8": 19,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 9,
     "Repairs \ud83d\udee0": 5,
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1,
-    "Health & Beauty \ud83e\uddf4": 1
+    "Checkout \ud83d\udcb3": 2,
+    "Health & Beauty \ud83e\uddf4": 1,
+    "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
     {
