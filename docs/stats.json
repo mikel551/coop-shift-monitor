@@ -45340,27 +45340,52 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-19T21:20:37.797952+00:00",
+      "total": 3372,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1104187",
+              "date": "2026-04-20",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1104555",
+              "date": "2026-04-20",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1103867",
-        "date": "2026-04-19",
-        "start": "18:00",
-        "end": "18:00",
+        "id": "1104187",
+        "date": "2026-04-20",
+        "start": "08:00",
+        "end": "08:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
         "id": "1104555",
-        "date": "2026-04-20",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1104547",
         "date": "2026-04-20",
         "start": "15:30",
         "end": "15:30",
@@ -45405,16 +45430,16 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1161,
-    "Lifting \ud83d\ude9a": 840,
+    "Stocking \ud83d\udce6": 1160,
+    "Lifting \ud83d\ude9a": 839,
     "Producer \ud83e\udd66": 360,
     "Flex \ud83e\udd6b": 184,
     "Produce Processing \ud83e\udd6c": 171,
     "Cleaning \ud83c\udfdd": 124,
     "Dairy Lifting \ud83e\udd5b": 120,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 99,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 98,
     "Meat Processing & Lifting \ud83c\udf56": 86,
-    "Inventory \ud83d\udccb": 45,
+    "Inventory \ud83d\udccb": 46,
     "Bathroom \ud83d\udebd": 34,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
     "Case Maintenance \ud83e\uddfd": 33,
@@ -45423,8 +45448,8 @@
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 9,
     "Repairs \ud83d\udee0": 5,
-    "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 2,
     "Health & Beauty \ud83e\uddf4": 1,
