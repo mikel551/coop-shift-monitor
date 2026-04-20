@@ -49603,6 +49603,108 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-20T12:50:36.768521+00:00",
+      "total": 3508,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 12,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118385",
+              "date": "2026-05-11",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118391",
+              "date": "2026-05-11",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118505",
+              "date": "2026-05-11",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118619",
+              "date": "2026-05-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123020",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123022",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123134",
+              "date": "2026-05-18",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123136",
+              "date": "2026-05-18",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128374",
+              "date": "2026-05-25",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128630",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128632",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128746",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
@@ -49634,13 +49736,6 @@
         "date": "2026-05-11",
         "start": "18:00",
         "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1122764",
-        "date": "2026-05-18",
-        "start": "08:00",
-        "end": "08:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -49699,15 +49794,6 @@
         "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
       }
-    ],
-    "Mike": [
-      {
-        "id": "1123212",
-        "date": "2026-05-18",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
     ]
   },
   "member_status": {
@@ -49745,7 +49831,7 @@
     "Stocking \ud83d\udce6": 1212,
     "Lifting \ud83d\ude9a": 841,
     "Producer \ud83e\udd66": 373,
-    "Flex \ud83e\udd6b": 204,
+    "Flex \ud83e\udd6b": 203,
     "Produce Processing \ud83e\udd6c": 169,
     "Cleaning \ud83c\udfdd": 124,
     "Dairy Lifting \ud83e\udd5b": 120,
@@ -49758,8 +49844,8 @@
     "Soup: Food Services \ud83c\udf72": 25,
     "Bulk Lifting \ud83e\uded8": 18,
     "Bins \ud83e\uddfc": 15,
-    "Checkout \ud83d\udcb3": 14,
-    "Cart Return \ud83d\uded2": 11,
+    "Checkout \ud83d\udcb3": 12,
+    "Cart Return \ud83d\uded2": 9,
     "Vitamins \ud83c\udf6c": 8,
     "Repairs \ud83d\udee0": 6,
     "Soup Cleaning": 4,
