@@ -49807,6 +49807,108 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-20T13:10:35.015988+00:00",
+      "total": 3496,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 12,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118385",
+              "date": "2026-05-11",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118391",
+              "date": "2026-05-11",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118505",
+              "date": "2026-05-11",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118619",
+              "date": "2026-05-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123020",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123022",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123134",
+              "date": "2026-05-18",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123136",
+              "date": "2026-05-18",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128374",
+              "date": "2026-05-25",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128630",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128632",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128746",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -49930,14 +50032,14 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1211,
-    "Lifting \ud83d\ude9a": 840,
-    "Producer \ud83e\udd66": 373,
+    "Stocking \ud83d\udce6": 1209,
+    "Lifting \ud83d\ude9a": 837,
+    "Producer \ud83e\udd66": 372,
     "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 167,
     "Cleaning \ud83c\udfdd": 124,
     "Dairy Lifting \ud83e\udd5b": 120,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 111,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 110,
     "Meat Processing & Lifting \ud83c\udf56": 86,
     "Inventory \ud83d\udccb": 56,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
@@ -49946,13 +50048,13 @@
     "Soup: Food Services \ud83c\udf72": 25,
     "Bulk Lifting \ud83e\uded8": 18,
     "Bins \ud83e\uddfc": 15,
-    "Checkout \ud83d\udcb3": 13,
+    "Checkout \ud83d\udcb3": 12,
     "Cart Return \ud83d\uded2": 8,
     "Vitamins \ud83c\udf6c": 8,
     "Repairs \ud83d\udee0": 6,
     "Soup Cleaning": 4,
+    "Office \ud83d\udcd7": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Office \ud83d\udcd7": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 1
   },
