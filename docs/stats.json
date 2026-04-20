@@ -51204,6 +51204,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-20T19:40:28.731449+00:00",
+      "total": 3377,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1113813",
+              "date": "2026-05-04",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -51250,13 +51275,13 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1174,
+    "Stocking \ud83d\udce6": 1172,
     "Lifting \ud83d\ude9a": 825,
     "Producer \ud83e\udd66": 367,
-    "Flex \ud83e\udd6b": 191,
+    "Flex \ud83e\udd6b": 190,
     "Produce Processing \ud83e\udd6c": 166,
     "Cleaning \ud83c\udfdd": 124,
-    "Dairy Lifting \ud83e\udd5b": 120,
+    "Dairy Lifting \ud83e\udd5b": 119,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 94,
     "Meat Processing & Lifting \ud83c\udf56": 82,
     "Inventory \ud83d\udccb": 56,
@@ -51267,7 +51292,7 @@
     "Bulk Lifting \ud83e\uded8": 17,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 8,
-    "Repairs \ud83d\udee0": 6,
+    "Repairs \ud83d\udee0": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 2,
