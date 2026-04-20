@@ -45852,6 +45852,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-20T00:50:36.275176+00:00",
+      "total": 3348,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -45861,17 +45878,12 @@
       "member_status": "Active",
       "scheduled_shifts": [
         {
-          "date": "Sunday April 19",
-          "start_time": "6:00pm",
-          "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2 \u2705 You checked in April 19, 2026 6:02pm"
-        },
-        {
           "date": "Thursday May 7",
           "start_time": "6:00pm",
           "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2"
         }
       ],
-      "credit_bank": "0",
+      "credit_bank": "1",
       "cancel_tickets": 1
     },
     "Nancy": {
@@ -45895,12 +45907,12 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1156,
     "Lifting \ud83d\ude9a": 836,
-    "Producer \ud83e\udd66": 358,
+    "Producer \ud83e\udd66": 359,
     "Flex \ud83e\udd6b": 181,
     "Produce Processing \ud83e\udd6c": 169,
     "Cleaning \ud83c\udfdd": 123,
     "Dairy Lifting \ud83e\udd5b": 121,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 98,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 97,
     "Meat Processing & Lifting \ud83c\udf56": 85,
     "Inventory \ud83d\udccb": 45,
     "Bathroom \ud83d\udebd": 34,
@@ -45914,6 +45926,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
