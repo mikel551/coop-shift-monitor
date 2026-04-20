@@ -50286,6 +50286,59 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-04-20T14:10:31.688733+00:00",
+      "total": 3469,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 5,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1123020",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123136",
+              "date": "2026-05-18",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128374",
+              "date": "2026-05-25",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128630",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128746",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -50363,11 +50416,11 @@
     "Stocking \ud83d\udce6": 1200,
     "Lifting \ud83d\ude9a": 835,
     "Producer \ud83e\udd66": 372,
-    "Flex \ud83e\udd6b": 201,
-    "Produce Processing \ud83e\udd6c": 166,
+    "Flex \ud83e\udd6b": 200,
+    "Produce Processing \ud83e\udd6c": 167,
     "Cleaning \ud83c\udfdd": 124,
     "Dairy Lifting \ud83e\udd5b": 121,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 108,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 107,
     "Meat Processing & Lifting \ud83c\udf56": 85,
     "Inventory \ud83d\udccb": 56,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
