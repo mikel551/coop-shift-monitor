@@ -52832,20 +52832,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-21T12:50:35.235209+00:00",
+      "total": 3480,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1133386",
-        "date": "2026-06-01",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -52895,13 +52902,13 @@
     "Bulk Lifting \ud83e\uded8": 18,
     "Bins \ud83e\uddfc": 13,
     "Vitamins \ud83c\udf6c": 8,
-    "Checkout \ud83d\udcb3": 7,
     "Office \ud83d\udcd7": 6,
+    "Checkout \ud83d\udcb3": 6,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 4,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Cart Return \ud83d\uded2": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
