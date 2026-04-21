@@ -2,8 +2,7 @@
   "notified": {
     "Nancy": [],
     "Mike": [
-      "1133386",
-      "1114437"
+      "1133386"
     ]
   },
   "stats": [
@@ -52764,6 +52763,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-21T12:20:29.982573+00:00",
+      "total": 3490,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1133386",
+              "date": "2026-06-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ]
 }

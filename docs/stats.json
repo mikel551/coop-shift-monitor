@@ -52757,18 +52757,36 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-21T12:20:29.982573+00:00",
+      "total": 3490,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1133386",
+              "date": "2026-06-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Mike": [
-      {
-        "id": "1114437",
-        "date": "2026-05-05",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
       {
         "id": "1133386",
         "date": "2026-06-01",
@@ -52810,8 +52828,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1209,
-    "Lifting \ud83d\ude9a": 846,
+    "Stocking \ud83d\udce6": 1210,
+    "Lifting \ud83d\ude9a": 847,
     "Producer \ud83e\udd66": 375,
     "Flex \ud83e\udd6b": 196,
     "Produce Processing \ud83e\udd6c": 174,
@@ -52826,10 +52844,10 @@
     "Soup: Food Services \ud83c\udf72": 22,
     "Bulk Lifting \ud83e\uded8": 18,
     "Bins \ud83e\uddfc": 14,
-    "Checkout \ud83d\udcb3": 9,
     "Vitamins \ud83c\udf6c": 8,
-    "Cart Return \ud83d\uded2": 7,
-    "Office \ud83d\udcd7": 7,
+    "Checkout \ud83d\udcb3": 7,
+    "Office \ud83d\udcd7": 6,
+    "Cart Return \ud83d\uded2": 4,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 4,
