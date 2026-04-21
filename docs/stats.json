@@ -52621,6 +52621,46 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-21T11:40:31.544524+00:00",
+      "total": 3504,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1114437",
+              "date": "2026-05-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1133386",
+              "date": "2026-06-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1133068",
+              "date": "2026-06-01",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -52683,8 +52723,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1207,
-    "Lifting \ud83d\ude9a": 848,
+    "Stocking \ud83d\udce6": 1208,
+    "Lifting \ud83d\ude9a": 847,
     "Producer \ud83e\udd66": 376,
     "Flex \ud83e\udd6b": 196,
     "Produce Processing \ud83e\udd6c": 174,
@@ -52699,8 +52739,8 @@
     "Soup: Food Services \ud83c\udf72": 22,
     "Bulk Lifting \ud83e\uded8": 18,
     "Bins \ud83e\uddfc": 14,
-    "Checkout \ud83d\udcb3": 13,
-    "Cart Return \ud83d\uded2": 10,
+    "Checkout \ud83d\udcb3": 12,
+    "Cart Return \ud83d\uded2": 9,
     "Vitamins \ud83c\udf6c": 8,
     "Office \ud83d\udcd7": 7,
     "Soup Cleaning": 4,
