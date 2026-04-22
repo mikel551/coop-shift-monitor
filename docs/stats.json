@@ -54290,6 +54290,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-22T02:30:32.451687+00:00",
+      "total": 3359,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1109233",
+              "date": "2026-04-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -54337,7 +54362,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1165,
-    "Lifting \ud83d\ude9a": 832,
+    "Lifting \ud83d\ude9a": 830,
     "Producer \ud83e\udd66": 368,
     "Flex \ud83e\udd6b": 183,
     "Produce Processing \ud83e\udd6c": 166,
