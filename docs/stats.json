@@ -56885,19 +56885,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-23T11:40:36.922807+00:00",
+      "total": 3545,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1125072",
+              "date": "2026-05-21",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1122275",
-        "date": "2026-05-17",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1125072",
@@ -56941,28 +56957,28 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1186,
-    "Lifting \ud83d\ude9a": 864,
+    "Lifting \ud83d\ude9a": 863,
     "Producer \ud83e\udd66": 379,
     "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 180,
     "Cleaning \ud83c\udfdd": 128,
     "Dairy Lifting \ud83e\udd5b": 127,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 86,
     "Meat Processing & Lifting \ud83c\udf56": 86,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 85,
     "Inventory \ud83d\udccb": 59,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 54,
     "Bathroom \ud83d\udebd": 43,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Food Services \ud83c\udf72": 29,
-    "Checkout \ud83d\udcb3": 26,
+    "Checkout \ud83d\udcb3": 23,
     "Bulk Lifting \ud83e\uded8": 17,
     "Bins \ud83e\uddfc": 15,
     "Vitamins \ud83c\udf6c": 8,
     "Office \ud83d\udcd7": 6,
-    "Cart Return \ud83d\uded2": 6,
     "Repairs \ud83d\udee0": 6,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
     "Health & Beauty \ud83e\uddf4": 1
   },
