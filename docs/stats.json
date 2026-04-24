@@ -59870,6 +59870,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-24T16:40:34.852347+00:00",
+      "total": 3512,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1107795",
+              "date": "2026-04-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -59919,7 +59944,7 @@
     "Stocking \ud83d\udce6": 1178,
     "Lifting \ud83d\ude9a": 868,
     "Producer \ud83e\udd66": 376,
-    "Flex \ud83e\udd6b": 209,
+    "Flex \ud83e\udd6b": 210,
     "Produce Processing \ud83e\udd6c": 183,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 128,
@@ -59939,7 +59964,6 @@
     "Office \ud83d\udcd7": 3,
     "Health & Beauty \ud83e\uddf4": 2,
     "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
