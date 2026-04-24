@@ -59984,10 +59984,59 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-24T17:20:31.339526+00:00",
+      "total": 3509,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1107795",
+              "date": "2026-04-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1120439",
+              "date": "2026-05-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1108887",
+              "date": "2026-04-27",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
   "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1108887",
+        "date": "2026-04-27",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ],
     "Mike": [
       {
         "id": "1107795",
@@ -60040,12 +60089,12 @@
     "Stocking \ud83d\udce6": 1175,
     "Lifting \ud83d\ude9a": 867,
     "Producer \ud83e\udd66": 376,
-    "Flex \ud83e\udd6b": 209,
+    "Flex \ud83e\udd6b": 210,
     "Produce Processing \ud83e\udd6c": 183,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 89,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 79,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 77,
     "Inventory \ud83d\udccb": 56,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 51,
     "Bathroom \ud83d\udebd": 44,
@@ -60060,6 +60109,7 @@
     "Office \ud83d\udcd7": 3,
     "Cart Return \ud83d\uded2": 2,
     "Health & Beauty \ud83e\uddf4": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
