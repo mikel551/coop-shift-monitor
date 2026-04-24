@@ -59920,6 +59920,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-24T17:00:40.980409+00:00",
+      "total": 3512,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1107795",
+              "date": "2026-04-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1120439",
+              "date": "2026-05-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -59928,6 +59960,13 @@
       {
         "id": "1107795",
         "date": "2026-04-25",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      },
+      {
+        "id": "1120439",
+        "date": "2026-05-14",
         "start": "18:00",
         "end": "18:00",
         "type": "Cart Return \ud83d\uded2"
@@ -59987,8 +60026,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Office \ud83d\udcd7": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Cart Return \ud83d\uded2": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
