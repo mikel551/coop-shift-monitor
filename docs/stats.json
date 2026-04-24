@@ -59660,18 +59660,36 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-24T15:00:43.768481+00:00",
+      "total": 3541,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1125724",
+              "date": "2026-05-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Mike": [
-      {
-        "id": "1107791",
-        "date": "2026-04-25",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
       {
         "id": "1125724",
         "date": "2026-05-22",
@@ -59713,15 +59731,15 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1188,
+    "Stocking \ud83d\udce6": 1186,
     "Lifting \ud83d\ude9a": 872,
     "Producer \ud83e\udd66": 378,
     "Flex \ud83e\udd6b": 211,
-    "Produce Processing \ud83e\udd6c": 184,
+    "Produce Processing \ud83e\udd6c": 183,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 90,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 85,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 82,
     "Inventory \ud83d\udccb": 58,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 51,
     "Bathroom \ud83d\udebd": 44,
@@ -59733,9 +59751,9 @@
     "Vitamins \ud83c\udf6c": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 4,
     "Office \ud83d\udcd7": 4,
-    "Cart Return \ud83d\uded2": 3,
+    "Checkout \ud83d\udcb3": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "Bread Stocking \ud83c\udf5e": 1
