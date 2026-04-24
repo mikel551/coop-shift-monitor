@@ -4,8 +4,8 @@
       "1117389"
     ],
     "Mike": [
-      "1111069",
-      "1125724"
+      "1125724",
+      "1107791"
     ]
   },
   "stats": [
@@ -59409,6 +59409,46 @@
             {
               "id": "1111069",
               "date": "2026-04-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1125724",
+              "date": "2026-05-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1117389",
+              "date": "2026-05-10",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
+    },
+    {
+      "ts": "2026-04-24T13:50:30.784972+00:00",
+      "total": 3555,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1107791",
+              "date": "2026-04-25",
               "start": "18:00",
               "end": "18:00",
               "type": "Cart Return \ud83d\uded2"
