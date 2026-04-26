@@ -68169,6 +68169,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-26T17:10:29.242540+00:00",
+      "total": 3548,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1109141",
+              "date": "2026-04-27",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -68176,13 +68201,6 @@
     "Nancy": [
       {
         "id": "1109141",
-        "date": "2026-04-27",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1109131",
         "date": "2026-04-27",
         "start": "15:30",
         "end": "15:30",
@@ -68222,10 +68240,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1203,
+    "Stocking \ud83d\udce6": 1205,
     "Lifting \ud83d\ude9a": 870,
     "Producer \ud83e\udd66": 385,
-    "Flex \ud83e\udd6b": 203,
+    "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 187,
     "Dairy Lifting \ud83e\udd5b": 136,
     "Cleaning \ud83c\udfdd": 130,
@@ -68243,8 +68261,8 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 4,
-    "Checkout \ud83d\udcb3": 2,
     "Health & Beauty \ud83e\uddf4": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
