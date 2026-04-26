@@ -66229,11 +66229,177 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-26T11:40:33.510655+00:00",
+      "total": 3626,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1121883",
+              "date": "2026-05-17",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1126988",
+              "date": "2026-05-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 18,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1109133",
+              "date": "2026-04-27",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1109139",
+              "date": "2026-04-27",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1112775",
+              "date": "2026-05-03",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1117265",
+              "date": "2026-05-10",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1117381",
+              "date": "2026-05-10",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1117627",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1117629",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1121917",
+              "date": "2026-05-17",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122033",
+              "date": "2026-05-17",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122035",
+              "date": "2026-05-17",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122149",
+              "date": "2026-05-17",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122397",
+              "date": "2026-05-17",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122399",
+              "date": "2026-05-17",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1126788",
+              "date": "2026-05-24",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1126910",
+              "date": "2026-05-24",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1127034",
+              "date": "2026-05-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1132396",
+              "date": "2026-05-31",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1132398",
+              "date": "2026-05-31",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
+      {
+        "id": "1109139",
+        "date": "2026-04-27",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
       {
         "id": "1109133",
         "date": "2026-04-27",
@@ -66284,14 +66450,14 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1122033",
+        "id": "1122035",
         "date": "2026-05-17",
         "start": "10:30",
         "end": "10:30",
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1122035",
+        "id": "1122033",
         "date": "2026-05-17",
         "start": "10:30",
         "end": "10:30",
@@ -66305,14 +66471,14 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1122397",
+        "id": "1122399",
         "date": "2026-05-17",
         "start": "18:00",
         "end": "18:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1122399",
+        "id": "1122397",
         "date": "2026-05-17",
         "start": "18:00",
         "end": "18:00",
@@ -66340,14 +66506,14 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1132398",
+        "id": "1132396",
         "date": "2026-05-31",
         "start": "13:00",
         "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1132396",
+        "id": "1132398",
         "date": "2026-05-31",
         "start": "13:00",
         "end": "13:00",
@@ -66403,10 +66569,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1221,
+    "Stocking \ud83d\udce6": 1220,
     "Lifting \ud83d\ude9a": 870,
-    "Producer \ud83e\udd66": 386,
-    "Flex \ud83e\udd6b": 209,
+    "Producer \ud83e\udd66": 387,
+    "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 186,
     "Dairy Lifting \ud83e\udd5b": 135,
     "Cleaning \ud83c\udfdd": 130,
@@ -66417,7 +66583,7 @@
     "Bathroom \ud83d\udebd": 44,
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Food Services \ud83c\udf72": 28,
-    "Checkout \ud83d\udcb3": 20,
+    "Checkout \ud83d\udcb3": 21,
     "Bulk Lifting \ud83e\uded8": 16,
     "Bins \ud83e\uddfc": 15,
     "Office \ud83d\udcd7": 12,
