@@ -68253,10 +68253,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-26T17:50:32.639551+00:00",
+      "total": 3544,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1116325",
+              "date": "2026-05-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1116325",
+        "date": "2026-05-08",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -68289,7 +68324,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1204,
+    "Stocking \ud83d\udce6": 1203,
     "Lifting \ud83d\ude9a": 868,
     "Producer \ud83e\udd66": 385,
     "Flex \ud83e\udd6b": 199,
@@ -68311,6 +68346,7 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 4,
     "Health & Beauty \ud83e\uddf4": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
