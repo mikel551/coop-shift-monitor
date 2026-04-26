@@ -63765,10 +63765,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-26T02:40:38.345661+00:00",
+      "total": 3444,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1109123",
+              "date": "2026-04-27",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1109123",
+        "date": "2026-04-27",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -63823,6 +63858,7 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 4,
     "Health & Beauty \ud83e\uddf4": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
