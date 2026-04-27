@@ -72831,20 +72831,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-27T19:10:41.840336+00:00",
+      "total": 3513,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1141784",
-        "date": "2026-04-27",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -72880,7 +72887,7 @@
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 129,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 94,
-    "Meat Processing & Lifting \ud83c\udf56": 85,
+    "Meat Processing & Lifting \ud83c\udf56": 84,
     "Inventory \ud83d\udccb": 69,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 39,
     "Case Maintenance \ud83e\uddfd": 38,
@@ -72894,9 +72901,6 @@
     "Vitamins \ud83c\udf6c": 4,
     "Bread Stocking \ud83c\udf5e": 3,
     "Office \ud83d\udcd7": 2,
-    "Checkout \ud83d\udcb3": 1,
-    "Entrance/Greeter \ud83c\udf9f": 1,
-    "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
