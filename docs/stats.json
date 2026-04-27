@@ -72596,6 +72596,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-27T17:20:32.268541+00:00",
+      "total": 3546,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1112987",
+              "date": "2026-05-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -72627,11 +72652,6 @@
       "member_status": "Alert",
       "scheduled_shifts": [
         {
-          "date": "Monday April 27",
-          "start_time": "10:30am",
-          "description": "Checkout \ud83d\udcb3 \u2705 You checked in April 27, 2026 10:29am"
-        },
-        {
           "date": "Monday May 11",
           "start_time": "10:30am",
           "description": "Checkout \ud83d\udcb3"
@@ -72642,14 +72662,14 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1217,
+    "Stocking \ud83d\udce6": 1215,
     "Lifting \ud83d\ude9a": 848,
     "Producer \ud83e\udd66": 379,
     "Flex \ud83e\udd6b": 211,
     "Produce Processing \ud83e\udd6c": 187,
     "Dairy Lifting \ud83e\udd5b": 130,
     "Cleaning \ud83c\udfdd": 128,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 99,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 97,
     "Meat Processing & Lifting \ud83c\udf56": 85,
     "Inventory \ud83d\udccb": 68,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 40,
@@ -72663,10 +72683,11 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bread Stocking \ud83c\udf5e": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Office \ud83d\udcd7": 2,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1
+    "Sort & Collate \ud83d\uddc2": 1,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
