@@ -70969,11 +70969,121 @@
         }
       },
       "pruned": 3
+    },
+    {
+      "ts": "2026-04-27T11:20:32.366684+00:00",
+      "total": 3676,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1128820",
+              "date": "2026-05-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 11,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1112661",
+              "date": "2026-05-03",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1113485",
+              "date": "2026-05-04",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118381",
+              "date": "2026-05-11",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123016",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128628",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128742",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128744",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128862",
+              "date": "2026-05-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133196",
+              "date": "2026-06-01",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133310",
+              "date": "2026-06-01",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133312",
+              "date": "2026-06-01",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
+      {
+        "id": "1112661",
+        "date": "2026-05-03",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
       {
         "id": "1113485",
         "date": "2026-05-04",
@@ -70986,13 +71096,6 @@
         "date": "2026-05-11",
         "start": "13:00",
         "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1122273",
-        "date": "2026-05-17",
-        "start": "15:30",
-        "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -71095,7 +71198,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1245,
-    "Lifting \ud83d\ude9a": 871,
+    "Lifting \ud83d\ude9a": 869,
     "Producer \ud83e\udd66": 386,
     "Flex \ud83e\udd6b": 215,
     "Produce Processing \ud83e\udd6c": 187,
@@ -71107,7 +71210,7 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 47,
     "Bathroom \ud83d\udebd": 40,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Soup: Food Services \ud83c\udf72": 33,
+    "Soup: Food Services \ud83c\udf72": 34,
     "Bins \ud83e\uddfc": 15,
     "Checkout \ud83d\udcb3": 15,
     "Bulk Lifting \ud83e\uded8": 15,
