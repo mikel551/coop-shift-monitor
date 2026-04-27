@@ -71831,6 +71831,67 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-27T13:00:33.904194+00:00",
+      "total": 3642,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1128820",
+              "date": "2026-05-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 5,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1123016",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128628",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128742",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128744",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133196",
+              "date": "2026-06-01",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -71915,10 +71976,10 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1237,
-    "Lifting \ud83d\ude9a": 861,
+    "Lifting \ud83d\ude9a": 860,
     "Producer \ud83e\udd66": 386,
     "Flex \ud83e\udd6b": 215,
-    "Produce Processing \ud83e\udd6c": 188,
+    "Produce Processing \ud83e\udd6c": 187,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 131,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 106,
@@ -71933,13 +71994,12 @@
     "Office \ud83d\udcd7": 12,
     "Checkout \ud83d\udcb3": 7,
     "Cart Return \ud83d\uded2": 6,
-    "Inventory: Produce \ud83c\udf40": 5,
     "Repairs \ud83d\udee0": 5,
     "Vitamins \ud83c\udf6c": 5,
     "Bread Stocking \ud83c\udf5e": 4,
     "Soup Cleaning": 4,
-    "Health & Beauty \ud83e\uddf4": 2,
-    "Sort & Collate \ud83d\uddc2": 1
+    "Inventory: Produce \ud83c\udf40": 4,
+    "Health & Beauty \ud83e\uddf4": 2
   },
   "user_config": [
     {
