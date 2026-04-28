@@ -73596,6 +73596,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-28T02:40:36.269428+00:00",
+      "total": 3460,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -73610,11 +73627,11 @@
           "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2"
         }
       ],
-      "credit_bank": "1",
+      "credit_bank": "0",
       "cancel_tickets": 1
     },
     "Nancy": {
-      "member_status": "Active",
+      "member_status": "Alert",
       "scheduled_shifts": [
         {
           "date": "Monday May 11",
@@ -73622,12 +73639,12 @@
           "description": "Checkout \ud83d\udcb3"
         }
       ],
-      "credit_bank": "0",
+      "credit_bank": "-1",
       "cancel_tickets": 1
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1187,
+    "Stocking \ud83d\udce6": 1185,
     "Lifting \ud83d\ude9a": 833,
     "Producer \ud83e\udd66": 379,
     "Flex \ud83e\udd6b": 201,
@@ -73648,7 +73665,6 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
