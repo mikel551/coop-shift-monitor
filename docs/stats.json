@@ -77443,6 +77443,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-29T22:30:43.112069+00:00",
+      "total": 3451,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1117627",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -77504,6 +77529,7 @@
     "Soup Cleaning": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Office \ud83d\udcd7": 1,
     "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
