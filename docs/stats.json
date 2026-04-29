@@ -77393,10 +77393,45 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-04-29T22:10:37.338566+00:00",
+      "total": 3450,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1117627",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1117627",
+        "date": "2026-05-10",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -77431,9 +77466,9 @@
     "Produce Processing \ud83e\udd6c": 188,
     "Cleaning \ud83c\udfdd": 129,
     "Dairy Lifting \ud83e\udd5b": 128,
-    "Meat Processing & Lifting \ud83c\udf56": 86,
+    "Meat Processing & Lifting \ud83c\udf56": 87,
     "Inventory \ud83d\udccb": 69,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 67,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 68,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
     "Bathroom \ud83d\udebd": 34,
     "Case Maintenance \ud83e\uddfd": 33,
@@ -77445,6 +77480,7 @@
     "Inventory: Produce \ud83c\udf40": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
