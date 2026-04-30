@@ -77804,20 +77804,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-04-30T01:20:27.274942+00:00",
+      "total": 3428,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1111721",
-        "date": "2026-05-01",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -77866,7 +77873,6 @@
     "Vitamins \ud83c\udf6c": 3,
     "Soup Cleaning": 2,
     "Office \ud83d\udcd7": 1,
-    "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
