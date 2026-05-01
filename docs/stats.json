@@ -81176,20 +81176,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-01T17:20:28.587616+00:00",
+      "total": 3435,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1112659",
-        "date": "2026-05-03",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -81217,7 +81224,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1159,
+    "Stocking \ud83d\udce6": 1158,
     "Lifting \ud83d\ude9a": 843,
     "Producer \ud83e\udd66": 379,
     "Flex \ud83e\udd6b": 209,
@@ -81238,7 +81245,6 @@
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
