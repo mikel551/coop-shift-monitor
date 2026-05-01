@@ -80326,6 +80326,46 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-01T11:40:29.458029+00:00",
+      "total": 3529,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1121087",
+              "date": "2026-05-15",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1131332",
+              "date": "2026-05-29",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1128372",
+              "date": "2026-05-25",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -80384,10 +80424,10 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1174,
-    "Lifting \ud83d\ude9a": 852,
+    "Lifting \ud83d\ude9a": 850,
     "Producer \ud83e\udd66": 384,
     "Flex \ud83e\udd6b": 221,
-    "Produce Processing \ud83e\udd6c": 189,
+    "Produce Processing \ud83e\udd6c": 188,
     "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Meat Processing & Lifting \ud83c\udf56": 87,
