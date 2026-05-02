@@ -82491,6 +82491,53 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-02T10:00:33.237357+00:00",
+      "total": 3599,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1121743",
+              "date": "2026-05-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1117505",
+              "date": "2026-05-10",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122153",
+              "date": "2026-05-17",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1137096",
+              "date": "2026-06-07",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ]
 }
