@@ -82243,20 +82243,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T04:00:43.335496+00:00",
+      "total": 3505,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1113741",
-        "date": "2026-05-04",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -82284,29 +82291,30 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1134,
-    "Lifting \ud83d\ude9a": 836,
-    "Producer \ud83e\udd66": 371,
+    "Stocking \ud83d\udce6": 1191,
+    "Lifting \ud83d\ude9a": 868,
+    "Producer \ud83e\udd66": 398,
     "Flex \ud83e\udd6b": 197,
-    "Produce Processing \ud83e\udd6c": 182,
-    "Dairy Lifting \ud83e\udd5b": 130,
-    "Cleaning \ud83c\udfdd": 126,
-    "Meat Processing & Lifting \ud83c\udf56": 86,
+    "Produce Processing \ud83e\udd6c": 187,
+    "Dairy Lifting \ud83e\udd5b": 136,
+    "Cleaning \ud83c\udfdd": 130,
+    "Meat Processing & Lifting \ud83c\udf56": 88,
     "Inventory \ud83d\udccb": 72,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 52,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 51,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 48,
-    "Bathroom \ud83d\udebd": 32,
+    "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 29,
-    "Soup: Food Services \ud83c\udf72": 23,
+    "Soup: Food Services \ud83c\udf72": 22,
     "Bulk Lifting \ud83e\uded8": 16,
     "Bins \ud83e\uddfc": 16,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Office \ud83d\udcd7": 4,
     "Health & Beauty \ud83e\uddf4": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
+    "Bread Stocking \ud83c\udf5e": 2,
     "Checkout \ud83d\udcb3": 2,
-    "Office \ud83d\udcd7": 2,
-    "Bread Stocking \ud83c\udf5e": 1
+    "Cart Return \ud83d\uded2": 2
   },
   "user_config": [
     {
