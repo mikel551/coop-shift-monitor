@@ -83292,20 +83292,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T16:20:31.986198+00:00",
+      "total": 3501,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1112985",
-        "date": "2026-05-03",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -83333,7 +83340,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1190,
+    "Stocking \ud83d\udce6": 1188,
     "Lifting \ud83d\ude9a": 855,
     "Producer \ud83e\udd66": 389,
     "Flex \ud83e\udd6b": 216,
@@ -83353,7 +83360,6 @@
     "Vitamins \ud83c\udf6c": 3,
     "Health & Beauty \ud83e\uddf4": 2,
     "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
