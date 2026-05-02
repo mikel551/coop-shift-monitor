@@ -83326,10 +83326,59 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T16:40:37.145263+00:00",
+      "total": 3501,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1112785",
+              "date": "2026-05-03",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1113023",
+              "date": "2026-05-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1112785",
+        "date": "2026-05-03",
+        "start": "13:00",
+        "end": "13:00",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1113023",
+        "date": "2026-05-03",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -83375,6 +83424,7 @@
     "Bins \ud83e\uddfc": 16,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Repairs \ud83d\udee0": 2,
     "Office \ud83d\udcd7": 1
