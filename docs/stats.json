@@ -84194,20 +84194,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T23:30:32.491549+00:00",
+      "total": 3444,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1112667",
-        "date": "2026-05-03",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -84235,9 +84242,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1163,
-    "Lifting \ud83d\ude9a": 849,
-    "Producer \ud83e\udd66": 383,
+    "Stocking \ud83d\udce6": 1162,
+    "Lifting \ud83d\ude9a": 848,
+    "Producer \ud83e\udd66": 384,
     "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 182,
     "Dairy Lifting \ud83e\udd5b": 135,
@@ -84252,10 +84259,9 @@
     "Bulk Lifting \ud83e\uded8": 16,
     "Bins \ud83e\uddfc": 16,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Vitamins \ud83c\udf6c": 3,
+    "Vitamins \ud83c\udf6c": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
