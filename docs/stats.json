@@ -83390,23 +83390,41 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T17:00:37.684823+00:00",
+      "total": 3494,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1112887",
+              "date": "2026-05-03",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1112785",
+        "id": "1112887",
         "date": "2026-05-03",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1113023",
-        "date": "2026-05-03",
-        "start": "18:00",
-        "end": "18:00",
+        "start": "15:30",
+        "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -83438,15 +83456,15 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1186,
+    "Stocking \ud83d\udce6": 1185,
     "Lifting \ud83d\ude9a": 857,
     "Producer \ud83e\udd66": 389,
-    "Flex \ud83e\udd6b": 214,
+    "Flex \ud83e\udd6b": 213,
     "Produce Processing \ud83e\udd6c": 184,
     "Dairy Lifting \ud83e\udd5b": 136,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 91,
-    "Inventory \ud83d\udccb": 71,
+    "Inventory \ud83d\udccb": 70,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 63,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 47,
     "Bathroom \ud83d\udebd": 35,
@@ -83455,11 +83473,11 @@
     "Bulk Lifting \ud83e\uded8": 16,
     "Bins \ud83e\uddfc": 16,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Office \ud83d\udcd7": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Repairs \ud83d\udee0": 2,
-    "Office \ud83d\udcd7": 1
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
