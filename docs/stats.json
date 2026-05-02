@@ -83242,10 +83242,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T16:00:40.026697+00:00",
+      "total": 3504,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1112985",
+              "date": "2026-05-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1112985",
+        "date": "2026-05-03",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -83273,8 +83308,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1188,
-    "Lifting \ud83d\ude9a": 857,
+    "Stocking \ud83d\udce6": 1189,
+    "Lifting \ud83d\ude9a": 855,
     "Producer \ud83e\udd66": 389,
     "Flex \ud83e\udd6b": 216,
     "Produce Processing \ud83e\udd6c": 184,
@@ -83291,10 +83326,10 @@
     "Bins \ud83e\uddfc": 16,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Office \ud83d\udcd7": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 1
+    "Cart Return \ud83d\uded2": 1,
+    "Office \ud83d\udcd7": 1
   },
   "user_config": [
     {
