@@ -82700,10 +82700,52 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T12:00:38.246140+00:00",
+      "total": 3572,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1121743",
+              "date": "2026-05-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1112775",
+              "date": "2026-05-03",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
   "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1112775",
+        "date": "2026-05-03",
+        "start": "13:00",
+        "end": "13:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ],
     "Mike": [
       {
         "id": "1121743",
@@ -82755,12 +82797,12 @@
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 29,
     "Soup: Food Services \ud83c\udf72": 25,
+    "Checkout \ud83d\udcb3": 17,
     "Bulk Lifting \ud83e\uded8": 16,
-    "Checkout \ud83d\udcb3": 16,
     "Bins \ud83e\uddfc": 16,
     "Office \ud83d\udcd7": 7,
+    "Cart Return \ud83d\uded2": 5,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Cart Return \ud83d\uded2": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
