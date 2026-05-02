@@ -82093,10 +82093,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-02T02:10:30.490296+00:00",
+      "total": 3372,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1113741",
+              "date": "2026-05-04",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1113741",
+        "date": "2026-05-04",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -82124,7 +82159,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1135,
+    "Stocking \ud83d\udce6": 1133,
     "Lifting \ud83d\ude9a": 836,
     "Producer \ud83e\udd66": 373,
     "Flex \ud83e\udd6b": 199,
@@ -82144,9 +82179,9 @@
     "Health & Beauty \ud83e\uddf4": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Office \ud83d\udcd7": 2,
-    "Bread Stocking \ud83c\udf5e": 1,
-    "Checkout \ud83d\udcb3": 1
+    "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
     {
