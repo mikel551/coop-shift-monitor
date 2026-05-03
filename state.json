@@ -90062,6 +90062,31 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-05-03T22:30:29.449797+00:00",
+      "total": 3455,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1113847",
+              "date": "2026-05-04",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ]
 }
