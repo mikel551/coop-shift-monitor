@@ -89716,10 +89716,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-03T20:00:36.450069+00:00",
+      "total": 3475,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1113843",
+              "date": "2026-05-04",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1113843",
+        "date": "2026-05-04",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -89747,7 +89782,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1200,
+    "Stocking \ud83d\udce6": 1199,
     "Lifting \ud83d\ude9a": 848,
     "Producer \ud83e\udd66": 383,
     "Flex \ud83e\udd6b": 210,
@@ -89768,6 +89803,7 @@
     "Repairs \ud83d\udee0": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
