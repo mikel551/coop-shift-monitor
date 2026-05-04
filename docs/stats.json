@@ -93326,6 +93326,52 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-04T12:40:46.492659+00:00",
+      "total": 3589,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1122760",
+              "date": "2026-05-18",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128738",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128860",
+              "date": "2026-05-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133306",
+              "date": "2026-06-01",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
@@ -93353,27 +93399,11 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1132940",
-        "date": "2026-06-01",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
         "id": "1133306",
         "date": "2026-06-01",
         "start": "15:30",
         "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
-      }
-    ],
-    "Mike": [
-      {
-        "id": "1141176",
-        "date": "2026-06-14",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Cart Return \ud83d\uded2"
       }
     ]
   },
@@ -93413,7 +93443,7 @@
     "Dairy Lifting \ud83e\udd5b": 129,
     "Meat Processing & Lifting \ud83c\udf56": 88,
     "Inventory \ud83d\udccb": 78,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 72,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 70,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 46,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 32,
@@ -93424,8 +93454,8 @@
     "Office \ud83d\udcd7": 6,
     "Checkout \ud83d\udcb3": 6,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Cart Return \ud83d\uded2": 5,
     "Vitamins \ud83c\udf6c": 4,
+    "Cart Return \ud83d\uded2": 4,
     "Bread Stocking \ud83c\udf5e": 3,
     "Health & Beauty \ud83e\uddf4": 2
   },
