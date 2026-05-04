@@ -94405,18 +94405,57 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-04T21:20:35.320592+00:00",
+      "total": 3382,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146208",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146210",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146212",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146214",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1118381",
-        "date": "2026-05-11",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1146210",
         "date": "2026-05-25",
@@ -94474,7 +94513,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1170,
+    "Stocking \ud83d\udce6": 1169,
     "Lifting \ud83d\ude9a": 823,
     "Producer \ud83e\udd66": 382,
     "Flex \ud83e\udd6b": 209,
@@ -94490,7 +94529,7 @@
     "Soup: Food Services \ud83c\udf72": 20,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 15,
-    "Checkout \ud83d\udcb3": 11,
+    "Checkout \ud83d\udcb3": 8,
     "Repairs \ud83d\udee0": 7,
     "Inventory: Produce \ud83c\udf40": 5,
     "Health & Beauty \ud83e\uddf4": 2,
