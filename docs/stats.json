@@ -94302,6 +94302,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-04T20:50:37.482676+00:00",
+      "total": 3383,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118381",
+              "date": "2026-05-11",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -94356,12 +94381,12 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 38,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 32,
-    "Soup: Food Services \ud83c\udf72": 21,
+    "Soup: Food Services \ud83c\udf72": 20,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 15,
     "Repairs \ud83d\udee0": 7,
+    "Checkout \ud83d\udcb3": 7,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Checkout \ud83d\udcb3": 4,
     "Health & Beauty \ud83e\uddf4": 2,
     "Vitamins \ud83c\udf6c": 2
   },
