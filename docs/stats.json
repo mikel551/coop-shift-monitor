@@ -90434,6 +90434,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-04T00:20:34.487026+00:00",
+      "total": 3447,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1113371",
+              "date": "2026-05-04",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -90488,7 +90513,7 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 42,
     "Bathroom \ud83d\udebd": 32,
     "Case Maintenance \ud83e\uddfd": 28,
-    "Soup: Food Services \ud83c\udf72": 18,
+    "Soup: Food Services \ud83c\udf72": 17,
     "Bulk Lifting \ud83e\uded8": 16,
     "Bins \ud83e\uddfc": 15,
     "Inventory: Produce \ud83c\udf40": 4,
