@@ -93482,6 +93482,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-04T13:20:38.333071+00:00",
+      "total": 3570,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1122760",
+              "date": "2026-05-18",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -93492,13 +93517,6 @@
         "date": "2026-05-18",
         "start": "08:00",
         "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1133306",
-        "date": "2026-06-01",
-        "start": "15:30",
-        "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -93530,16 +93548,16 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1230,
-    "Lifting \ud83d\ude9a": 847,
+    "Stocking \ud83d\udce6": 1229,
+    "Lifting \ud83d\ude9a": 846,
     "Producer \ud83e\udd66": 400,
-    "Flex \ud83e\udd6b": 226,
+    "Flex \ud83e\udd6b": 225,
     "Produce Processing \ud83e\udd6c": 182,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 129,
     "Meat Processing & Lifting \ud83c\udf56": 88,
     "Inventory \ud83d\udccb": 78,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 67,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 66,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 46,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 32,
@@ -93552,8 +93570,8 @@
     "Cart Return \ud83d\uded2": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Checkout \ud83d\udcb3": 2,
-    "Health & Beauty \ud83e\uddf4": 2
+    "Health & Beauty \ud83e\uddf4": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
