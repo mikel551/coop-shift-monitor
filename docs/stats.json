@@ -94226,20 +94226,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-04T20:10:35.945343+00:00",
+      "total": 3382,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1113809",
-        "date": "2026-05-04",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -94267,10 +94274,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1175,
+    "Stocking \ud83d\udce6": 1174,
     "Lifting \ud83d\ude9a": 822,
-    "Producer \ud83e\udd66": 383,
-    "Flex \ud83e\udd6b": 209,
+    "Producer \ud83e\udd66": 382,
+    "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 125,
     "Cleaning \ud83c\udfdd": 122,
@@ -94286,8 +94293,7 @@
     "Repairs \ud83d\udee0": 7,
     "Inventory: Produce \ud83c\udf40": 5,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Vitamins \ud83c\udf6c": 2,
-    "Cart Return \ud83d\uded2": 1
+    "Vitamins \ud83c\udf6c": 2
   },
   "user_config": [
     {
