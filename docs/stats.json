@@ -94451,6 +94451,52 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-04T21:30:41.054402+00:00",
+      "total": 3380,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146208",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146210",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146212",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146214",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -94513,16 +94559,16 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1169,
+    "Stocking \ud83d\udce6": 1168,
     "Lifting \ud83d\ude9a": 823,
     "Producer \ud83e\udd66": 382,
-    "Flex \ud83e\udd6b": 209,
+    "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 124,
     "Cleaning \ud83c\udfdd": 122,
-    "Meat Processing & Lifting \ud83c\udf56": 87,
+    "Meat Processing & Lifting \ud83c\udf56": 88,
     "Inventory \ud83d\udccb": 74,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 40,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 38,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 32,
