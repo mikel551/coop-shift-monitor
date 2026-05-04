@@ -93372,6 +93372,45 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-05-04T12:50:30.655668+00:00",
+      "total": 3583,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1122760",
+              "date": "2026-05-18",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128738",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133306",
+              "date": "2026-06-01",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -93389,13 +93428,6 @@
         "date": "2026-05-25",
         "start": "15:30",
         "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1128860",
-        "date": "2026-05-25",
-        "start": "18:00",
-        "end": "18:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -93437,13 +93469,13 @@
     "Stocking \ud83d\udce6": 1234,
     "Lifting \ud83d\ude9a": 847,
     "Producer \ud83e\udd66": 400,
-    "Flex \ud83e\udd6b": 225,
-    "Produce Processing \ud83e\udd6c": 184,
-    "Cleaning \ud83c\udfdd": 131,
+    "Flex \ud83e\udd6b": 226,
+    "Produce Processing \ud83e\udd6c": 183,
+    "Cleaning \ud83c\udfdd": 130,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Meat Processing & Lifting \ud83c\udf56": 88,
     "Inventory \ud83d\udccb": 78,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 70,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 67,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 46,
     "Bathroom \ud83d\udebd": 33,
     "Case Maintenance \ud83e\uddfd": 32,
@@ -93452,8 +93484,8 @@
     "Bulk Lifting \ud83e\uded8": 15,
     "Repairs \ud83d\udee0": 7,
     "Office \ud83d\udcd7": 6,
-    "Checkout \ud83d\udcb3": 6,
     "Inventory: Produce \ud83c\udf40": 5,
+    "Checkout \ud83d\udcb3": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Cart Return \ud83d\uded2": 4,
     "Bread Stocking \ud83c\udf5e": 3,
