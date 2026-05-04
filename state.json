@@ -94552,6 +94552,52 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-04T21:50:34.966984+00:00",
+      "total": 3376,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146208",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146210",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146212",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146214",
+              "date": "2026-05-25",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ]
 }
