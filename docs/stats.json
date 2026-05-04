@@ -90534,6 +90534,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-04T01:00:37.257180+00:00",
+      "total": 3441,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1113371",
+              "date": "2026-05-04",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -90580,7 +90605,7 @@
     "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 184,
-    "Dairy Lifting \ud83e\udd5b": 134,
+    "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 90,
     "Inventory \ud83d\udccb": 66,
