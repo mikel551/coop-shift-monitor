@@ -93776,6 +93776,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-04T16:10:38.456333+00:00",
+      "total": 3459,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118505",
+              "date": "2026-05-11",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ]
 }
