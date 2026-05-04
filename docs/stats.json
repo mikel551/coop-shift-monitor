@@ -93265,6 +93265,67 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-04T12:30:40.016742+00:00",
+      "total": 3592,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141176",
+              "date": "2026-06-14",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 5,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1122760",
+              "date": "2026-05-18",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128738",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128860",
+              "date": "2026-05-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1132940",
+              "date": "2026-06-01",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133306",
+              "date": "2026-06-01",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -93301,13 +93362,6 @@
       {
         "id": "1133306",
         "date": "2026-06-01",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1137940",
-        "date": "2026-06-08",
         "start": "15:30",
         "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
@@ -93367,8 +93421,8 @@
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 15,
     "Repairs \ud83d\udee0": 7,
-    "Checkout \ud83d\udcb3": 7,
     "Office \ud83d\udcd7": 6,
+    "Checkout \ud83d\udcb3": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Cart Return \ud83d\uded2": 5,
     "Vitamins \ud83c\udf6c": 4,
