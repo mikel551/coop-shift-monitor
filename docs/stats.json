@@ -96134,6 +96134,38 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-05T13:00:42.592476+00:00",
+      "total": 3491,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1134010",
+              "date": "2026-06-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1142414",
+              "date": "2026-06-15",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -96203,10 +96235,10 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Cart Return \ud83d\uded2": 4,
     "Checkout \ud83d\udcb3": 3,
+    "Entrance/Greeter \ud83c\udf9f": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Vitamins \ud83c\udf6c": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Vitamins \ud83c\udf6c": 2
   },
   "user_config": [
     {
