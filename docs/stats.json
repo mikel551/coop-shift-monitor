@@ -95176,16 +95176,41 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-05T01:30:38.178666+00:00",
+      "total": 3354,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1117389",
+              "date": "2026-05-10",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1126906",
-        "date": "2026-05-24",
-        "start": "15:30",
-        "end": "15:30",
+        "id": "1117389",
+        "date": "2026-05-10",
+        "start": "13:00",
+        "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -95237,9 +95262,9 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Checkout \ud83d\udcb3": 3,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Office \ud83d\udcd7": 2,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Vitamins \ud83c\udf6c": 2,
-    "Office \ud83d\udcd7": 1
+    "Vitamins \ud83c\udf6c": 2
   },
   "user_config": [
     {
