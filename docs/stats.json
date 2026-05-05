@@ -95441,18 +95441,51 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-05T06:00:36.406748+00:00",
+      "total": 3556,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1134010",
+              "date": "2026-06-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1142414",
+              "date": "2026-06-15",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1142350",
+              "date": "2026-06-15",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1122269",
-        "date": "2026-05-17",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1142350",
         "date": "2026-06-15",
@@ -95506,9 +95539,9 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1208,
-    "Lifting \ud83d\ude9a": 844,
+    "Lifting \ud83d\ude9a": 843,
     "Producer \ud83e\udd66": 395,
-    "Flex \ud83e\udd6b": 218,
+    "Flex \ud83e\udd6b": 219,
     "Produce Processing \ud83e\udd6c": 183,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 120,
@@ -95518,7 +95551,7 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 48,
     "Case Maintenance \ud83e\uddfd": 36,
     "Bathroom \ud83d\udebd": 34,
-    "Checkout \ud83d\udcb3": 32,
+    "Checkout \ud83d\udcb3": 29,
     "Soup: Food Services \ud83c\udf72": 20,
     "Bins \ud83e\uddfc": 16,
     "Bulk Lifting \ud83e\uded8": 16,
@@ -95526,8 +95559,8 @@
     "Office \ud83d\udcd7": 7,
     "Repairs \ud83d\udee0": 7,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Entrance/Greeter \ud83c\udf9f": 4,
     "Bread Stocking \ud83c\udf5e": 3,
+    "Entrance/Greeter \ud83c\udf9f": 3,
     "Health & Beauty \ud83e\uddf4": 2,
     "Vitamins \ud83c\udf6c": 2
   },
