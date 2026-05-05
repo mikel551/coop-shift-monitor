@@ -95641,6 +95641,46 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-05T11:00:46.706319+00:00",
+      "total": 3531,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1134010",
+              "date": "2026-06-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1142414",
+              "date": "2026-06-15",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1142350",
+              "date": "2026-06-15",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -95698,31 +95738,31 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1207,
-    "Lifting \ud83d\ude9a": 841,
-    "Producer \ud83e\udd66": 396,
-    "Flex \ud83e\udd6b": 219,
-    "Produce Processing \ud83e\udd6c": 183,
+    "Stocking \ud83d\udce6": 1206,
+    "Lifting \ud83d\ude9a": 839,
+    "Producer \ud83e\udd66": 395,
+    "Flex \ud83e\udd6b": 217,
+    "Produce Processing \ud83e\udd6c": 181,
     "Dairy Lifting \ud83e\udd5b": 128,
     "Cleaning \ud83c\udfdd": 120,
     "Meat Processing & Lifting \ud83c\udf56": 92,
     "Inventory \ud83d\udccb": 78,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 52,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 50,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 48,
     "Case Maintenance \ud83e\uddfd": 36,
     "Bathroom \ud83d\udebd": 34,
     "Soup: Food Services \ud83c\udf72": 21,
-    "Checkout \ud83d\udcb3": 21,
+    "Checkout \ud83d\udcb3": 20,
     "Bins \ud83e\uddfc": 16,
     "Bulk Lifting \ud83e\uded8": 16,
-    "Cart Return \ud83d\uded2": 10,
+    "Cart Return \ud83d\uded2": 8,
     "Office \ud83d\udcd7": 7,
     "Repairs \ud83d\udee0": 7,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Entrance/Greeter \ud83c\udf9f": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Vitamins \ud83c\udf6c": 2
+    "Vitamins \ud83c\udf6c": 2,
+    "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
     {
