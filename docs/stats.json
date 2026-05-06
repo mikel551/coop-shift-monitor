@@ -97598,6 +97598,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-06T00:00:33.740346+00:00",
+      "total": 3368,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118609",
+              "date": "2026-05-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -97639,11 +97664,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1166,
+    "Stocking \ud83d\udce6": 1165,
     "Lifting \ud83d\ude9a": 822,
     "Producer \ud83e\udd66": 388,
     "Flex \ud83e\udd6b": 202,
-    "Produce Processing \ud83e\udd6c": 178,
+    "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 124,
     "Cleaning \ud83c\udfdd": 120,
     "Meat Processing & Lifting \ud83c\udf56": 87,
@@ -97656,12 +97681,13 @@
     "Soup: Food Services \ud83c\udf72": 16,
     "Bulk Lifting \ud83e\uded8": 16,
     "Inventory: Produce \ud83c\udf40": 5,
+    "Bread Stocking \ud83c\udf5e": 4,
     "Repairs \ud83d\udee0": 3,
-    "Bread Stocking \ud83c\udf5e": 3,
     "Checkout \ud83d\udcb3": 2,
-    "Office \ud83d\udcd7": 2,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Vitamins \ud83c\udf6c": 2
+    "Vitamins \ud83c\udf6c": 2,
+    "Cart Return \ud83d\uded2": 1,
+    "Office \ud83d\udcd7": 1
   },
   "user_config": [
     {
