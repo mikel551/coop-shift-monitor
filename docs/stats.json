@@ -99481,20 +99481,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-06T21:40:41.198978+00:00",
+      "total": 3279,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1115049",
-        "date": "2026-05-06",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -99534,16 +99541,15 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 42,
     "Case Maintenance \ud83e\uddfd": 33,
     "Bathroom \ud83d\udebd": 33,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 18,
     "Soup: Food Services \ud83c\udf72": 17,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 17,
     "Bins \ud83e\uddfc": 16,
     "Bulk Lifting \ud83e\uded8": 14,
     "Repairs \ud83d\udee0": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Checkout \ud83d\udcb3": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Vitamins \ud83c\udf6c": 2,
-    "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
