@@ -97648,16 +97648,41 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-06T00:20:44.254075+00:00",
+      "total": 3364,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1132394",
+              "date": "2026-05-31",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1118609",
-        "date": "2026-05-11",
-        "start": "18:00",
-        "end": "18:00",
+        "id": "1132394",
+        "date": "2026-05-31",
+        "start": "13:00",
+        "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -97692,7 +97717,7 @@
     "Stocking \ud83d\udce6": 1164,
     "Lifting \ud83d\ude9a": 822,
     "Producer \ud83e\udd66": 388,
-    "Flex \ud83e\udd6b": 202,
+    "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 124,
     "Cleaning \ud83c\udfdd": 118,
