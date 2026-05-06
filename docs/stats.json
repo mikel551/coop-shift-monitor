@@ -97673,20 +97673,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-06T00:30:38.563031+00:00",
+      "total": 3364,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1132394",
-        "date": "2026-05-31",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -97725,8 +97732,8 @@
     "Inventory \ud83d\udccb": 74,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
     "Case Maintenance \ud83e\uddfd": 35,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 33,
     "Bathroom \ud83d\udebd": 33,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 32,
     "Bins \ud83e\uddfc": 16,
     "Soup: Food Services \ud83c\udf72": 16,
     "Bulk Lifting \ud83e\uded8": 16,
@@ -97735,7 +97742,6 @@
     "Repairs \ud83d\udee0": 3,
     "Health & Beauty \ud83e\uddf4": 2,
     "Vitamins \ud83c\udf6c": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
