@@ -101113,6 +101113,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-07T17:30:38.850456+00:00",
+      "total": 3295,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1126552",
+              "date": "2026-05-24",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -101154,9 +101179,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1123,
+    "Stocking \ud83d\udce6": 1122,
     "Lifting \ud83d\ude9a": 807,
-    "Producer \ud83e\udd66": 383,
+    "Producer \ud83e\udd66": 382,
     "Flex \ud83e\udd6b": 198,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 125,
@@ -101172,10 +101197,10 @@
     "Bulk Lifting \ud83e\uded8": 14,
     "Repairs \ud83d\udee0": 5,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Office \ud83d\udcd7": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Checkout \ud83d\udcb3": 1,
-    "Office \ud83d\udcd7": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
