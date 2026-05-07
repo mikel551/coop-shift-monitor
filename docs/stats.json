@@ -99727,10 +99727,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-07T00:00:38.257670+00:00",
+      "total": 3266,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1118505",
+              "date": "2026-05-11",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1118505",
+        "date": "2026-05-11",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -99758,10 +99793,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1131,
-    "Lifting \ud83d\ude9a": 799,
+    "Stocking \ud83d\udce6": 1133,
+    "Lifting \ud83d\ude9a": 800,
     "Producer \ud83e\udd66": 380,
-    "Flex \ud83e\udd6b": 187,
+    "Flex \ud83e\udd6b": 188,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 124,
     "Cleaning \ud83c\udfdd": 121,
@@ -99770,15 +99805,16 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 42,
     "Case Maintenance \ud83e\uddfd": 33,
     "Bathroom \ud83d\udebd": 33,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 18,
-    "Bins \ud83e\uddfc": 16,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 19,
+    "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
     "Bulk Lifting \ud83e\uded8": 14,
     "Repairs \ud83d\udee0": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Checkout \ud83d\udcb3": 2,
+    "Office \ud83d\udcd7": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Vitamins \ud83c\udf6c": 2,
-    "Office \ud83d\udcd7": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
