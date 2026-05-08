@@ -101877,6 +101877,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-08T00:50:36.545622+00:00",
+      "total": 3242,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -101884,14 +101901,8 @@
   "member_status": {
     "Mike": {
       "member_status": "Active",
-      "scheduled_shifts": [
-        {
-          "date": "Thursday May 7",
-          "start_time": "6:00pm",
-          "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2 \u2705 You checked in May 7, 2026 6:06pm"
-        }
-      ],
-      "credit_bank": "0",
+      "scheduled_shifts": null,
+      "credit_bank": "1",
       "cancel_tickets": 1
     },
     "Nancy": {
@@ -101920,15 +101931,14 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
     "Bathroom \ud83d\udebd": 34,
     "Case Maintenance \ud83e\uddfd": 32,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 25,
-    "Soup: Food Services \ud83c\udf72": 18,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 24,
+    "Soup: Food Services \ud83c\udf72": 17,
     "Bins \ud83e\uddfc": 16,
     "Bulk Lifting \ud83e\uded8": 14,
     "Repairs \ud83d\udee0": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Bread Stocking \ud83c\udf5e": 3,
     "Vitamins \ud83c\udf6c": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
