@@ -102213,6 +102213,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-08T07:00:47.468025+00:00",
+      "total": 3454,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1125722",
+              "date": "2026-05-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -102268,7 +102293,7 @@
     "Cart Return \ud83d\uded2": 9,
     "Office \ud83d\udcd7": 6,
     "Bread Stocking \ud83c\udf5e": 5,
-    "Entrance/Greeter \ud83c\udf9f": 5,
+    "Entrance/Greeter \ud83c\udf9f": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Repairs \ud83d\udee0": 2,
