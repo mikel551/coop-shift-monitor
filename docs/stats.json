@@ -105829,10 +105829,59 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-09T20:20:27.053050+00:00",
+      "total": 3381,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1117271",
+              "date": "2026-05-10",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122159",
+              "date": "2026-05-17",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1117271",
+        "date": "2026-05-10",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1122159",
+        "date": "2026-05-17",
+        "start": "13:00",
+        "end": "13:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -105854,7 +105903,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1130,
+    "Stocking \ud83d\udce6": 1131,
     "Lifting \ud83d\ude9a": 828,
     "Producer \ud83e\udd66": 387,
     "Flex \ud83e\udd6b": 210,
@@ -105863,7 +105912,7 @@
     "Cleaning \ud83c\udfdd": 127,
     "Meat Processing & Lifting \ud83c\udf56": 93,
     "Inventory \ud83d\udccb": 68,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 46,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 48,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 40,
     "Case Maintenance \ud83e\uddfd": 30,
     "Bathroom \ud83d\udebd": 29,
@@ -105875,6 +105924,7 @@
     "Soup Cleaning": 4,
     "Repairs \ud83d\udee0": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Bread Stocking \ud83c\udf5e": 1
   },

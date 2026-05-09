@@ -1,6 +1,9 @@
 {
   "notified": {
-    "Nancy": [],
+    "Nancy": [
+      "1117271",
+      "1122159"
+    ],
     "Mike": []
   },
   "stats": [
@@ -105830,6 +105833,38 @@
           "matched": 0,
           "notified": 0,
           "shifts": []
+        }
+      },
+      "pruned": 0
+    },
+    {
+      "ts": "2026-05-09T20:20:27.053050+00:00",
+      "total": 3381,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1117271",
+              "date": "2026-05-10",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1122159",
+              "date": "2026-05-17",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
         }
       },
       "pruned": 0
