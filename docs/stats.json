@@ -105517,6 +105517,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-09T17:40:31.270577+00:00",
+      "total": 3396,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1117377",
+              "date": "2026-05-10",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -105561,7 +105586,7 @@
     "Cleaning \ud83c\udfdd": 127,
     "Meat Processing & Lifting \ud83c\udf56": 93,
     "Inventory \ud83d\udccb": 69,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 51,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 50,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 42,
     "Case Maintenance \ud83e\uddfd": 30,
     "Bathroom \ud83d\udebd": 28,
