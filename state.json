@@ -3,7 +3,9 @@
     "Nancy": [
       "1117623"
     ],
-    "Mike": []
+    "Mike": [
+      "1117589"
+    ]
   },
   "stats": [
     {
@@ -106107,6 +106109,39 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-09T22:10:29.091402+00:00",
+      "total": 3362,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1117589",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1117623",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ]
 }
