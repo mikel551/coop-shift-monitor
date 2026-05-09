@@ -106044,16 +106044,48 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-09T21:50:34.900516+00:00",
+      "total": 3370,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1117393",
+              "date": "2026-05-10",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1117623",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1117135",
+        "id": "1117393",
         "date": "2026-05-10",
-        "start": "08:00",
-        "end": "08:00",
+        "start": "13:00",
+        "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
