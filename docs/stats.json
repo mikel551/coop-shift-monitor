@@ -104369,6 +104369,67 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-09T09:00:36.293957+00:00",
+      "total": 3504,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1117589",
+              "date": "2026-05-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1126376",
+              "date": "2026-05-23",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1121913",
+              "date": "2026-05-17",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128376",
+              "date": "2026-05-25",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1132518",
+              "date": "2026-05-31",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1141564",
+              "date": "2026-06-14",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -104450,9 +104511,9 @@
     "Dairy Lifting \ud83e\udd5b": 127,
     "Meat Processing & Lifting \ud83c\udf56": 95,
     "Inventory \ud83d\udccb": 68,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 54,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 55,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
-    "Checkout \ud83d\udcb3": 40,
+    "Checkout \ud83d\udcb3": 37,
     "Case Maintenance \ud83e\uddfd": 32,
     "Bathroom \ud83d\udebd": 28,
     "Soup: Food Services \ud83c\udf72": 24,
