@@ -104491,6 +104491,60 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-09T11:00:34.840315+00:00",
+      "total": 3496,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1126376",
+              "date": "2026-05-23",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1121913",
+              "date": "2026-05-17",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1128376",
+              "date": "2026-05-25",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1132518",
+              "date": "2026-05-31",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1141564",
+              "date": "2026-06-14",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -104527,13 +104581,6 @@
     ],
     "Mike": [
       {
-        "id": "1117589",
-        "date": "2026-05-10",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
-      {
         "id": "1126376",
         "date": "2026-05-23",
         "start": "18:00",
@@ -104563,8 +104610,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1163,
-    "Lifting \ud83d\ude9a": 845,
+    "Stocking \ud83d\udce6": 1161,
+    "Lifting \ud83d\ude9a": 844,
     "Producer \ud83e\udd66": 394,
     "Flex \ud83e\udd6b": 213,
     "Produce Processing \ud83e\udd6c": 184,
@@ -104574,7 +104621,7 @@
     "Inventory \ud83d\udccb": 68,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 55,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
-    "Checkout \ud83d\udcb3": 34,
+    "Checkout \ud83d\udcb3": 33,
     "Case Maintenance \ud83e\uddfd": 32,
     "Bathroom \ud83d\udebd": 28,
     "Soup: Food Services \ud83c\udf72": 24,
