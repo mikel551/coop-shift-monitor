@@ -109148,6 +109148,38 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-10T13:20:35.704158+00:00",
+      "total": 3466,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118381",
+              "date": "2026-05-11",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1118507",
+              "date": "2026-05-11",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {},
@@ -109166,15 +109198,6 @@
         "start": "15:30",
         "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
-      }
-    ],
-    "Mike": [
-      {
-        "id": "1126986",
-        "date": "2026-05-24",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
       }
     ]
   },
@@ -109220,8 +109243,8 @@
     "Soup Cleaning": 4,
     "Repairs \ud83d\udee0": 3,
     "Checkout \ud83d\udcb3": 3,
-    "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Bread Stocking \ud83c\udf5e": 2
   },
