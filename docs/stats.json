@@ -109705,6 +109705,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-10T17:10:29.550915+00:00",
+      "total": 3426,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1118491",
+              "date": "2026-05-11",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -109740,11 +109765,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1169,
+    "Stocking \ud83d\udce6": 1168,
     "Lifting \ud83d\ude9a": 835,
     "Producer \ud83e\udd66": 396,
     "Flex \ud83e\udd6b": 203,
-    "Produce Processing \ud83e\udd6c": 183,
+    "Produce Processing \ud83e\udd6c": 184,
     "Dairy Lifting \ud83e\udd5b": 128,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 91,
