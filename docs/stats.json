@@ -109042,18 +109042,44 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-10T12:50:29.478938+00:00",
+      "total": 3471,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1126986",
+              "date": "2026-05-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141444",
+              "date": "2026-06-14",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {},
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1137092",
-        "date": "2026-06-07",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1141444",
         "date": "2026-06-14",
@@ -109066,13 +109092,6 @@
       {
         "id": "1126986",
         "date": "2026-05-24",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
-      {
-        "id": "1137170",
-        "date": "2026-06-07",
         "start": "18:00",
         "end": "18:00",
         "type": "Cart Return \ud83d\uded2"
@@ -109119,10 +109138,10 @@
     "Office \ud83d\udcd7": 11,
     "Inventory: Produce \ud83c\udf40": 5,
     "Soup Cleaning": 4,
-    "Cart Return \ud83d\uded2": 4,
     "Repairs \ud83d\udee0": 3,
-    "Checkout \ud83d\udcb3": 3,
+    "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Health & Beauty \ud83e\uddf4": 2,
     "Bread Stocking \ud83c\udf5e": 2
   },
