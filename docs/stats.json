@@ -117424,6 +117424,53 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-12T06:00:40.111738+00:00",
+      "total": 3505,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1129444",
+              "date": "2026-05-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1138598",
+              "date": "2026-06-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1146910",
+              "date": "2026-06-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146846",
+              "date": "2026-06-22",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -117476,7 +117523,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1189,
+    "Stocking \ud83d\udce6": 1188,
     "Lifting \ud83d\ude9a": 826,
     "Producer \ud83e\udd66": 399,
     "Flex \ud83e\udd6b": 198,
@@ -117493,12 +117540,12 @@
     "Soup: Food Services \ud83c\udf72": 18,
     "Bins \ud83e\uddfc": 16,
     "Bulk Lifting \ud83e\uded8": 16,
-    "Cart Return \ud83d\uded2": 11,
+    "Cart Return \ud83d\uded2": 10,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Entrance/Greeter \ud83c\udf9f": 4,
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 4,
     "Repairs \ud83d\udee0": 3,
+    "Entrance/Greeter \ud83c\udf9f": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 2
