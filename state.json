@@ -1,7 +1,8 @@
 {
   "notified": {
     "Nancy": [
-      "1146846"
+      "1146846",
+      "1137830"
     ],
     "Mike": [
       "1146910"
@@ -118022,6 +118023,46 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-12T12:20:37.912761+00:00",
+      "total": 3450,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146910",
+              "date": "2026-06-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1137830",
+              "date": "2026-06-08",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146846",
+              "date": "2026-06-22",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ]
 }
