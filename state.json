@@ -119991,6 +119991,38 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-13T10:00:36.040209+00:00",
+      "total": 3456,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1130058",
+              "date": "2026-05-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1139180",
+              "date": "2026-06-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ]
 }
