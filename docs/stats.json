@@ -125458,6 +125458,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-15T19:10:29.934344+00:00",
+      "total": 3328,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1123016",
+              "date": "2026-05-18",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -125490,7 +125515,7 @@
     "Stocking \ud83d\udce6": 1110,
     "Lifting \ud83d\ude9a": 821,
     "Producer \ud83e\udd66": 375,
-    "Flex \ud83e\udd6b": 204,
+    "Flex \ud83e\udd6b": 203,
     "Produce Processing \ud83e\udd6c": 182,
     "Dairy Lifting \ud83e\udd5b": 127,
     "Cleaning \ud83c\udfdd": 123,
@@ -125508,8 +125533,8 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
