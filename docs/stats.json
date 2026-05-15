@@ -124512,6 +124512,46 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-15T11:50:38.631852+00:00",
+      "total": 3431,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1136556",
+              "date": "2026-06-06",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1140392",
+              "date": "2026-06-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1122385",
+              "date": "2026-05-17",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -124566,10 +124606,10 @@
     "Cleaning \ud83c\udfdd": 125,
     "Meat Processing & Lifting \ud83c\udf56": 93,
     "Inventory \ud83d\udccb": 74,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 62,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 64,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Soup: Food Services \ud83c\udf72": 26,
+    "Soup: Food Services \ud83c\udf72": 25,
     "Bathroom \ud83d\udebd": 23,
     "Bins \ud83e\uddfc": 16,
     "Checkout \ud83d\udcb3": 13,
@@ -124579,7 +124619,7 @@
     "Vitamins \ud83c\udf6c": 5,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
-    "Cart Return \ud83d\uded2": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
