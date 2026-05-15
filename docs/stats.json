@@ -125145,10 +125145,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-15T16:20:33.495772+00:00",
+      "total": 3352,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1123254",
+              "date": "2026-05-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1123254",
+        "date": "2026-05-18",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -125165,7 +125200,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1111,
-    "Lifting \ud83d\ude9a": 830,
+    "Lifting \ud83d\ude9a": 829,
     "Producer \ud83e\udd66": 378,
     "Flex \ud83e\udd6b": 209,
     "Produce Processing \ud83e\udd6c": 182,
@@ -125185,8 +125220,8 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 2,
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
