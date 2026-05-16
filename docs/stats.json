@@ -126209,10 +126209,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-16T01:40:29.530109+00:00",
+      "total": 3295,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1127020",
+              "date": "2026-05-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1127020",
+        "date": "2026-05-24",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -126228,7 +126263,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1096,
+    "Stocking \ud83d\udce6": 1097,
     "Lifting \ud83d\ude9a": 817,
     "Producer \ud83e\udd66": 371,
     "Flex \ud83e\udd6b": 198,
@@ -126249,8 +126284,8 @@
     "Office \ud83d\udcd7": 4,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 2,
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
