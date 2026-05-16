@@ -127636,6 +127636,39 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-16T14:30:30.719773+00:00",
+      "total": 3467,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141036",
+              "date": "2026-06-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1137700",
+              "date": "2026-06-08",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {},
@@ -127674,9 +127707,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1159,
-    "Lifting \ud83d\ude9a": 841,
-    "Producer \ud83e\udd66": 377,
+    "Stocking \ud83d\udce6": 1160,
+    "Lifting \ud83d\ude9a": 840,
+    "Producer \ud83e\udd66": 376,
     "Flex \ud83e\udd6b": 213,
     "Produce Processing \ud83e\udd6c": 188,
     "Dairy Lifting \ud83e\udd5b": 132,
@@ -127689,7 +127722,7 @@
     "Soup: Food Services \ud83c\udf72": 28,
     "Bathroom \ud83d\udebd": 18,
     "Bins \ud83e\uddfc": 16,
-    "Checkout \ud83d\udcb3": 16,
+    "Checkout \ud83d\udcb3": 13,
     "Bulk Lifting \ud83e\uded8": 13,
     "Repairs \ud83d\udee0": 8,
     "Vitamins \ud83c\udf6c": 7,
