@@ -1,20 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-04T18:30:31.929318+00:00",
-      "total": 3312,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      }
-    },
-    {
       "ts": "2026-04-04T18:45:27.306456+00:00",
       "total": 3313,
       "users": {
@@ -128129,10 +128115,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-16T18:40:37.051218+00:00",
+      "total": 3405,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1137170",
+              "date": "2026-06-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1123248",
+              "date": "2026-05-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 17,
+    "total_runs": 18,
     "users": {
       "Mike": {
         "matched": 5,
@@ -128179,7 +128198,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1142,
+    "Stocking \ud83d\udce6": 1140,
     "Lifting \ud83d\ude9a": 842,
     "Producer \ud83e\udd66": 367,
     "Flex \ud83e\udd6b": 208,
@@ -128188,7 +128207,7 @@
     "Cleaning \ud83c\udfdd": 124,
     "Meat Processing & Lifting \ud83c\udf56": 94,
     "Inventory \ud83d\udccb": 75,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 70,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 72,
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 21,
@@ -128198,8 +128217,8 @@
     "Repairs \ud83d\udee0": 8,
     "Vitamins \ud83c\udf6c": 6,
     "Soup Cleaning": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Entrance/Greeter \ud83c\udf9f": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Cart Return \ud83d\uded2": 1,
