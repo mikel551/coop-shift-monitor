@@ -1,20 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-04T21:15:24.235094+00:00",
-      "total": 3295,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      }
-    },
-    {
       "ts": "2026-04-04T21:30:30.300844+00:00",
       "total": 3294,
       "users": {
@@ -128445,10 +128431,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-16T21:20:32.151379+00:00",
+      "total": 3392,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1122019",
+              "date": "2026-05-17",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1123232",
+              "date": "2026-05-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 28,
+    "total_runs": 29,
     "users": {
       "Mike": {
         "matched": 5,
@@ -128462,6 +128480,13 @@
   },
   "available_shifts": {
     "Nancy": [
+      {
+        "id": "1122019",
+        "date": "2026-05-17",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
       {
         "id": "1123232",
         "date": "2026-05-18",
@@ -128486,7 +128511,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1138,
+    "Stocking \ud83d\udce6": 1137,
     "Lifting \ud83d\ude9a": 842,
     "Producer \ud83e\udd66": 368,
     "Flex \ud83e\udd6b": 208,
@@ -128505,8 +128530,8 @@
     "Repairs \ud83d\udee0": 8,
     "Vitamins \ud83c\udf6c": 5,
     "Soup Cleaning": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Office \ud83d\udcd7": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
