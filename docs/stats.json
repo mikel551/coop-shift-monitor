@@ -1,20 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-04T23:15:29.207062+00:00",
-      "total": 3290,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      }
-    },
-    {
       "ts": "2026-04-04T23:30:27.490355+00:00",
       "total": 3289,
       "users": {
@@ -128592,10 +128578,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-16T23:20:32.448429+00:00",
+      "total": 3382,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1122399",
+              "date": "2026-05-17",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 36,
+    "total_runs": 37,
     "users": {
       "Mike": {
         "matched": 5,
@@ -128653,9 +128664,9 @@
     "Vitamins \ud83c\udf6c": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
+    "Office \ud83d\udcd7": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Checkout \ud83d\udcb3": 1,
-    "Office \ud83d\udcd7": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
