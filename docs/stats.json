@@ -1,20 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-04T21:00:26.109061+00:00",
-      "total": 3295,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      }
-    },
-    {
       "ts": "2026-04-04T21:15:24.235094+00:00",
       "total": 3295,
       "users": {
@@ -128417,10 +128403,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-16T21:00:38.056187+00:00",
+      "total": 3393,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
-    "total_runs": 27,
+    "total_runs": 28,
     "users": {
       "Mike": {
         "matched": 5,
@@ -128432,24 +128435,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1122159",
-        "date": "2026-05-17",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1122766",
-        "date": "2026-05-18",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128465,7 +128451,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1138,
+    "Stocking \ud83d\udce6": 1139,
     "Lifting \ud83d\ude9a": 842,
     "Producer \ud83e\udd66": 368,
     "Flex \ud83e\udd6b": 208,
@@ -128474,7 +128460,7 @@
     "Cleaning \ud83c\udfdd": 124,
     "Meat Processing & Lifting \ud83c\udf56": 94,
     "Inventory \ud83d\udccb": 73,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 68,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 69,
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 19,
@@ -128482,11 +128468,11 @@
     "Bins \ud83e\uddfc": 16,
     "Bulk Lifting \ud83e\uded8": 13,
     "Repairs \ud83d\udee0": 8,
+    "Vitamins \ud83c\udf6c": 5,
     "Soup Cleaning": 4,
-    "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
