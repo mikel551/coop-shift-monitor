@@ -1,21 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-05T18:20:24.750912+00:00",
-      "total": 3374,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-05T18:30:24.624637+00:00",
       "total": 3372,
       "users": {
@@ -130919,10 +130904,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-17T18:20:34.870935+00:00",
+      "total": 3447,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 126,
+    "total_runs": 127,
     "users": {
       "Mike": {
         "matched": 138,
@@ -130934,17 +130936,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1123142",
-        "date": "2026-05-18",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130982,7 +130974,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Checkout \ud83d\udcb3": 2
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
