@@ -1,21 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-05T18:40:30.339811+00:00",
-      "total": 3370,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-05T18:50:30.527839+00:00",
       "total": 3371,
       "users": {
@@ -130948,10 +130933,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-17T18:50:31.463477+00:00",
+      "total": 3447,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 128,
+    "total_runs": 129,
     "users": {
       "Mike": {
         "matched": 138,
@@ -130963,17 +130965,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1122896",
-        "date": "2026-05-18",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130993,14 +130985,14 @@
     "Lifting \ud83d\ude9a": 840,
     "Producer \ud83e\udd66": 375,
     "Flex \ud83e\udd6b": 206,
-    "Produce Processing \ud83e\udd6c": 187,
+    "Produce Processing \ud83e\udd6c": 188,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 129,
     "Meat Processing & Lifting \ud83c\udf56": 92,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 80,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 79,
     "Inventory \ud83d\udccb": 73,
     "Case Maintenance \ud83e\uddfd": 34,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 29,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 30,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bathroom \ud83d\udebd": 17,
     "Bins \ud83e\uddfc": 16,
@@ -131010,8 +131002,7 @@
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 4,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Bread Stocking \ud83c\udf5e": 3,
-    "Checkout \ud83d\udcb3": 1
+    "Bread Stocking \ud83c\udf5e": 3
   },
   "user_config": [
     {
