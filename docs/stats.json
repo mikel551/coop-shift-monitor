@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-05T21:40:27.373867+00:00",
-      "total": 3335,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-05T21:50:30.795121+00:00",
       "total": 3336,
       "users": {
@@ -131042,10 +131025,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-17T21:40:32.999486+00:00",
+      "total": 3422,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 147,
+    "total_runs": 148,
     "users": {
       "Mike": {
         "matched": 138,
@@ -131074,15 +131074,15 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1168,
-    "Lifting \ud83d\ude9a": 837,
+    "Lifting \ud83d\ude9a": 836,
     "Producer \ud83e\udd66": 376,
     "Flex \ud83e\udd6b": 202,
-    "Produce Processing \ud83e\udd6c": 190,
+    "Produce Processing \ud83e\udd6c": 188,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 127,
     "Meat Processing & Lifting \ud83c\udf56": 92,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 74,
-    "Inventory \ud83d\udccb": 72,
+    "Inventory \ud83d\udccb": 73,
     "Case Maintenance \ud83e\uddfd": 34,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 28,
     "Bathroom \ud83d\udebd": 17,
@@ -131091,9 +131091,9 @@
     "Bulk Lifting \ud83e\uded8": 13,
     "Repairs \ud83d\udee0": 11,
     "Vitamins \ud83c\udf6c": 4,
-    "Bread Stocking \ud83c\udf5e": 4,
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 4,
+    "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 3
   },
   "user_config": [
