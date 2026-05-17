@@ -1,36 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-05T16:50:29.422805+00:00",
-      "total": 3389,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-05T17:00:29.822167+00:00",
-      "total": 3389,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-05T17:10:26.551516+00:00",
       "total": 3388,
       "users": {
@@ -130870,10 +130840,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-17T17:00:36.808175+00:00",
+      "total": 3460,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1122267",
+              "date": "2026-05-17",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 117,
+    "total_runs": 119,
     "users": {
       "Mike": {
         "matched": 138,
@@ -130885,7 +130880,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1122267",
+        "date": "2026-05-17",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130901,11 +130906,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1185,
-    "Lifting \ud83d\ude9a": 845,
-    "Producer \ud83e\udd66": 378,
+    "Stocking \ud83d\udce6": 1184,
+    "Lifting \ud83d\ude9a": 844,
+    "Producer \ud83e\udd66": 377,
     "Flex \ud83e\udd6b": 207,
-    "Produce Processing \ud83e\udd6c": 188,
+    "Produce Processing \ud83e\udd6c": 187,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 92,
