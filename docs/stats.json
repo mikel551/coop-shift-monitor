@@ -1,20 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-05T02:00:30.173627+00:00",
-      "total": 3282,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0
-        }
-      }
-    },
-    {
       "ts": "2026-04-05T02:15:31.963029+00:00",
       "total": 3280,
       "users": {
@@ -128838,13 +128824,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-17T02:00:36.151182+00:00",
+      "total": 3375,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 47,
+    "total_runs": 48,
     "users": {
       "Mike": {
-        "matched": 6,
+        "matched": 7,
         "notified": 1
       },
       "Nancy": {
@@ -128853,17 +128856,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1122399",
-        "date": "2026-05-17",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128888,9 +128881,9 @@
     "Cleaning \ud83c\udfdd": 124,
     "Meat Processing & Lifting \ud83c\udf56": 93,
     "Inventory \ud83d\udccb": 73,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 70,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 69,
     "Case Maintenance \ud83e\uddfd": 35,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 30,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
     "Soup: Food Services \ud83c\udf72": 17,
     "Bathroom \ud83d\udebd": 17,
     "Bins \ud83e\uddfc": 16,
@@ -128900,9 +128893,7 @@
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
