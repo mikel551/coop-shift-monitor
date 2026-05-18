@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-06T15:20:31.387446+00:00",
-      "total": 3385,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-06T15:30:32.578489+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1113741",
-              "date": "2026-05-04",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-06T15:40:24.754904+00:00",
       "total": 3379,
       "users": {
@@ -130873,17 +130831,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-18T15:30:36.831098+00:00",
+      "total": 3441,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 216,
+    "total_runs": 218,
     "users": {
       "Mike": {
         "matched": 152,
         "notified": 6
       },
       "Nancy": {
-        "matched": 920,
+        "matched": 921,
         "notified": 73
       }
     }
@@ -130907,7 +130882,7 @@
     "Stocking \ud83d\udce6": 1176,
     "Lifting \ud83d\ude9a": 818,
     "Producer \ud83e\udd66": 390,
-    "Flex \ud83e\udd6b": 211,
+    "Flex \ud83e\udd6b": 210,
     "Produce Processing \ud83e\udd6c": 186,
     "Cleaning \ud83c\udfdd": 128,
     "Dairy Lifting \ud83e\udd5b": 126,
@@ -130924,7 +130899,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
-    "Office \ud83d\udcd7": 3,
+    "Office \ud83d\udcd7": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Health & Beauty \ud83e\uddf4": 1,
     "Checkout \ud83d\udcb3": 1
