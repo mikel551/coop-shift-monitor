@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-06T21:02:28.072232+00:00",
-      "total": 3303,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-06T21:10:28.789144+00:00",
-      "total": 3303,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-06T21:20:36.761994+00:00",
       "total": 3301,
       "users": {
@@ -130759,10 +130725,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-18T21:10:39.073333+00:00",
+      "total": 3357,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 251,
+    "total_runs": 253,
     "users": {
       "Mike": {
         "matched": 157,
@@ -130790,7 +130773,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1149,
+    "Stocking \ud83d\udce6": 1147,
     "Lifting \ud83d\ude9a": 808,
     "Producer \ud83e\udd66": 386,
     "Flex \ud83e\udd6b": 203,
@@ -130799,7 +130782,7 @@
     "Dairy Lifting \ud83e\udd5b": 123,
     "Meat Processing & Lifting \ud83c\udf56": 91,
     "Inventory \ud83d\udccb": 75,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 59,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 60,
     "Case Maintenance \ud83e\uddfd": 39,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 24,
     "Bathroom \ud83d\udebd": 19,
@@ -130811,7 +130794,6 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Health & Beauty \ud83e\uddf4": 2,
-    "Checkout \ud83d\udcb3": 2,
     "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
