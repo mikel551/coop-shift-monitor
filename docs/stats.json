@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-06T01:20:27.392143+00:00",
-      "total": 3303,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-06T01:30:25.247342+00:00",
-      "total": 3301,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-06T01:35:30.836918+00:00",
       "total": 3299,
       "users": {
@@ -131012,10 +130978,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-18T01:30:31.820277+00:00",
+      "total": 3390,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1122894",
+              "date": "2026-05-18",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 170,
+    "total_runs": 172,
     "users": {
       "Mike": {
         "matched": 141,
@@ -131057,7 +131048,7 @@
     "Lifting \ud83d\ude9a": 825,
     "Producer \ud83e\udd66": 378,
     "Flex \ud83e\udd6b": 203,
-    "Produce Processing \ud83e\udd6c": 186,
+    "Produce Processing \ud83e\udd6c": 185,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 125,
     "Meat Processing & Lifting \ud83c\udf56": 93,
@@ -131071,8 +131062,8 @@
     "Bulk Lifting \ud83e\uded8": 13,
     "Repairs \ud83d\udee0": 7,
     "Soup Cleaning": 4,
-    "Office \ud83d\udcd7": 4,
     "Inventory: Produce \ud83c\udf40": 3,
+    "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Checkout \ud83d\udcb3": 1
