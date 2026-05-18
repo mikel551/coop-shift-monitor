@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-06T01:35:30.836918+00:00",
-      "total": 3299,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-06T01:44:01.233574+00:00",
       "total": 3297,
       "users": {
@@ -131003,10 +130986,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-18T01:40:28.927273+00:00",
+      "total": 3389,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 172,
+    "total_runs": 173,
     "users": {
       "Mike": {
         "matched": 141,
@@ -131018,17 +131018,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1122894",
-        "date": "2026-05-18",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -131065,8 +131055,7 @@
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
