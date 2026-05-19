@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-07T14:50:38.854236+00:00",
-      "total": 3362,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-07T15:00:35.444139+00:00",
-      "total": 3358,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-07T15:10:39.364118+00:00",
       "total": 3355,
       "users": {
@@ -130746,10 +130712,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-19T15:00:41.841017+00:00",
+      "total": 3415,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 316,
+    "total_runs": 318,
     "users": {
       "Mike": {
         "matched": 199,
@@ -130777,9 +130760,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1168,
+    "Stocking \ud83d\udce6": 1169,
     "Lifting \ud83d\ude9a": 822,
-    "Producer \ud83e\udd66": 389,
+    "Producer \ud83e\udd66": 388,
     "Flex \ud83e\udd6b": 207,
     "Produce Processing \ud83e\udd6c": 186,
     "Cleaning \ud83c\udfdd": 130,
@@ -130798,8 +130781,7 @@
     "Office \ud83d\udcd7": 5,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
