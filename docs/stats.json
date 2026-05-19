@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-07T15:40:38.782619+00:00",
-      "total": 3348,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-07T15:50:38.344293+00:00",
-      "total": 3340,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1108893",
-              "date": "2026-04-27",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-07T16:00:36.592642+00:00",
       "total": 3343,
       "users": {
@@ -130746,18 +130704,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-19T15:50:43.486020+00:00",
+      "total": 3407,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 321,
+    "total_runs": 323,
     "users": {
       "Mike": {
         "matched": 199,
         "notified": 11
       },
       "Nancy": {
-        "matched": 964,
-        "notified": 82
+        "matched": 965,
+        "notified": 83
       }
     }
   },
@@ -130786,7 +130761,7 @@
     "Dairy Lifting \ud83e\udd5b": 126,
     "Meat Processing & Lifting \ud83c\udf56": 90,
     "Inventory \ud83d\udccb": 75,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 51,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 52,
     "Case Maintenance \ud83e\uddfd": 41,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 21,
@@ -130794,8 +130769,8 @@
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 14,
     "Repairs \ud83d\udee0": 11,
-    "Office \ud83d\udcd7": 5,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 3,
     "Bread Stocking \ud83c\udf5e": 2
