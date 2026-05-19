@@ -130793,6 +130793,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-19T20:00:41.341106+00:00",
+      "total": 3350,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1124452",
+              "date": "2026-05-20",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -130843,8 +130868,8 @@
     "Dairy Lifting \ud83e\udd5b": 124,
     "Meat Processing & Lifting \ud83c\udf56": 90,
     "Inventory \ud83d\udccb": 74,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 42,
     "Case Maintenance \ud83e\uddfd": 40,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 35,
     "Soup: Food Services \ud83c\udf72": 19,
     "Bathroom \ud83d\udebd": 18,
@@ -130855,7 +130880,7 @@
     "Vitamins \ud83c\udf6c": 4,
     "Office \ud83d\udcd7": 3,
     "Soup Cleaning": 3,
-    "Entrance/Greeter \ud83c\udf9f": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
