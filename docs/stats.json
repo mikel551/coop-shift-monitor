@@ -1,85 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-07T04:00:36.088192+00:00",
-      "total": 3374,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1123214",
-              "date": "2026-05-18",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 2,
-          "shifts": [
-            {
-              "id": "1122896",
-              "date": "2026-05-18",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1123142",
-              "date": "2026-05-18",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-07T05:00:33.065202+00:00",
-      "total": 3462,
-      "users": {
-        "Mike": {
-          "matched": 3,
-          "notified": 2,
-          "shifts": [
-            {
-              "id": "1105261",
-              "date": "2026-04-21",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1114439",
-              "date": "2026-05-05",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1123214",
-              "date": "2026-05-18",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 2
-    },
-    {
       "ts": "2026-04-07T07:00:39.335464+00:00",
       "total": 3458,
       "users": {
@@ -130758,28 +130679,75 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-19T05:00:38.612595+00:00",
+      "total": 3503,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1134008",
+              "date": "2026-06-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1143006",
+              "date": "2026-06-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1132510",
+              "date": "2026-05-31",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1151338",
+              "date": "2026-06-29",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 288,
+    "total_runs": 290,
     "users": {
       "Mike": {
-        "matched": 159,
-        "notified": 8
+        "matched": 163,
+        "notified": 11
       },
       "Nancy": {
-        "matched": 942,
-        "notified": 76
+        "matched": 944,
+        "notified": 78
       }
     }
   },
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1150880",
-        "date": "2026-06-29",
-        "start": "08:00",
-        "end": "08:00",
+        "id": "1132510",
+        "date": "2026-05-31",
+        "start": "15:30",
+        "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -130788,6 +130756,22 @@
         "start": "18:00",
         "end": "18:00",
         "type": "Checkout \ud83d\udcb3"
+      }
+    ],
+    "Mike": [
+      {
+        "id": "1134008",
+        "date": "2026-06-02",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      },
+      {
+        "id": "1143006",
+        "date": "2026-06-16",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
       }
     ]
   },
@@ -130806,31 +130790,31 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1170,
+    "Stocking \ud83d\udce6": 1180,
     "Lifting \ud83d\ude9a": 834,
-    "Producer \ud83e\udd66": 391,
-    "Flex \ud83e\udd6b": 199,
+    "Producer \ud83e\udd66": 390,
+    "Flex \ud83e\udd6b": 211,
     "Produce Processing \ud83e\udd6c": 188,
     "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 127,
     "Meat Processing & Lifting \ud83c\udf56": 93,
     "Inventory \ud83d\udccb": 76,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 52,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 56,
     "Case Maintenance \ud83e\uddfd": 41,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 23,
-    "Bathroom \ud83d\udebd": 19,
-    "Soup: Food Services \ud83c\udf72": 18,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
+    "Checkout \ud83d\udcb3": 28,
+    "Soup: Food Services \ud83c\udf72": 22,
+    "Bathroom \ud83d\udebd": 20,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 14,
-    "Repairs \ud83d\udee0": 8,
+    "Repairs \ud83d\udee0": 11,
+    "Cart Return \ud83d\uded2": 10,
+    "Office \ud83d\udcd7": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Entrance/Greeter \ud83c\udf9f": 4,
     "Vitamins \ud83c\udf6c": 4,
-    "Checkout \ud83d\udcb3": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Cart Return \ud83d\uded2": 2,
-    "Office \ud83d\udcd7": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
