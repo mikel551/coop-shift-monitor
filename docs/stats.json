@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-08T16:40:30.721531+00:00",
-      "total": 3346,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1103755",
-              "date": "2026-04-19",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-08T16:50:33.059083+00:00",
-      "total": 3344,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-08T17:00:42.271354+00:00",
       "total": 3341,
       "users": {
@@ -130698,18 +130656,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-20T16:50:44.031266+00:00",
+      "total": 3340,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 430,
+    "total_runs": 432,
     "users": {
       "Mike": {
         "matched": 220,
         "notified": 13
       },
       "Nancy": {
-        "matched": 994,
-        "notified": 88
+        "matched": 995,
+        "notified": 89
       }
     }
   },
@@ -130729,12 +130704,12 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1141,
+    "Stocking \ud83d\udce6": 1139,
     "Lifting \ud83d\ude9a": 817,
     "Producer \ud83e\udd66": 384,
     "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 176,
-    "Cleaning \ud83c\udfdd": 130,
+    "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Meat Processing & Lifting \ud83c\udf56": 91,
     "Inventory \ud83d\udccb": 71,
@@ -130750,8 +130725,7 @@
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 3,
     "Office \ud83d\udcd7": 2,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
