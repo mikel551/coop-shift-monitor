@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-08T22:50:29.303619+00:00",
-      "total": 3305,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-08T23:00:31.223298+00:00",
-      "total": 3303,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-08T23:10:29.844910+00:00",
       "total": 3304,
       "users": {
@@ -130673,10 +130639,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-20T23:00:35.629990+00:00",
+      "total": 3267,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 468,
+    "total_runs": 470,
     "users": {
       "Mike": {
         "matched": 220,
@@ -130706,11 +130689,11 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1121,
     "Lifting \ud83d\ude9a": 802,
-    "Producer \ud83e\udd66": 376,
+    "Producer \ud83e\udd66": 375,
     "Flex \ud83e\udd6b": 191,
     "Produce Processing \ud83e\udd6c": 172,
-    "Dairy Lifting \ud83e\udd5b": 128,
     "Cleaning \ud83c\udfdd": 127,
+    "Dairy Lifting \ud83e\udd5b": 127,
     "Meat Processing & Lifting \ud83c\udf56": 91,
     "Inventory \ud83d\udccb": 70,
     "Case Maintenance \ud83e\uddfd": 40,
@@ -130725,8 +130708,7 @@
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 3,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Office \ud83d\udcd7": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Office \ud83d\udcd7": 2
   },
   "user_config": [
     {
