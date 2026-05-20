@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-08T00:40:37.567983+00:00",
-      "total": 3286,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-08T00:50:38.561058+00:00",
       "total": 3284,
       "users": {
@@ -130858,10 +130841,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-20T00:50:28.981522+00:00",
+      "total": 3303,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 375,
+    "total_runs": 376,
     "users": {
       "Mike": {
         "matched": 199,
@@ -130891,7 +130891,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1133,
     "Lifting \ud83d\ude9a": 802,
-    "Producer \ud83e\udd66": 380,
+    "Producer \ud83e\udd66": 379,
     "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 180,
     "Cleaning \ud83c\udfdd": 126,
@@ -130910,7 +130910,6 @@
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 3,
     "Office \ud83d\udcd7": 1,
-    "Cart Return \ud83d\uded2": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
