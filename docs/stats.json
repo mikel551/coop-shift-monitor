@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-08T23:30:38.857558+00:00",
-      "total": 3302,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-08T23:40:45.078703+00:00",
       "total": 3303,
       "users": {
@@ -130673,10 +130656,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-20T23:40:32.444140+00:00",
+      "total": 3273,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 472,
+    "total_runs": 473,
     "users": {
       "Mike": {
         "matched": 220,
@@ -130705,12 +130705,12 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1120,
-    "Lifting \ud83d\ude9a": 804,
+    "Lifting \ud83d\ude9a": 803,
     "Producer \ud83e\udd66": 376,
     "Flex \ud83e\udd6b": 191,
     "Produce Processing \ud83e\udd6c": 172,
     "Cleaning \ud83c\udfdd": 127,
-    "Dairy Lifting \ud83e\udd5b": 127,
+    "Dairy Lifting \ud83e\udd5b": 126,
     "Meat Processing & Lifting \ud83c\udf56": 91,
     "Inventory \ud83d\udccb": 70,
     "Case Maintenance \ud83e\uddfd": 39,
@@ -130719,14 +130719,14 @@
     "Soup: Food Services \ud83c\udf72": 17,
     "Bathroom \ud83d\udebd": 16,
     "Bins \ud83e\uddfc": 15,
-    "Bulk Lifting \ud83e\uded8": 14,
+    "Bulk Lifting \ud83e\uded8": 15,
     "Repairs \ud83d\udee0": 13,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
+    "Office \ud83d\udcd7": 3,
     "Soup Cleaning": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Checkout \ud83d\udcb3": 2,
-    "Office \ud83d\udcd7": 2,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
