@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-09T02:20:27.320710+00:00",
-      "total": 3279,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-09T02:30:31.228597+00:00",
       "total": 3279,
       "users": {
@@ -130664,10 +130647,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-21T02:20:36.841040+00:00",
+      "total": 3255,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 489,
+    "total_runs": 490,
     "users": {
       "Mike": {
         "matched": 220,
@@ -130679,17 +130679,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1137590",
-        "date": "2026-06-08",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130714,20 +130704,20 @@
     "Cleaning \ud83c\udfdd": 126,
     "Meat Processing & Lifting \ud83c\udf56": 91,
     "Inventory \ud83d\udccb": 70,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 26,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 27,
     "Bathroom \ud83d\udebd": 17,
     "Bulk Lifting \ud83e\uded8": 15,
     "Repairs \ud83d\udee0": 13,
     "Bins \ud83e\uddfc": 12,
-    "Soup: Food Services \ud83c\udf72": 12,
+    "Soup: Food Services \ud83c\udf72": 11,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 3,
     "Office \ud83d\udcd7": 3,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Checkout \ud83d\udcb3": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
