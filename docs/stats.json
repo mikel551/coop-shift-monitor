@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-09T16:10:30.000222+00:00",
-      "total": 3397,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1098617",
-              "date": "2026-04-11",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-09T16:20:33.108870+00:00",
       "total": 3393,
       "users": {
@@ -130479,13 +130454,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-21T16:20:36.243393+00:00",
+      "total": 3330,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 532,
+    "total_runs": 533,
     "users": {
       "Mike": {
-        "matched": 268,
+        "matched": 269,
         "notified": 19
       },
       "Nancy": {
@@ -130521,9 +130513,9 @@
     "Inventory \ud83d\udccb": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 42,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 26,
-    "Soup: Food Services \ud83c\udf72": 18,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 27,
     "Bathroom \ud83d\udebd": 18,
+    "Soup: Food Services \ud83c\udf72": 17,
     "Bulk Lifting \ud83e\uded8": 14,
     "Bins \ud83e\uddfc": 14,
     "Repairs \ud83d\udee0": 13,
@@ -130532,7 +130524,7 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Bread Stocking \ud83c\udf5e": 3,
     "Soup Cleaning": 2,
-    "Checkout \ud83d\udcb3": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
