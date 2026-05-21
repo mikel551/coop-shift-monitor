@@ -1,46 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-09T12:20:32.444890+00:00",
-      "total": 3455,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1106495",
-              "date": "2026-04-23",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1115673",
-              "date": "2026-05-07",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1113497",
-              "date": "2026-05-04",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-09T12:30:33.568786+00:00",
       "total": 3454,
       "users": {
@@ -130709,17 +130669,42 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-21T12:30:35.034400+00:00",
+      "total": 3389,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1144176",
+              "date": "2026-06-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 509,
+    "total_runs": 510,
     "users": {
       "Mike": {
-        "matched": 248,
+        "matched": 250,
         "notified": 15
       },
       "Nancy": {
-        "matched": 1003,
+        "matched": 1004,
         "notified": 91
       }
     }
@@ -130753,7 +130738,7 @@
     "Stocking \ud83d\udce6": 1137,
     "Lifting \ud83d\ude9a": 819,
     "Producer \ud83e\udd66": 383,
-    "Flex \ud83e\udd6b": 209,
+    "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 176,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 130,
