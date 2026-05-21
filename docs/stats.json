@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-09T14:30:40.567116+00:00",
-      "total": 3422,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-09T14:40:30.482907+00:00",
       "total": 3416,
       "users": {
@@ -130479,10 +130462,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-21T14:40:34.117337+00:00",
+      "total": 3349,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1128494",
+              "date": "2026-05-25",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 522,
+    "total_runs": 523,
     "users": {
       "Mike": {
         "matched": 267,
@@ -130494,7 +130502,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1128494",
+        "date": "2026-05-25",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130510,7 +130528,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1128,
+    "Stocking \ud83d\udce6": 1127,
     "Lifting \ud83d\ude9a": 815,
     "Producer \ud83e\udd66": 383,
     "Flex \ud83e\udd6b": 205,
@@ -130528,9 +130546,9 @@
     "Bins \ud83e\uddfc": 14,
     "Repairs \ud83d\udee0": 13,
     "Office \ud83d\udcd7": 10,
+    "Checkout \ud83d\udcb3": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Cart Return \ud83d\uded2": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Soup Cleaning": 2
