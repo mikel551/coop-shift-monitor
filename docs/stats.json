@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-09T23:30:33.654661+00:00",
-      "total": 3312,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1098755",
-              "date": "2026-04-12",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1104639",
-              "date": "2026-04-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-09T23:40:31.304732+00:00",
       "total": 3311,
       "users": {
@@ -130321,13 +130289,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-21T23:40:34.566613+00:00",
+      "total": 3258,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 576,
+    "total_runs": 577,
     "users": {
       "Mike": {
-        "matched": 290,
+        "matched": 292,
         "notified": 21
       },
       "Nancy": {
@@ -130356,7 +130341,7 @@
     "Lifting \ud83d\ude9a": 807,
     "Producer \ud83e\udd66": 376,
     "Flex \ud83e\udd6b": 202,
-    "Produce Processing \ud83e\udd6c": 172,
+    "Produce Processing \ud83e\udd6c": 170,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 127,
     "Meat Processing & Lifting \ud83c\udf56": 94,
@@ -130374,8 +130359,7 @@
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Soup Cleaning": 2,
-    "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
