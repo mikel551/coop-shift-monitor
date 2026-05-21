@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-09T17:20:33.024176+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1098617",
-              "date": "2026-04-11",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-09T17:30:36.807800+00:00",
       "total": 3379,
       "users": {
@@ -130439,13 +130414,30 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-21T17:30:31.779535+00:00",
+      "total": 3321,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 539,
+    "total_runs": 540,
     "users": {
       "Mike": {
-        "matched": 275,
+        "matched": 276,
         "notified": 19
       },
       "Nancy": {
@@ -130472,16 +130464,16 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1120,
     "Lifting \ud83d\ude9a": 812,
-    "Producer \ud83e\udd66": 381,
+    "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 132,
-    "Cleaning \ud83c\udfdd": 130,
+    "Cleaning \ud83c\udfdd": 129,
     "Meat Processing & Lifting \ud83c\udf56": 95,
     "Inventory \ud83d\udccb": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 27,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 26,
     "Bathroom \ud83d\udebd": 19,
     "Soup: Food Services \ud83c\udf72": 16,
     "Bulk Lifting \ud83e\uded8": 14,
