@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-09T15:40:31.086596+00:00",
-      "total": 3408,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1104447",
-              "date": "2026-04-20",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-09T15:50:36.213326+00:00",
       "total": 3405,
       "users": {
@@ -130478,17 +130453,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-21T15:40:35.356968+00:00",
+      "total": 3335,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1137828",
+              "date": "2026-06-08",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 529,
+    "total_runs": 530,
     "users": {
       "Mike": {
         "matched": 267,
         "notified": 18
       },
       "Nancy": {
-        "matched": 1019,
+        "matched": 1020,
         "notified": 94
       }
     }
@@ -130519,9 +130519,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1125,
-    "Lifting \ud83d\ude9a": 815,
-    "Producer \ud83e\udd66": 382,
+    "Stocking \ud83d\udce6": 1122,
+    "Lifting \ud83d\ude9a": 814,
+    "Producer \ud83e\udd66": 381,
     "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 132,
@@ -130533,7 +130533,7 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 26,
     "Soup: Food Services \ud83c\udf72": 19,
     "Bathroom \ud83d\udebd": 18,
-    "Bulk Lifting \ud83e\uded8": 15,
+    "Bulk Lifting \ud83e\uded8": 14,
     "Bins \ud83e\uddfc": 14,
     "Repairs \ud83d\udee0": 13,
     "Office \ud83d\udcd7": 9,
