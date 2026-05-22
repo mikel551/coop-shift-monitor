@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T17:10:30.011946+00:00",
-      "total": 3364,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1101927",
-              "date": "2026-04-16",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-10T17:20:36.830008+00:00",
       "total": 3362,
       "users": {
@@ -129930,13 +129905,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T17:20:29.847239+00:00",
+      "total": 3312,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 643,
+    "total_runs": 644,
     "users": {
       "Mike": {
-        "matched": 353,
+        "matched": 354,
         "notified": 25
       },
       "Nancy": {
@@ -129967,10 +129959,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1106,
-    "Lifting \ud83d\ude9a": 821,
-    "Producer \ud83e\udd66": 373,
-    "Flex \ud83e\udd6b": 218,
+    "Stocking \ud83d\udce6": 1107,
+    "Lifting \ud83d\ude9a": 820,
+    "Producer \ud83e\udd66": 372,
+    "Flex \ud83e\udd6b": 217,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 129,
@@ -129987,8 +129979,7 @@
     "Office \ud83d\udcd7": 9,
     "Inventory: Produce \ud83c\udf40": 4,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Vitamins \ud83c\udf6c": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Vitamins \ud83c\udf6c": 2
   },
   "user_config": [
     {
