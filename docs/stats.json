@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T13:40:36.397661+00:00",
-      "total": 3419,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1116325",
-              "date": "2026-05-08",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-10T13:50:32.989471+00:00",
       "total": 3417,
       "users": {
@@ -130106,13 +130081,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T13:50:36.031920+00:00",
+      "total": 3373,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 621,
+    "total_runs": 622,
     "users": {
       "Mike": {
-        "matched": 342,
+        "matched": 343,
         "notified": 24
       },
       "Nancy": {
@@ -130143,7 +130135,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1115,
+    "Stocking \ud83d\udce6": 1116,
     "Lifting \ud83d\ude9a": 828,
     "Producer \ud83e\udd66": 377,
     "Flex \ud83e\udd6b": 225,
@@ -130154,9 +130146,9 @@
     "Inventory \ud83d\udccb": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Case Maintenance \ud83e\uddfd": 37,
-    "Checkout \ud83d\udcb3": 21,
     "Bathroom \ud83d\udebd": 20,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 19,
+    "Checkout \ud83d\udcb3": 18,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bulk Lifting \ud83e\uded8": 15,
     "Bins \ud83e\uddfc": 13,
