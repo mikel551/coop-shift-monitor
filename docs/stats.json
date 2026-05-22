@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T00:30:36.852161+00:00",
-      "total": 3310,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1098755",
-              "date": "2026-04-12",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1104639",
-              "date": "2026-04-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-10T00:40:35.223407+00:00",
       "total": 3310,
       "users": {
@@ -130238,13 +130206,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T00:40:27.731992+00:00",
+      "total": 3248,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 582,
+    "total_runs": 583,
     "users": {
       "Mike": {
-        "matched": 301,
+        "matched": 303,
         "notified": 22
       },
       "Nancy": {
@@ -130291,7 +130276,8 @@
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Checkout \ud83d\udcb3": 2,
-    "Soup Cleaning": 2
+    "Soup Cleaning": 2,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
