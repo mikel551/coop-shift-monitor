@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T12:40:31.266066+00:00",
-      "total": 3450,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1116325",
-              "date": "2026-05-08",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-10T12:50:35.137758+00:00",
       "total": 3447,
       "users": {
@@ -130146,13 +130121,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T12:50:33.083311+00:00",
+      "total": 3390,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 615,
+    "total_runs": 616,
     "users": {
       "Mike": {
-        "matched": 336,
+        "matched": 337,
         "notified": 24
       },
       "Nancy": {
@@ -130161,17 +130153,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1141560",
-        "date": "2026-06-14",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130204,8 +130186,8 @@
     "Inventory \ud83d\udccb": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Case Maintenance \ud83e\uddfd": 37,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 24,
-    "Checkout \ud83d\udcb3": 22,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 23,
+    "Checkout \ud83d\udcb3": 21,
     "Bathroom \ud83d\udebd": 20,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bulk Lifting \ud83e\uded8": 15,
