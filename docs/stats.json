@@ -130121,6 +130121,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T12:20:33.061763+00:00",
+      "total": 3398,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1141560",
+              "date": "2026-06-14",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
@@ -130137,27 +130162,26 @@
     }
   },
   "available_shifts": {
-    "Mike": [
+    "Nancy": [
       {
-        "id": "1135894",
-        "date": "2026-06-05",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
-      {
-        "id": "1144798",
-        "date": "2026-06-19",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
+        "id": "1141560",
+        "date": "2026-06-14",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
       }
     ]
   },
   "member_status": {
     "Mike": {
       "member_status": "Active",
-      "scheduled_shifts": null,
+      "scheduled_shifts": [
+        {
+          "date": "Friday June 19",
+          "start_time": "6:00pm",
+          "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2"
+        }
+      ],
       "credit_bank": "1",
       "cancel_tickets": 1
     },
@@ -130169,7 +130193,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1119,
+    "Stocking \ud83d\udce6": 1120,
     "Lifting \ud83d\ude9a": 827,
     "Producer \ud83e\udd66": 378,
     "Flex \ud83e\udd6b": 226,
@@ -130180,16 +130204,16 @@
     "Inventory \ud83d\udccb": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 45,
     "Case Maintenance \ud83e\uddfd": 37,
-    "Checkout \ud83d\udcb3": 26,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 25,
+    "Checkout \ud83d\udcb3": 22,
     "Bathroom \ud83d\udebd": 20,
     "Soup: Food Services \ud83c\udf72": 19,
     "Bulk Lifting \ud83e\uded8": 15,
     "Bins \ud83e\uddfc": 13,
     "Repairs \ud83d\udee0": 12,
     "Office \ud83d\udcd7": 11,
-    "Cart Return \ud83d\uded2": 6,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Cart Return \ud83d\uded2": 4,
     "Bread Stocking \ud83c\udf5e": 3,
     "Soup Cleaning": 2,
     "Entrance/Greeter \ud83c\udf9f": 2,
