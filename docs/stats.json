@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T01:30:36.794700+00:00",
-      "total": 3299,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1104639",
-              "date": "2026-04-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-10T01:40:35.637199+00:00",
       "total": 3298,
       "users": {
@@ -130148,13 +130123,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T01:40:35.025737+00:00",
+      "total": 3250,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 588,
+    "total_runs": 589,
     "users": {
       "Mike": {
-        "matched": 313,
+        "matched": 314,
         "notified": 22
       },
       "Nancy": {
@@ -130179,10 +130171,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1095,
+    "Stocking \ud83d\udce6": 1096,
     "Lifting \ud83d\ude9a": 805,
     "Producer \ud83e\udd66": 376,
-    "Flex \ud83e\udd6b": 199,
+    "Flex \ud83e\udd6b": 198,
     "Produce Processing \ud83e\udd6c": 170,
     "Dairy Lifting \ud83e\udd5b": 127,
     "Cleaning \ud83c\udfdd": 126,
@@ -130196,12 +130188,13 @@
     "Soup: Food Services \ud83c\udf72": 14,
     "Bins \ud83e\uddfc": 13,
     "Repairs \ud83d\udee0": 12,
-    "Office \ud83d\udcd7": 9,
+    "Office \ud83d\udcd7": 8,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Soup Cleaning": 2
+    "Checkout \ud83d\udcb3": 2,
+    "Soup Cleaning": 2,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
