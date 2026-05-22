@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T21:30:33.488622+00:00",
-      "total": 3322,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-10T21:40:32.426517+00:00",
       "total": 3319,
       "users": {
@@ -129986,10 +129969,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T21:40:34.361333+00:00",
+      "total": 3286,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 669,
+    "total_runs": 670,
     "users": {
       "Mike": {
         "matched": 354,
@@ -130001,17 +130001,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1126514",
-        "date": "2026-05-24",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130033,10 +130023,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1097,
-    "Lifting \ud83d\ude9a": 812,
+    "Stocking \ud83d\udce6": 1099,
+    "Lifting \ud83d\ude9a": 811,
     "Producer \ud83e\udd66": 370,
-    "Flex \ud83e\udd6b": 218,
+    "Flex \ud83e\udd6b": 216,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 129,
@@ -130053,7 +130043,6 @@
     "Office \ud83d\udcd7": 9,
     "Inventory: Produce \ud83c\udf40": 4,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
