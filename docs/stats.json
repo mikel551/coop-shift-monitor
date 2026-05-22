@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T23:30:34.421491+00:00",
-      "total": 3323,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1098905",
-              "date": "2026-04-12",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-10T23:40:37.474207+00:00",
       "total": 3322,
       "users": {
@@ -129986,18 +129961,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T23:40:30.516341+00:00",
+      "total": 3265,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 681,
+    "total_runs": 682,
     "users": {
       "Mike": {
         "matched": 354,
         "notified": 25
       },
       "Nancy": {
-        "matched": 1037,
-        "notified": 99
+        "matched": 1038,
+        "notified": 100
       }
     }
   },
@@ -130023,17 +130015,17 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1089,
-    "Lifting \ud83d\ude9a": 807,
+    "Stocking \ud83d\udce6": 1090,
+    "Lifting \ud83d\ude9a": 808,
     "Producer \ud83e\udd66": 366,
     "Flex \ud83e\udd6b": 213,
     "Produce Processing \ud83e\udd6c": 172,
     "Dairy Lifting \ud83e\udd5b": 131,
-    "Cleaning \ud83c\udfdd": 129,
+    "Cleaning \ud83c\udfdd": 128,
     "Meat Processing & Lifting \ud83c\udf56": 100,
     "Inventory \ud83d\udccb": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
-    "Case Maintenance \ud83e\uddfd": 37,
+    "Case Maintenance \ud83e\uddfd": 38,
     "Bathroom \ud83d\udebd": 22,
     "Soup: Food Services \ud83c\udf72": 17,
     "Bulk Lifting \ud83e\uded8": 14,
