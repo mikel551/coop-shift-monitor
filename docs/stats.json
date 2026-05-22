@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-10T16:20:33.992292+00:00",
-      "total": 3371,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1101927",
-              "date": "2026-04-16",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-10T16:30:52.751257+00:00",
       "total": 3372,
       "users": {
@@ -129970,14 +129945,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-22T16:30:32.795703+00:00",
+      "total": 3322,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 638,
+    "total_runs": 639,
     "users": {
       "Mike": {
-        "matched": 348,
-        "notified": 24
+        "matched": 349,
+        "notified": 25
       },
       "Nancy": {
         "matched": 1037,
@@ -130021,7 +130013,7 @@
     "Bathroom \ud83d\udebd": 20,
     "Soup: Food Services \ud83c\udf72": 18,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
-    "Bulk Lifting \ud83e\uded8": 15,
+    "Bulk Lifting \ud83e\uded8": 14,
     "Bins \ud83e\uddfc": 13,
     "Repairs \ud83d\udee0": 12,
     "Office \ud83d\udcd7": 9,
