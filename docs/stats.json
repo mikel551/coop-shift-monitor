@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-11T00:50:28.937251+00:00",
-      "total": 3316,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1098905",
-              "date": "2026-04-12",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-11T01:00:38.720125+00:00",
       "total": 3313,
       "users": {
@@ -129970,18 +129945,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-23T01:00:33.383231+00:00",
+      "total": 3237,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 689,
+    "total_runs": 690,
     "users": {
       "Mike": {
         "matched": 354,
         "notified": 25
       },
       "Nancy": {
-        "matched": 1039,
-        "notified": 100
+        "matched": 1040,
+        "notified": 101
       }
     }
   },
@@ -130009,7 +130001,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1085,
     "Lifting \ud83d\ude9a": 802,
-    "Producer \ud83e\udd66": 366,
+    "Producer \ud83e\udd66": 365,
     "Flex \ud83e\udd6b": 206,
     "Produce Processing \ud83e\udd6c": 171,
     "Dairy Lifting \ud83e\udd5b": 131,
@@ -130024,7 +130016,7 @@
     "Bins \ud83e\uddfc": 13,
     "Repairs \ud83d\udee0": 12,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 8,
-    "Office \ud83d\udcd7": 8,
+    "Office \ud83d\udcd7": 7,
     "Inventory: Produce \ud83c\udf40": 4,
     "Checkout \ud83d\udcb3": 2,
     "Bread Stocking \ud83c\udf5e": 2,
