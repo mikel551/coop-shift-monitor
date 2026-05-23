@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-11T13:00:36.630152+00:00",
-      "total": 3467,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1116979",
-              "date": "2026-05-09",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122281",
-              "date": "2026-05-17",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-11T13:10:34.437417+00:00",
       "total": 3468,
       "users": {
@@ -129741,17 +129708,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-23T13:10:33.834516+00:00",
+      "total": 3377,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1126988",
+              "date": "2026-05-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 722,
+    "total_runs": 723,
     "users": {
       "Mike": {
-        "matched": 388,
+        "matched": 389,
         "notified": 27
       },
       "Nancy": {
-        "matched": 1092,
+        "matched": 1093,
         "notified": 110
       }
     }
@@ -129805,12 +129797,12 @@
     "Bulk Lifting \ud83e\uded8": 14,
     "Office \ud83d\udcd7": 13,
     "Bins \ud83e\uddfc": 13,
-    "Checkout \ud83d\udcb3": 13,
     "Repairs \ud83d\udee0": 12,
+    "Checkout \ud83d\udcb3": 10,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Bread Stocking \ud83c\udf5e": 3
+    "Bread Stocking \ud83c\udf5e": 3,
+    "Cart Return \ud83d\uded2": 2
   },
   "user_config": [
     {
