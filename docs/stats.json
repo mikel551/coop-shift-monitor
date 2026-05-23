@@ -1,52 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-11T22:30:37.162712+00:00",
-      "total": 3343,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 4,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1099139",
-              "date": "2026-04-12",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1099879",
-              "date": "2026-04-13",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1099991",
-              "date": "2026-04-13",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1104445",
-              "date": "2026-04-20",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-11T22:40:35.153768+00:00",
       "total": 3339,
       "users": {
@@ -129496,18 +129450,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-23T22:40:28.346562+00:00",
+      "total": 3252,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 779,
+    "total_runs": 780,
     "users": {
       "Mike": {
         "matched": 401,
         "notified": 28
       },
       "Nancy": {
-        "matched": 1113,
-        "notified": 120
+        "matched": 1117,
+        "notified": 121
       }
     }
   },
@@ -129553,8 +129524,7 @@
     "Office \ud83d\udcd7": 7,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
