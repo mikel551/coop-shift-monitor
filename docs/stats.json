@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-11T17:20:28.012459+00:00",
-      "total": 3388,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-11T17:30:30.676398+00:00",
       "total": 3386,
       "users": {
@@ -129612,10 +129595,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-23T17:20:32.963870+00:00",
+      "total": 3326,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 748,
+    "total_runs": 749,
     "users": {
       "Mike": {
         "matched": 396,
@@ -129650,7 +129650,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1121,
-    "Lifting \ud83d\ude9a": 823,
+    "Lifting \ud83d\ude9a": 824,
     "Producer \ud83e\udd66": 367,
     "Flex \ud83e\udd6b": 211,
     "Produce Processing \ud83e\udd6c": 176,
@@ -129667,8 +129667,8 @@
     "Bins \ud83e\uddfc": 13,
     "Repairs \ud83d\udee0": 12,
     "Office \ud83d\udcd7": 11,
+    "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
