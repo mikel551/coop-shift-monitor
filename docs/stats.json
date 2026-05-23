@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-11T22:00:30.770857+00:00",
-      "total": 3342,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1098781",
-              "date": "2026-04-12",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1099879",
-              "date": "2026-04-13",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-11T22:10:26.951499+00:00",
       "total": 3340,
       "users": {
@@ -129548,18 +129516,35 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-23T22:10:28.670881+00:00",
+      "total": 3261,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 776,
+    "total_runs": 777,
     "users": {
       "Mike": {
         "matched": 401,
         "notified": 28
       },
       "Nancy": {
-        "matched": 1106,
-        "notified": 116
+        "matched": 1108,
+        "notified": 117
       }
     }
   },
@@ -129589,7 +129574,7 @@
     "Lifting \ud83d\ude9a": 814,
     "Producer \ud83e\udd66": 364,
     "Flex \ud83e\udd6b": 205,
-    "Produce Processing \ud83e\udd6c": 177,
+    "Produce Processing \ud83e\udd6c": 178,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 122,
     "Meat Processing & Lifting \ud83c\udf56": 101,
@@ -129605,8 +129590,8 @@
     "Office \ud83d\udcd7": 7,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Checkout \ud83d\udcb3": 2,
-    "Bread Stocking \ud83c\udf5e": 2
+    "Bread Stocking \ud83c\udf5e": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
