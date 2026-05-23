@@ -8,46 +8,6 @@
   },
   "stats": [
     {
-      "ts": "2026-04-11T12:10:28.144472+00:00",
-      "total": 3491,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1107793",
-              "date": "2026-04-25",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1116979",
-              "date": "2026-05-09",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122281",
-              "date": "2026-05-17",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 3
-    },
-    {
       "ts": "2026-04-11T12:20:34.781209+00:00",
       "total": 3488,
       "users": {
@@ -129795,17 +129755,49 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-23T12:20:37.275831+00:00",
+      "total": 3397,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1126512",
+              "date": "2026-05-24",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1126988",
+              "date": "2026-05-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 717,
+    "total_runs": 718,
     "users": {
       "Mike": {
-        "matched": 380,
+        "matched": 382,
         "notified": 27
       },
       "Nancy": {
-        "matched": 1087,
+        "matched": 1088,
         "notified": 110
       }
     }
