@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-12T03:00:31.774462+00:00",
-      "total": 3316,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-12T04:00:37.957946+00:00",
       "total": 3431,
       "users": {
@@ -129008,10 +128991,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-24T04:00:34.883719+00:00",
+      "total": 3297,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 806,
+    "total_runs": 807,
     "users": {
       "Mike": {
         "matched": 401,
@@ -129045,10 +129045,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1079,
-    "Lifting \ud83d\ude9a": 811,
-    "Producer \ud83e\udd66": 367,
-    "Flex \ud83e\udd6b": 200,
+    "Stocking \ud83d\udce6": 1130,
+    "Lifting \ud83d\ude9a": 819,
+    "Producer \ud83e\udd66": 379,
+    "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 123,
@@ -129056,16 +129056,17 @@
     "Inventory \ud83d\udccb": 68,
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
-    "Bathroom \ud83d\udebd": 21,
+    "Bathroom \ud83d\udebd": 20,
     "Bulk Lifting \ud83e\uded8": 14,
     "Bins \ud83e\uddfc": 13,
     "Soup: Food Services \ud83c\udf72": 13,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 12,
     "Repairs \ud83d\udee0": 11,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 10,
-    "Office \ud83d\udcd7": 7,
+    "Office \ud83d\udcd7": 6,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Bread Stocking \ud83c\udf5e": 2
+    "Bread Stocking \ud83c\udf5e": 3,
+    "Cart Return \ud83d\uded2": 3
   },
   "user_config": [
     {
