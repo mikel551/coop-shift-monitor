@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-12T21:20:36.925573+00:00",
-      "total": 3362,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1099265",
-              "date": "2026-04-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1128222",
-              "date": "2026-04-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-12T21:30:30.513151+00:00",
       "total": 3359,
       "users": {
@@ -129536,17 +129504,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-24T21:30:28.410825+00:00",
+      "total": 3253,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 875,
+    "total_runs": 876,
     "users": {
       "Mike": {
         "matched": 491,
         "notified": 37
       },
       "Nancy": {
-        "matched": 1508,
+        "matched": 1510,
         "notified": 177
       }
     }
@@ -129573,7 +129558,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1120,
+    "Stocking \ud83d\udce6": 1119,
     "Lifting \ud83d\ude9a": 808,
     "Producer \ud83e\udd66": 372,
     "Flex \ud83e\udd6b": 198,
@@ -129582,7 +129567,7 @@
     "Cleaning \ud83c\udfdd": 120,
     "Meat Processing & Lifting \ud83c\udf56": 98,
     "Inventory \ud83d\udccb": 65,
-    "Case Maintenance \ud83e\uddfd": 36,
+    "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
     "Bathroom \ud83d\udebd": 20,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
