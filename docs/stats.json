@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-12T01:10:39.113127+00:00",
-      "total": 3331,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1098785",
-              "date": "2026-04-12",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1098789",
-              "date": "2026-04-12",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-12T01:20:27.926698+00:00",
       "total": 3330,
       "users": {
@@ -129054,17 +129022,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-24T01:20:31.509342+00:00",
+      "total": 3235,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 795,
+    "total_runs": 796,
     "users": {
       "Mike": {
         "matched": 401,
         "notified": 28
       },
       "Nancy": {
-        "matched": 1175,
+        "matched": 1177,
         "notified": 131
       }
     }
@@ -129097,7 +129082,7 @@
     "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 134,
-    "Cleaning \ud83c\udfdd": 122,
+    "Cleaning \ud83c\udfdd": 123,
     "Meat Processing & Lifting \ud83c\udf56": 100,
     "Inventory \ud83d\udccb": 69,
     "Case Maintenance \ud83e\uddfd": 35,
@@ -129106,8 +129091,8 @@
     "Bulk Lifting \ud83e\uded8": 14,
     "Bins \ud83e\uddfc": 13,
     "Soup: Food Services \ud83c\udf72": 13,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 11,
     "Repairs \ud83d\udee0": 11,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 10,
     "Office \ud83d\udcd7": 7,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
