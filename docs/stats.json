@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-12T22:10:29.414926+00:00",
-      "total": 3350,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-12T22:20:29.504758+00:00",
       "total": 3350,
       "users": {
@@ -129506,10 +129489,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-24T22:20:32.491899+00:00",
+      "total": 3247,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1128744",
+              "date": "2026-05-25",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 880,
+    "total_runs": 881,
     "users": {
       "Mike": {
         "matched": 491,
@@ -129521,7 +129529,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1128744",
+        "date": "2026-05-25",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129560,11 +129578,10 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 13,
     "Soup: Food Services \ud83c\udf72": 11,
     "Repairs \ud83d\udee0": 11,
-    "Office \ud83d\udcd7": 5,
+    "Office \ud83d\udcd7": 6,
     "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Entrance/Greeter \ud83c\udf9f": 1,
-    "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
