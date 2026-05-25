@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-13T19:10:32.319743+00:00",
-      "total": 3361,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1100107",
-              "date": "2026-04-13",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1126536",
-              "date": "2026-05-24",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-13T19:20:33.888108+00:00",
       "total": 3359,
       "users": {
@@ -128634,18 +128602,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-25T19:20:28.662537+00:00",
+      "total": 3306,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 965,
+    "total_runs": 966,
     "users": {
       "Mike": {
         "matched": 527,
         "notified": 42
       },
       "Nancy": {
-        "matched": 1987,
-        "notified": 223
+        "matched": 1989,
+        "notified": 224
       }
     }
   },
@@ -128671,9 +128656,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1157,
+    "Stocking \ud83d\udce6": 1156,
     "Lifting \ud83d\ude9a": 804,
-    "Producer \ud83e\udd66": 379,
+    "Producer \ud83e\udd66": 378,
     "Flex \ud83e\udd6b": 193,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 132,
@@ -128692,6 +128677,7 @@
     "Office \ud83d\udcd7": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Vitamins \ud83c\udf6c": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
