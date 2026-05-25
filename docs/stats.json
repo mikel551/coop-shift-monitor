@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-13T00:10:31.529442+00:00",
-      "total": 3354,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1100069",
-              "date": "2026-04-13",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1099623",
-              "date": "2026-04-13",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-13T00:20:34.598842+00:00",
       "total": 3356,
       "users": {
@@ -129470,32 +129437,39 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-25T00:20:33.431240+00:00",
+      "total": 3245,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 892,
+    "total_runs": 893,
     "users": {
       "Mike": {
-        "matched": 493,
+        "matched": 494,
         "notified": 38
       },
       "Nancy": {
-        "matched": 1525,
+        "matched": 1526,
         "notified": 180
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1129446",
-        "date": "2026-05-26",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129537,7 +129511,6 @@
     "Office \ud83d\udcd7": 5,
     "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
