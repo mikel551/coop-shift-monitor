@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-13T18:50:38.713347+00:00",
-      "total": 3362,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1100107",
-              "date": "2026-04-13",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-13T19:00:34.833473+00:00",
       "total": 3360,
       "users": {
@@ -128650,17 +128625,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-25T19:00:32.911200+00:00",
+      "total": 3309,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 963,
+    "total_runs": 964,
     "users": {
       "Mike": {
         "matched": 527,
         "notified": 42
       },
       "Nancy": {
-        "matched": 1985,
+        "matched": 1986,
         "notified": 223
       }
     }
@@ -128689,7 +128681,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1157,
     "Lifting \ud83d\ude9a": 805,
-    "Producer \ud83e\udd66": 380,
+    "Producer \ud83e\udd66": 379,
     "Flex \ud83e\udd6b": 194,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 132,
@@ -128697,7 +128689,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 97,
     "Inventory \ud83d\udccb": 71,
     "Case Maintenance \ud83e\uddfd": 39,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
     "Bathroom \ud83d\udebd": 25,
     "Soup: Food Services \ud83c\udf72": 14,
     "Bulk Lifting \ud83e\uded8": 14,
