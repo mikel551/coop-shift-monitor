@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-13T01:30:38.270691+00:00",
-      "total": 3348,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1100069",
-              "date": "2026-04-13",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-13T01:40:30.549844+00:00",
       "total": 3345,
       "users": {
@@ -129398,13 +129373,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-25T01:40:30.535129+00:00",
+      "total": 3231,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 900,
+    "total_runs": 901,
     "users": {
       "Mike": {
-        "matched": 501,
+        "matched": 502,
         "notified": 38
       },
       "Nancy": {
@@ -129452,7 +129444,7 @@
     "Soup: Food Services \ud83c\udf72": 11,
     "Repairs \ud83d\udee0": 11,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 10,
-    "Office \ud83d\udcd7": 4,
+    "Office \ud83d\udcd7": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Vitamins \ud83c\udf6c": 1
