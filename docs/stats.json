@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-13T17:10:40.947350+00:00",
-      "total": 3383,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-13T17:20:31.345268+00:00",
       "total": 3382,
       "users": {
@@ -128642,10 +128625,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-25T17:20:34.487512+00:00",
+      "total": 3337,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 953,
+    "total_runs": 954,
     "users": {
       "Mike": {
         "matched": 527,
@@ -128679,19 +128679,19 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1167,
+    "Stocking \ud83d\udce6": 1168,
     "Lifting \ud83d\ude9a": 805,
     "Producer \ud83e\udd66": 379,
-    "Flex \ud83e\udd6b": 200,
-    "Produce Processing \ud83e\udd6c": 175,
+    "Flex \ud83e\udd6b": 199,
+    "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 132,
-    "Cleaning \ud83c\udfdd": 123,
+    "Cleaning \ud83c\udfdd": 122,
     "Meat Processing & Lifting \ud83c\udf56": 97,
     "Inventory \ud83d\udccb": 72,
     "Case Maintenance \ud83e\uddfd": 39,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Bathroom \ud83d\udebd": 25,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 18,
     "Soup: Food Services \ud83c\udf72": 15,
     "Bulk Lifting \ud83e\uded8": 14,
     "Bins \ud83e\uddfc": 13,
@@ -128700,7 +128700,8 @@
     "Vitamins \ud83c\udf6c": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 2,
+    "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
