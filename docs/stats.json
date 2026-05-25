@@ -1,45 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-13T14:10:38.846406+00:00",
-      "total": 3442,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1118135",
-              "date": "2026-05-11",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1122766",
-              "date": "2026-05-18",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1123138",
-              "date": "2026-05-18",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-13T14:20:33.293851+00:00",
       "total": 3444,
       "users": {
@@ -128685,17 +128646,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-25T14:20:29.949689+00:00",
+      "total": 3371,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 936,
+    "total_runs": 937,
     "users": {
       "Mike": {
         "matched": 527,
         "notified": 42
       },
       "Nancy": {
-        "matched": 1974,
+        "matched": 1977,
         "notified": 221
       }
     }
@@ -128722,8 +128700,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1175,
-    "Lifting \ud83d\ude9a": 812,
+    "Stocking \ud83d\udce6": 1176,
+    "Lifting \ud83d\ude9a": 813,
     "Producer \ud83e\udd66": 382,
     "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 176,
