@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-13T20:00:33.615266+00:00",
-      "total": 3349,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1100691",
-              "date": "2026-04-14",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1126536",
-              "date": "2026-05-24",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-13T20:10:38.391150+00:00",
       "total": 3348,
       "users": {
@@ -128541,17 +128508,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-25T20:10:30.829844+00:00",
+      "total": 3297,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 970,
+    "total_runs": 971,
     "users": {
       "Mike": {
-        "matched": 531,
+        "matched": 532,
         "notified": 43
       },
       "Nancy": {
-        "matched": 1995,
+        "matched": 1996,
         "notified": 224
       }
     }
@@ -128578,10 +128562,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1156,
-    "Lifting \ud83d\ude9a": 804,
-    "Producer \ud83e\udd66": 379,
-    "Flex \ud83e\udd6b": 193,
+    "Stocking \ud83d\udce6": 1155,
+    "Lifting \ud83d\ude9a": 803,
+    "Producer \ud83e\udd66": 378,
+    "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 122,
@@ -128598,8 +128582,7 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Bread Stocking \ud83c\udf5e": 2,
     "Office \ud83d\udcd7": 2,
-    "Vitamins \ud83c\udf6c": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Vitamins \ud83c\udf6c": 2
   },
   "user_config": [
     {
