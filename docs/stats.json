@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-14T23:00:38.478414+00:00",
-      "total": 3302,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-14T23:10:30.686721+00:00",
-      "total": 3301,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-14T23:20:32.260680+00:00",
       "total": 3303,
       "users": {
@@ -127655,10 +127621,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-26T23:10:38.655502+00:00",
+      "total": 3163,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1091,
+    "total_runs": 1093,
     "users": {
       "Mike": {
         "matched": 585,
@@ -127692,8 +127675,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1104,
-    "Lifting \ud83d\ude9a": 787,
+    "Stocking \ud83d\udce6": 1103,
+    "Lifting \ud83d\ude9a": 786,
     "Producer \ud83e\udd66": 381,
     "Produce Processing \ud83e\udd6c": 165,
     "Flex \ud83e\udd6b": 162,
@@ -127701,8 +127684,8 @@
     "Cleaning \ud83c\udfdd": 122,
     "Meat Processing & Lifting \ud83c\udf56": 98,
     "Inventory \ud83d\udccb": 71,
-    "Case Maintenance \ud83e\uddfd": 39,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 24,
+    "Case Maintenance \ud83e\uddfd": 38,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 23,
     "Bathroom \ud83d\udebd": 23,
     "Bulk Lifting \ud83e\uded8": 15,
     "Bins \ud83e\uddfc": 13,
@@ -127711,6 +127694,7 @@
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Checkout \ud83d\udcb3": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
