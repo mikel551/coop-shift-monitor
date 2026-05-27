@@ -1,44 +1,13 @@
 {
   "notified": {
-    "Nancy": [],
+    "Nancy": [
+      "1142238"
+    ],
     "Mike": [
       "1139178"
     ]
   },
   "stats": [
-    {
-      "ts": "2026-04-15T11:50:37.639543+00:00",
-      "total": 3415,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1119205",
-              "date": "2026-05-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1112787",
-              "date": "2026-05-03",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-04-15T12:00:43.416042+00:00",
       "total": 3413,
@@ -127711,18 +127680,51 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-27T11:51:36.547147+00:00",
+      "total": 3342,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1139178",
+              "date": "2026-06-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1142238",
+              "date": "2026-06-15",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1128,
+    "total_runs": 1129,
     "users": {
       "Mike": {
-        "matched": 591,
+        "matched": 592,
         "notified": 49
       },
       "Nancy": {
-        "matched": 2056,
-        "notified": 232
+        "matched": 2057,
+        "notified": 233
       }
     }
   }
