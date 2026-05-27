@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-15T20:10:43.133016+00:00",
-      "total": 3292,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-15T20:20:34.006313+00:00",
       "total": 3291,
       "users": {
@@ -127762,10 +127745,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-27T20:20:38.809154+00:00",
+      "total": 3163,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1132630",
+              "date": "2026-05-31",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1178,
+    "total_runs": 1179,
     "users": {
       "Mike": {
         "matched": 592,
@@ -127780,7 +127788,7 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1132638",
+        "id": "1132630",
         "date": "2026-05-31",
         "start": "18:00",
         "end": "18:00",
@@ -127819,7 +127827,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 95,
     "Inventory \ud83d\udccb": 71,
     "Case Maintenance \ud83e\uddfd": 37,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 26,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
     "Bathroom \ud83d\udebd": 25,
     "Bulk Lifting \ud83e\uded8": 15,
     "Bins \ud83e\uddfc": 13,
