@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-15T05:00:33.326293+00:00",
-      "total": 3459,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1110449",
-              "date": "2026-04-29",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1122279",
-              "date": "2026-05-17",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-15T06:00:39.502311+00:00",
       "total": 3451,
       "users": {
@@ -127670,18 +127637,50 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-27T06:00:32.333769+00:00",
+      "total": 3372,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1139178",
+              "date": "2026-06-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1148084",
+              "date": "2026-06-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1117,
+    "total_runs": 1118,
     "users": {
       "Mike": {
-        "matched": 585,
-        "notified": 47
+        "matched": 586,
+        "notified": 48
       },
       "Nancy": {
-        "matched": 2055,
-        "notified": 231
+        "matched": 2056,
+        "notified": 232
       }
     }
   },
@@ -127725,18 +127724,18 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1130,
-    "Lifting \ud83d\ude9a": 805,
+    "Lifting \ud83d\ude9a": 806,
     "Producer \ud83e\udd66": 387,
-    "Flex \ud83e\udd6b": 175,
+    "Flex \ud83e\udd6b": 174,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 121,
     "Meat Processing & Lifting \ud83c\udf56": 99,
-    "General Meeting \ud83d\uddf3\ufe0f": 74,
+    "General Meeting \ud83d\uddf3\ufe0f": 72,
     "Inventory \ud83d\udccb": 70,
     "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
-    "Checkout \ud83d\udcb3": 30,
+    "Checkout \ud83d\udcb3": 29,
     "Bathroom \ud83d\udebd": 26,
     "Soup: Food Services \ud83c\udf72": 16,
     "Bulk Lifting \ud83e\uded8": 14,
