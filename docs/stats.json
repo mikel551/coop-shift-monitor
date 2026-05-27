@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-15T02:50:42.362409+00:00",
-      "total": 3262,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1103869",
-              "date": "2026-04-19",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-15T03:00:34.601729+00:00",
       "total": 3262,
       "users": {
@@ -127663,32 +127638,39 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-27T03:00:32.673567+00:00",
+      "total": 3123,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1114,
+    "total_runs": 1115,
     "users": {
       "Mike": {
         "matched": 585,
         "notified": 47
       },
       "Nancy": {
-        "matched": 2054,
+        "matched": 2055,
         "notified": 231
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1141560",
-        "date": "2026-06-14",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127711,13 +127693,13 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1098,
-    "Lifting \ud83d\ude9a": 776,
+    "Lifting \ud83d\ude9a": 775,
     "Producer \ud83e\udd66": 378,
     "Produce Processing \ud83e\udd6c": 165,
     "Flex \ud83e\udd6b": 158,
     "Dairy Lifting \ud83e\udd5b": 127,
     "Cleaning \ud83c\udfdd": 117,
-    "Meat Processing & Lifting \ud83c\udf56": 96,
+    "Meat Processing & Lifting \ud83c\udf56": 95,
     "Inventory \ud83d\udccb": 70,
     "Case Maintenance \ud83e\uddfd": 37,
     "Bathroom \ud83d\udebd": 24,
