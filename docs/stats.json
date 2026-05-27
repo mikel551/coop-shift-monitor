@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-15T11:10:34.029073+00:00",
-      "total": 3429,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1119205",
-              "date": "2026-05-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-15T11:20:31.860414+00:00",
       "total": 3426,
       "users": {
@@ -127730,13 +127705,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-27T11:20:30.455930+00:00",
+      "total": 3348,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1139178",
+              "date": "2026-06-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1124,
+    "total_runs": 1125,
     "users": {
       "Mike": {
-        "matched": 587,
+        "matched": 588,
         "notified": 49
       },
       "Nancy": {
@@ -127786,11 +127786,11 @@
     "Cleaning \ud83c\udfdd": 121,
     "Meat Processing & Lifting \ud83c\udf56": 99,
     "Inventory \ud83d\udccb": 70,
-    "General Meeting \ud83d\uddf3\ufe0f": 68,
+    "General Meeting \ud83d\uddf3\ufe0f": 67,
     "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
     "Bathroom \ud83d\udebd": 26,
-    "Checkout \ud83d\udcb3": 18,
+    "Checkout \ud83d\udcb3": 17,
     "Soup: Food Services \ud83c\udf72": 16,
     "Bulk Lifting \ud83e\uded8": 14,
     "Bins \ud83e\uddfc": 13,
