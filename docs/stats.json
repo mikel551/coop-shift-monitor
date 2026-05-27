@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-15T20:30:40.438986+00:00",
-      "total": 3290,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-15T20:40:31.180707+00:00",
       "total": 3284,
       "users": {
@@ -127778,10 +127761,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-27T20:40:31.467451+00:00",
+      "total": 3162,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1132630",
+              "date": "2026-05-31",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1180,
+    "total_runs": 1181,
     "users": {
       "Mike": {
         "matched": 592,
@@ -127825,10 +127833,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1087,
+    "Stocking \ud83d\udce6": 1086,
     "Lifting \ud83d\ude9a": 789,
-    "Producer \ud83e\udd66": 375,
-    "Produce Processing \ud83e\udd6c": 169,
+    "Producer \ud83e\udd66": 374,
+    "Produce Processing \ud83e\udd6c": 170,
     "Flex \ud83e\udd6b": 168,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 119,
@@ -127842,7 +127850,7 @@
     "Repairs \ud83d\udee0": 12,
     "General Meeting \ud83d\uddf3\ufe0f": 12,
     "Soup: Food Services \ud83c\udf72": 11,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 2,
     "Checkout \ud83d\udcb3": 1,
