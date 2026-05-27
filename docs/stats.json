@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-15T02:10:29.779547+00:00",
-      "total": 3270,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-15T02:20:30.258918+00:00",
       "total": 3268,
       "users": {
@@ -127655,10 +127638,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-27T02:20:28.116176+00:00",
+      "total": 3131,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1137168",
+              "date": "2026-06-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1110,
+    "total_runs": 1111,
     "users": {
       "Mike": {
         "matched": 585,
@@ -127670,7 +127678,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1137168",
+        "date": "2026-06-07",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127693,7 +127711,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1100,
-    "Lifting \ud83d\ude9a": 780,
+    "Lifting \ud83d\ude9a": 779,
     "Producer \ud83e\udd66": 379,
     "Produce Processing \ud83e\udd6c": 164,
     "Flex \ud83e\udd6b": 158,
@@ -127708,8 +127726,8 @@
     "Bins \ud83e\uddfc": 13,
     "Soup: Food Services \ud83c\udf72": 11,
     "Repairs \ud83d\udee0": 11,
+    "Cart Return \ud83d\uded2": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Cart Return \ud83d\uded2": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Office \ud83d\udcd7": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
