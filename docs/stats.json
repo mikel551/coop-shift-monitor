@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-16T02:10:31.128911+00:00",
-      "total": 3252,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-16T02:20:26.411649+00:00",
       "total": 3252,
       "users": {
@@ -127818,10 +127801,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-28T02:20:29.476565+00:00",
+      "total": 3138,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1214,
+    "total_runs": 1215,
     "users": {
       "Mike": {
         "matched": 592,
@@ -127833,17 +127833,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1132502",
-        "date": "2026-05-31",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127884,10 +127874,9 @@
     "General Meeting \ud83d\uddf3\ufe0f": 8,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Inventory: Produce \ud83c\udf40": 3,
+    "Office \ud83d\udcd7": 2,
     "Bread Stocking \ud83c\udf5e": 2,
-    "Vitamins \ud83c\udf6c": 1,
-    "Checkout \ud83d\udcb3": 1,
-    "Office \ud83d\udcd7": 1
+    "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
     {
