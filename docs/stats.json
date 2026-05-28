@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-16T21:30:36.776583+00:00",
-      "total": 3318,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-16T21:40:40.757132+00:00",
       "total": 3316,
       "users": {
@@ -127744,10 +127727,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-28T21:40:33.390209+00:00",
+      "total": 3184,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1290,
+    "total_runs": 1291,
     "users": {
       "Mike": {
         "matched": 637,
@@ -127800,6 +127800,7 @@
     "Office \ud83d\udcd7": 5,
     "Inventory: Produce \ud83c\udf40": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
