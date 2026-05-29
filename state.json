@@ -8,39 +8,6 @@
   },
   "stats": [
     {
-      "ts": "2026-04-17T11:10:30.595183+00:00",
-      "total": 3501,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1111721",
-              "date": "2026-05-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1109127",
-              "date": "2026-04-27",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-17T11:20:38.302889+00:00",
       "total": 3501,
       "users": {
@@ -127839,18 +127806,50 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-29T11:20:33.135699+00:00",
+      "total": 3369,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1140390",
+              "date": "2026-06-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1149294",
+              "date": "2026-06-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1332,
+    "total_runs": 1333,
     "users": {
       "Mike": {
-        "matched": 644,
+        "matched": 645,
         "notified": 53
       },
       "Nancy": {
-        "matched": 2080,
-        "notified": 239
+        "matched": 2081,
+        "notified": 240
       }
     }
   }
