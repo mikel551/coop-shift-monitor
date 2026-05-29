@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-17T16:10:34.132554+00:00",
-      "total": 3399,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-17T16:20:33.743026+00:00",
       "total": 3398,
       "users": {
@@ -128087,10 +128070,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-29T16:10:38.624961+00:00",
+      "total": 3295,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1140390",
+              "date": "2026-06-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1362,
+    "total_runs": 1363,
     "users": {
       "Mike": {
         "matched": 661,
@@ -128137,12 +128145,12 @@
     "Stocking \ud83d\udce6": 1119,
     "Lifting \ud83d\ude9a": 804,
     "Producer \ud83e\udd66": 379,
-    "Flex \ud83e\udd6b": 205,
+    "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 127,
     "Cleaning \ud83c\udfdd": 120,
-    "Meat Processing & Lifting \ud83c\udf56": 95,
-    "Inventory \ud83d\udccb": 65,
+    "Meat Processing & Lifting \ud83c\udf56": 94,
+    "Inventory \ud83d\udccb": 66,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
     "Bathroom \ud83d\udebd": 30,
@@ -128155,10 +128163,10 @@
     "Office \ud83d\udcd7": 6,
     "Cart Return \ud83d\uded2": 5,
     "Soup Cleaning": 4,
+    "Vitamins \ud83c\udf6c": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "General Meeting \ud83d\uddf3\ufe0f": 3,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Vitamins \ud83c\udf6c": 2
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
