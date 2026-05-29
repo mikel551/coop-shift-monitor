@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-17T15:20:38.320247+00:00",
-      "total": 3414,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-17T15:30:34.338290+00:00",
       "total": 3408,
       "users": {
@@ -128056,10 +128039,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-29T15:30:38.278109+00:00",
+      "total": 3301,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1140390",
+              "date": "2026-06-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1136722",
+              "date": "2026-06-07",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1357,
+    "total_runs": 1358,
     "users": {
       "Mike": {
         "matched": 661,
@@ -128112,8 +128128,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1120,
-    "Lifting \ud83d\ude9a": 806,
+    "Stocking \ud83d\udce6": 1119,
+    "Lifting \ud83d\ude9a": 805,
     "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 177,
@@ -128128,7 +128144,7 @@
     "Bulk Lifting \ud83e\uded8": 17,
     "Bins \ud83e\uddfc": 13,
     "Repairs \ud83d\udee0": 13,
-    "Checkout \ud83d\udcb3": 12,
+    "Checkout \ud83d\udcb3": 11,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
     "Office \ud83d\udcd7": 6,
     "Cart Return \ud83d\uded2": 5,
