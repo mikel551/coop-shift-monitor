@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-17T21:30:36.372083+00:00",
-      "total": 3349,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-17T21:40:37.255690+00:00",
       "total": 3347,
       "users": {
@@ -128101,10 +128084,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-29T21:40:29.787501+00:00",
+      "total": 3231,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1394,
+    "total_runs": 1395,
     "users": {
       "Mike": {
         "matched": 672,
@@ -128139,7 +128139,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1110,
-    "Lifting \ud83d\ude9a": 797,
+    "Lifting \ud83d\ude9a": 796,
     "Producer \ud83e\udd66": 375,
     "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 177,
@@ -128154,12 +128154,11 @@
     "Bulk Lifting \ud83e\uded8": 17,
     "Bins \ud83e\uddfc": 13,
     "Repairs \ud83d\udee0": 13,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 3,
     "General Meeting \ud83d\uddf3\ufe0f": 2,
-    "Vitamins \ud83c\udf6c": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
