@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-17T12:20:36.782724+00:00",
-      "total": 3477,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1111721",
-              "date": "2026-05-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-17T12:30:38.392751+00:00",
       "total": 3470,
       "users": {
@@ -127865,13 +127840,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-29T12:30:35.150371+00:00",
+      "total": 3355,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1140390",
+              "date": "2026-06-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1149294",
+              "date": "2026-06-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1339,
+    "total_runs": 1340,
     "users": {
       "Mike": {
-        "matched": 651,
+        "matched": 652,
         "notified": 53
       },
       "Nancy": {
@@ -127922,7 +127929,7 @@
     "Stocking \ud83d\udce6": 1125,
     "Lifting \ud83d\ude9a": 815,
     "Producer \ud83e\udd66": 393,
-    "Flex \ud83e\udd6b": 212,
+    "Flex \ud83e\udd6b": 210,
     "Produce Processing \ud83e\udd6c": 179,
     "Dairy Lifting \ud83e\udd5b": 126,
     "Cleaning \ud83c\udfdd": 120,
