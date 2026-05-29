@@ -128158,6 +128158,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-29T18:50:35.856931+00:00",
+      "total": 3257,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1132270",
+              "date": "2026-05-31",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1133196",
+              "date": "2026-06-01",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -128176,10 +128208,10 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1132510",
+        "id": "1132270",
         "date": "2026-05-31",
-        "start": "15:30",
-        "end": "15:30",
+        "start": "10:30",
+        "end": "10:30",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -128212,7 +128244,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1114,
+    "Stocking \ud83d\udce6": 1113,
     "Lifting \ud83d\ude9a": 799,
     "Producer \ud83e\udd66": 378,
     "Flex \ud83e\udd6b": 195,
