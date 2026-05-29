@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-17T17:50:28.209238+00:00",
-      "total": 3385,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-17T18:00:41.161269+00:00",
       "total": 3384,
       "users": {
@@ -128152,10 +128135,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-29T18:00:40.272905+00:00",
+      "total": 3270,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1133066",
+              "date": "2026-06-01",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1372,
+    "total_runs": 1373,
     "users": {
       "Mike": {
         "matched": 661,
@@ -128167,7 +128175,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1133066",
+        "date": "2026-06-01",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128192,7 +128210,7 @@
     "Stocking \ud83d\udce6": 1113,
     "Lifting \ud83d\ude9a": 801,
     "Producer \ud83e\udd66": 380,
-    "Flex \ud83e\udd6b": 200,
+    "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 126,
     "Cleaning \ud83c\udfdd": 120,
@@ -128207,7 +128225,7 @@
     "Repairs \ud83d\udee0": 13,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
     "Office \ud83d\udcd7": 6,
-    "Checkout \ud83d\udcb3": 5,
+    "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Inventory: Produce \ud83c\udf40": 3,
