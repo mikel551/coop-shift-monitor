@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-17T17:10:33.889569+00:00",
-      "total": 3392,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-17T17:20:39.838003+00:00",
       "total": 3390,
       "users": {
@@ -128135,10 +128118,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-29T17:10:40.021894+00:00",
+      "total": 3278,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1368,
+    "total_runs": 1369,
     "users": {
       "Mike": {
         "matched": 661,
@@ -128150,17 +128150,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1140390",
-        "date": "2026-06-12",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128203,9 +128193,9 @@
     "Office \ud83d\udcd7": 6,
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Cart Return \ud83d\uded2": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Cart Return \ud83d\uded2": 2,
     "General Meeting \ud83d\uddf3\ufe0f": 2
   },
   "user_config": [
