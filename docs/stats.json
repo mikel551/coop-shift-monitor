@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-18T20:40:36.321576+00:00",
-      "total": 3397,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-18T20:50:30.119995+00:00",
       "total": 3396,
       "users": {
@@ -129105,10 +129088,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-30T20:50:31.892820+00:00",
+      "total": 3296,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1493,
+    "total_runs": 1494,
     "users": {
       "Mike": {
         "matched": 710,
@@ -129142,7 +129142,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1140,
+    "Stocking \ud83d\udce6": 1141,
     "Lifting \ud83d\ude9a": 819,
     "Producer \ud83e\udd66": 375,
     "Flex \ud83e\udd6b": 200,
@@ -129159,9 +129159,9 @@
     "Repairs \ud83d\udee0": 14,
     "Bins \ud83e\uddfc": 13,
     "Soup Cleaning": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Checkout \ud83d\udcb3": 2,
     "Office \ud83d\udcd7": 2,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
