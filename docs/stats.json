@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-18T16:10:31.897720+00:00",
-      "total": 3440,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-18T16:20:32.168967+00:00",
       "total": 3441,
       "users": {
@@ -128940,10 +128923,35 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-05-30T16:20:28.614582+00:00",
+      "total": 3333,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141034",
+              "date": "2026-06-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1466,
+    "total_runs": 1467,
     "users": {
       "Mike": {
         "matched": 710,
@@ -128987,12 +128995,12 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1156,
+    "Stocking \ud83d\udce6": 1155,
     "Lifting \ud83d\ude9a": 822,
     "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 180,
-    "Dairy Lifting \ud83e\udd5b": 131,
+    "Dairy Lifting \ud83e\udd5b": 130,
     "Cleaning \ud83c\udfdd": 124,
     "Meat Processing & Lifting \ud83c\udf56": 96,
     "Inventory \ud83d\udccb": 67,
@@ -129003,10 +129011,10 @@
     "Soup: Food Services \ud83c\udf72": 17,
     "Repairs \ud83d\udee0": 14,
     "Bins \ud83e\uddfc": 13,
-    "Checkout \ud83d\udcb3": 7,
-    "Cart Return \ud83d\uded2": 5,
+    "Checkout \ud83d\udcb3": 6,
     "Soup Cleaning": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
+    "Cart Return \ud83d\uded2": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 1,
