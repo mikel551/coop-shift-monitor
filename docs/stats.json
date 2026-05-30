@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-18T15:00:33.762537+00:00",
-      "total": 3449,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1103737",
-              "date": "2026-04-19",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-18T15:10:32.915928+00:00",
       "total": 3445,
       "users": {
@@ -128815,18 +128790,50 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-30T15:00:40.659587+00:00",
+      "total": 3359,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141034",
+              "date": "2026-06-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1145438",
+              "date": "2026-06-20",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1459,
+    "total_runs": 1460,
     "users": {
       "Mike": {
         "matched": 710,
         "notified": 58
       },
       "Nancy": {
-        "matched": 2117,
-        "notified": 253
+        "matched": 2118,
+        "notified": 254
       }
     }
   },
@@ -128872,11 +128879,11 @@
     "Stocking \ud83d\udce6": 1160,
     "Lifting \ud83d\ude9a": 821,
     "Producer \ud83e\udd66": 386,
-    "Flex \ud83e\udd6b": 203,
+    "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 180,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 124,
-    "Meat Processing & Lifting \ud83c\udf56": 96,
+    "Meat Processing & Lifting \ud83c\udf56": 97,
     "Inventory \ud83d\udccb": 67,
     "Case Maintenance \ud83e\uddfd": 34,
     "Bathroom \ud83d\udebd": 29,
