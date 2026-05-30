@@ -128276,6 +128276,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-30T02:30:31.897167+00:00",
+      "total": 3214,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1131984",
+              "date": "2026-05-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -128343,7 +128368,7 @@
     "Office \ud83d\udcd7": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Cart Return \ud83d\uded2": 1,
+    "Cart Return \ud83d\uded2": 2,
     "Checkout \ud83d\udcb3": 1,
     "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Bread Stocking \ud83c\udf5e": 1
