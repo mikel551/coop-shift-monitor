@@ -128875,6 +128875,39 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-30T15:40:30.474786+00:00",
+      "total": 3348,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141034",
+              "date": "2026-06-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1132636",
+              "date": "2026-05-31",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -128907,13 +128940,6 @@
         "start": "18:00",
         "end": "18:00",
         "type": "Cart Return \ud83d\uded2"
-      },
-      {
-        "id": "1145438",
-        "date": "2026-06-20",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
       }
     ]
   },
@@ -128940,8 +128966,8 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1158,
     "Lifting \ud83d\ude9a": 821,
-    "Producer \ud83e\udd66": 384,
-    "Flex \ud83e\udd6b": 203,
+    "Producer \ud83e\udd66": 381,
+    "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 180,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 124,
@@ -128955,8 +128981,8 @@
     "Repairs \ud83d\udee0": 14,
     "Bins \ud83e\uddfc": 13,
     "Checkout \ud83d\udcb3": 11,
-    "Cart Return \ud83d\uded2": 6,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
+    "Cart Return \ud83d\uded2": 5,
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 4,
     "Inventory: Produce \ud83c\udf40": 3,
