@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-18T02:30:31.613147+00:00",
-      "total": 3313,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-18T02:40:35.254770+00:00",
       "total": 3313,
       "users": {
@@ -128301,10 +128284,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-30T02:40:37.629469+00:00",
+      "total": 3211,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1131984",
+              "date": "2026-05-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1424,
+    "total_runs": 1425,
     "users": {
       "Mike": {
         "matched": 675,
@@ -128349,7 +128357,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1104,
-    "Lifting \ud83d\ude9a": 794,
+    "Lifting \ud83d\ude9a": 793,
     "Producer \ud83e\udd66": 372,
     "Flex \ud83e\udd6b": 191,
     "Produce Processing \ud83e\udd6c": 177,
@@ -128358,7 +128366,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 92,
     "Inventory \ud83d\udccb": 67,
     "Case Maintenance \ud83e\uddfd": 34,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 30,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 29,
     "Bathroom \ud83d\udebd": 29,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bulk Lifting \ud83e\uded8": 17,
@@ -128369,7 +128377,6 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Cart Return \ud83d\uded2": 2,
-    "Checkout \ud83d\udcb3": 1,
     "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Bread Stocking \ud83c\udf5e": 1
   },
