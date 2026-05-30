@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-18T18:10:32.838338+00:00",
-      "total": 3422,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-18T18:20:29.681878+00:00",
-      "total": 3415,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-18T18:30:36.850409+00:00",
       "total": 3410,
       "users": {
@@ -129073,10 +129039,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-30T18:20:35.069369+00:00",
+      "total": 3319,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1132254",
+              "date": "2026-05-31",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1478,
+    "total_runs": 1480,
     "users": {
       "Mike": {
         "matched": 710,
@@ -129120,8 +129111,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1151,
-    "Lifting \ud83d\ude9a": 822,
+    "Stocking \ud83d\udce6": 1150,
+    "Lifting \ud83d\ude9a": 821,
     "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 180,
@@ -129141,8 +129132,7 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
-    "Office \ud83d\udcd7": 2,
-    "Cart Return \ud83d\uded2": 1
+    "Office \ud83d\udcd7": 2
   },
   "user_config": [
     {
