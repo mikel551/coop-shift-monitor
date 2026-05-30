@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-18T17:50:33.261867+00:00",
-      "total": 3425,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-18T18:00:36.708332+00:00",
       "total": 3424,
       "users": {
@@ -129057,10 +129040,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-30T18:00:36.944064+00:00",
+      "total": 3323,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1132254",
+              "date": "2026-05-31",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1476,
+    "total_runs": 1477,
     "users": {
       "Mike": {
         "matched": 710,
@@ -129079,13 +129087,6 @@
         "date": "2026-05-31",
         "start": "10:30",
         "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1136952",
-        "date": "2026-06-07",
-        "start": "13:00",
-        "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -129114,7 +129115,7 @@
     "Stocking \ud83d\udce6": 1152,
     "Lifting \ud83d\ude9a": 822,
     "Producer \ud83e\udd66": 380,
-    "Flex \ud83e\udd6b": 199,
+    "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 180,
     "Dairy Lifting \ud83e\udd5b": 130,
     "Cleaning \ud83c\udfdd": 124,
@@ -129127,13 +129128,12 @@
     "Soup: Food Services \ud83c\udf72": 17,
     "Repairs \ud83d\udee0": 14,
     "Bins \ud83e\uddfc": 13,
-    "Checkout \ud83d\udcb3": 7,
+    "Checkout \ud83d\udcb3": 6,
     "Soup Cleaning": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
     "Office \ud83d\udcd7": 2,
-    "Vitamins \ud83c\udf6c": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
