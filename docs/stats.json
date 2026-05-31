@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-19T16:20:36.823955+00:00",
-      "total": 3438,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-19T16:30:32.721394+00:00",
       "total": 3433,
       "users": {
@@ -130377,10 +130360,49 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-31T16:30:32.642600+00:00",
+      "total": 3384,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1150340",
+              "date": "2026-06-28",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1150458",
+              "date": "2026-06-28",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1155061",
+              "date": "2026-07-06",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1571,
+    "total_runs": 1572,
     "users": {
       "Mike": {
         "matched": 768,
@@ -130406,6 +130428,13 @@
         "date": "2026-06-28",
         "start": "15:30",
         "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1155061",
+        "date": "2026-07-06",
+        "start": "08:00",
+        "end": "08:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -130436,7 +130465,7 @@
     "Producer \ud83e\udd66": 390,
     "Flex \ud83e\udd6b": 197,
     "Produce Processing \ud83e\udd6c": 181,
-    "Dairy Lifting \ud83e\udd5b": 129,
+    "Dairy Lifting \ud83e\udd5b": 130,
     "Cleaning \ud83c\udfdd": 126,
     "Meat Processing & Lifting \ud83c\udf56": 101,
     "Inventory \ud83d\udccb": 70,
@@ -130449,8 +130478,8 @@
     "Repairs \ud83d\udee0": 13,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
     "Office \ud83d\udcd7": 6,
+    "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 1,
     "Cart Return \ud83d\uded2": 1,
