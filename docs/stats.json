@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-19T20:00:34.316841+00:00",
-      "total": 3389,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-19T20:10:31.116376+00:00",
       "total": 3389,
       "users": {
@@ -130711,10 +130694,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-31T20:10:31.075978+00:00",
+      "total": 3355,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1138002",
+              "date": "2026-06-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1593,
+    "total_runs": 1594,
     "users": {
       "Mike": {
         "matched": 768,
@@ -130766,7 +130774,7 @@
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 126,
     "Meat Processing & Lifting \ud83c\udf56": 99,
-    "Inventory \ud83d\udccb": 70,
+    "Inventory \ud83d\udccb": 69,
     "Case Maintenance \ud83e\uddfd": 33,
     "Bathroom \ud83d\udebd": 28,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
