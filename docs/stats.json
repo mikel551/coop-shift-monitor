@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-19T02:20:31.786012+00:00",
-      "total": 3351,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1104567",
-              "date": "2026-04-20",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-19T02:30:29.634923+00:00",
-      "total": 3349,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-19T02:40:34.045066+00:00",
       "total": 3349,
       "users": {
@@ -129264,17 +129222,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-31T02:30:35.334625+00:00",
+      "total": 3286,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1527,
+    "total_runs": 1529,
     "users": {
       "Mike": {
         "matched": 715,
         "notified": 59
       },
       "Nancy": {
-        "matched": 2126,
+        "matched": 2127,
         "notified": 258
       }
     }
@@ -129321,7 +129296,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
     {
