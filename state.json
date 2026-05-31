@@ -1,6 +1,7 @@
 {
   "notified": {
     "Nancy": [
+      "1132934",
       "1150340",
       "1155061",
       "1150458"
@@ -8,23 +9,6 @@
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-04-19T17:10:29.999719+00:00",
-      "total": 3427,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-04-19T17:20:32.055917+00:00",
       "total": 3426,
@@ -130495,10 +130479,56 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-31T17:20:33.624504+00:00",
+      "total": 3379,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1132934",
+              "date": "2026-06-01",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1150340",
+              "date": "2026-06-28",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1150458",
+              "date": "2026-06-28",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1155061",
+              "date": "2026-07-06",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1576,
+    "total_runs": 1577,
     "users": {
       "Mike": {
         "matched": 768,
