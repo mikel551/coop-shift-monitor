@@ -1,53 +1,11 @@
 {
   "notified": {
     "Nancy": [
-      "1133404"
+      "1132938"
     ],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-04-19T23:40:29.432478+00:00",
-      "total": 3359,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
-      "ts": "2026-04-19T23:50:28.081716+00:00",
-      "total": 3355,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1104189",
-              "date": "2026-04-20",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-04-20T00:00:35.198173+00:00",
       "total": 3354,
@@ -130547,18 +130505,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-05-31T23:50:32.913914+00:00",
+      "total": 3327,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1132938",
+              "date": "2026-06-01",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1615,
+    "total_runs": 1617,
     "users": {
       "Mike": {
         "matched": 772,
         "notified": 64
       },
       "Nancy": {
-        "matched": 2411,
-        "notified": 300
+        "matched": 2412,
+        "notified": 301
       }
     }
   }
