@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-20T22:50:30.492590+00:00",
-      "total": 3352,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-20T23:00:37.340440+00:00",
       "total": 3354,
       "users": {
@@ -129229,10 +129212,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-01T23:00:33.637830+00:00",
+      "total": 3313,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1134010",
+              "date": "2026-06-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1713,
+    "total_runs": 1714,
     "users": {
       "Mike": {
         "matched": 834,
@@ -129244,7 +129252,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1134010",
+        "date": "2026-06-02",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129266,12 +129284,12 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1196,
+    "Stocking \ud83d\udce6": 1198,
     "Lifting \ud83d\ude9a": 787,
     "Producer \ud83e\udd66": 384,
-    "Flex \ud83e\udd6b": 196,
+    "Flex \ud83e\udd6b": 195,
     "Produce Processing \ud83e\udd6c": 175,
-    "Cleaning \ud83c\udfdd": 124,
+    "Cleaning \ud83c\udfdd": 123,
     "Dairy Lifting \ud83e\udd5b": 121,
     "Meat Processing & Lifting \ud83c\udf56": 89,
     "Inventory \ud83d\udccb": 71,
@@ -129286,7 +129304,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
-    "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
