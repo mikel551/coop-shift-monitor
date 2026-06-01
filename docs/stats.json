@@ -129214,6 +129214,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-01T21:00:44.876206+00:00",
+      "total": 3328,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1133424",
+              "date": "2026-06-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129229,7 +129254,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1133424",
+        "date": "2026-06-01",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129251,7 +129286,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1199,
+    "Stocking \ud83d\udce6": 1197,
     "Lifting \ud83d\ude9a": 790,
     "Producer \ud83e\udd66": 384,
     "Flex \ud83e\udd6b": 197,
@@ -129271,7 +129306,8 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Office \ud83d\udcd7": 3
+    "Office \ud83d\udcd7": 3,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
