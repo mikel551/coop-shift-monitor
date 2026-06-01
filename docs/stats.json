@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-20T18:00:37.890242+00:00",
-      "total": 3400,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1106495",
-              "date": "2026-04-23",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-20T18:10:34.005202+00:00",
       "total": 3397,
       "users": {
@@ -129351,14 +129326,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-01T18:10:38.850855+00:00",
+      "total": 3365,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1684,
+    "total_runs": 1685,
     "users": {
       "Mike": {
-        "matched": 809,
-        "notified": 67
+        "matched": 810,
+        "notified": 68
       },
       "Nancy": {
         "matched": 2945,
@@ -129388,10 +129380,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1209,
+    "Stocking \ud83d\udce6": 1208,
     "Lifting \ud83d\ude9a": 800,
     "Producer \ud83e\udd66": 387,
-    "Flex \ud83e\udd6b": 206,
+    "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 176,
     "Cleaning \ud83c\udfdd": 125,
     "Dairy Lifting \ud83e\udd5b": 123,
@@ -129401,8 +129393,8 @@
     "Bathroom \ud83d\udebd": 31,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 24,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
-    "Soup: Food Services \ud83c\udf72": 16,
     "Repairs \ud83d\udee0": 15,
+    "Soup: Food Services \ud83c\udf72": 15,
     "Bulk Lifting \ud83e\uded8": 15,
     "Bins \ud83e\uddfc": 12,
     "Office \ud83d\udcd7": 7,
