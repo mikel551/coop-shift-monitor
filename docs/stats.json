@@ -129290,6 +129290,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-02T19:50:38.548785+00:00",
+      "total": 3363,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1137584",
+              "date": "2026-06-08",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129305,7 +129330,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1137584",
+        "date": "2026-06-08",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129328,7 +129363,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1211,
-    "Lifting \ud83d\ude9a": 799,
+    "Lifting \ud83d\ude9a": 798,
     "Producer \ud83e\udd66": 393,
     "Flex \ud83e\udd6b": 196,
     "Produce Processing \ud83e\udd6c": 177,
@@ -129347,7 +129382,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
-    "Checkout \ud83d\udcb3": 1,
+    "Checkout \ud83d\udcb3": 2,
     "CHIPS Food Drive \ud83c\udf5b": 1,
     "Vitamins \ud83c\udf6c": 1
   },
