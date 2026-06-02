@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-21T14:40:41.064851+00:00",
-      "total": 3449,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-21T14:50:38.768640+00:00",
       "total": 3446,
       "users": {
@@ -129291,10 +129274,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-02T14:50:35.498168+00:00",
+      "total": 3403,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
-    "total_runs": 1768,
+    "total_runs": 1769,
     "users": {
       "Mike": {
         "matched": 872,
@@ -129306,24 +129306,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1150094",
-        "date": "2026-06-28",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1154408",
-        "date": "2026-07-05",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129345,8 +129328,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1216,
-    "Lifting \ud83d\ude9a": 809,
+    "Stocking \ud83d\udce6": 1215,
+    "Lifting \ud83d\ude9a": 807,
     "Producer \ud83e\udd66": 395,
     "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 181,
@@ -129361,11 +129344,11 @@
     "Soup: Food Services \ud83c\udf72": 16,
     "Bulk Lifting \ud83e\uded8": 15,
     "Bins \ud83e\uddfc": 12,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
-    "Checkout \ud83d\udcb3": 6,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 8,
     "Office \ud83d\udcd7": 6,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Checkout \ud83d\udcb3": 3,
     "CHIPS Food Drive \ud83c\udf5b": 2,
     "Vitamins \ud83c\udf6c": 1,
     "Bread Stocking \ud83c\udf5e": 1,
