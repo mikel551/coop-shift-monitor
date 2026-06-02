@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-21T22:00:37.150426+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-21T22:10:33.189775+00:00",
       "total": 3382,
       "users": {
@@ -129315,10 +129298,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-02T22:10:38.489103+00:00",
+      "total": 3347,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1812,
+    "total_runs": 1813,
     "users": {
       "Mike": {
         "matched": 872,
@@ -129370,9 +129370,10 @@
     "Bins \ud83e\uddfc": 12,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Office \ud83d\udcd7": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
