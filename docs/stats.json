@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-21T14:10:33.436171+00:00",
-      "total": 3455,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-21T14:20:40.737848+00:00",
       "total": 3448,
       "users": {
@@ -129228,10 +129211,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-02T14:10:40.811829+00:00",
+      "total": 3413,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1150094",
+              "date": "2026-06-28",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1765,
+    "total_runs": 1766,
     "users": {
       "Mike": {
         "matched": 872,
@@ -129275,27 +129283,28 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1216,
+    "Stocking \ud83d\udce6": 1218,
     "Lifting \ud83d\ude9a": 810,
-    "Producer \ud83e\udd66": 395,
-    "Flex \ud83e\udd6b": 200,
+    "Producer \ud83e\udd66": 394,
+    "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 180,
     "Cleaning \ud83c\udfdd": 126,
     "Dairy Lifting \ud83e\udd5b": 123,
     "Meat Processing & Lifting \ud83c\udf56": 91,
     "Inventory \ud83d\udccb": 73,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
     "Bathroom \ud83d\udebd": 32,
-    "Soup: Food Services \ud83c\udf72": 17,
     "Repairs \ud83d\udee0": 16,
+    "Soup: Food Services \ud83c\udf72": 16,
     "Bulk Lifting \ud83e\uded8": 15,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 13,
     "Bins \ud83e\uddfc": 12,
-    "Office \ud83d\udcd7": 8,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 11,
+    "Office \ud83d\udcd7": 7,
     "Checkout \ud83d\udcb3": 6,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "CHIPS Food Drive \ud83c\udf5b": 2,
     "Vitamins \ud83c\udf6c": 1,
     "Bread Stocking \ud83c\udf5e": 1,
     "Cart Return \ud83d\uded2": 1
