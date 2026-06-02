@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-21T18:50:32.916738+00:00",
-      "total": 3411,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-21T19:00:43.503801+00:00",
       "total": 3406,
       "users": {
@@ -129290,10 +129273,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-02T18:50:41.027914+00:00",
+      "total": 3358,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1793,
+    "total_runs": 1794,
     "users": {
       "Mike": {
         "matched": 872,
@@ -129305,17 +129305,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1137168",
-        "date": "2026-06-07",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129340,9 +129330,9 @@
     "Stocking \ud83d\udce6": 1207,
     "Lifting \ud83d\ude9a": 799,
     "Producer \ud83e\udd66": 393,
-    "Flex \ud83e\udd6b": 195,
+    "Flex \ud83e\udd6b": 196,
     "Produce Processing \ud83e\udd6c": 177,
-    "Cleaning \ud83c\udfdd": 125,
+    "Cleaning \ud83c\udfdd": 124,
     "Dairy Lifting \ud83e\udd5b": 122,
     "Meat Processing & Lifting \ud83c\udf56": 92,
     "Inventory \ud83d\udccb": 73,
@@ -129358,7 +129348,6 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Office \ud83d\udcd7": 3,
     "CHIPS Food Drive \ud83c\udf5b": 1,
-    "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
