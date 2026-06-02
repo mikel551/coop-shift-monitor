@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-21T12:20:29.982573+00:00",
-      "total": 3490,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133386",
-              "date": "2026-06-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-21T12:30:40.272235+00:00",
       "total": 3486,
       "users": {
@@ -129140,13 +129115,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-02T12:30:38.427320+00:00",
+      "total": 3437,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1142234",
+              "date": "2026-06-15",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1150094",
+              "date": "2026-06-28",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1754,
+    "total_runs": 1755,
     "users": {
       "Mike": {
-        "matched": 869,
+        "matched": 870,
         "notified": 72
       },
       "Nancy": {
@@ -129194,10 +129201,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1225,
+    "Stocking \ud83d\udce6": 1224,
     "Lifting \ud83d\ude9a": 811,
     "Producer \ud83e\udd66": 397,
-    "Flex \ud83e\udd6b": 199,
+    "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 180,
     "Cleaning \ud83c\udfdd": 126,
     "Dairy Lifting \ud83e\udd5b": 124,
