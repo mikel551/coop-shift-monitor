@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-22T22:10:35.504606+00:00",
-      "total": 3398,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-22T22:20:29.342961+00:00",
-      "total": 3394,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-22T22:30:34.799322+00:00",
       "total": 3394,
       "users": {
@@ -129009,10 +128975,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-03T22:20:40.124359+00:00",
+      "total": 3380,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1138598",
+              "date": "2026-06-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1917,
+    "total_runs": 1919,
     "users": {
       "Mike": {
         "matched": 921,
@@ -129058,11 +129049,11 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1206,
     "Lifting \ud83d\ude9a": 805,
-    "Producer \ud83e\udd66": 383,
+    "Producer \ud83e\udd66": 382,
     "Flex \ud83e\udd6b": 211,
     "Produce Processing \ud83e\udd6c": 181,
     "Cleaning \ud83c\udfdd": 125,
-    "Dairy Lifting \ud83e\udd5b": 123,
+    "Dairy Lifting \ud83e\udd5b": 122,
     "Meat Processing & Lifting \ud83c\udf56": 94,
     "Inventory \ud83d\udccb": 72,
     "Case Maintenance \ud83e\uddfd": 36,
@@ -129075,10 +129066,10 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 11,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 2,
     "Cart Return \ud83d\uded2": 2,
     "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Bread Stocking \ud83c\udf5e": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
