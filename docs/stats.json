@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-22T11:50:31.925167+00:00",
-      "total": 3512,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1115051",
-              "date": "2026-05-06",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1124452",
-              "date": "2026-05-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-22T12:00:40.739816+00:00",
       "total": 3506,
       "users": {
@@ -129176,13 +129144,30 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-03T12:00:38.847519+00:00",
+      "total": 3461,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1855,
+    "total_runs": 1856,
     "users": {
       "Mike": {
-        "matched": 896,
+        "matched": 898,
         "notified": 75
       },
       "Nancy": {
@@ -129213,12 +129198,12 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1227,
+    "Stocking \ud83d\udce6": 1226,
     "Lifting \ud83d\ude9a": 818,
     "Producer \ud83e\udd66": 392,
     "Flex \ud83e\udd6b": 200,
-    "Produce Processing \ud83e\udd6c": 183,
-    "Dairy Lifting \ud83e\udd5b": 128,
+    "Produce Processing \ud83e\udd6c": 184,
+    "Dairy Lifting \ud83e\udd5b": 127,
     "Cleaning \ud83c\udfdd": 125,
     "Meat Processing & Lifting \ud83c\udf56": 94,
     "Inventory \ud83d\udccb": 73,
@@ -129228,7 +129213,7 @@
     "Soup: Food Services \ud83c\udf72": 19,
     "Checkout \ud83d\udcb3": 16,
     "Repairs \ud83d\udee0": 16,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 13,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 14,
     "Bulk Lifting \ud83e\uded8": 13,
     "Bins \ud83e\uddfc": 12,
     "Cart Return \ud83d\uded2": 5,
