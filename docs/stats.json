@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-22T21:10:42.363885+00:00",
-      "total": 3411,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-22T21:20:41.644670+00:00",
       "total": 3409,
       "users": {
@@ -128993,10 +128976,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-03T21:20:38.067727+00:00",
+      "total": 3373,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1911,
+    "total_runs": 1912,
     "users": {
       "Mike": {
         "matched": 921,
@@ -129030,7 +129030,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1207,
+    "Stocking \ud83d\udce6": 1206,
     "Lifting \ud83d\ude9a": 806,
     "Producer \ud83e\udd66": 385,
     "Flex \ud83e\udd6b": 199,
@@ -129051,7 +129051,7 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 1,
-    "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Bread Stocking \ud83c\udf5e": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
