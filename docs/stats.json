@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-22T21:50:33.286289+00:00",
-      "total": 3400,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-22T22:00:34.373190+00:00",
       "total": 3400,
       "users": {
@@ -128993,10 +128976,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-03T22:00:38.570880+00:00",
+      "total": 3384,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1138598",
+              "date": "2026-06-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1915,
+    "total_runs": 1916,
     "users": {
       "Mike": {
         "matched": 921,
@@ -129008,7 +129016,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1138598",
+        "date": "2026-06-09",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129049,9 +129067,10 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 10,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Checkout \ud83d\udcb3": 2,
+    "Cart Return \ud83d\uded2": 2,
     "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Bread Stocking \ud83c\udf5e": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
