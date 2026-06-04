@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-23T20:10:33.847341+00:00",
-      "total": 3445,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-23T20:20:30.280566+00:00",
-      "total": 3445,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-23T20:30:31.460927+00:00",
       "total": 3446,
       "users": {
@@ -129139,10 +129105,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-04T20:20:37.438144+00:00",
+      "total": 3351,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2005,
+    "total_runs": 2007,
     "users": {
       "Mike": {
         "matched": 938,
@@ -129154,17 +129137,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1136556",
-        "date": "2026-06-06",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129186,8 +129159,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1179,
-    "Lifting \ud83d\ude9a": 813,
+    "Stocking \ud83d\udce6": 1177,
+    "Lifting \ud83d\ude9a": 812,
     "Producer \ud83e\udd66": 382,
     "Flex \ud83e\udd6b": 206,
     "Produce Processing \ud83e\udd6c": 180,
@@ -129204,10 +129177,9 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Office \ud83d\udcd7": 3,
+    "Repairs \ud83d\udee0": 3,
     "Checkout \ud83d\udcb3": 2,
-    "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 1,
+    "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
