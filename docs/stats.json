@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-23T14:50:41.456164+00:00",
-      "total": 3503,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-23T15:00:43.504297+00:00",
-      "total": 3498,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-23T15:10:36.529670+00:00",
       "total": 3498,
       "users": {
@@ -129123,10 +129089,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-04T15:00:50.999182+00:00",
+      "total": 3463,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1973,
+    "total_runs": 1975,
     "users": {
       "Mike": {
         "matched": 938,
@@ -129162,8 +129145,8 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1218,
     "Lifting \ud83d\ude9a": 823,
-    "Producer \ud83e\udd66": 387,
-    "Flex \ud83e\udd6b": 218,
+    "Producer \ud83e\udd66": 386,
+    "Flex \ud83e\udd6b": 219,
     "Produce Processing \ud83e\udd6c": 184,
     "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 127,
@@ -129177,10 +129160,10 @@
     "Repairs \ud83d\udee0": 16,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 12,
-    "Office \ud83d\udcd7": 7,
-    "Checkout \ud83d\udcb3": 6,
+    "Office \ud83d\udcd7": 6,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
