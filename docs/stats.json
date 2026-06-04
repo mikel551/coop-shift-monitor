@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-23T02:40:53.944512+00:00",
-      "total": 3366,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-23T02:50:34.366147+00:00",
       "total": 3363,
       "users": {
@@ -129129,10 +129112,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-04T02:50:37.261794+00:00",
+      "total": 3363,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1944,
+    "total_runs": 1945,
     "users": {
       "Mike": {
         "matched": 921,
@@ -129144,17 +129144,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1144176",
-        "date": "2026-06-18",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129178,9 +129168,9 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1199,
     "Lifting \ud83d\ude9a": 800,
-    "Producer \ud83e\udd66": 382,
+    "Producer \ud83e\udd66": 383,
     "Flex \ud83e\udd6b": 204,
-    "Produce Processing \ud83e\udd6c": 182,
+    "Produce Processing \ud83e\udd6c": 181,
     "Cleaning \ud83c\udfdd": 125,
     "Dairy Lifting \ud83e\udd5b": 122,
     "Meat Processing & Lifting \ud83c\udf56": 94,
@@ -129196,8 +129186,6 @@
     "Office \ud83d\udcd7": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 1,
-    "Cart Return \ud83d\uded2": 1,
     "Bread Stocking \ud83c\udf5e": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
