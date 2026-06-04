@@ -1,51 +1,11 @@
 {
   "notified": {
-    "Nancy": [],
+    "Nancy": [
+      "1146594"
+    ],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-04-23T18:40:35.527196+00:00",
-      "total": 3454,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-23T18:50:31.700439+00:00",
-      "total": 3451,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1108181",
-              "date": "2026-04-26",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-04-23T19:00:38.615049+00:00",
       "total": 3451,
@@ -129135,18 +129095,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-04T18:50:39.790018+00:00",
+      "total": 3384,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1146594",
+              "date": "2026-06-22",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 1996,
+    "total_runs": 1998,
     "users": {
       "Mike": {
         "matched": 938,
         "notified": 79
       },
       "Nancy": {
-        "matched": 2992,
-        "notified": 351
+        "matched": 2993,
+        "notified": 352
       }
     }
   }
