@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-23T18:00:43.509969+00:00",
-      "total": 3460,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-23T18:10:34.562282+00:00",
       "total": 3457,
       "users": {
@@ -129131,10 +129114,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-04T18:10:36.986578+00:00",
+      "total": 3398,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 1992,
+    "total_runs": 1993,
     "users": {
       "Mike": {
         "matched": 938,
@@ -129146,17 +129146,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1135894",
-        "date": "2026-06-05",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129178,19 +129168,19 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1193,
-    "Lifting \ud83d\ude9a": 816,
-    "Producer \ud83e\udd66": 383,
-    "Flex \ud83e\udd6b": 214,
+    "Stocking \ud83d\udce6": 1194,
+    "Lifting \ud83d\ude9a": 814,
+    "Producer \ud83e\udd66": 384,
+    "Flex \ud83e\udd6b": 213,
     "Produce Processing \ud83e\udd6c": 180,
     "Dairy Lifting \ud83e\udd5b": 127,
     "Cleaning \ud83c\udfdd": 125,
     "Meat Processing & Lifting \ud83c\udf56": 95,
-    "Inventory \ud83d\udccb": 70,
+    "Inventory \ud83d\udccb": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Bathroom \ud83d\udebd": 36,
     "Case Maintenance \ud83e\uddfd": 34,
-    "Soup: Food Services \ud83c\udf72": 22,
+    "Soup: Food Services \ud83c\udf72": 21,
     "Repairs \ud83d\udee0": 16,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 13,
@@ -129198,8 +129188,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 1,
-    "Vitamins \ud83c\udf6c": 1,
+    "Vitamins \ud83c\udf6c": 2,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
