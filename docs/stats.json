@@ -129106,6 +129106,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-04T23:40:28.296481+00:00",
+      "total": 3323,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1139766",
+              "date": "2026-06-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129153,8 +129178,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1171,
-    "Lifting \ud83d\ude9a": 802,
+    "Stocking \ud83d\udce6": 1170,
+    "Lifting \ud83d\ude9a": 801,
     "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 203,
     "Produce Processing \ud83e\udd6c": 179,
@@ -129171,8 +129196,8 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Repairs \ud83d\udee0": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1,
     "Bread Stocking \ud83c\udf5e": 1,
     "Health & Beauty \ud83e\uddf4": 1,
