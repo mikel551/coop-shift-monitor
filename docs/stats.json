@@ -129106,6 +129106,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-04T16:00:41.608137+00:00",
+      "total": 3448,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1163663",
+              "date": "2026-06-08",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129121,7 +129146,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1163663",
+        "date": "2026-06-08",
+        "start": "13:00",
+        "end": "13:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129143,10 +129178,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1216,
+    "Stocking \ud83d\udce6": 1215,
     "Lifting \ud83d\ude9a": 822,
-    "Producer \ud83e\udd66": 385,
-    "Flex \ud83e\udd6b": 219,
+    "Producer \ud83e\udd66": 383,
+    "Flex \ud83e\udd6b": 218,
     "Produce Processing \ud83e\udd6c": 182,
     "Cleaning \ud83c\udfdd": 130,
     "Dairy Lifting \ud83e\udd5b": 127,
@@ -129160,10 +129195,10 @@
     "Bins \ud83e\uddfc": 15,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 13,
     "Bulk Lifting \ud83e\uded8": 12,
-    "Office \ud83d\udcd7": 5,
     "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Office \ud83d\udcd7": 4,
     "CHIPS Food Drive \ud83c\udf5b": 1,
     "Vitamins \ud83c\udf6c": 1,
     "Health & Beauty \ud83e\uddf4": 1
