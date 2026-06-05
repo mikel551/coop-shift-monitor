@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-24T00:00:35.293376+00:00",
-      "total": 3421,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-24T00:10:39.215670+00:00",
       "total": 3419,
       "users": {
@@ -129147,10 +129130,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-05T00:10:34.358157+00:00",
+      "total": 3319,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1139766",
+              "date": "2026-06-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2028,
+    "total_runs": 2029,
     "users": {
       "Mike": {
         "matched": 938,
@@ -129194,12 +129202,12 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1170,
+    "Stocking \ud83d\udce6": 1168,
     "Lifting \ud83d\ude9a": 801,
     "Producer \ud83e\udd66": 380,
-    "Flex \ud83e\udd6b": 202,
+    "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 179,
-    "Cleaning \ud83c\udfdd": 128,
+    "Cleaning \ud83c\udfdd": 127,
     "Dairy Lifting \ud83e\udd5b": 124,
     "Meat Processing & Lifting \ud83c\udf56": 96,
     "Inventory \ud83d\udccb": 70,
@@ -129212,7 +129220,6 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
     "Cart Return \ud83d\uded2": 1,
     "Bread Stocking \ud83c\udf5e": 1,
