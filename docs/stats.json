@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-24T02:40:34.062785+00:00",
-      "total": 3404,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-24T02:50:35.918843+00:00",
       "total": 3404,
       "users": {
@@ -129171,10 +129154,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-05T02:50:39.230260+00:00",
+      "total": 3289,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2044,
+    "total_runs": 2045,
     "users": {
       "Mike": {
         "matched": 938,
@@ -129208,14 +129208,14 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1157,
+    "Stocking \ud83d\udce6": 1155,
     "Lifting \ud83d\ude9a": 802,
-    "Producer \ud83e\udd66": 378,
+    "Producer \ud83e\udd66": 377,
     "Flex \ud83e\udd6b": 194,
     "Produce Processing \ud83e\udd6c": 179,
     "Cleaning \ud83c\udfdd": 126,
-    "Dairy Lifting \ud83e\udd5b": 124,
-    "Meat Processing & Lifting \ud83c\udf56": 96,
+    "Dairy Lifting \ud83e\udd5b": 123,
+    "Meat Processing & Lifting \ud83c\udf56": 95,
     "Inventory \ud83d\udccb": 69,
     "Bathroom \ud83d\udebd": 36,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
