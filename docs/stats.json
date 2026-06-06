@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-25T16:50:30.209103+00:00",
-      "total": 3582,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-25T17:00:48.898222+00:00",
       "total": 3574,
       "users": {
@@ -129353,10 +129336,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-06T17:00:34.929542+00:00",
+      "total": 3454,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2193,
+    "total_runs": 2194,
     "users": {
       "Mike": {
         "matched": 1115,
@@ -129368,17 +129368,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1145440",
-        "date": "2026-06-20",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129400,10 +129390,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1196,
+    "Stocking \ud83d\udce6": 1195,
     "Lifting \ud83d\ude9a": 844,
     "Producer \ud83e\udd66": 387,
-    "Flex \ud83e\udd6b": 215,
+    "Flex \ud83e\udd6b": 213,
     "Produce Processing \ud83e\udd6c": 188,
     "Dairy Lifting \ud83e\udd5b": 135,
     "Cleaning \ud83c\udfdd": 131,
@@ -129416,7 +129406,7 @@
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
     "Bulk Lifting \ud83e\uded8": 12,
-    "Cart Return \ud83d\uded2": 8,
+    "Cart Return \ud83d\uded2": 6,
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 4,
     "Inventory: Produce \ud83c\udf40": 4,
