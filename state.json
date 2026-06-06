@@ -7,23 +7,6 @@
   },
   "stats": [
     {
-      "ts": "2026-04-25T22:10:37.196539+00:00",
-      "total": 3476,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-25T22:20:35.780085+00:00",
       "total": 3474,
       "users": {
@@ -129358,10 +129341,35 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-06T22:20:29.880292+00:00",
+      "total": 3421,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1137208",
+              "date": "2026-06-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2225,
+    "total_runs": 2226,
     "users": {
       "Mike": {
         "matched": 1115,
