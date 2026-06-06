@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-25T22:30:30.905489+00:00",
-      "total": 3472,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-25T22:40:29.482811+00:00",
-      "total": 3472,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-25T22:50:32.847294+00:00",
       "total": 3470,
       "users": {
@@ -129375,10 +129341,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-06T22:40:36.118436+00:00",
+      "total": 3422,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1145728",
+              "date": "2026-06-21",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2227,
+    "total_runs": 2229,
     "users": {
       "Mike": {
         "matched": 1115,
@@ -129392,13 +129383,6 @@
   },
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1137208",
-        "date": "2026-06-07",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1145728",
         "date": "2026-06-21",
@@ -129447,11 +129431,12 @@
     "Bulk Lifting \ud83e\uded8": 12,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Health & Beauty \ud83e\uddf4": 3,
     "Office \ud83d\udcd7": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "CHIPS Food Drive \ud83c\udf5b": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
