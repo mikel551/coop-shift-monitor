@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-25T21:10:34.427477+00:00",
-      "total": 3491,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1108187",
-              "date": "2026-04-26",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-25T21:20:29.070645+00:00",
       "total": 3489,
       "users": {
@@ -129345,18 +129320,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-06T21:20:33.229565+00:00",
+      "total": 3427,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2219,
+    "total_runs": 2220,
     "users": {
       "Mike": {
         "matched": 1115,
         "notified": 90
       },
       "Nancy": {
-        "matched": 3046,
-        "notified": 364
+        "matched": 3047,
+        "notified": 365
       }
     }
   },
@@ -129382,9 +129374,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1186,
+    "Stocking \ud83d\udce6": 1185,
     "Lifting \ud83d\ude9a": 840,
-    "Producer \ud83e\udd66": 388,
+    "Producer \ud83e\udd66": 390,
     "Flex \ud83e\udd6b": 211,
     "Produce Processing \ud83e\udd6c": 188,
     "Dairy Lifting \ud83e\udd5b": 134,
@@ -129394,7 +129386,7 @@
     "Bathroom \ud83d\udebd": 38,
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 24,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 25,
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 13,
     "Bulk Lifting \ud83e\uded8": 12,
