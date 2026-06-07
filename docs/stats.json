@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T00:40:32.280699+00:00",
-      "total": 3456,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-26T00:50:31.450144+00:00",
       "total": 3455,
       "users": {
@@ -129423,10 +129406,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-07T00:50:30.624254+00:00",
+      "total": 3400,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1138596",
+              "date": "2026-06-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1136720",
+              "date": "2026-06-07",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2240,
+    "total_runs": 2241,
     "users": {
       "Mike": {
         "matched": 1115,
@@ -129499,9 +129515,9 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Health & Beauty \ud83e\uddf4": 3,
     "Office \ud83d\udcd7": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
     "Bread Stocking \ud83c\udf5e": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
