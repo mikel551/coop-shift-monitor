@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T23:20:30.623160+00:00",
-      "total": 3507,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1108765",
-              "date": "2026-04-27",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1109011",
-              "date": "2026-04-27",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-26T23:30:34.689473+00:00",
       "total": 3507,
       "users": {
@@ -128925,17 +128893,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-07T23:30:31.709432+00:00",
+      "total": 3414,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2336,
+    "total_runs": 2337,
     "users": {
       "Mike": {
         "matched": 1186,
         "notified": 96
       },
       "Nancy": {
-        "matched": 3502,
+        "matched": 3504,
         "notified": 421
       }
     }
@@ -128965,8 +128950,8 @@
     "Stocking \ud83d\udce6": 1204,
     "Lifting \ud83d\ude9a": 837,
     "Producer \ud83e\udd66": 394,
-    "Flex \ud83e\udd6b": 202,
-    "Produce Processing \ud83e\udd6c": 185,
+    "Flex \ud83e\udd6b": 203,
+    "Produce Processing \ud83e\udd6c": 184,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 131,
     "Meat Processing & Lifting \ud83c\udf56": 96,
@@ -128983,6 +128968,7 @@
     "Office \ud83d\udcd7": 3,
     "Soup Cleaning": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
