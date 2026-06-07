@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T21:40:32.145333+00:00",
-      "total": 3510,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-26T21:50:30.078637+00:00",
       "total": 3510,
       "users": {
@@ -128917,10 +128900,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-07T21:50:29.683757+00:00",
+      "total": 3422,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1163663",
+              "date": "2026-06-08",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2326,
+    "total_runs": 2327,
     "users": {
       "Mike": {
         "matched": 1186,
@@ -128935,10 +128943,10 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1137924",
+        "id": "1163663",
         "date": "2026-06-08",
-        "start": "15:30",
-        "end": "15:30",
+        "start": "13:00",
+        "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -128964,8 +128972,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1208,
-    "Lifting \ud83d\ude9a": 841,
+    "Stocking \ud83d\udce6": 1206,
+    "Lifting \ud83d\ude9a": 839,
     "Producer \ud83e\udd66": 395,
     "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 185,
@@ -128975,7 +128983,7 @@
     "Inventory \ud83d\udccb": 65,
     "Bathroom \ud83d\udebd": 38,
     "Case Maintenance \ud83e\uddfd": 32,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 28,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 26,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 22,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 12,
