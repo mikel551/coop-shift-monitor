@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T01:10:33.408363+00:00",
-      "total": 3454,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-26T01:20:29.481957+00:00",
       "total": 3454,
       "users": {
@@ -129455,10 +129438,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-07T01:20:28.440733+00:00",
+      "total": 3397,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2243,
+    "total_runs": 2244,
     "users": {
       "Mike": {
         "matched": 1115,
@@ -129470,17 +129470,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1138596",
-        "date": "2026-06-09",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129503,9 +129493,9 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1173,
-    "Lifting \ud83d\ude9a": 832,
+    "Lifting \ud83d\ude9a": 831,
     "Producer \ud83e\udd66": 388,
-    "Flex \ud83e\udd6b": 209,
+    "Flex \ud83e\udd6b": 210,
     "Produce Processing \ud83e\udd6c": 189,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 129,
@@ -129523,9 +129513,7 @@
     "Health & Beauty \ud83e\uddf4": 3,
     "Office \ud83d\udcd7": 3,
     "Repairs \ud83d\udee0": 2,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1
+    "Bread Stocking \ud83c\udf5e": 1
   },
   "user_config": [
     {
