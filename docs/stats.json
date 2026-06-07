@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T19:40:29.741631+00:00",
-      "total": 3523,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1108891",
-              "date": "2026-04-27",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-26T19:50:28.971767+00:00",
       "total": 3524,
       "users": {
@@ -128916,17 +128891,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-07T19:40:39.115590+00:00",
+      "total": 3462,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2314,
+    "total_runs": 2315,
     "users": {
       "Mike": {
         "matched": 1186,
         "notified": 96
       },
       "Nancy": {
-        "matched": 3494,
+        "matched": 3495,
         "notified": 417
       }
     }
@@ -128953,10 +128945,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1221,
-    "Lifting \ud83d\ude9a": 841,
+    "Stocking \ud83d\udce6": 1220,
+    "Lifting \ud83d\ude9a": 842,
     "Producer \ud83e\udd66": 397,
-    "Flex \ud83e\udd6b": 208,
+    "Flex \ud83e\udd6b": 206,
     "Produce Processing \ud83e\udd6c": 186,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 133,
@@ -128974,6 +128966,7 @@
     "Repairs \ud83d\udee0": 3,
     "Soup Cleaning": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
