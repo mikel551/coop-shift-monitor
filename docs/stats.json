@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T03:00:36.579681+00:00",
-      "total": 3439,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-26T04:00:33.827030+00:00",
       "total": 3552,
       "users": {
@@ -129455,10 +129438,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-07T04:00:31.900956+00:00",
+      "total": 3517,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2254,
+    "total_runs": 2255,
     "users": {
       "Mike": {
         "matched": 1115,
@@ -129492,28 +129492,30 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1175,
-    "Lifting \ud83d\ude9a": 831,
-    "Producer \ud83e\udd66": 391,
-    "Flex \ud83e\udd6b": 210,
+    "Stocking \ud83d\udce6": 1239,
+    "Lifting \ud83d\ude9a": 849,
+    "Producer \ud83e\udd66": 410,
+    "Flex \ud83e\udd6b": 212,
     "Produce Processing \ud83e\udd6c": 189,
     "Dairy Lifting \ud83e\udd5b": 134,
-    "Cleaning \ud83c\udfdd": 129,
+    "Cleaning \ud83c\udfdd": 132,
     "Meat Processing & Lifting \ud83c\udf56": 101,
     "Inventory \ud83d\udccb": 66,
-    "Bathroom \ud83d\udebd": 38,
+    "Bathroom \ud83d\udebd": 39,
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 23,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 24,
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 13,
     "Bulk Lifting \ud83e\uded8": 12,
+    "Office \ud83d\udcd7": 5,
     "Inventory: Produce \ud83c\udf40": 4,
     "Health & Beauty \ud83e\uddf4": 3,
     "Soup Cleaning": 3,
-    "Office \ud83d\udcd7": 3,
+    "Cart Return \ud83d\uded2": 3,
     "Repairs \ud83d\udee0": 2,
-    "Bread Stocking \ud83c\udf5e": 1
+    "Bread Stocking \ud83c\udf5e": 2,
+    "Checkout \ud83d\udcb3": 2
   },
   "user_config": [
     {
