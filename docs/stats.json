@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T00:00:38.257448+00:00",
-      "total": 3466,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1133288",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-26T00:10:34.996391+00:00",
       "total": 3462,
       "users": {
@@ -129415,18 +129390,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-07T00:10:36.802744+00:00",
+      "total": 3403,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2236,
+    "total_runs": 2237,
     "users": {
       "Mike": {
         "matched": 1115,
         "notified": 90
       },
       "Nancy": {
-        "matched": 3048,
-        "notified": 366
+        "matched": 3049,
+        "notified": 367
       }
     }
   },
@@ -129452,10 +129444,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1176,
-    "Lifting \ud83d\ude9a": 836,
+    "Stocking \ud83d\udce6": 1175,
+    "Lifting \ud83d\ude9a": 834,
     "Producer \ud83e\udd66": 388,
-    "Flex \ud83e\udd6b": 210,
+    "Flex \ud83e\udd6b": 209,
     "Produce Processing \ud83e\udd6c": 189,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 129,
@@ -129473,8 +129465,7 @@
     "Health & Beauty \ud83e\uddf4": 3,
     "Office \ud83d\udcd7": 3,
     "Repairs \ud83d\udee0": 2,
-    "Bread Stocking \ud83c\udf5e": 2,
-    "Cart Return \ud83d\uded2": 1
+    "Bread Stocking \ud83c\udf5e": 2
   },
   "user_config": [
     {
