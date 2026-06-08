@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-27T18:10:33.326235+00:00",
-      "total": 3530,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1109125",
-              "date": "2026-04-27",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-04-27T18:20:31.669111+00:00",
-      "total": 3525,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-27T18:30:40.429071+00:00",
       "total": 3524,
       "users": {
@@ -128780,18 +128738,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-08T18:20:38.558787+00:00",
+      "total": 3417,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2409,
+    "total_runs": 2411,
     "users": {
       "Mike": {
         "matched": 1227,
         "notified": 101
       },
       "Nancy": {
-        "matched": 3813,
-        "notified": 457
+        "matched": 3814,
+        "notified": 458
       }
     }
   },
@@ -128817,7 +128792,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1217,
+    "Stocking \ud83d\udce6": 1216,
     "Lifting \ud83d\ude9a": 823,
     "Producer \ud83e\udd66": 404,
     "Flex \ud83e\udd6b": 210,
@@ -128836,8 +128811,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Bread Stocking \ud83c\udf5e": 3,
     "Soup Cleaning": 2,
-    "Office \ud83d\udcd7": 2,
     "Repairs \ud83d\udee0": 1,
+    "Office \ud83d\udcd7": 1,
     "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
