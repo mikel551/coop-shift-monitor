@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-27T20:00:35.287021+00:00",
-      "total": 3501,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-27T20:10:34.374509+00:00",
       "total": 3502,
       "users": {
@@ -128828,10 +128811,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-08T20:10:33.775986+00:00",
+      "total": 3397,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1146926",
+              "date": "2026-06-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2420,
+    "total_runs": 2421,
     "users": {
       "Mike": {
         "matched": 1227,
@@ -128843,7 +128851,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1146926",
+        "date": "2026-06-22",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128871,7 +128889,7 @@
     "Flex \ud83e\udd6b": 209,
     "Produce Processing \ud83e\udd6c": 177,
     "Cleaning \ud83c\udfdd": 131,
-    "Dairy Lifting \ud83e\udd5b": 124,
+    "Dairy Lifting \ud83e\udd5b": 123,
     "Meat Processing & Lifting \ud83c\udf56": 86,
     "Inventory \ud83d\udccb": 74,
     "Bathroom \ud83d\udebd": 39,
@@ -128885,8 +128903,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 2,
     "Repairs \ud83d\udee0": 2,
+    "Checkout \ud83d\udcb3": 2,
     "Office \ud83d\udcd7": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
