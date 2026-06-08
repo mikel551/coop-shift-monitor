@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-27T19:10:41.840336+00:00",
-      "total": 3513,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-27T19:20:38.970312+00:00",
       "total": 3513,
       "users": {
@@ -128820,10 +128803,35 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-08T19:20:36.177714+00:00",
+      "total": 3402,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1138028",
+              "date": "2026-06-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2415,
+    "total_runs": 2416,
     "users": {
       "Mike": {
         "matched": 1227,
@@ -128867,14 +128875,14 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1214,
+    "Stocking \ud83d\udce6": 1213,
     "Lifting \ud83d\ude9a": 821,
-    "Producer \ud83e\udd66": 403,
+    "Producer \ud83e\udd66": 402,
     "Flex \ud83e\udd6b": 210,
-    "Produce Processing \ud83e\udd6c": 180,
+    "Produce Processing \ud83e\udd6c": 179,
     "Cleaning \ud83c\udfdd": 130,
     "Dairy Lifting \ud83e\udd5b": 124,
-    "Meat Processing & Lifting \ud83c\udf56": 93,
+    "Meat Processing & Lifting \ud83c\udf56": 86,
     "Inventory \ud83d\udccb": 74,
     "Bathroom \ud83d\udebd": 39,
     "Case Maintenance \ud83e\uddfd": 36,
@@ -128886,8 +128894,8 @@
     "Bread Stocking \ud83c\udf5e": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Soup Cleaning": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1,
     "Cart Return \ud83d\uded2": 1
   },
