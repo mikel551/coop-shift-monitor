@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-26T23:50:36.361941+00:00",
-      "total": 3507,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1109245",
-              "date": "2026-04-27",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-27T00:00:34.061568+00:00",
       "total": 3504,
       "users": {
@@ -128895,18 +128870,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-08T00:00:39.090362+00:00",
+      "total": 3413,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2339,
+    "total_runs": 2340,
     "users": {
       "Mike": {
         "matched": 1186,
         "notified": 96
       },
       "Nancy": {
-        "matched": 3506,
-        "notified": 421
+        "matched": 3507,
+        "notified": 422
       }
     }
   },
@@ -128932,12 +128924,12 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1203,
-    "Lifting \ud83d\ude9a": 836,
+    "Stocking \ud83d\udce6": 1202,
+    "Lifting \ud83d\ude9a": 835,
     "Producer \ud83e\udd66": 394,
     "Flex \ud83e\udd6b": 204,
     "Produce Processing \ud83e\udd6c": 184,
-    "Dairy Lifting \ud83e\udd5b": 133,
+    "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 131,
     "Meat Processing & Lifting \ud83c\udf56": 96,
     "Inventory \ud83d\udccb": 66,
@@ -128954,6 +128946,7 @@
     "Soup Cleaning": 2,
     "Repairs \ud83d\udee0": 2,
     "Bread Stocking \ud83c\udf5e": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
