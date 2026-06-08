@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-27T23:00:34.528188+00:00",
-      "total": 3486,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-27T23:10:34.851157+00:00",
       "total": 3482,
       "users": {
@@ -128844,10 +128827,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-08T23:10:35.858644+00:00",
+      "total": 3367,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1142346",
+              "date": "2026-06-15",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2438,
+    "total_runs": 2439,
     "users": {
       "Mike": {
         "matched": 1227,
@@ -128859,7 +128867,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1142346",
+        "date": "2026-06-15",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128881,7 +128899,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1199,
+    "Stocking \ud83d\udce6": 1200,
     "Lifting \ud83d\ude9a": 816,
     "Producer \ud83e\udd66": 399,
     "Flex \ud83e\udd6b": 206,
@@ -128900,10 +128918,10 @@
     "Bread Stocking \ud83c\udf5e": 5,
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1,
-    "Soup Cleaning": 1
+    "Soup Cleaning": 1,
+    "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
