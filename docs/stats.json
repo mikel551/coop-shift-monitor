@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-28T01:30:34.509855+00:00",
-      "total": 3465,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-28T01:40:32.082093+00:00",
       "total": 3465,
       "users": {
@@ -128852,10 +128835,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-09T01:40:34.564363+00:00",
+      "total": 3340,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2453,
+    "total_runs": 2454,
     "users": {
       "Mike": {
         "matched": 1227,
@@ -128889,7 +128889,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1192,
+    "Stocking \ud83d\udce6": 1191,
     "Lifting \ud83d\ude9a": 818,
     "Producer \ud83e\udd66": 394,
     "Flex \ud83e\udd6b": 201,
@@ -128905,10 +128905,9 @@
     "Bulk Lifting \ud83e\uded8": 11,
     "Soup: Food Services \ud83c\udf72": 9,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
-    "Bread Stocking \ud83c\udf5e": 5,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Bread Stocking \ud83c\udf5e": 4,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Soup Cleaning": 1
   },
   "user_config": [
