@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-28T02:30:34.341917+00:00",
-      "total": 3463,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-28T02:40:36.269428+00:00",
       "total": 3460,
       "users": {
@@ -128852,10 +128835,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-09T02:40:32.024151+00:00",
+      "total": 3333,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2459,
+    "total_runs": 2460,
     "users": {
       "Mike": {
         "matched": 1227,
@@ -128878,13 +128878,13 @@
           "description": "Cart Return and Sidewalk Maintenance \ud83d\uded2"
         }
       ],
-      "credit_bank": "1",
+      "credit_bank": "0",
       "cancel_tickets": 1
     },
     "Nancy": {
-      "member_status": "Active",
+      "member_status": "Alert",
       "scheduled_shifts": null,
-      "credit_bank": "0",
+      "credit_bank": "-1",
       "cancel_tickets": 1
     }
   },
