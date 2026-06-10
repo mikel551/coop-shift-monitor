@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-29T12:30:40.517824+00:00",
-      "total": 3627,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-04-29T12:40:37.812962+00:00",
       "total": 3625,
       "users": {
@@ -128905,10 +128888,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-10T12:40:41.889462+00:00",
+      "total": 3441,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2583,
+    "total_runs": 2584,
     "users": {
       "Mike": {
         "matched": 1281,
@@ -128943,7 +128943,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1197,
-    "Lifting \ud83d\ude9a": 834,
+    "Lifting \ud83d\ude9a": 835,
     "Producer \ud83e\udd66": 399,
     "Flex \ud83e\udd6b": 216,
     "Produce Processing \ud83e\udd6c": 181,
@@ -128958,7 +128958,7 @@
     "Soup: Food Services \ud83c\udf72": 15,
     "Checkout \ud83d\udcb3": 12,
     "Bulk Lifting \ud83e\uded8": 12,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
     "Bread Stocking \ud83c\udf5e": 5,
     "Cart Return \ud83d\uded2": 4,
     "Inventory: Produce \ud83c\udf40": 4,
