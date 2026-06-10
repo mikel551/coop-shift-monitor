@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-29T23:30:46.553647+00:00",
-      "total": 3452,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-29T23:40:33.703602+00:00",
       "total": 3447,
       "users": {
@@ -128807,10 +128790,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-10T23:40:38.295531+00:00",
+      "total": 3332,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2649,
+    "total_runs": 2650,
     "users": {
       "Mike": {
         "matched": 1284,
@@ -128822,17 +128822,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1139766",
-        "date": "2026-06-11",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128855,7 +128845,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1164,
-    "Lifting \ud83d\ude9a": 821,
+    "Lifting \ud83d\ude9a": 820,
     "Producer \ud83e\udd66": 388,
     "Flex \ud83e\udd6b": 202,
     "Produce Processing \ud83e\udd6c": 181,
@@ -128864,8 +128854,8 @@
     "Inventory \ud83d\udccb": 72,
     "Meat Processing & Lifting \ud83c\udf56": 69,
     "Case Maintenance \ud83e\uddfd": 39,
-    "Bathroom \ud83d\udebd": 33,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 29,
+    "Bathroom \ud83d\udebd": 34,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 28,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 27,
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
