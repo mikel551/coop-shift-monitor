@@ -1,38 +1,15 @@
 {
   "notified": {
     "Nancy": [
-      "1158931"
+      "1158931",
+      "1142334",
+      "1141210"
     ],
     "Mike": [
       "1144174"
     ]
   },
   "stats": [
-    {
-      "ts": "2026-04-29T11:10:31.733516+00:00",
-      "total": 3668,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1130060",
-              "date": "2026-05-27",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-04-29T11:20:35.002685+00:00",
       "total": 3664,
@@ -128864,13 +128841,60 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-10T11:20:32.451093+00:00",
+      "total": 3465,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1144174",
+              "date": "2026-06-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1141210",
+              "date": "2026-06-14",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1142334",
+              "date": "2026-06-15",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1158931",
+              "date": "2026-07-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2575,
+    "total_runs": 2576,
     "users": {
       "Mike": {
-        "matched": 1273,
+        "matched": 1274,
         "notified": 107
       },
       "Nancy": {
