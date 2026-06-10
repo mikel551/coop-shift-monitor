@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-29T20:50:31.312894+00:00",
-      "total": 3456,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1113729",
-              "date": "2026-05-04",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-29T21:00:36.476087+00:00",
       "total": 3457,
       "users": {
@@ -128855,18 +128830,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-10T21:00:36.989814+00:00",
+      "total": 3310,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2633,
+    "total_runs": 2634,
     "users": {
       "Mike": {
         "matched": 1281,
         "notified": 107
       },
       "Nancy": {
-        "matched": 3847,
-        "notified": 467
+        "matched": 3848,
+        "notified": 468
       }
     }
   },
@@ -128892,10 +128884,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1172,
-    "Lifting \ud83d\ude9a": 821,
+    "Stocking \ud83d\udce6": 1168,
+    "Lifting \ud83d\ude9a": 822,
     "Producer \ud83e\udd66": 389,
-    "Flex \ud83e\udd6b": 200,
+    "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 182,
     "Dairy Lifting \ud83e\udd5b": 130,
     "Cleaning \ud83c\udfdd": 129,
@@ -128907,11 +128899,11 @@
     "Bins \ud83e\uddfc": 15,
     "Soup: Food Services \ud83c\udf72": 14,
     "Bulk Lifting \ud83e\uded8": 11,
-    "Inventory: Produce \ud83c\udf40": 4,
     "Bread Stocking \ud83c\udf5e": 3,
     "Repairs \ud83d\udee0": 3,
-    "Checkout \ud83d\udcb3": 2,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2
+    "Inventory: Produce \ud83c\udf40": 3,
+    "Checkout \ud83d\udcb3": 1,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
   "user_config": [
     {
