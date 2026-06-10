@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-29T21:50:40.170675+00:00",
-      "total": 3454,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1117505",
-              "date": "2026-05-10",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-29T22:00:37.674014+00:00",
       "total": 3447,
       "users": {
@@ -128815,18 +128790,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-10T22:00:35.704669+00:00",
+      "total": 3310,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2639,
+    "total_runs": 2640,
     "users": {
       "Mike": {
         "matched": 1281,
         "notified": 107
       },
       "Nancy": {
-        "matched": 3852,
-        "notified": 468
+        "matched": 3853,
+        "notified": 469
       }
     }
   },
@@ -128855,10 +128847,10 @@
     "Stocking \ud83d\udce6": 1164,
     "Lifting \ud83d\ude9a": 820,
     "Producer \ud83e\udd66": 389,
-    "Flex \ud83e\udd6b": 200,
+    "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 182,
-    "Dairy Lifting \ud83e\udd5b": 130,
     "Cleaning \ud83c\udfdd": 129,
+    "Dairy Lifting \ud83e\udd5b": 128,
     "Inventory \ud83d\udccb": 74,
     "Meat Processing & Lifting \ud83c\udf56": 69,
     "Case Maintenance \ud83e\uddfd": 39,
@@ -128870,7 +128862,8 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
     "Bread Stocking \ud83c\udf5e": 3,
     "Repairs \ud83d\udee0": 3,
-    "Inventory: Produce \ud83c\udf40": 3
+    "Inventory: Produce \ud83c\udf40": 3,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
