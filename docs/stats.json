@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-30T12:10:48.845147+00:00",
-      "total": 3562,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-30T12:20:37.712545+00:00",
       "total": 3559,
       "users": {
@@ -128891,10 +128874,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-11T12:20:33.145183+00:00",
+      "total": 3444,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157211",
+              "date": "2026-07-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1141680",
+              "date": "2026-06-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2685,
+    "total_runs": 2686,
     "users": {
       "Mike": {
         "matched": 1301,
@@ -128907,6 +128923,15 @@
     }
   },
   "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1141680",
+        "date": "2026-06-14",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ],
     "Mike": [
       {
         "id": "1157211",
@@ -128948,10 +128973,10 @@
     "Inventory \ud83d\udccb": 72,
     "Meat Processing & Lifting \ud83c\udf56": 71,
     "Bathroom \ud83d\udebd": 39,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 23,
-    "Checkout \ud83d\udcb3": 20,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 22,
+    "Checkout \ud83d\udcb3": 22,
     "Soup: Food Services \ud83c\udf72": 19,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 11,
