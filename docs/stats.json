@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-30T11:20:35.078512+00:00",
-      "total": 3571,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1120437",
-              "date": "2026-05-14",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-30T11:30:34.239696+00:00",
       "total": 3569,
       "users": {
@@ -128867,13 +128842,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-11T11:30:33.626496+00:00",
+      "total": 3455,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157211",
+              "date": "2026-07-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2680,
+    "total_runs": 2681,
     "users": {
       "Mike": {
-        "matched": 1299,
+        "matched": 1300,
         "notified": 111
       },
       "Nancy": {
@@ -128883,15 +128883,6 @@
     }
   },
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1150894",
-        "date": "2026-06-29",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1157211",
@@ -128936,8 +128927,8 @@
     "Bathroom \ud83d\udebd": 38,
     "Case Maintenance \ud83e\uddfd": 38,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 23,
-    "Checkout \ud83d\udcb3": 22,
     "Soup: Food Services \ud83c\udf72": 21,
+    "Checkout \ud83d\udcb3": 21,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 11,
     "Office \ud83d\udcd7": 8,
