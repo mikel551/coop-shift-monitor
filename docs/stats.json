@@ -128962,6 +128962,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-11T23:40:29.851799+00:00",
+      "total": 3320,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146722",
+              "date": "2026-06-22",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129009,7 +129034,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1161,
+    "Stocking \ud83d\udce6": 1159,
     "Lifting \ud83d\ude9a": 822,
     "Producer \ud83e\udd66": 386,
     "Flex \ud83e\udd6b": 191,
@@ -129025,11 +129050,11 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 15,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 10,
+    "Checkout \ud83d\udcb3": 3,
     "Repairs \ud83d\udee0": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Office \ud83d\udcd7": 2,
     "Cart Return \ud83d\uded2": 2,
-    "Checkout \ud83d\udcb3": 2,
     "Bread Stocking \ud83c\udf5e": 2,
     "Soup Cleaning": 1
   },
