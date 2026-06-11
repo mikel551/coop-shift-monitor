@@ -1,29 +1,15 @@
 {
   "notified": {
     "Nancy": [
-      "1141994",
-      "1146492"
+      "1141320"
     ],
-    "Mike": []
+    "Mike": [
+      "1148670",
+      "1157211",
+      "1141036"
+    ]
   },
   "stats": [
-    {
-      "ts": "2026-04-30T04:00:41.305363+00:00",
-      "total": 3519,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-04-30T05:00:44.148835+00:00",
       "total": 3618,
@@ -128804,10 +128790,57 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-11T05:00:42.369374+00:00",
+      "total": 3488,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 3,
+          "shifts": [
+            {
+              "id": "1141036",
+              "date": "2026-06-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1148670",
+              "date": "2026-06-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1157211",
+              "date": "2026-07-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1141320",
+              "date": "2026-06-14",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
-    "total_runs": 2671,
+    "total_runs": 2672,
     "users": {
       "Mike": {
         "matched": 1289,
