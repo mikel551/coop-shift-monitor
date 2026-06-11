@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-04-30T00:30:39.178155+00:00",
-      "total": 3435,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1111721",
-              "date": "2026-05-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-04-30T00:40:32.072365+00:00",
       "total": 3432,
       "users": {
@@ -128807,14 +128782,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-11T00:40:30.544239+00:00",
+      "total": 3315,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2655,
+    "total_runs": 2656,
     "users": {
       "Mike": {
-        "matched": 1284,
-        "notified": 108
+        "matched": 1285,
+        "notified": 109
       },
       "Nancy": {
         "matched": 3856,
@@ -128847,14 +128839,14 @@
     "Stocking \ud83d\udce6": 1158,
     "Lifting \ud83d\ude9a": 820,
     "Producer \ud83e\udd66": 389,
-    "Flex \ud83e\udd6b": 197,
+    "Flex \ud83e\udd6b": 196,
     "Produce Processing \ud83e\udd6c": 181,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Cleaning \ud83c\udfdd": 124,
     "Inventory \ud83d\udccb": 72,
     "Meat Processing & Lifting \ud83c\udf56": 69,
     "Case Maintenance \ud83e\uddfd": 39,
-    "Bathroom \ud83d\udebd": 34,
+    "Bathroom \ud83d\udebd": 35,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 28,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 28,
     "Soup: Food Services \ud83c\udf72": 14,
@@ -128862,8 +128854,7 @@
     "Bulk Lifting \ud83e\uded8": 11,
     "Bread Stocking \ud83c\udf5e": 4,
     "Repairs \ud83d\udee0": 3,
-    "Inventory: Produce \ud83c\udf40": 3,
-    "Cart Return \ud83d\uded2": 1
+    "Inventory: Produce \ud83c\udf40": 3
   },
   "user_config": [
     {
