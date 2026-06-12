@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-01T00:40:37.889172+00:00",
-      "total": 3390,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-01T00:50:40.290228+00:00",
       "total": 3389,
       "users": {
@@ -129011,10 +128994,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-12T00:50:40.448534+00:00",
+      "total": 3343,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1141562",
+              "date": "2026-06-14",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2760,
+    "total_runs": 2761,
     "users": {
       "Mike": {
         "matched": 1301,
@@ -129026,7 +129034,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1141562",
+        "date": "2026-06-14",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129053,7 +129071,7 @@
     "Producer \ud83e\udd66": 385,
     "Flex \ud83e\udd6b": 222,
     "Produce Processing \ud83e\udd6c": 183,
-    "Dairy Lifting \ud83e\udd5b": 132,
+    "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 126,
     "Meat Processing & Lifting \ud83c\udf56": 70,
     "Inventory \ud83d\udccb": 70,
@@ -129069,7 +129087,8 @@
     "Inventory: Produce \ud83c\udf40": 3,
     "Cart Return \ud83d\uded2": 2,
     "Bread Stocking \ud83c\udf5e": 2,
-    "Soup Cleaning": 1
+    "Soup Cleaning": 1,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
