@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-01T16:00:42.077817+00:00",
-      "total": 3448,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-01T16:10:38.273422+00:00",
       "total": 3446,
       "users": {
@@ -129071,10 +129054,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-12T16:10:35.202531+00:00",
+      "total": 3423,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2812,
+    "total_runs": 2813,
     "users": {
       "Mike": {
         "matched": 1354,
@@ -129108,7 +129108,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1175,
+    "Stocking \ud83d\udce6": 1174,
     "Lifting \ud83d\ude9a": 842,
     "Producer \ud83e\udd66": 391,
     "Flex \ud83e\udd6b": 221,
@@ -129130,6 +129130,7 @@
     "Checkout \ud83d\udcb3": 3,
     "Bread Stocking \ud83c\udf5e": 3,
     "Soup Cleaning": 1,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
