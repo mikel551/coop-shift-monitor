@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-01T21:30:36.941381+00:00",
-      "total": 3397,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-01T21:40:34.630648+00:00",
       "total": 3396,
       "users": {
@@ -129071,10 +129054,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-12T21:40:37.199866+00:00",
+      "total": 3377,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2845,
+    "total_runs": 2846,
     "users": {
       "Mike": {
         "matched": 1354,
@@ -129086,17 +129086,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1142452",
-        "date": "2026-06-15",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129118,7 +129108,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1161,
+    "Stocking \ud83d\udce6": 1160,
     "Lifting \ud83d\ude9a": 831,
     "Producer \ud83e\udd66": 386,
     "Flex \ud83e\udd6b": 216,
@@ -129133,12 +129123,12 @@
     "Soup: Food Services \ud83c\udf72": 22,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 15,
     "Bins \ud83e\uddfc": 15,
-    "Bulk Lifting \ud83e\uded8": 11,
-    "Office \ud83d\udcd7": 3,
-    "Checkout \ud83d\udcb3": 3,
+    "Bulk Lifting \ud83e\uded8": 12,
+    "Checkout \ud83d\udcb3": 4,
     "Repairs \ud83d\udee0": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 3,
+    "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
