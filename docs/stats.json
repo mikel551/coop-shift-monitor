@@ -129051,6 +129051,38 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-12T11:10:35.663050+00:00",
+      "total": 3504,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1149292",
+              "date": "2026-06-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1157823",
+              "date": "2026-07-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -129067,15 +129099,6 @@
     }
   },
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1141548",
-        "date": "2026-06-14",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1149292",
@@ -129126,7 +129149,7 @@
     "Bathroom \ud83d\udebd": 39,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Checkout \ud83d\udcb3": 29,
+    "Checkout \ud83d\udcb3": 28,
     "Soup: Food Services \ud83c\udf72": 24,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 23,
     "Bins \ud83e\uddfc": 15,
