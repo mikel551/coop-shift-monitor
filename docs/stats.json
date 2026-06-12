@@ -129019,6 +129019,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-12T12:10:33.735836+00:00",
+      "total": 3488,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157823",
+              "date": "2026-07-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -129036,13 +129061,6 @@
   },
   "available_shifts": {
     "Mike": [
-      {
-        "id": "1149292",
-        "date": "2026-06-26",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
       {
         "id": "1157823",
         "date": "2026-07-10",
@@ -129074,7 +129092,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1188,
-    "Lifting \ud83d\ude9a": 846,
+    "Lifting \ud83d\ude9a": 845,
     "Producer \ud83e\udd66": 390,
     "Flex \ud83e\udd6b": 237,
     "Produce Processing \ud83e\udd6c": 190,
@@ -129091,10 +129109,11 @@
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 11,
     "Office \ud83d\udcd7": 7,
-    "Cart Return \ud83d\uded2": 6,
+    "Cart Return \ud83d\uded2": 5,
     "Repairs \ud83d\udee0": 3,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 3,
+    "Entrance/Greeter \ud83c\udf9f": 2,
     "Soup Cleaning": 1
   },
   "user_config": [
