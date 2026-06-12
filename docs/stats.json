@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-01T16:10:38.273422+00:00",
-      "total": 3446,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1112671",
-              "date": "2026-05-03",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-01T16:20:35.463380+00:00",
       "total": 3441,
       "users": {
@@ -129071,18 +129046,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-12T16:20:32.999055+00:00",
+      "total": 3416,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2813,
+    "total_runs": 2814,
     "users": {
       "Mike": {
         "matched": 1354,
         "notified": 113
       },
       "Nancy": {
-        "matched": 3874,
-        "notified": 476
+        "matched": 3875,
+        "notified": 477
       }
     }
   },
@@ -129108,9 +129100,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1174,
-    "Lifting \ud83d\ude9a": 842,
-    "Producer \ud83e\udd66": 391,
+    "Stocking \ud83d\udce6": 1173,
+    "Lifting \ud83d\ude9a": 839,
+    "Producer \ud83e\udd66": 390,
     "Flex \ud83e\udd6b": 221,
     "Produce Processing \ud83e\udd6c": 187,
     "Dairy Lifting \ud83e\udd5b": 135,
@@ -129124,13 +129116,11 @@
     "Soup: Food Services \ud83c\udf72": 21,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 11,
-    "Office \ud83d\udcd7": 5,
+    "Office \ud83d\udcd7": 6,
     "Repairs \ud83d\udee0": 3,
     "Inventory: Produce \ud83c\udf40": 3,
-    "Checkout \ud83d\udcb3": 3,
     "Bread Stocking \ud83c\udf5e": 3,
-    "Soup Cleaning": 1,
-    "Entrance/Greeter \ud83c\udf9f": 1,
+    "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
