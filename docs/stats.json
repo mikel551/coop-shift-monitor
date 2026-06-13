@@ -129498,6 +129498,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-13T18:40:28.890849+00:00",
+      "total": 3426,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1155489",
+              "date": "2026-07-06",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -129516,10 +129541,10 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1141996",
-        "date": "2026-06-15",
-        "start": "08:00",
-        "end": "08:00",
+        "id": "1155489",
+        "date": "2026-07-06",
+        "start": "18:00",
+        "end": "18:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -129558,7 +129583,7 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Food Services \ud83c\udf72": 22,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 17,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 11,
     "Bread Stocking \ud83c\udf5e": 4,
