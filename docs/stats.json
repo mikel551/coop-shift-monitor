@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-02T11:10:35.799882+00:00",
-      "total": 3580,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1121743",
-              "date": "2026-05-16",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 2
-    },
-    {
       "ts": "2026-05-02T11:20:34.790144+00:00",
       "total": 3579,
       "users": {
@@ -129081,13 +129056,52 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-13T11:20:35.823401+00:00",
+      "total": 3516,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1148672",
+              "date": "2026-06-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1149934",
+              "date": "2026-06-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158439",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2887,
+    "total_runs": 2888,
     "users": {
       "Mike": {
-        "matched": 1366,
+        "matched": 1367,
         "notified": 116
       },
       "Nancy": {
@@ -129142,7 +129156,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1201,
+    "Stocking \ud83d\udce6": 1202,
     "Lifting \ud83d\ude9a": 853,
     "Producer \ud83e\udd66": 397,
     "Flex \ud83e\udd6b": 224,
@@ -129156,7 +129170,7 @@
     "Case Maintenance \ud83e\uddfd": 35,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 27,
     "Soup: Food Services \ud83c\udf72": 24,
-    "Checkout \ud83d\udcb3": 22,
+    "Checkout \ud83d\udcb3": 20,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 12,
     "Cart Return \ud83d\uded2": 9,
