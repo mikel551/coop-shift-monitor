@@ -1,51 +1,11 @@
 {
   "notified": {
-    "Nancy": [],
+    "Nancy": [
+      "1141324"
+    ],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-02T23:20:31.873888+00:00",
-      "total": 3447,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1112667",
-              "date": "2026-05-03",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-02T23:30:32.491549+00:00",
-      "total": 3444,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
     {
       "ts": "2026-05-02T23:40:30.821645+00:00",
       "total": 3447,
@@ -129482,18 +129442,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-13T23:30:39.550439+00:00",
+      "total": 3391,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1141324",
+              "date": "2026-06-14",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2960,
+    "total_runs": 2962,
     "users": {
       "Mike": {
         "matched": 1383,
         "notified": 119
       },
       "Nancy": {
-        "matched": 3926,
-        "notified": 499
+        "matched": 3927,
+        "notified": 500
       }
     }
   }
