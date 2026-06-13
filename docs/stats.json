@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-02T13:40:35.276085+00:00",
-      "total": 3542,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-02T13:50:31.577009+00:00",
       "total": 3539,
       "users": {
@@ -129289,10 +129272,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-13T13:50:32.555121+00:00",
+      "total": 3465,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1149934",
+              "date": "2026-06-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158439",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2902,
+    "total_runs": 2903,
     "users": {
       "Mike": {
         "matched": 1381,
@@ -129343,7 +129358,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1196,
+    "Stocking \ud83d\udce6": 1193,
     "Lifting \ud83d\ude9a": 851,
     "Producer \ud83e\udd66": 394,
     "Flex \ud83e\udd6b": 221,
@@ -129359,8 +129374,8 @@
     "Soup: Food Services \ud83c\udf72": 23,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 12,
-    "Checkout \ud83d\udcb3": 6,
     "Cart Return \ud83d\uded2": 5,
+    "Checkout \ud83d\udcb3": 4,
     "Bread Stocking \ud83c\udf5e": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 2,
