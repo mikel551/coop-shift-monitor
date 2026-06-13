@@ -129530,6 +129530,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-13T19:20:32.752411+00:00",
+      "total": 3425,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141552",
+              "date": "2026-06-14",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129577,7 +129602,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1182,
+    "Stocking \ud83d\udce6": 1181,
     "Lifting \ud83d\ude9a": 847,
     "Producer \ud83e\udd66": 394,
     "Flex \ud83e\udd6b": 217,
@@ -129586,8 +129611,8 @@
     "Cleaning \ud83c\udfdd": 129,
     "Meat Processing & Lifting \ud83c\udf56": 73,
     "Inventory \ud83d\udccb": 70,
-    "Bathroom \ud83d\udebd": 39,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
+    "Bathroom \ud83d\udebd": 40,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
     "Case Maintenance \ud83e\uddfd": 34,
     "Soup: Food Services \ud83c\udf72": 22,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
@@ -129596,6 +129621,7 @@
     "Bread Stocking \ud83c\udf5e": 4,
     "Inventory: Produce \ud83c\udf40": 3,
     "Repairs \ud83d\udee0": 2,
+    "Office \ud83d\udcd7": 1,
     "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "Vitamins \ud83c\udf6c": 1
