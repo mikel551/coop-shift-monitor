@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-02T04:00:43.335496+00:00",
-      "total": 3505,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-02T05:00:37.312858+00:00",
       "total": 3609,
       "users": {
@@ -129038,10 +129021,57 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-13T05:00:41.404598+00:00",
+      "total": 3537,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 3,
+          "shifts": [
+            {
+              "id": "1148672",
+              "date": "2026-06-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1149934",
+              "date": "2026-06-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158439",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1145956",
+              "date": "2026-06-21",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 2879,
+    "total_runs": 2880,
     "users": {
       "Mike": {
         "matched": 1355,
@@ -129056,11 +129086,34 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1141432",
-        "date": "2026-06-14",
-        "start": "13:00",
-        "end": "13:00",
+        "id": "1145956",
+        "date": "2026-06-21",
+        "start": "15:30",
+        "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
+      }
+    ],
+    "Mike": [
+      {
+        "id": "1148672",
+        "date": "2026-06-25",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      },
+      {
+        "id": "1149934",
+        "date": "2026-06-27",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      },
+      {
+        "id": "1158439",
+        "date": "2026-07-11",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
       }
     ]
   },
@@ -129085,28 +129138,29 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1190,
+    "Stocking \ud83d\udce6": 1201,
     "Lifting \ud83d\ude9a": 855,
-    "Producer \ud83e\udd66": 396,
-    "Flex \ud83e\udd6b": 208,
+    "Producer \ud83e\udd66": 397,
+    "Flex \ud83e\udd6b": 224,
     "Produce Processing \ud83e\udd6c": 192,
     "Dairy Lifting \ud83e\udd5b": 140,
     "Cleaning \ud83c\udfdd": 132,
     "Meat Processing & Lifting \ud83c\udf56": 73,
     "Inventory \ud83d\udccb": 70,
-    "Bathroom \ud83d\udebd": 40,
+    "Bathroom \ud83d\udebd": 41,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Case Maintenance \ud83e\uddfd": 35,
-    "Soup: Food Services \ud83c\udf72": 21,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 18,
+    "Checkout \ud83d\udcb3": 34,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 27,
+    "Soup: Food Services \ud83c\udf72": 25,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 12,
-    "Checkout \ud83d\udcb3": 4,
+    "Cart Return \ud83d\uded2": 11,
     "Bread Stocking \ud83c\udf5e": 4,
     "Office \ud83d\udcd7": 3,
     "Inventory: Produce \ud83c\udf40": 3,
+    "Entrance/Greeter \ud83c\udf9f": 3,
     "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 2,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
