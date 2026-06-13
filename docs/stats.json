@@ -129143,6 +129143,60 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-13T12:00:39.799087+00:00",
+      "total": 3511,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1148672",
+              "date": "2026-06-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1149934",
+              "date": "2026-06-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158439",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1141198",
+              "date": "2026-06-14",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1141446",
+              "date": "2026-06-14",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -129168,10 +129222,10 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1141660",
+        "id": "1141446",
         "date": "2026-06-14",
-        "start": "18:00",
-        "end": "18:00",
+        "start": "13:00",
+        "end": "13:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ],
@@ -129221,7 +129275,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1202,
-    "Lifting \ud83d\ude9a": 853,
+    "Lifting \ud83d\ude9a": 852,
     "Producer \ud83e\udd66": 395,
     "Flex \ud83e\udd6b": 224,
     "Produce Processing \ud83e\udd6c": 192,
@@ -129234,7 +129288,7 @@
     "Case Maintenance \ud83e\uddfd": 35,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 28,
     "Soup: Food Services \ud83c\udf72": 23,
-    "Checkout \ud83d\udcb3": 21,
+    "Checkout \ud83d\udcb3": 20,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 12,
     "Cart Return \ud83d\uded2": 7,
