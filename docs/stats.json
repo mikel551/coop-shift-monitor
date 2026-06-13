@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-02T02:10:30.490296+00:00",
-      "total": 3372,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1113741",
-              "date": "2026-05-04",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-02T02:20:34.609425+00:00",
       "total": 3370,
       "users": {
@@ -129078,18 +129053,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-13T02:20:30.311106+00:00",
+      "total": 3325,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 2873,
+    "total_runs": 2874,
     "users": {
       "Mike": {
         "matched": 1355,
         "notified": 114
       },
       "Nancy": {
-        "matched": 3877,
-        "notified": 479
+        "matched": 3878,
+        "notified": 480
       }
     }
   },
@@ -129115,7 +129107,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1139,
+    "Stocking \ud83d\udce6": 1137,
     "Lifting \ud83d\ude9a": 824,
     "Producer \ud83e\udd66": 386,
     "Flex \ud83e\udd6b": 207,
@@ -129128,8 +129120,8 @@
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 35,
     "Soup: Food Services \ud83c\udf72": 21,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 15,
     "Bins \ud83e\uddfc": 15,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 14,
     "Bulk Lifting \ud83e\uded8": 12,
     "Inventory: Produce \ud83c\udf40": 3,
     "Bread Stocking \ud83c\udf5e": 3,
