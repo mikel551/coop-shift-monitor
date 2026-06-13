@@ -1,9 +1,7 @@
 {
   "notified": {
     "Nancy": [
-      "1141446",
-      "1141318",
-      "1141436"
+      "1141446"
     ],
     "Mike": [
       "1158439",
@@ -12,39 +10,6 @@
     ]
   },
   "stats": [
-    {
-      "ts": "2026-05-02T12:10:32.416327+00:00",
-      "total": 3568,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1121743",
-              "date": "2026-05-16",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1113027",
-              "date": "2026-05-03",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
     {
       "ts": "2026-05-02T12:20:30.347391+00:00",
       "total": 3566,
@@ -129237,18 +129202,65 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-13T12:20:31.929503+00:00",
+      "total": 3500,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1148672",
+              "date": "2026-06-25",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1149934",
+              "date": "2026-06-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158439",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141446",
+              "date": "2026-06-14",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
-    "total_runs": 2893,
+    "total_runs": 2894,
     "users": {
       "Mike": {
-        "matched": 1373,
+        "matched": 1374,
         "notified": 117
       },
       "Nancy": {
-        "matched": 3898,
-        "notified": 484
+        "matched": 3899,
+        "notified": 485
       }
     }
   }
