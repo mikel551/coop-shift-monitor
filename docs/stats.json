@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-03T20:50:36.434709+00:00",
-      "total": 3465,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-03T21:00:36.300219+00:00",
       "total": 3467,
       "users": {
@@ -129960,10 +129943,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-14T21:00:38.110482+00:00",
+      "total": 3445,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1142414",
+              "date": "2026-06-15",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3049,
+    "total_runs": 3050,
     "users": {
       "Mike": {
         "matched": 1498,
@@ -129976,15 +129984,6 @@
     }
   },
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1142224",
-        "date": "2026-06-15",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1142414",
@@ -130035,9 +130034,9 @@
     "Bread Stocking \ud83c\udf5e": 6,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
     "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
