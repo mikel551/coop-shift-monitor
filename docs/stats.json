@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-03T17:10:30.797513+00:00",
-      "total": 3502,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1121745",
-              "date": "2026-05-16",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-03T17:20:37.010975+00:00",
       "total": 3502,
       "users": {
@@ -129921,13 +129896,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-14T17:10:36.609727+00:00",
+      "total": 3472,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1141996",
+              "date": "2026-06-15",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3027,
+    "total_runs": 3028,
     "users": {
       "Mike": {
-        "matched": 1493,
+        "matched": 1494,
         "notified": 124
       },
       "Nancy": {
@@ -129969,8 +129969,8 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1219,
-    "Lifting \ud83d\ude9a": 842,
-    "Producer \ud83e\udd66": 404,
+    "Lifting \ud83d\ude9a": 843,
+    "Producer \ud83e\udd66": 403,
     "Flex \ud83e\udd6b": 214,
     "Produce Processing \ud83e\udd6c": 190,
     "Dairy Lifting \ud83e\udd5b": 137,
@@ -129989,7 +129989,6 @@
     "Office \ud83d\udcd7": 4,
     "Repairs \ud83d\udee0": 2,
     "Checkout \ud83d\udcb3": 1,
-    "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
