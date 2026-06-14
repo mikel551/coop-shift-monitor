@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-03T20:30:34.869640+00:00",
-      "total": 3470,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-03T20:40:38.253423+00:00",
       "total": 3464,
       "users": {
@@ -129936,10 +129919,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-14T20:40:37.337752+00:00",
+      "total": 3445,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1142414",
+              "date": "2026-06-15",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3047,
+    "total_runs": 3048,
     "users": {
       "Mike": {
         "matched": 1498,
@@ -129951,7 +129959,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1142414",
+        "date": "2026-06-15",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129973,8 +129991,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1211,
-    "Lifting \ud83d\ude9a": 841,
+    "Stocking \ud83d\udce6": 1213,
+    "Lifting \ud83d\ude9a": 840,
     "Producer \ud83e\udd66": 401,
     "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 190,
@@ -129994,6 +130012,7 @@
     "Office \ud83d\udcd7": 3,
     "Repairs \ud83d\udee0": 2,
     "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
