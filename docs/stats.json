@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-03T21:00:36.300219+00:00",
-      "total": 3467,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-03T21:10:34.638704+00:00",
       "total": 3468,
       "users": {
@@ -129968,10 +129951,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-14T21:10:29.247348+00:00",
+      "total": 3447,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3050,
+    "total_runs": 3051,
     "users": {
       "Mike": {
         "matched": 1498,
@@ -129983,17 +129983,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1142414",
-        "date": "2026-06-15",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -130015,18 +130005,18 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1214,
+    "Stocking \ud83d\udce6": 1215,
     "Lifting \ud83d\ude9a": 841,
     "Producer \ud83e\udd66": 401,
-    "Flex \ud83e\udd6b": 209,
+    "Flex \ud83e\udd6b": 210,
     "Produce Processing \ud83e\udd6c": 190,
     "Dairy Lifting \ud83e\udd5b": 136,
     "Cleaning \ud83c\udfdd": 130,
     "Meat Processing & Lifting \ud83c\udf56": 73,
     "Inventory \ud83d\udccb": 69,
     "Bathroom \ud83d\udebd": 39,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
     "Case Maintenance \ud83e\uddfd": 33,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 19,
     "Bins \ud83e\uddfc": 15,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 15,
@@ -130035,7 +130025,6 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
     "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 1,
     "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
