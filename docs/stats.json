@@ -129904,6 +129904,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-14T20:10:34.505013+00:00",
+      "total": 3449,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1141992",
+              "date": "2026-06-15",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1142332",
+              "date": "2026-06-15",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129926,6 +129958,13 @@
         "date": "2026-06-15",
         "start": "08:00",
         "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1142332",
+        "date": "2026-06-15",
+        "start": "15:30",
+        "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -129954,7 +129993,7 @@
     "Stocking \ud83d\udce6": 1212,
     "Lifting \ud83d\ude9a": 841,
     "Producer \ud83e\udd66": 400,
-    "Flex \ud83e\udd6b": 209,
+    "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 191,
     "Dairy Lifting \ud83e\udd5b": 136,
     "Cleaning \ud83c\udfdd": 130,
@@ -129963,15 +130002,16 @@
     "Bathroom \ud83d\udebd": 39,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
     "Case Maintenance \ud83e\uddfd": 33,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 19,
     "Soup: Food Services \ud83c\udf72": 19,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 18,
     "Bins \ud83e\uddfc": 15,
     "Bulk Lifting \ud83e\uded8": 11,
     "Bread Stocking \ud83c\udf5e": 6,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
