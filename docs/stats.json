@@ -1,105 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-04T21:10:43.482400+00:00",
-      "total": 3386,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 5,
-          "notified": 4,
-          "shifts": [
-            {
-              "id": "1118381",
-              "date": "2026-05-11",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146208",
-              "date": "2026-05-25",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146210",
-              "date": "2026-05-25",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146212",
-              "date": "2026-05-25",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146214",
-              "date": "2026-05-25",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-04T21:20:35.320592+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 4,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1146208",
-              "date": "2026-05-25",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146210",
-              "date": "2026-05-25",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146212",
-              "date": "2026-05-25",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146214",
-              "date": "2026-05-25",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-04T21:30:41.054402+00:00",
       "total": 3380,
       "users": {
@@ -129452,18 +129353,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-15T21:20:40.146772+00:00",
+      "total": 3387,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3154,
+    "total_runs": 3156,
     "users": {
       "Mike": {
         "matched": 1531,
         "notified": 128
       },
       "Nancy": {
-        "matched": 4739,
-        "notified": 590
+        "matched": 4748,
+        "notified": 594
       }
     }
   },
@@ -129495,7 +129413,7 @@
     "Flex \ud83e\udd6b": 203,
     "Produce Processing \ud83e\udd6c": 185,
     "Cleaning \ud83c\udfdd": 132,
-    "Dairy Lifting \ud83e\udd5b": 127,
+    "Dairy Lifting \ud83e\udd5b": 128,
     "Inventory \ud83d\udccb": 75,
     "Meat Processing & Lifting \ud83c\udf56": 68,
     "Bathroom \ud83d\udebd": 35,
@@ -129507,9 +129425,9 @@
     "Bulk Lifting \ud83e\uded8": 11,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 4,
-    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
     "Office \ud83d\udcd7": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
