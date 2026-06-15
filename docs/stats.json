@@ -1,91 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-04T12:40:46.492659+00:00",
-      "total": 3589,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 4,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122760",
-              "date": "2026-05-18",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1128738",
-              "date": "2026-05-25",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1128860",
-              "date": "2026-05-25",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1133306",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 2
-    },
-    {
-      "ts": "2026-05-04T12:50:30.655668+00:00",
-      "total": 3583,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122760",
-              "date": "2026-05-18",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1128738",
-              "date": "2026-05-25",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1133306",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-04T13:00:38.510961+00:00",
       "total": 3581,
       "users": {
@@ -129555,30 +129470,48 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-15T12:50:42.742182+00:00",
+      "total": 3541,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146076",
+              "date": "2026-06-21",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3104,
+    "total_runs": 3106,
     "users": {
       "Mike": {
         "matched": 1526,
         "notified": 127
       },
       "Nancy": {
-        "matched": 4721,
+        "matched": 4728,
         "notified": 588
       }
     }
   },
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1145848",
-        "date": "2026-06-21",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1146076",
         "date": "2026-06-21",
@@ -129609,7 +129542,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1253,
+    "Stocking \ud83d\udce6": 1252,
     "Lifting \ud83d\ude9a": 838,
     "Producer \ud83e\udd66": 411,
     "Flex \ud83e\udd6b": 222,
@@ -129628,8 +129561,8 @@
     "Office \ud83d\udcd7": 10,
     "Bread Stocking \ud83c\udf5e": 7,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Repairs \ud83d\udee0": 3,
+    "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
