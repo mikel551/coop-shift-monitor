@@ -1,61 +1,9 @@
 {
   "notified": {
-    "Nancy": [
-      "1142230"
-    ],
+    "Nancy": [],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-04T00:20:34.487026+00:00",
-      "total": 3447,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1113371",
-              "date": "2026-05-04",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-04T00:30:31.466693+00:00",
-      "total": 3445,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1113371",
-              "date": "2026-05-04",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-05-04T00:40:43.160696+00:00",
       "total": 3444,
@@ -129784,17 +129732,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-15T00:30:36.068457+00:00",
+      "total": 3408,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3070,
+    "total_runs": 3072,
     "users": {
       "Mike": {
         "matched": 1498,
         "notified": 124
       },
       "Nancy": {
-        "matched": 4424,
+        "matched": 4426,
         "notified": 551
       }
     }
