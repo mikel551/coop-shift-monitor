@@ -1,56 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-04T20:50:37.482676+00:00",
-      "total": 3383,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1118381",
-              "date": "2026-05-11",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-04T21:00:37.157515+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1118381",
-              "date": "2026-05-11",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-04T21:10:43.482400+00:00",
       "total": 3386,
       "users": {
@@ -129468,17 +129418,34 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-15T21:00:42.975123+00:00",
+      "total": 3393,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3152,
+    "total_runs": 3154,
     "users": {
       "Mike": {
         "matched": 1531,
         "notified": 128
       },
       "Nancy": {
-        "matched": 4737,
+        "matched": 4739,
         "notified": 590
       }
     }
@@ -129525,6 +129492,7 @@
     "Bread Stocking \ud83c\udf5e": 4,
     "Office \ud83d\udcd7": 3,
     "Repairs \ud83d\udee0": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
