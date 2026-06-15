@@ -129459,6 +129459,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-15T18:20:40.393087+00:00",
+      "total": 3426,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1142338",
+              "date": "2026-06-15",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129474,7 +129499,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1142338",
+        "date": "2026-06-15",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129502,7 +129537,7 @@
     "Flex \ud83e\udd6b": 205,
     "Produce Processing \ud83e\udd6c": 186,
     "Cleaning \ud83c\udfdd": 132,
-    "Dairy Lifting \ud83e\udd5b": 132,
+    "Dairy Lifting \ud83e\udd5b": 131,
     "Inventory \ud83d\udccb": 75,
     "Meat Processing & Lifting \ud83c\udf56": 69,
     "Bathroom \ud83d\udebd": 36,
@@ -129517,6 +129552,7 @@
     "Bread Stocking \ud83c\udf5e": 4,
     "Cart Return \ud83d\uded2": 3,
     "Repairs \ud83d\udee0": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
