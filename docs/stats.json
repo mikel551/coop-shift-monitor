@@ -1,45 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-04T22:50:35.228938+00:00",
-      "total": 3371,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1146210",
-              "date": "2026-05-25",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146212",
-              "date": "2026-05-25",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1146214",
-              "date": "2026-05-25",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-04T23:00:37.773911+00:00",
       "total": 3369,
       "users": {
@@ -129162,17 +129123,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-15T23:00:42.391931+00:00",
+      "total": 3380,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3164,
+    "total_runs": 3165,
     "users": {
       "Mike": {
         "matched": 1531,
         "notified": 128
       },
       "Nancy": {
-        "matched": 4779,
+        "matched": 4782,
         "notified": 594
       }
     }
@@ -129208,8 +129186,8 @@
     "Dairy Lifting \ud83e\udd5b": 129,
     "Inventory \ud83d\udccb": 75,
     "Meat Processing & Lifting \ud83c\udf56": 68,
+    "Case Maintenance \ud83e\uddfd": 35,
     "Bathroom \ud83d\udebd": 34,
-    "Case Maintenance \ud83e\uddfd": 34,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
     "Soup: Food Services \ud83c\udf72": 21,
     "Bins \ud83e\uddfc": 14,
