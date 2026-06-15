@@ -1,56 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-04T19:20:39.937743+00:00",
-      "total": 3395,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1113809",
-              "date": "2026-05-04",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-04T19:30:33.082947+00:00",
-      "total": 3393,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1113809",
-              "date": "2026-05-04",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-04T19:40:34.565883+00:00",
       "total": 3392,
       "users": {
@@ -129508,14 +129458,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-15T19:30:42.621017+00:00",
+      "total": 3406,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3143,
+    "total_runs": 3145,
     "users": {
       "Mike": {
-        "matched": 1526,
-        "notified": 127
+        "matched": 1528,
+        "notified": 128
       },
       "Nancy": {
         "matched": 4736,
@@ -129545,7 +129512,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1210,
+    "Stocking \ud83d\udce6": 1209,
     "Lifting \ud83d\ude9a": 822,
     "Producer \ud83e\udd66": 402,
     "Flex \ud83e\udd6b": 204,
@@ -129559,7 +129526,7 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 22,
     "Bins \ud83e\uddfc": 15,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 14,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 13,
     "Bulk Lifting \ud83e\uded8": 11,
     "Office \ud83d\udcd7": 6,
     "Inventory: Produce \ud83c\udf40": 4,
