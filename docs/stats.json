@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-04T23:40:35.590653+00:00",
-      "total": 3362,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1117629",
-              "date": "2026-05-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-04T23:50:37.341435+00:00",
       "total": 3362,
       "users": {
@@ -129094,17 +129069,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-15T23:50:41.797614+00:00",
+      "total": 3378,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3169,
+    "total_runs": 3170,
     "users": {
       "Mike": {
         "matched": 1531,
         "notified": 128
       },
       "Nancy": {
-        "matched": 4788,
+        "matched": 4789,
         "notified": 595
       }
     }
@@ -129137,7 +129129,7 @@
     "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 185,
     "Cleaning \ud83c\udfdd": 132,
-    "Dairy Lifting \ud83e\udd5b": 128,
+    "Dairy Lifting \ud83e\udd5b": 126,
     "Inventory \ud83d\udccb": 75,
     "Meat Processing & Lifting \ud83c\udf56": 68,
     "Case Maintenance \ud83e\uddfd": 35,
@@ -129149,9 +129141,8 @@
     "Bulk Lifting \ud83e\uded8": 11,
     "Bread Stocking \ud83c\udf5e": 5,
     "Inventory: Produce \ud83c\udf40": 5,
+    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1,
     "Vitamins \ud83c\udf6c": 1
   },
