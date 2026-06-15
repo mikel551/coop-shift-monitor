@@ -1,74 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-04T12:20:34.402754+00:00",
-      "total": 3593,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1141176",
-              "date": "2026-06-14",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 6,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122760",
-              "date": "2026-05-18",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1128738",
-              "date": "2026-05-25",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1128860",
-              "date": "2026-05-25",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1132940",
-              "date": "2026-06-01",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1133306",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1137940",
-              "date": "2026-06-08",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-04T12:30:40.016742+00:00",
       "total": 3592,
       "users": {
@@ -129595,17 +129527,57 @@
         }
       },
       "pruned": 3
+    },
+    {
+      "ts": "2026-06-15T12:20:44.826425+00:00",
+      "total": 3553,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1159887",
+              "date": "2026-07-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1142104",
+              "date": "2026-06-15",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1159719",
+              "date": "2026-07-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
-    "total_runs": 3102,
+    "total_runs": 3103,
     "users": {
       "Mike": {
-        "matched": 1524,
+        "matched": 1525,
         "notified": 127
       },
       "Nancy": {
-        "matched": 4710,
+        "matched": 4716,
         "notified": 588
       }
     }
@@ -129613,17 +129585,10 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1155297",
-        "date": "2026-07-06",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1159717",
-        "date": "2026-07-13",
-        "start": "13:00",
-        "end": "13:00",
+        "id": "1142104",
+        "date": "2026-06-15",
+        "start": "10:30",
+        "end": "10:30",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -129665,7 +129630,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1255,
+    "Stocking \ud83d\udce6": 1254,
     "Lifting \ud83d\ude9a": 839,
     "Producer \ud83e\udd66": 412,
     "Flex \ud83e\udd6b": 222,
@@ -129683,7 +129648,7 @@
     "Office \ud83d\udcd7": 11,
     "Bulk Lifting \ud83e\uded8": 11,
     "Bread Stocking \ud83c\udf5e": 7,
-    "Checkout \ud83d\udcb3": 6,
+    "Checkout \ud83d\udcb3": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Repairs \ud83d\udee0": 3,
     "Cart Return \ud83d\uded2": 3,
