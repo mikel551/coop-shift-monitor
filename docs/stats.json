@@ -129078,6 +129078,53 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-16T11:40:38.042024+00:00",
+      "total": 3558,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1151886",
+              "date": "2026-06-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1160475",
+              "date": "2026-07-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1168649",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146718",
+              "date": "2026-06-22",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129148,8 +129195,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1230,
-    "Lifting \ud83d\ude9a": 836,
+    "Stocking \ud83d\udce6": 1228,
+    "Lifting \ud83d\ude9a": 835,
     "Producer \ud83e\udd66": 412,
     "Flex \ud83e\udd6b": 208,
     "Produce Processing \ud83e\udd6c": 187,
@@ -129157,7 +129204,7 @@
     "Dairy Lifting \ud83e\udd5b": 130,
     "Inventory \ud83d\udccb": 78,
     "Meat Processing & Lifting \ud83c\udf56": 70,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 69,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 68,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
     "Case Maintenance \ud83e\uddfd": 38,
     "Bathroom \ud83d\udebd": 36,
@@ -129167,8 +129214,8 @@
     "Bulk Lifting \ud83e\uded8": 12,
     "Cart Return \ud83d\uded2": 12,
     "Bread Stocking \ud83c\udf5e": 6,
-    "Office \ud83d\udcd7": 6,
     "Inventory: Produce \ud83c\udf40": 5,
+    "Office \ud83d\udcd7": 5,
     "Repairs \ud83d\udee0": 2,
     "Vitamins \ud83c\udf6c": 1
   },
