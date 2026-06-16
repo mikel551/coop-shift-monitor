@@ -1,98 +1,15 @@
 {
   "notified": {
-    "Nancy": [],
+    "Nancy": [
+      "1150450"
+    ],
     "Mike": [
+      "1160475",
+      "1151886",
       "1168649"
     ]
   },
   "stats": [
-    {
-      "ts": "2026-05-05T04:00:39.461713+00:00",
-      "total": 3466,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1142414",
-              "date": "2026-06-15",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 2,
-          "shifts": [
-            {
-              "id": "1142120",
-              "date": "2026-06-15",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1142350",
-              "date": "2026-06-15",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-05T05:00:36.277645+00:00",
-      "total": 3560,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1134010",
-              "date": "2026-06-02",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1142414",
-              "date": "2026-06-15",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1122269",
-              "date": "2026-05-17",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1142350",
-              "date": "2026-06-15",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
     {
       "ts": "2026-05-05T06:00:36.406748+00:00",
       "total": 3556,
@@ -129076,18 +128993,65 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-16T05:00:40.876795+00:00",
+      "total": 3607,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1151886",
+              "date": "2026-06-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1160475",
+              "date": "2026-07-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1168649",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1150450",
+              "date": "2026-06-28",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3190,
+    "total_runs": 3192,
     "users": {
       "Mike": {
-        "matched": 1531,
-        "notified": 128
+        "matched": 1534,
+        "notified": 130
       },
       "Nancy": {
-        "matched": 4792,
-        "notified": 598
+        "matched": 4796,
+        "notified": 601
       }
     }
   }
