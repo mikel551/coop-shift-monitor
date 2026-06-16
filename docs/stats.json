@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-05T19:50:33.055651+00:00",
-      "total": 3402,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1115049",
-              "date": "2026-05-06",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-05T20:00:41.567008+00:00",
       "total": 3399,
       "users": {
@@ -129517,14 +129492,47 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-16T19:50:51.109823+00:00",
+      "total": 3421,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153678",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1150462",
+              "date": "2026-06-28",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3250,
+    "total_runs": 3251,
     "users": {
       "Mike": {
-        "matched": 1580,
-        "notified": 130
+        "matched": 1581,
+        "notified": 131
       },
       "Nancy": {
         "matched": 4823,
@@ -129533,6 +129541,15 @@
     }
   },
   "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1150462",
+        "date": "2026-06-28",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ],
     "Mike": [
       {
         "id": "1153678",
