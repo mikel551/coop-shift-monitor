@@ -129398,6 +129398,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-16T17:30:41.018182+00:00",
+      "total": 3462,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168649",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -129415,13 +129440,6 @@
   },
   "available_shifts": {
     "Mike": [
-      {
-        "id": "1160475",
-        "date": "2026-07-14",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
       {
         "id": "1168649",
         "date": "2026-07-27",
@@ -129452,7 +129470,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1209,
+    "Stocking \ud83d\udce6": 1208,
     "Lifting \ud83d\ude9a": 836,
     "Producer \ud83e\udd66": 411,
     "Flex \ud83e\udd6b": 204,
@@ -129471,8 +129489,8 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
     "Office \ud83d\udcd7": 4,
-    "Cart Return \ud83d\uded2": 4,
     "Repairs \ud83d\udee0": 2,
+    "Cart Return \ud83d\uded2": 2,
     "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
