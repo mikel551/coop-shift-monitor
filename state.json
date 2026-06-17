@@ -1,61 +1,9 @@
 {
   "notified": {
     "Nancy": [],
-    "Mike": [
-      "1152464"
-    ]
+    "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-06T12:00:44.229702+00:00",
-      "total": 3479,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122157",
-              "date": "2026-05-17",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-06T12:10:29.826636+00:00",
-      "total": 3478,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1118581",
-              "date": "2026-05-11",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
     {
       "ts": "2026-05-06T12:20:36.043167+00:00",
       "total": 3472,
@@ -129461,17 +129409,34 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-17T12:10:41.517200+00:00",
+      "total": 3461,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3307,
+    "total_runs": 3309,
     "users": {
       "Mike": {
-        "matched": 1616,
-        "notified": 133
+        "matched": 1617,
+        "notified": 134
       },
       "Nancy": {
-        "matched": 4831,
+        "matched": 4832,
         "notified": 609
       }
     }
