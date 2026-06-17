@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-06T19:20:42.169856+00:00",
-      "total": 3316,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1115049",
-              "date": "2026-05-06",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-06T19:31:05.890186+00:00",
       "total": 3313,
       "users": {
@@ -129439,13 +129414,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-17T19:30:48.296829+00:00",
+      "total": 3300,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1160475",
+              "date": "2026-07-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3351,
+    "total_runs": 3352,
     "users": {
       "Mike": {
-        "matched": 1622,
+        "matched": 1623,
         "notified": 135
       },
       "Nancy": {
@@ -129486,15 +129486,15 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1156,
-    "Lifting \ud83d\ude9a": 814,
+    "Stocking \ud83d\udce6": 1154,
+    "Lifting \ud83d\ude9a": 813,
     "Producer \ud83e\udd66": 397,
     "Flex \ud83e\udd6b": 188,
     "Produce Processing \ud83e\udd6c": 183,
     "Cleaning \ud83c\udfdd": 133,
     "Dairy Lifting \ud83e\udd5b": 125,
     "Inventory \ud83d\udccb": 76,
-    "Meat Processing & Lifting \ud83c\udf56": 70,
+    "Meat Processing & Lifting \ud83c\udf56": 71,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Case Maintenance \ud83e\uddfd": 35,
     "Bathroom \ud83d\udebd": 34,
