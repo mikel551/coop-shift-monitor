@@ -129357,6 +129357,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-17T01:40:36.451759+00:00",
+      "total": 3345,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -129372,17 +129389,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1146948",
-        "date": "2026-06-22",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129404,10 +129411,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1186,
+    "Stocking \ud83d\udce6": 1184,
     "Lifting \ud83d\ude9a": 816,
     "Producer \ud83e\udd66": 404,
-    "Flex \ud83e\udd6b": 195,
+    "Flex \ud83e\udd6b": 194,
     "Produce Processing \ud83e\udd6c": 183,
     "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 123,
@@ -129424,8 +129431,7 @@
     "Bread Stocking \ud83c\udf5e": 4,
     "Cart Return \ud83d\uded2": 3,
     "Office \ud83d\udcd7": 3,
-    "Checkout \ud83d\udcb3": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
