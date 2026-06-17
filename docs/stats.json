@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-06T14:20:45.128886+00:00",
-      "total": 3427,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-06T14:30:34.590348+00:00",
-      "total": 3422,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-06T14:40:40.364150+00:00",
       "total": 3414,
       "users": {
@@ -129407,10 +129373,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-17T14:30:49.406052+00:00",
+      "total": 3400,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3321,
+    "total_runs": 3323,
     "users": {
       "Mike": {
         "matched": 1619,
@@ -129445,8 +129428,8 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1196,
-    "Lifting \ud83d\ude9a": 829,
-    "Producer \ud83e\udd66": 405,
+    "Lifting \ud83d\ude9a": 827,
+    "Producer \ud83e\udd66": 404,
     "Flex \ud83e\udd6b": 198,
     "Produce Processing \ud83e\udd6c": 190,
     "Cleaning \ud83c\udfdd": 134,
@@ -129458,12 +129441,12 @@
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Food Services \ud83c\udf72": 26,
     "Bulk Lifting \ud83e\uded8": 9,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
     "Bins \ud83e\uddfc": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Office \ud83d\udcd7": 3,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Repairs \ud83d\udee0": 1,
     "Vitamins \ud83c\udf6c": 1
   },
