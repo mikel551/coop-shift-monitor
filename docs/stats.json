@@ -129414,6 +129414,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-17T19:10:43.624304+00:00",
+      "total": 3300,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1160475",
+              "date": "2026-07-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129461,10 +129486,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1161,
+    "Stocking \ud83d\udce6": 1157,
     "Lifting \ud83d\ude9a": 814,
     "Producer \ud83e\udd66": 397,
-    "Flex \ud83e\udd6b": 190,
+    "Flex \ud83e\udd6b": 189,
     "Produce Processing \ud83e\udd6c": 183,
     "Cleaning \ud83c\udfdd": 133,
     "Dairy Lifting \ud83e\udd5b": 125,
