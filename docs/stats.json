@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-06T16:50:37.793730+00:00",
-      "total": 3348,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-06T17:00:37.601851+00:00",
       "total": 3345,
       "users": {
@@ -129431,10 +129414,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-17T17:00:40.994402+00:00",
+      "total": 3331,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1151298",
+              "date": "2026-06-29",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3336,
+    "total_runs": 3337,
     "users": {
       "Mike": {
         "matched": 1619,
@@ -129446,7 +129454,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1151298",
+        "date": "2026-06-29",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129468,11 +129486,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1167,
+    "Stocking \ud83d\udce6": 1166,
     "Lifting \ud83d\ude9a": 818,
     "Producer \ud83e\udd66": 400,
     "Flex \ud83e\udd6b": 192,
-    "Produce Processing \ud83e\udd6c": 189,
+    "Produce Processing \ud83e\udd6c": 190,
     "Cleaning \ud83c\udfdd": 133,
     "Dairy Lifting \ud83e\udd5b": 126,
     "Inventory \ud83d\udccb": 76,
@@ -129487,6 +129505,7 @@
     "Bins \ud83e\uddfc": 3,
     "Checkout \ud83d\udcb3": 1,
     "Repairs \ud83d\udee0": 1,
+    "Cart Return \ud83d\uded2": 1,
     "Office \ud83d\udcd7": 1,
     "Vitamins \ud83c\udf6c": 1
   },
