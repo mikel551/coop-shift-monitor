@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-06T17:00:37.601851+00:00",
-      "total": 3345,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-06T17:10:36.456348+00:00",
       "total": 3340,
       "users": {
@@ -129439,10 +129422,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-17T17:10:39.644990+00:00",
+      "total": 3330,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3337,
+    "total_runs": 3338,
     "users": {
       "Mike": {
         "matched": 1619,
@@ -129454,17 +129454,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1151298",
-        "date": "2026-06-29",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129505,7 +129495,6 @@
     "Bins \ud83e\uddfc": 3,
     "Checkout \ud83d\udcb3": 1,
     "Repairs \ud83d\udee0": 1,
-    "Cart Return \ud83d\uded2": 1,
     "Office \ud83d\udcd7": 1,
     "Vitamins \ud83c\udf6c": 1
   },
