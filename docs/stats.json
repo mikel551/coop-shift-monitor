@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-07T14:50:36.805967+00:00",
-      "total": 3321,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-07T15:00:59.678548+00:00",
       "total": 3320,
       "users": {
@@ -129258,10 +129241,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-18T14:50:42.341915+00:00",
+      "total": 3345,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3428,
+    "total_runs": 3429,
     "users": {
       "Mike": {
         "matched": 1657,
@@ -129289,8 +129289,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1162,
-    "Lifting \ud83d\ude9a": 825,
+    "Stocking \ud83d\udce6": 1161,
+    "Lifting \ud83d\ude9a": 824,
     "Producer \ud83e\udd66": 391,
     "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 189,
