@@ -129258,6 +129258,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-18T16:10:39.499593+00:00",
+      "total": 3320,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1145954",
+              "date": "2026-06-21",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -129273,7 +129298,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1145954",
+        "date": "2026-06-21",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129289,7 +129324,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1153,
+    "Stocking \ud83d\udce6": 1152,
     "Lifting \ud83d\ude9a": 817,
     "Producer \ud83e\udd66": 389,
     "Flex \ud83e\udd6b": 197,
@@ -129303,13 +129338,13 @@
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Food Services \ud83c\udf72": 26,
     "Bulk Lifting \ud83e\uded8": 9,
-    "Office \ud83d\udcd7": 7,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
+    "Office \ud83d\udcd7": 5,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Bins \ud83e\uddfc": 3,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
