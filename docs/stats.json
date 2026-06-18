@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-07T17:00:41.961862+00:00",
-      "total": 3298,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1126552",
-              "date": "2026-05-24",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-07T17:10:46.041369+00:00",
       "total": 3297,
       "users": {
@@ -129283,22 +129258,57 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-18T17:10:39.580314+00:00",
+      "total": 3304,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1159475",
+              "date": "2026-07-13",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3441,
+    "total_runs": 3442,
     "users": {
       "Mike": {
         "matched": 1657,
         "notified": 138
       },
       "Nancy": {
-        "matched": 4849,
-        "notified": 615
+        "matched": 4850,
+        "notified": 616
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1159475",
+        "date": "2026-07-13",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129334,7 +129344,8 @@
     "Bins \ud83e\uddfc": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2,
-    "Vitamins \ud83c\udf6c": 1
+    "Vitamins \ud83c\udf6c": 1,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
