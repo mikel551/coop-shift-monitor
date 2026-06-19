@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-08T02:20:39.086191+00:00",
-      "total": 3232,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-08T02:30:41.784895+00:00",
       "total": 3230,
       "users": {
@@ -129235,10 +129218,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-19T02:30:35.129460+00:00",
+      "total": 3268,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1145724",
+              "date": "2026-06-21",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3497,
+    "total_runs": 3498,
     "users": {
       "Mike": {
         "matched": 1657,
@@ -129250,7 +129258,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1145724",
+        "date": "2026-06-21",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -129266,7 +129284,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1124,
+    "Stocking \ud83d\udce6": 1125,
     "Lifting \ud83d\ude9a": 811,
     "Producer \ud83e\udd66": 385,
     "Flex \ud83e\udd6b": 208,
@@ -129285,8 +129303,8 @@
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 3,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
