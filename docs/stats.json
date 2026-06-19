@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-08T13:40:38.299947+00:00",
-      "total": 3381,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-08T13:50:38.308298+00:00",
       "total": 3375,
       "users": {
@@ -129544,10 +129527,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-19T13:50:33.339580+00:00",
+      "total": 3371,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1145440",
+              "date": "2026-06-20",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3525,
+    "total_runs": 3526,
     "users": {
       "Mike": {
         "matched": 1668,
@@ -129588,7 +129596,7 @@
     "Stocking \ud83d\udce6": 1157,
     "Lifting \ud83d\ude9a": 836,
     "Producer \ud83e\udd66": 386,
-    "Flex \ud83e\udd6b": 225,
+    "Flex \ud83e\udd6b": 223,
     "Produce Processing \ud83e\udd6c": 191,
     "Cleaning \ud83c\udfdd": 134,
     "Dairy Lifting \ud83e\udd5b": 128,
@@ -129600,13 +129608,13 @@
     "Soup: Food Services \ud83c\udf72": 17,
     "Bulk Lifting \ud83e\uded8": 9,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
-    "Checkout \ud83d\udcb3": 6,
     "Bread Stocking \ud83c\udf5e": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Office \ud83d\udcd7": 5,
+    "Checkout \ud83d\udcb3": 5,
     "Cart Return \ud83d\uded2": 3,
+    "Repairs \ud83d\udee0": 3,
     "Bins \ud83e\uddfc": 3,
-    "Repairs \ud83d\udee0": 2,
     "Entrance/Greeter \ud83c\udf9f": 2
   },
   "user_config": [
