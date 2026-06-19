@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-08T22:30:42.591163+00:00",
-      "total": 3297,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1117145",
-              "date": "2026-05-10",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-08T22:40:43.402046+00:00",
       "total": 3298,
       "users": {
@@ -129568,17 +129543,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-19T22:40:33.362292+00:00",
+      "total": 3286,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3578,
+    "total_runs": 3579,
     "users": {
       "Mike": {
         "matched": 1670,
         "notified": 141
       },
       "Nancy": {
-        "matched": 4860,
+        "matched": 4861,
         "notified": 619
       }
     }
@@ -129599,10 +129591,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1119,
+    "Stocking \ud83d\udce6": 1118,
     "Lifting \ud83d\ude9a": 827,
     "Producer \ud83e\udd66": 383,
-    "Flex \ud83e\udd6b": 215,
+    "Flex \ud83e\udd6b": 214,
     "Produce Processing \ud83e\udd6c": 187,
     "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 127,
@@ -129613,10 +129605,10 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 27,
     "Soup: Food Services \ud83c\udf72": 17,
     "Bulk Lifting \ud83e\uded8": 10,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
+    "Office \ud83d\udcd7": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
-    "Office \ud83d\udcd7": 4,
     "Repairs \ud83d\udee0": 3,
     "Bins \ud83e\uddfc": 3,
     "Checkout \ud83d\udcb3": 1,
