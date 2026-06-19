@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-08T23:40:33.077903+00:00",
-      "total": 3291,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-08T23:50:35.716362+00:00",
       "total": 3293,
       "users": {
@@ -129575,10 +129558,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-19T23:40:38.521771+00:00",
+      "total": 3281,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1145440",
+              "date": "2026-06-20",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3585,
+    "total_runs": 3586,
     "users": {
       "Mike": {
         "matched": 1670,
@@ -129633,10 +129641,10 @@
     "Office \ud83d\udcd7": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Repairs \ud83d\udee0": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 3,
-    "Cart Return \ud83d\uded2": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Vitamins \ud83c\udf6c": 1
   },
   "user_config": [
