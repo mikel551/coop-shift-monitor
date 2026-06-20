@@ -1,61 +1,9 @@
 {
   "notified": {
-    "Nancy": [
-      "1172561"
-    ],
+    "Nancy": [],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-09T18:00:39.443176+00:00",
-      "total": 3394,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1117377",
-              "date": "2026-05-10",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-09T18:10:32.264486+00:00",
-      "total": 3393,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1136948",
-              "date": "2026-06-07",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
     {
       "ts": "2026-05-09T18:20:32.304050+00:00",
       "total": 3393,
@@ -129223,18 +129171,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-20T18:10:37.336562+00:00",
+      "total": 3377,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3655,
+    "total_runs": 3657,
     "users": {
       "Mike": {
         "matched": 1697,
         "notified": 144
       },
       "Nancy": {
-        "matched": 4926,
-        "notified": 632
+        "matched": 4928,
+        "notified": 633
       }
     }
   }
