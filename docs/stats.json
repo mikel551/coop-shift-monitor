@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-09T23:00:33.341546+00:00",
-      "total": 3356,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-09T23:10:36.416612+00:00",
       "total": 3354,
       "users": {
@@ -129116,10 +129099,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-20T23:10:34.979263+00:00",
+      "total": 3355,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1145614",
+              "date": "2026-06-21",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3685,
+    "total_runs": 3686,
     "users": {
       "Mike": {
         "matched": 1699,
@@ -129157,7 +129165,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1149,
+    "Stocking \ud83d\udce6": 1147,
     "Lifting \ud83d\ude9a": 850,
     "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 208,
@@ -129175,10 +129183,10 @@
     "Office \ud83d\udcd7": 7,
     "Bread Stocking \ud83c\udf5e": 6,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
     "Bins \ud83e\uddfc": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
