@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-09T16:10:35.141070+00:00",
-      "total": 3414,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-09T16:20:36.677356+00:00",
       "total": 3412,
       "users": {
@@ -129225,10 +129208,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-20T16:20:35.164949+00:00",
+      "total": 3391,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1145840",
+              "date": "2026-06-21",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3644,
+    "total_runs": 3645,
     "users": {
       "Mike": {
         "matched": 1697,
@@ -129243,7 +129251,7 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1145844",
+        "id": "1145840",
         "date": "2026-06-21",
         "start": "13:00",
         "end": "13:00",
@@ -129266,7 +129274,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1162,
+    "Stocking \ud83d\udce6": 1161,
     "Lifting \ud83d\ude9a": 852,
     "Producer \ud83e\udd66": 384,
     "Flex \ud83e\udd6b": 218,
@@ -129280,8 +129288,8 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 27,
     "Soup: Food Services \ud83c\udf72": 18,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
+    "Office \ud83d\udcd7": 10,
     "Bulk Lifting \ud83e\uded8": 9,
-    "Office \ud83d\udcd7": 9,
     "Bread Stocking \ud83c\udf5e": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 3,
