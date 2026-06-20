@@ -1,56 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-09T01:20:40.004327+00:00",
-      "total": 3287,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1117615",
-              "date": "2026-05-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-09T01:30:31.528549+00:00",
-      "total": 3288,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1117615",
-              "date": "2026-05-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-09T01:40:37.016438+00:00",
       "total": 3288,
       "users": {
@@ -129632,18 +129582,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-20T01:30:38.505174+00:00",
+      "total": 3264,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3595,
+    "total_runs": 3597,
     "users": {
       "Mike": {
         "matched": 1670,
         "notified": 141
       },
       "Nancy": {
-        "matched": 4861,
-        "notified": 619
+        "matched": 4863,
+        "notified": 620
       }
     }
   },
@@ -129663,7 +129630,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1116,
+    "Stocking \ud83d\udce6": 1117,
     "Lifting \ud83d\ude9a": 827,
     "Producer \ud83e\udd66": 380,
     "Flex \ud83e\udd6b": 207,
