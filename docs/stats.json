@@ -1,55 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-10T19:20:36.358306+00:00",
-      "total": 3403,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1118379",
-              "date": "2026-05-11",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1122151",
-              "date": "2026-05-17",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-10T19:30:32.850596+00:00",
-      "total": 3400,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 2
-    },
-    {
       "ts": "2026-05-10T19:40:36.809163+00:00",
       "total": 3398,
       "users": {
@@ -128355,17 +128306,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-21T19:30:39.047434+00:00",
+      "total": 3384,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3767,
+    "total_runs": 3769,
     "users": {
       "Mike": {
         "matched": 1754,
         "notified": 152
       },
       "Nancy": {
-        "matched": 5223,
+        "matched": 5225,
         "notified": 681
       }
     }
@@ -128392,10 +128360,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1173,
+    "Stocking \ud83d\udce6": 1172,
     "Lifting \ud83d\ude9a": 851,
-    "Producer \ud83e\udd66": 398,
-    "Flex \ud83e\udd6b": 201,
+    "Producer \ud83e\udd66": 397,
+    "Flex \ud83e\udd6b": 200,
     "Produce Processing \ud83e\udd6c": 186,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 132,
