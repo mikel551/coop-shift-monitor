@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-10T14:30:35.641480+00:00",
-      "total": 3454,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1118581",
-              "date": "2026-05-11",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-10T14:40:34.735354+00:00",
       "total": 3453,
       "users": {
@@ -128521,13 +128496,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-21T14:40:31.979347+00:00",
+      "total": 3445,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154694",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3738,
+    "total_runs": 3739,
     "users": {
       "Mike": {
-        "matched": 1749,
+        "matched": 1750,
         "notified": 152
       },
       "Nancy": {
@@ -128571,8 +128571,8 @@
     "Stocking \ud83d\udce6": 1198,
     "Lifting \ud83d\ude9a": 859,
     "Producer \ud83e\udd66": 399,
-    "Flex \ud83e\udd6b": 207,
-    "Produce Processing \ud83e\udd6c": 186,
+    "Flex \ud83e\udd6b": 206,
+    "Produce Processing \ud83e\udd6c": 187,
     "Cleaning \ud83c\udfdd": 133,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Meat Processing & Lifting \ud83c\udf56": 78,
@@ -128589,7 +128589,8 @@
     "Cart Return \ud83d\uded2": 4,
     "Repairs \ud83d\udee0": 3,
     "Bins \ud83e\uddfc": 3,
-    "Vitamins \ud83c\udf6c": 2
+    "Vitamins \ud83c\udf6c": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
