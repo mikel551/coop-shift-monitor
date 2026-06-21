@@ -1,62 +1,9 @@
 {
   "notified": {
-    "Nancy": [
-      "1145838",
-      "1146718"
-    ],
+    "Nancy": [],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-10T15:30:32.549869+00:00",
-      "total": 3437,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1122387",
-              "date": "2026-05-17",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-10T15:40:32.273449+00:00",
-      "total": 3437,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1117379",
-              "date": "2026-05-10",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
     {
       "ts": "2026-05-10T15:50:40.519595+00:00",
       "total": 3437,
@@ -128557,18 +128504,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-21T15:40:38.656651+00:00",
+      "total": 3423,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
-    "total_runs": 3744,
+    "total_runs": 3746,
     "users": {
       "Mike": {
         "matched": 1754,
         "notified": 152
       },
       "Nancy": {
-        "matched": 5198,
-        "notified": 676
+        "matched": 5200,
+        "notified": 678
       }
     }
   }
