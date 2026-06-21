@@ -1,60 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-10T12:10:29.250091+00:00",
-      "total": 3479,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1126986",
-              "date": "2026-05-24",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1137170",
-              "date": "2026-06-07",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1132390",
-              "date": "2026-05-31",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1137092",
-              "date": "2026-06-07",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141444",
-              "date": "2026-06-14",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 3
-    },
-    {
       "ts": "2026-05-10T12:20:32.666866+00:00",
       "total": 3477,
       "users": {
@@ -128557,17 +128503,71 @@
         }
       },
       "pruned": 5
+    },
+    {
+      "ts": "2026-06-21T12:20:36.918565+00:00",
+      "total": 3478,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154694",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 4,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154508",
+              "date": "2026-07-05",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1154736",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1159045",
+              "date": "2026-07-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1163237",
+              "date": "2026-07-19",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3724,
+    "total_runs": 3725,
     "users": {
       "Mike": {
-        "matched": 1736,
+        "matched": 1738,
         "notified": 151
       },
       "Nancy": {
-        "matched": 5178,
+        "matched": 5181,
         "notified": 672
       }
     }
@@ -128636,12 +128636,12 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1205,
     "Lifting \ud83d\ude9a": 863,
-    "Producer \ud83e\udd66": 399,
+    "Producer \ud83e\udd66": 398,
     "Flex \ud83e\udd6b": 212,
     "Produce Processing \ud83e\udd6c": 189,
+    "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 133,
-    "Dairy Lifting \ud83e\udd5b": 132,
-    "Meat Processing & Lifting \ud83c\udf56": 80,
+    "Meat Processing & Lifting \ud83c\udf56": 79,
     "Inventory \ud83d\udccb": 71,
     "Bathroom \ud83d\udebd": 41,
     "Case Maintenance \ud83e\uddfd": 33,
@@ -128650,9 +128650,9 @@
     "Soup: Food Services \ud83c\udf72": 16,
     "Office \ud83d\udcd7": 10,
     "Bulk Lifting \ud83e\uded8": 9,
-    "Checkout \ud83d\udcb3": 9,
-    "Cart Return \ud83d\uded2": 7,
+    "Checkout \ud83d\udcb3": 8,
     "Bread Stocking \ud83c\udf5e": 7,
+    "Cart Return \ud83d\uded2": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
