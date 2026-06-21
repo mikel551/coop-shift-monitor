@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-10T21:00:33.551756+00:00",
-      "total": 3395,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1117587",
-              "date": "2026-05-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1117631",
-              "date": "2026-05-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-10T21:10:29.364743+00:00",
       "total": 3393,
       "users": {
@@ -128259,17 +128226,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-21T21:00:39.614263+00:00",
+      "total": 3357,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3777,
+    "total_runs": 3778,
     "users": {
       "Mike": {
-        "matched": 1760,
+        "matched": 1761,
         "notified": 153
       },
       "Nancy": {
-        "matched": 5227,
+        "matched": 5228,
         "notified": 683
       }
     }
@@ -128309,7 +128293,7 @@
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
     "Soup: Food Services \ud83c\udf72": 15,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 12,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 11,
     "Bulk Lifting \ud83e\uded8": 8,
     "Office \ud83d\udcd7": 8,
     "Bread Stocking \ud83c\udf5e": 6,
