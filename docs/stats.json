@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-10T17:50:35.151525+00:00",
-      "total": 3421,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1118491",
-              "date": "2026-05-11",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-10T18:00:34.150974+00:00",
-      "total": 3420,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-10T18:10:37.438863+00:00",
       "total": 3412,
       "users": {
@@ -128454,17 +128412,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-21T18:00:40.609626+00:00",
+      "total": 3401,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3758,
+    "total_runs": 3760,
     "users": {
       "Mike": {
         "matched": 1754,
         "notified": 152
       },
       "Nancy": {
-        "matched": 5210,
+        "matched": 5211,
         "notified": 679
       }
     }
@@ -128503,7 +128478,7 @@
     "Bathroom \ud83d\udebd": 40,
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 24,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 16,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 15,
     "Soup: Food Services \ud83c\udf72": 15,
     "Office \ud83d\udcd7": 9,
     "Bulk Lifting \ud83e\uded8": 8,
@@ -128512,8 +128487,7 @@
     "Repairs \ud83d\udee0": 3,
     "Bins \ud83e\uddfc": 3,
     "Cart Return \ud83d\uded2": 2,
-    "Vitamins \ud83c\udf6c": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Vitamins \ud83c\udf6c": 2
   },
   "user_config": [
     {
