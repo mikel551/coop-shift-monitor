@@ -128265,6 +128265,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-21T23:40:38.948455+00:00",
+      "total": 3338,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1146722",
+              "date": "2026-06-22",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -128280,7 +128305,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1146722",
+        "date": "2026-06-22",
+        "start": "13:00",
+        "end": "13:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128302,7 +128337,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1164,
+    "Stocking \ud83d\udce6": 1162,
     "Lifting \ud83d\ude9a": 848,
     "Producer \ud83e\udd66": 385,
     "Flex \ud83e\udd6b": 201,
@@ -128322,6 +128357,7 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Checkout \ud83d\udcb3": 1,
     "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Repairs \ud83d\udee0": 1
   },
