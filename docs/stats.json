@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-10T22:00:35.198449+00:00",
-      "total": 3389,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-10T22:10:32.700783+00:00",
       "total": 3388,
       "users": {
@@ -128250,10 +128233,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-21T22:10:33.110055+00:00",
+      "total": 3348,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1148082",
+              "date": "2026-06-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3783,
+    "total_runs": 3784,
     "users": {
       "Mike": {
         "matched": 1762,
@@ -128265,7 +128273,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1148082",
+        "date": "2026-06-24",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128290,7 +128308,7 @@
     "Stocking \ud83d\udce6": 1165,
     "Lifting \ud83d\ude9a": 850,
     "Producer \ud83e\udd66": 387,
-    "Flex \ud83e\udd6b": 199,
+    "Flex \ud83e\udd6b": 198,
     "Produce Processing \ud83e\udd6c": 183,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Cleaning \ud83c\udfdd": 132,
@@ -128307,6 +128325,7 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Repairs \ud83d\udee0": 1
   },
   "user_config": [
