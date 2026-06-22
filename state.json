@@ -11,23 +11,6 @@
   },
   "stats": [
     {
-      "ts": "2026-05-11T14:50:33.003860+00:00",
-      "total": 3424,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-11T15:01:05.170462+00:00",
       "total": 3425,
       "users": {
@@ -126876,10 +126859,63 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-22T14:50:41.826705+00:00",
+      "total": 3430,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 5,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154728",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1159715",
+              "date": "2026-07-13",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1159817",
+              "date": "2026-07-13",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1159819",
+              "date": "2026-07-13",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1163465",
+              "date": "2026-07-19",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3844,
+    "total_runs": 3845,
     "users": {
       "Mike": {
         "matched": 1835,
