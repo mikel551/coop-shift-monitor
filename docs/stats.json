@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-11T21:30:36.889551+00:00",
-      "total": 3342,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-11T21:40:36.109619+00:00",
       "total": 3340,
       "users": {
@@ -127024,10 +127007,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-22T21:40:41.008906+00:00",
+      "total": 3313,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3884,
+    "total_runs": 3885,
     "users": {
       "Mike": {
         "matched": 1835,
@@ -127066,8 +127066,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1177,
-    "Lifting \ud83d\ude9a": 833,
+    "Stocking \ud83d\udce6": 1176,
+    "Lifting \ud83d\ude9a": 830,
     "Producer \ud83e\udd66": 387,
     "Flex \ud83e\udd6b": 196,
     "Produce Processing \ud83e\udd6c": 170,
@@ -127078,13 +127078,12 @@
     "Bathroom \ud83d\udebd": 42,
     "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 23,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 11,
     "Soup: Food Services \ud83c\udf72": 10,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 10,
     "Bulk Lifting \ud83e\uded8": 7,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 4,
     "Bins \ud83e\uddfc": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Repairs \ud83d\udee0": 1
   },
