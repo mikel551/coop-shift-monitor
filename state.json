@@ -1,28 +1,12 @@
 {
   "notified": {
     "Nancy": [
-      "1146722"
+      "1146492",
+      "1146844"
     ],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-10T23:50:34.917548+00:00",
-      "total": 3373,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-05-11T00:00:37.773958+00:00",
       "total": 3374,
@@ -128304,10 +128288,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-22T00:00:39.579743+00:00",
+      "total": 3340,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1146492",
+              "date": "2026-06-22",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146844",
+              "date": "2026-06-22",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 3794,
+    "total_runs": 3795,
     "users": {
       "Mike": {
         "matched": 1762,
