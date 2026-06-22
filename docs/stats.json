@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-11T00:00:37.773958+00:00",
-      "total": 3374,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-11T00:10:30.688748+00:00",
       "total": 3370,
       "users": {
@@ -128313,10 +128296,42 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-22T00:10:33.641462+00:00",
+      "total": 3336,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1146492",
+              "date": "2026-06-22",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1146844",
+              "date": "2026-06-22",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3795,
+    "total_runs": 3796,
     "users": {
       "Mike": {
         "matched": 1762,
@@ -128369,13 +128384,13 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1161,
     "Lifting \ud83d\ude9a": 848,
-    "Producer \ud83e\udd66": 385,
+    "Producer \ud83e\udd66": 383,
     "Flex \ud83e\udd6b": 199,
-    "Produce Processing \ud83e\udd6c": 181,
+    "Produce Processing \ud83e\udd6c": 180,
     "Cleaning \ud83c\udfdd": 134,
     "Dairy Lifting \ud83e\udd5b": 132,
     "Meat Processing & Lifting \ud83c\udf56": 73,
-    "Inventory \ud83d\udccb": 71,
+    "Inventory \ud83d\udccb": 69,
     "Bathroom \ud83d\udebd": 40,
     "Case Maintenance \ud83e\uddfd": 31,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
@@ -128388,6 +128403,7 @@
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Checkout \ud83d\udcb3": 2,
+    "Cart Return \ud83d\uded2": 1,
     "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Repairs \ud83d\udee0": 1
   },
