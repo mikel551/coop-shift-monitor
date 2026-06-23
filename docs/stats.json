@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-12T16:40:36.916189+00:00",
-      "total": 3394,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-12T16:50:37.707172+00:00",
       "total": 3391,
       "users": {
@@ -126582,10 +126565,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-23T16:50:37.165033+00:00",
+      "total": 3299,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3959,
+    "total_runs": 3960,
     "users": {
       "Mike": {
         "matched": 1876,
@@ -126624,15 +126624,15 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1154,
-    "Lifting \ud83d\ude9a": 821,
-    "Producer \ud83e\udd66": 394,
+    "Stocking \ud83d\udce6": 1153,
+    "Lifting \ud83d\ude9a": 822,
+    "Producer \ud83e\udd66": 392,
     "Flex \ud83e\udd6b": 184,
     "Produce Processing \ud83e\udd6c": 170,
     "Cleaning \ud83c\udfdd": 138,
     "Dairy Lifting \ud83e\udd5b": 126,
     "Inventory \ud83d\udccb": 83,
-    "Meat Processing & Lifting \ud83c\udf56": 74,
+    "Meat Processing & Lifting \ud83c\udf56": 73,
     "Bathroom \ud83d\udebd": 43,
     "Case Maintenance \ud83e\uddfd": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
@@ -126641,8 +126641,8 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
+    "Office \ud83d\udcd7": 4,
     "Bins \ud83e\uddfc": 3,
-    "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 2,
     "Repairs \ud83d\udee0": 1
   },
