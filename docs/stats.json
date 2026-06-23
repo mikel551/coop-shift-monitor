@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-12T23:10:43.082049+00:00",
-      "total": 3325,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-12T23:20:30.430077+00:00",
-      "total": 3326,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-12T23:30:39.438558+00:00",
       "total": 3326,
       "users": {
@@ -126582,10 +126548,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-23T23:20:39.365514+00:00",
+      "total": 3248,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3998,
+    "total_runs": 4000,
     "users": {
       "Mike": {
         "matched": 1876,
@@ -126624,8 +126607,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1139,
-    "Lifting \ud83d\ude9a": 822,
+    "Stocking \ud83d\udce6": 1138,
+    "Lifting \ud83d\ude9a": 824,
     "Producer \ud83e\udd66": 383,
     "Flex \ud83e\udd6b": 175,
     "Produce Processing \ud83e\udd6c": 168,
@@ -126635,15 +126618,15 @@
     "Meat Processing & Lifting \ud83c\udf56": 73,
     "Bathroom \ud83d\udebd": 42,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 26,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
     "Soup: Food Services \ud83c\udf72": 9,
     "Bulk Lifting \ud83e\uded8": 8,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
+    "Checkout \ud83d\udcb3": 3,
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Repairs \ud83d\udee0": 1
   },
