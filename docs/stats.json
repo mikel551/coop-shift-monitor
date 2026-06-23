@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-12T21:50:37.115535+00:00",
-      "total": 3327,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-12T22:00:39.536006+00:00",
       "total": 3327,
       "users": {
@@ -126582,10 +126565,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-23T22:00:39.893775+00:00",
+      "total": 3255,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3990,
+    "total_runs": 3991,
     "users": {
       "Mike": {
         "matched": 1876,
@@ -126624,26 +126624,26 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1145,
+    "Stocking \ud83d\udce6": 1144,
     "Lifting \ud83d\ude9a": 821,
     "Producer \ud83e\udd66": 382,
     "Flex \ud83e\udd6b": 177,
     "Produce Processing \ud83e\udd6c": 169,
     "Cleaning \ud83c\udfdd": 138,
     "Dairy Lifting \ud83e\udd5b": 124,
-    "Inventory \ud83d\udccb": 82,
+    "Inventory \ud83d\udccb": 81,
     "Meat Processing & Lifting \ud83c\udf56": 73,
-    "Bathroom \ud83d\udebd": 43,
+    "Bathroom \ud83d\udebd": 42,
     "Case Maintenance \ud83e\uddfd": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 29,
-    "Soup: Food Services \ud83c\udf72": 9,
+    "Soup: Food Services \ud83c\udf72": 10,
     "Bulk Lifting \ud83e\uded8": 8,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bread Stocking \ud83c\udf5e": 5,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Repairs \ud83d\udee0": 1
   },
   "user_config": [
