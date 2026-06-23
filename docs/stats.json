@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-12T23:40:34.098380+00:00",
-      "total": 3324,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-12T23:50:38.463096+00:00",
       "total": 3324,
       "users": {
@@ -126582,10 +126565,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-23T23:50:36.046476+00:00",
+      "total": 3245,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4001,
+    "total_runs": 4002,
     "users": {
       "Mike": {
         "matched": 1876,
@@ -126645,6 +126645,7 @@
     "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
+    "Cart Return \ud83d\uded2": 1,
     "Repairs \ud83d\udee0": 1
   },
   "user_config": [
