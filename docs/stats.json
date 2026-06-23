@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-12T12:10:37.620721+00:00",
-      "total": 3459,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1146910",
-              "date": "2026-06-22",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1146846",
-              "date": "2026-06-22",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-12T12:20:37.912761+00:00",
       "total": 3450,
       "users": {
@@ -126680,17 +126647,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-23T12:20:35.555443+00:00",
+      "total": 3366,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 3932,
+    "total_runs": 3933,
     "users": {
       "Mike": {
-        "matched": 1874,
+        "matched": 1875,
         "notified": 162
       },
       "Nancy": {
-        "matched": 5819,
+        "matched": 5820,
         "notified": 735
       }
     }
@@ -126722,7 +126706,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1179,
+    "Stocking \ud83d\udce6": 1178,
     "Lifting \ud83d\ude9a": 825,
     "Producer \ud83e\udd66": 402,
     "Flex \ud83e\udd6b": 191,
@@ -126736,10 +126720,10 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
     "Soup: Food Services \ud83c\udf72": 14,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
-    "Office \ud83d\udcd7": 7,
     "Bulk Lifting \ud83e\uded8": 7,
+    "Office \ud83d\udcd7": 6,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Cart Return \ud83d\uded2": 5,
+    "Cart Return \ud83d\uded2": 4,
     "Bread Stocking \ud83c\udf5e": 4,
     "Bins \ud83e\uddfc": 3,
     "Checkout \ud83d\udcb3": 3,
