@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-13T16:50:44.899333+00:00",
-      "total": 3342,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-13T17:01:02.853525+00:00",
       "total": 3341,
       "users": {
@@ -126703,10 +126686,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-24T17:00:41.255291+00:00",
+      "total": 3266,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4064,
+    "total_runs": 4065,
     "users": {
       "Mike": {
         "matched": 1900,
@@ -126745,9 +126745,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1127,
+    "Stocking \ud83d\udce6": 1128,
     "Lifting \ud83d\ude9a": 814,
-    "Producer \ud83e\udd66": 383,
+    "Producer \ud83e\udd66": 382,
     "Flex \ud83e\udd6b": 183,
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 139,
@@ -126766,7 +126766,6 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2,
     "Entrance/Greeter \ud83c\udf9f": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
