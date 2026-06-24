@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-13T12:30:38.568909+00:00",
-      "total": 3410,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-13T12:40:33.579188+00:00",
       "total": 3411,
       "users": {
@@ -126551,10 +126534,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-24T12:40:34.245391+00:00",
+      "total": 3333,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1165441",
+              "date": "2026-07-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4038,
+    "total_runs": 4039,
     "users": {
       "Mike": {
         "matched": 1900,
@@ -126609,7 +126617,7 @@
     "Flex \ud83e\udd6b": 190,
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 140,
-    "Dairy Lifting \ud83e\udd5b": 130,
+    "Dairy Lifting \ud83e\udd5b": 131,
     "Inventory \ud83d\udccb": 80,
     "Meat Processing & Lifting \ud83c\udf56": 76,
     "Bathroom \ud83d\udebd": 44,
@@ -126619,11 +126627,11 @@
     "Cart Return \ud83d\uded2": 9,
     "Bulk Lifting \ud83e\uded8": 7,
     "Bread Stocking \ud83c\udf5e": 7,
-    "Checkout \ud83d\udcb3": 6,
     "Inventory: Produce \ud83c\udf40": 5,
+    "Checkout \ud83d\udcb3": 4,
+    "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 3,
-    "Vitamins \ud83c\udf6c": 2,
     "Repairs \ud83d\udee0": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
