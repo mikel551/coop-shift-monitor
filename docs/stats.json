@@ -126541,6 +126541,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-24T02:40:34.635105+00:00",
+      "total": 3221,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -126556,17 +126573,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1151234",
-        "date": "2026-06-29",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -126595,10 +126602,10 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1129,
     "Lifting \ud83d\ude9a": 818,
-    "Producer \ud83e\udd66": 380,
-    "Flex \ud83e\udd6b": 173,
+    "Producer \ud83e\udd66": 379,
+    "Flex \ud83e\udd6b": 172,
     "Produce Processing \ud83e\udd6c": 168,
-    "Cleaning \ud83c\udfdd": 138,
+    "Cleaning \ud83c\udfdd": 137,
     "Dairy Lifting \ud83e\udd5b": 124,
     "Inventory \ud83d\udccb": 81,
     "Meat Processing & Lifting \ud83c\udf56": 73,
@@ -126612,7 +126619,6 @@
     "Bins \ud83e\uddfc": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Vitamins \ud83c\udf6c": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
