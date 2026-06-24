@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-13T03:00:39.420990+00:00",
-      "total": 3290,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-13T04:00:37.046683+00:00",
       "total": 3380,
       "users": {
@@ -126558,10 +126541,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-24T04:00:41.787093+00:00",
+      "total": 3296,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4021,
+    "total_runs": 4022,
     "users": {
       "Mike": {
         "matched": 1876,
@@ -126600,26 +126600,29 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1128,
-    "Lifting \ud83d\ude9a": 817,
-    "Producer \ud83e\udd66": 379,
+    "Stocking \ud83d\udce6": 1146,
+    "Lifting \ud83d\ude9a": 838,
+    "Producer \ud83e\udd66": 386,
+    "Produce Processing \ud83e\udd6c": 175,
     "Flex \ud83e\udd6b": 171,
-    "Produce Processing \ud83e\udd6c": 168,
-    "Cleaning \ud83c\udfdd": 137,
-    "Dairy Lifting \ud83e\udd5b": 124,
+    "Cleaning \ud83c\udfdd": 140,
+    "Dairy Lifting \ud83e\udd5b": 130,
     "Inventory \ud83d\udccb": 81,
-    "Meat Processing & Lifting \ud83c\udf56": 73,
-    "Bathroom \ud83d\udebd": 42,
+    "Meat Processing & Lifting \ud83c\udf56": 77,
+    "Bathroom \ud83d\udebd": 43,
     "Case Maintenance \ud83e\uddfd": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 27,
     "Bulk Lifting \ud83e\uded8": 8,
     "Soup: Food Services \ud83c\udf72": 8,
+    "Bread Stocking \ud83c\udf5e": 7,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Bread Stocking \ud83c\udf5e": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 3,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 2,
-    "Office \ud83d\udcd7": 1
+    "Cart Return \ud83d\uded2": 2,
+    "Repairs \ud83d\udee0": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
