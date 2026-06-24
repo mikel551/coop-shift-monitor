@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-13T12:10:37.975556+00:00",
-      "total": 3414,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1139180",
-              "date": "2026-06-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-13T12:20:36.581689+00:00",
       "total": 3411,
       "users": {
@@ -126543,13 +126518,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-24T12:20:38.337820+00:00",
+      "total": 3334,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1165441",
+              "date": "2026-07-22",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4036,
+    "total_runs": 4037,
     "users": {
       "Mike": {
-        "matched": 1899,
+        "matched": 1900,
         "notified": 164
       },
       "Nancy": {
@@ -126596,12 +126596,12 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1150,
-    "Lifting \ud83d\ude9a": 830,
+    "Lifting \ud83d\ude9a": 831,
     "Producer \ud83e\udd66": 385,
     "Flex \ud83e\udd6b": 191,
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 140,
-    "Dairy Lifting \ud83e\udd5b": 129,
+    "Dairy Lifting \ud83e\udd5b": 130,
     "Inventory \ud83d\udccb": 81,
     "Meat Processing & Lifting \ud83c\udf56": 76,
     "Bathroom \ud83d\udebd": 44,
