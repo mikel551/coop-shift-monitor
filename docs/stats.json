@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-13T16:30:42.168622+00:00",
-      "total": 3346,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-13T16:40:43.740081+00:00",
       "total": 3343,
       "users": {
@@ -126703,10 +126686,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-24T16:40:36.015103+00:00",
+      "total": 3271,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4062,
+    "total_runs": 4063,
     "users": {
       "Mike": {
         "matched": 1900,
@@ -126746,14 +126746,14 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1129,
-    "Lifting \ud83d\ude9a": 815,
+    "Lifting \ud83d\ude9a": 814,
     "Producer \ud83e\udd66": 384,
     "Flex \ud83e\udd6b": 183,
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 139,
     "Dairy Lifting \ud83e\udd5b": 128,
     "Inventory \ud83d\udccb": 78,
-    "Meat Processing & Lifting \ud83c\udf56": 76,
+    "Meat Processing & Lifting \ud83c\udf56": 77,
     "Bathroom \ud83d\udebd": 45,
     "Case Maintenance \ud83e\uddfd": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 35,
@@ -126761,11 +126761,12 @@
     "Bread Stocking \ud83c\udf5e": 8,
     "Bulk Lifting \ud83e\uded8": 7,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2,
     "Entrance/Greeter \ud83c\udf9f": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
