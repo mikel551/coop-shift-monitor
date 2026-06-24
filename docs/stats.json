@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-13T20:30:36.651590+00:00",
-      "total": 3309,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-13T20:40:37.071231+00:00",
       "total": 3307,
       "users": {
@@ -126711,10 +126694,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-24T20:40:35.084848+00:00",
+      "total": 3237,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4086,
+    "total_runs": 4087,
     "users": {
       "Mike": {
         "matched": 1901,
@@ -126753,8 +126753,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1125,
-    "Lifting \ud83d\ude9a": 811,
+    "Stocking \ud83d\udce6": 1122,
+    "Lifting \ud83d\ude9a": 812,
     "Producer \ud83e\udd66": 378,
     "Flex \ud83e\udd6b": 179,
     "Produce Processing \ud83e\udd6c": 175,
@@ -126772,8 +126772,7 @@
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 3,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
