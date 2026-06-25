@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T12:00:33.964396+00:00",
-      "total": 3433,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1130678",
-              "date": "2026-05-28",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-14T12:10:33.676875+00:00",
       "total": 3430,
       "users": {
@@ -126662,13 +126637,30 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-06-25T12:00:40.005437+00:00",
+      "total": 3190,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4139,
+    "total_runs": 4140,
     "users": {
       "Mike": {
-        "matched": 1920,
+        "matched": 1921,
         "notified": 167
       },
       "Nancy": {
@@ -126726,8 +126718,8 @@
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
-    "Repairs \ud83d\udee0": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Entrance/Greeter \ud83c\udf9f": 2,
+    "Repairs \ud83d\udee0": 2
   },
   "user_config": [
     {
