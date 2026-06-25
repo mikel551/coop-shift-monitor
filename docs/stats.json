@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T17:30:35.404457+00:00",
-      "total": 3359,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-14T17:40:34.711746+00:00",
       "total": 3355,
       "users": {
@@ -126439,10 +126422,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-25T17:40:34.972401+00:00",
+      "total": 3122,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4172,
+    "total_runs": 4173,
     "users": {
       "Mike": {
         "matched": 1944,
@@ -126482,7 +126482,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1044,
-    "Lifting \ud83d\ude9a": 760,
+    "Lifting \ud83d\ude9a": 759,
     "Producer \ud83e\udd66": 371,
     "Flex \ud83e\udd6b": 195,
     "Produce Processing \ud83e\udd6c": 171,
@@ -126502,7 +126502,6 @@
     "Vitamins \ud83c\udf6c": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
