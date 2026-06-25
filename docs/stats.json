@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T13:50:37.027959+00:00",
-      "total": 3409,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 2,
-          "shifts": [
-            {
-              "id": "1122381",
-              "date": "2026-05-17",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1142348",
-              "date": "2026-06-15",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-14T14:00:43.438748+00:00",
       "total": 3403,
       "users": {
@@ -126591,18 +126559,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-25T14:00:38.644992+00:00",
+      "total": 3164,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4150,
+    "total_runs": 4151,
     "users": {
       "Mike": {
         "matched": 1931,
         "notified": 167
       },
       "Nancy": {
-        "matched": 5863,
-        "notified": 745
+        "matched": 5865,
+        "notified": 747
       }
     }
   },
@@ -126633,7 +126618,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1059,
+    "Stocking \ud83d\udce6": 1058,
     "Lifting \ud83d\ude9a": 767,
     "Producer \ud83e\udd66": 371,
     "Flex \ud83e\udd6b": 193,
@@ -126651,10 +126636,10 @@
     "Bulk Lifting \ud83e\uded8": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Cart Return \ud83d\uded2": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 4,
     "Checkout \ud83d\udcb3": 3,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2
   },
   "user_config": [
