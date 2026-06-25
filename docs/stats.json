@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T02:40:34.211509+00:00",
-      "total": 3255,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-14T02:50:35.461594+00:00",
       "total": 3253,
       "users": {
@@ -126694,10 +126677,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-25T02:50:34.002162+00:00",
+      "total": 3069,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4123,
+    "total_runs": 4124,
     "users": {
       "Mike": {
         "matched": 1901,
@@ -126736,7 +126736,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1048,
+    "Stocking \ud83d\udce6": 1045,
     "Lifting \ud83d\ude9a": 755,
     "Producer \ud83e\udd66": 367,
     "Flex \ud83e\udd6b": 174,
@@ -126745,7 +126745,7 @@
     "Dairy Lifting \ud83e\udd5b": 127,
     "Inventory \ud83d\udccb": 77,
     "Meat Processing & Lifting \ud83c\udf56": 75,
-    "Bathroom \ud83d\udebd": 44,
+    "Bathroom \ud83d\udebd": 43,
     "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 9,
@@ -126754,11 +126754,10 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Office \ud83d\udcd7": 2,
     "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
