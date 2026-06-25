@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T12:10:33.676875+00:00",
-      "total": 3430,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1130678",
-              "date": "2026-05-28",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-14T12:20:33.500915+00:00",
       "total": 3427,
       "users": {
@@ -126671,13 +126646,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-25T12:20:31.085441+00:00",
+      "total": 3183,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4140,
+    "total_runs": 4141,
     "users": {
       "Mike": {
-        "matched": 1921,
+        "matched": 1922,
         "notified": 167
       },
       "Nancy": {
@@ -126723,7 +126715,7 @@
     "Inventory \ud83d\udccb": 77,
     "Meat Processing & Lifting \ud83c\udf56": 75,
     "Bathroom \ud83d\udebd": 46,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Food Services \ud83c\udf72": 15,
     "Office \ud83d\udcd7": 8,
@@ -126734,7 +126726,7 @@
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 4,
     "Cart Return \ud83d\uded2": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2,
     "Entrance/Greeter \ud83c\udf9f": 1
   },
