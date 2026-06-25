@@ -1,56 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T18:10:37.096800+00:00",
-      "total": 3352,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1121915",
-              "date": "2026-05-17",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-14T18:20:31.109106+00:00",
-      "total": 3351,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1121915",
-              "date": "2026-05-17",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-14T18:30:33.626656+00:00",
       "total": 3348,
       "users": {
@@ -126439,18 +126389,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-25T18:20:38.351448+00:00",
+      "total": 3115,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4176,
+    "total_runs": 4178,
     "users": {
       "Mike": {
         "matched": 1944,
         "notified": 169
       },
       "Nancy": {
-        "matched": 5870,
-        "notified": 747
+        "matched": 5872,
+        "notified": 748
       }
     }
   },
@@ -126493,13 +126460,13 @@
     "Bathroom \ud83d\udebd": 47,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Soup: Food Services \ud83c\udf72": 15,
+    "Soup: Food Services \ud83c\udf72": 14,
     "Bread Stocking \ud83c\udf5e": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "Office \ud83d\udcd7": 5,
     "Bins \ud83e\uddfc": 4,
-    "Vitamins \ud83c\udf6c": 3,
+    "Vitamins \ud83c\udf6c": 2,
     "Repairs \ud83d\udee0": 2,
     "Cart Return \ud83d\uded2": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
