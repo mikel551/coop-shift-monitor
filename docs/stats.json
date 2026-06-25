@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T19:10:30.482018+00:00",
-      "total": 3342,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-14T19:20:29.365529+00:00",
       "total": 3341,
       "users": {
@@ -126414,10 +126397,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-25T19:10:36.964331+00:00",
+      "total": 3110,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4182,
+    "total_runs": 4183,
     "users": {
       "Mike": {
         "matched": 1944,
@@ -126456,7 +126456,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1042,
+    "Stocking \ud83d\udce6": 1039,
     "Lifting \ud83d\ude9a": 759,
     "Producer \ud83e\udd66": 369,
     "Flex \ud83e\udd6b": 191,
@@ -126477,7 +126477,6 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 2,
     "Repairs \ud83d\udee0": 2,
-    "Cart Return \ud83d\uded2": 1,
     "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
