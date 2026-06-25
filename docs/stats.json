@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-14T02:00:40.496877+00:00",
-      "total": 3262,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-14T02:10:28.725410+00:00",
-      "total": 3260,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-14T02:20:33.630597+00:00",
       "total": 3258,
       "users": {
@@ -126711,10 +126677,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-25T02:20:34.897639+00:00",
+      "total": 3077,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4119,
+    "total_runs": 4121,
     "users": {
       "Mike": {
         "matched": 1901,
@@ -126753,14 +126736,14 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1049,
+    "Stocking \ud83d\udce6": 1048,
     "Lifting \ud83d\ude9a": 755,
     "Producer \ud83e\udd66": 368,
-    "Flex \ud83e\udd6b": 176,
+    "Flex \ud83e\udd6b": 175,
     "Produce Processing \ud83e\udd6c": 168,
     "Cleaning \ud83c\udfdd": 130,
     "Dairy Lifting \ud83e\udd5b": 127,
-    "Inventory \ud83d\udccb": 78,
+    "Inventory \ud83d\udccb": 77,
     "Meat Processing & Lifting \ud83c\udf56": 75,
     "Bathroom \ud83d\udebd": 44,
     "Case Maintenance \ud83e\uddfd": 37,
@@ -126771,10 +126754,11 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 3,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Office \ud83d\udcd7": 2,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
   "user_config": [
     {
