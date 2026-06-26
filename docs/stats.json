@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T16:30:35.045316+00:00",
-      "total": 3349,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-15T16:40:32.604995+00:00",
       "total": 3348,
       "users": {
@@ -126611,10 +126594,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T16:40:31.695087+00:00",
+      "total": 3156,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157819",
+              "date": "2026-07-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158575",
+              "date": "2026-07-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4269,
+    "total_runs": 4270,
     "users": {
       "Mike": {
         "matched": 1991,
@@ -126686,9 +126701,9 @@
     "Office \ud83d\udcd7": 10,
     "Bread Stocking \ud83c\udf5e": 8,
     "Bulk Lifting \ud83e\uded8": 6,
+    "Cart Return \ud83d\uded2": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
-    "Cart Return \ud83d\uded2": 4,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 2,
