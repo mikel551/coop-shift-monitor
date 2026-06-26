@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T18:40:31.799346+00:00",
-      "total": 3331,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T18:50:34.059355+00:00",
       "total": 3332,
       "users": {
@@ -126682,10 +126665,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T18:50:31.220028+00:00",
+      "total": 3160,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4282,
+    "total_runs": 4283,
     "users": {
       "Mike": {
         "matched": 1991,
@@ -126697,17 +126697,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1154692",
-        "date": "2026-07-05",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -126734,7 +126724,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1049,
+    "Stocking \ud83d\udce6": 1048,
     "Lifting \ud83d\ude9a": 752,
     "Producer \ud83e\udd66": 369,
     "Flex \ud83e\udd6b": 224,
@@ -126750,10 +126740,10 @@
     "Bread Stocking \ud83c\udf5e": 8,
     "Office \ud83d\udcd7": 7,
     "Bulk Lifting \ud83e\uded8": 6,
-    "Cart Return \ud83d\uded2": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Cart Return \ud83d\uded2": 3,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 2,
