@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T00:30:31.044997+00:00",
-      "total": 3311,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133066",
-              "date": "2026-06-01",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T00:40:41.690783+00:00",
       "total": 3309,
       "users": {
@@ -126361,17 +126336,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T00:40:36.462369+00:00",
+      "total": 3065,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4214,
+    "total_runs": 4215,
     "users": {
       "Mike": {
         "matched": 1944,
         "notified": 169
       },
       "Nancy": {
-        "matched": 5881,
+        "matched": 5882,
         "notified": 750
       }
     }
@@ -126406,7 +126398,7 @@
     "Stocking \ud83d\udce6": 1031,
     "Lifting \ud83d\ude9a": 745,
     "Producer \ud83e\udd66": 364,
-    "Flex \ud83e\udd6b": 186,
+    "Flex \ud83e\udd6b": 185,
     "Produce Processing \ud83e\udd6c": 170,
     "Dairy Lifting \ud83e\udd5b": 130,
     "Cleaning \ud83c\udfdd": 130,
@@ -126421,10 +126413,10 @@
     "Bins \ud83e\uddfc": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 4,
-    "Checkout \ud83d\udcb3": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Repairs \ud83d\udee0": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
