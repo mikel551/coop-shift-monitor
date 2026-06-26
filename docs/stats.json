@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T00:00:39.329998+00:00",
-      "total": 3322,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133066",
-              "date": "2026-06-01",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T00:10:36.103232+00:00",
       "total": 3316,
       "users": {
@@ -126385,17 +126360,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T00:10:36.077319+00:00",
+      "total": 3069,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4211,
+    "total_runs": 4212,
     "users": {
       "Mike": {
         "matched": 1944,
         "notified": 169
       },
       "Nancy": {
-        "matched": 5878,
+        "matched": 5879,
         "notified": 750
       }
     }
@@ -126430,14 +126422,14 @@
     "Stocking \ud83d\udce6": 1032,
     "Lifting \ud83d\ude9a": 745,
     "Producer \ud83e\udd66": 365,
-    "Flex \ud83e\udd6b": 187,
+    "Flex \ud83e\udd6b": 186,
     "Produce Processing \ud83e\udd6c": 170,
-    "Cleaning \ud83c\udfdd": 132,
     "Dairy Lifting \ud83e\udd5b": 130,
-    "Inventory \ud83d\udccb": 77,
+    "Cleaning \ud83c\udfdd": 130,
+    "Inventory \ud83d\udccb": 76,
     "Meat Processing & Lifting \ud83c\udf56": 68,
     "Bathroom \ud83d\udebd": 45,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Food Services \ud83c\udf72": 15,
     "Bread Stocking \ud83c\udf5e": 8,
