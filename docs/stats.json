@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T13:40:39.912376+00:00",
-      "total": 3386,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1140392",
-              "date": "2026-06-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T13:50:35.889619+00:00",
       "total": 3382,
       "users": {
@@ -126456,13 +126431,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T13:50:31.708390+00:00",
+      "total": 3186,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1166633",
+              "date": "2026-07-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4252,
+    "total_runs": 4253,
     "users": {
       "Mike": {
-        "matched": 1990,
+        "matched": 1991,
         "notified": 174
       },
       "Nancy": {
@@ -126508,9 +126508,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1063,
+    "Stocking \ud83d\udce6": 1062,
     "Lifting \ud83d\ude9a": 756,
-    "Producer \ud83e\udd66": 371,
+    "Producer \ud83e\udd66": 369,
     "Flex \ud83e\udd6b": 203,
     "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 134,
@@ -126529,8 +126529,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Bins \ud83e\uddfc": 3,
-    "Entrance/Greeter \ud83c\udf9f": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Entrance/Greeter \ud83c\udf9f": 2,
     "Repairs \ud83d\udee0": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Health & Beauty \ud83e\uddf4": 1
