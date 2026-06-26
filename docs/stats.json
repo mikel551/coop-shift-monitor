@@ -126625,6 +126625,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T17:10:30.709297+00:00",
+      "total": 3181,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1158575",
+              "date": "2026-07-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -126678,9 +126703,9 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1056,
-    "Lifting \ud83d\ude9a": 754,
+    "Lifting \ud83d\ude9a": 755,
     "Producer \ud83e\udd66": 369,
-    "Flex \ud83e\udd6b": 228,
+    "Flex \ud83e\udd6b": 227,
     "Produce Processing \ud83e\udd6c": 175,
     "Cleaning \ud83c\udfdd": 133,
     "Dairy Lifting \ud83e\udd5b": 129,
@@ -126696,11 +126721,11 @@
     "Cart Return \ud83d\uded2": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 2,
-    "Health & Beauty \ud83e\uddf4": 1,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
+    "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
     {
