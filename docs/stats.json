@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T14:00:42.165351+00:00",
-      "total": 3380,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T14:10:30.029382+00:00",
       "total": 3376,
       "users": {
@@ -126464,10 +126447,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T14:10:34.170187+00:00",
+      "total": 3177,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1166633",
+              "date": "2026-07-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4254,
+    "total_runs": 4255,
     "users": {
       "Mike": {
         "matched": 1991,
@@ -126519,13 +126527,13 @@
     "Stocking \ud83d\udce6": 1062,
     "Lifting \ud83d\ude9a": 756,
     "Producer \ud83e\udd66": 369,
-    "Flex \ud83e\udd6b": 202,
+    "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 175,
     "Dairy Lifting \ud83e\udd5b": 133,
     "Cleaning \ud83c\udfdd": 133,
-    "Inventory \ud83d\udccb": 75,
     "Meat Processing & Lifting \ud83c\udf56": 74,
-    "Bathroom \ud83d\udebd": 46,
+    "Inventory \ud83d\udccb": 74,
+    "Bathroom \ud83d\udebd": 45,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Food Services \ud83c\udf72": 22,
@@ -126538,10 +126546,10 @@
     "Soup Cleaning": 4,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Entrance/Greeter \ud83c\udf9f": 2,
     "Repairs \ud83d\udee0": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
-    "Health & Beauty \ud83e\uddf4": 1
+    "Health & Beauty \ud83e\uddf4": 1,
+    "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
     {
