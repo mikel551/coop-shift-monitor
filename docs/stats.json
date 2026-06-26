@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T15:00:34.977960+00:00",
-      "total": 3365,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T15:10:34.584618+00:00",
       "total": 3363,
       "users": {
@@ -126512,10 +126495,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T15:10:32.588499+00:00",
+      "total": 3166,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1166633",
+              "date": "2026-07-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4260,
+    "total_runs": 4261,
     "users": {
       "Mike": {
         "matched": 1991,
@@ -126564,7 +126572,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1061,
+    "Stocking \ud83d\udce6": 1060,
     "Lifting \ud83d\ude9a": 756,
     "Producer \ud83e\udd66": 370,
     "Flex \ud83e\udd6b": 201,
@@ -126572,24 +126580,23 @@
     "Cleaning \ud83c\udfdd": 133,
     "Dairy Lifting \ud83e\udd5b": 130,
     "Meat Processing & Lifting \ud83c\udf56": 74,
-    "Inventory \ud83d\udccb": 74,
-    "Bathroom \ud83d\udebd": 45,
+    "Inventory \ud83d\udccb": 73,
+    "Bathroom \ud83d\udebd": 44,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 40,
     "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Food Services \ud83c\udf72": 23,
     "Office \ud83d\udcd7": 10,
-    "Bread Stocking \ud83c\udf5e": 7,
+    "Bread Stocking \ud83c\udf5e": 8,
     "Bulk Lifting \ud83e\uded8": 6,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Cart Return \ud83d\uded2": 4,
-    "Checkout \ud83d\udcb3": 4,
     "Bins \ud83e\uddfc": 3,
+    "Checkout \ud83d\udcb3": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2,
-    "Health & Beauty \ud83e\uddf4": 1,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
     {
