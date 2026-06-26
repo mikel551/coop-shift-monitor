@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T22:20:31.866139+00:00",
-      "total": 3309,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T22:30:32.390136+00:00",
       "total": 3307,
       "users": {
@@ -126634,10 +126617,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T22:30:36.342124+00:00",
+      "total": 3140,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4304,
+    "total_runs": 4305,
     "users": {
       "Mike": {
         "matched": 1993,
@@ -126676,15 +126676,15 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1042,
-    "Lifting \ud83d\ude9a": 750,
-    "Producer \ud83e\udd66": 371,
+    "Stocking \ud83d\udce6": 1043,
+    "Lifting \ud83d\ude9a": 751,
+    "Producer \ud83e\udd66": 370,
     "Flex \ud83e\udd6b": 212,
     "Produce Processing \ud83e\udd6c": 173,
     "Cleaning \ud83c\udfdd": 133,
     "Dairy Lifting \ud83e\udd5b": 129,
     "Meat Processing & Lifting \ud83c\udf56": 75,
-    "Inventory \ud83d\udccb": 72,
+    "Inventory \ud83d\udccb": 73,
     "Bathroom \ud83d\udebd": 44,
     "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
@@ -126692,12 +126692,13 @@
     "Bread Stocking \ud83c\udf5e": 7,
     "Office \ud83d\udcd7": 7,
     "Bulk Lifting \ud83e\uded8": 6,
-    "Checkout \ud83d\udcb3": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 2,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
