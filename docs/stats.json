@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T15:30:35.301764+00:00",
-      "total": 3360,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-15T15:40:31.384254+00:00",
       "total": 3357,
       "users": {
@@ -126536,10 +126519,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T15:40:29.841448+00:00",
+      "total": 3163,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1166633",
+              "date": "2026-07-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4263,
+    "total_runs": 4264,
     "users": {
       "Mike": {
         "matched": 1991,
@@ -126588,8 +126596,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1059,
-    "Lifting \ud83d\ude9a": 755,
+    "Stocking \ud83d\udce6": 1058,
+    "Lifting \ud83d\ude9a": 756,
     "Producer \ud83e\udd66": 370,
     "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 175,
@@ -126611,7 +126619,8 @@
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 2,
-    "Health & Beauty \ud83e\uddf4": 1
+    "Health & Beauty \ud83e\uddf4": 1,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
