@@ -1,45 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-15T09:00:32.900417+00:00",
-      "total": 3469,
-      "users": {
-        "Mike": {
-          "matched": 3,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1121881",
-              "date": "2026-05-17",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1136556",
-              "date": "2026-06-06",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1140392",
-              "date": "2026-06-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 2
-    },
-    {
       "ts": "2026-05-15T10:00:37.859312+00:00",
       "total": 3459,
       "users": {
@@ -126342,14 +126303,68 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-26T09:00:44.287410+00:00",
+      "total": 3247,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1149292",
+              "date": "2026-06-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1157821",
+              "date": "2026-07-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1166633",
+              "date": "2026-07-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1150882",
+              "date": "2026-06-29",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167717",
+              "date": "2026-07-26",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4234,
+    "total_runs": 4235,
     "users": {
       "Mike": {
-        "matched": 1953,
-        "notified": 172
+        "matched": 1956,
+        "notified": 173
       },
       "Nancy": {
         "matched": 5889,
@@ -126358,6 +126373,22 @@
     }
   },
   "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1150882",
+        "date": "2026-06-29",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1167717",
+        "date": "2026-07-26",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ],
     "Mike": [
       {
         "id": "1149292",
@@ -126420,8 +126451,8 @@
     "Bathroom \ud83d\udebd": 46,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Checkout \ud83d\udcb3": 32,
-    "Soup: Food Services \ud83c\udf72": 23,
+    "Checkout \ud83d\udcb3": 35,
+    "Soup: Food Services \ud83c\udf72": 24,
     "Office \ud83d\udcd7": 11,
     "Cart Return \ud83d\uded2": 10,
     "Bread Stocking \ud83c\udf5e": 9,
@@ -126429,9 +126460,9 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Entrance/Greeter \ud83c\udf9f": 4,
     "Soup Cleaning": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Repairs \ud83d\udee0": 2,
     "Health & Beauty \ud83e\uddf4": 1
   },
