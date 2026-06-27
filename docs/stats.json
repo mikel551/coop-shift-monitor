@@ -126603,6 +126603,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-27T15:40:34.840620+00:00",
+      "total": 3200,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153052",
+              "date": "2026-07-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1153054",
+              "date": "2026-07-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158437",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -126669,11 +126708,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1079,
+    "Stocking \ud83d\udce6": 1077,
     "Lifting \ud83d\ude9a": 760,
-    "Producer \ud83e\udd66": 374,
-    "Flex \ud83e\udd6b": 214,
-    "Produce Processing \ud83e\udd6c": 175,
+    "Producer \ud83e\udd66": 375,
+    "Flex \ud83e\udd6b": 213,
+    "Produce Processing \ud83e\udd6c": 176,
     "Dairy Lifting \ud83e\udd5b": 134,
     "Cleaning \ud83c\udfdd": 133,
     "Meat Processing & Lifting \ud83c\udf56": 76,
@@ -126681,7 +126720,7 @@
     "Bathroom \ud83d\udebd": 46,
     "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
-    "Soup: Food Services \ud83c\udf72": 22,
+    "Soup: Food Services \ud83c\udf72": 21,
     "Office \ud83d\udcd7": 8,
     "Bread Stocking \ud83c\udf5e": 7,
     "Bulk Lifting \ud83e\uded8": 6,
@@ -126690,8 +126729,8 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 3,
-    "Repairs \ud83d\udee0": 2,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Repairs \ud83d\udee0": 2
   },
   "user_config": [
     {
