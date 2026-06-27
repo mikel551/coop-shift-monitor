@@ -126532,6 +126532,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-27T14:40:29.618811+00:00",
+      "total": 3206,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153052",
+              "date": "2026-07-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1158437",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -126548,15 +126580,6 @@
     }
   },
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1150210",
-        "date": "2026-06-28",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1153052",
@@ -126621,10 +126644,9 @@
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 3,
     "Cart Return \ud83d\uded2": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Repairs \ud83d\udee0": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
-    "Health & Beauty \ud83e\uddf4": 1
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
