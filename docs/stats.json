@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-16T16:30:28.729086+00:00",
-      "total": 3431,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1137170",
-              "date": "2026-06-07",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-16T16:40:29.543357+00:00",
       "total": 3429,
       "users": {
@@ -126623,13 +126598,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-27T16:30:37.137892+00:00",
+      "total": 3191,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153054",
+              "date": "2026-07-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4373,
+    "total_runs": 4374,
     "users": {
       "Mike": {
-        "matched": 2056,
+        "matched": 2057,
         "notified": 180
       },
       "Nancy": {
@@ -126675,7 +126675,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1074,
+    "Stocking \ud83d\udce6": 1073,
     "Lifting \ud83d\ude9a": 761,
     "Producer \ud83e\udd66": 371,
     "Flex \ud83e\udd6b": 213,
@@ -126687,10 +126687,10 @@
     "Bathroom \ud83d\udebd": 46,
     "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
-    "Soup: Food Services \ud83c\udf72": 21,
-    "Bread Stocking \ud83c\udf5e": 7,
+    "Soup: Food Services \ud83c\udf72": 22,
     "Office \ud83d\udcd7": 7,
     "Bulk Lifting \ud83e\uded8": 6,
+    "Bread Stocking \ud83c\udf5e": 6,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
