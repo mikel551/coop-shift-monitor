@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-16T01:20:30.997602+00:00",
-      "total": 3294,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-16T01:30:33.685201+00:00",
       "total": 3293,
       "users": {
@@ -126626,10 +126609,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-27T01:30:35.785934+00:00",
+      "total": 3120,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4322,
+    "total_runs": 4323,
     "users": {
       "Mike": {
         "matched": 1997,
@@ -126641,17 +126641,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1152464",
-        "date": "2026-07-01",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -126700,8 +126690,7 @@
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
-    "Health & Beauty \ud83e\uddf4": 1,
-    "Cart Return \ud83d\uded2": 1
+    "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
     {
