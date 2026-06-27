@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-16T23:40:29.458013+00:00",
-      "total": 3383,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122399",
-              "date": "2026-05-17",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-16T23:50:39.969310+00:00",
       "total": 3380,
       "users": {
@@ -126415,17 +126390,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-27T23:50:34.066975+00:00",
+      "total": 3108,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153676",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4416,
+    "total_runs": 4417,
     "users": {
       "Mike": {
         "matched": 2081,
         "notified": 180
       },
       "Nancy": {
-        "matched": 5994,
+        "matched": 5995,
         "notified": 780
       }
     }
@@ -126479,7 +126479,7 @@
     "Bathroom \ud83d\udebd": 45,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
-    "Soup: Food Services \ud83c\udf72": 22,
+    "Soup: Food Services \ud83c\udf72": 21,
     "Bread Stocking \ud83c\udf5e": 7,
     "Bulk Lifting \ud83e\uded8": 6,
     "Office \ud83d\udcd7": 5,
@@ -126488,7 +126488,7 @@
     "Vitamins \ud83c\udf6c": 4,
     "Repairs \ud83d\udee0": 3,
     "Bins \ud83e\uddfc": 3,
-    "Checkout \ud83d\udcb3": 1,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
