@@ -126569,6 +126569,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-27T00:40:34.303383+00:00",
+      "total": 3123,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1152464",
+              "date": "2026-07-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -126584,7 +126609,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1152464",
+        "date": "2026-07-01",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -126613,8 +126648,8 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1040,
     "Lifting \ud83d\ude9a": 751,
-    "Producer \ud83e\udd66": 369,
-    "Flex \ud83e\udd6b": 210,
+    "Producer \ud83e\udd66": 368,
+    "Flex \ud83e\udd6b": 207,
     "Produce Processing \ud83e\udd6c": 172,
     "Cleaning \ud83c\udfdd": 130,
     "Dairy Lifting \ud83e\udd5b": 129,
@@ -126633,7 +126668,8 @@
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
-    "Health & Beauty \ud83e\uddf4": 1
+    "Health & Beauty \ud83e\uddf4": 1,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
