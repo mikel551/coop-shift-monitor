@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-16T23:50:39.969310+00:00",
-      "total": 3380,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122399",
-              "date": "2026-05-17",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-17T00:00:37.580046+00:00",
       "total": 3382,
       "users": {
@@ -126415,17 +126390,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-28T00:00:38.327378+00:00",
+      "total": 3109,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153676",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4417,
+    "total_runs": 4418,
     "users": {
       "Mike": {
         "matched": 2081,
         "notified": 180
       },
       "Nancy": {
-        "matched": 5995,
+        "matched": 5996,
         "notified": 780
       }
     }
@@ -126475,7 +126475,7 @@
     "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 130,
     "Meat Processing & Lifting \ud83c\udf56": 73,
-    "Inventory \ud83d\udccb": 71,
+    "Inventory \ud83d\udccb": 72,
     "Bathroom \ud83d\udebd": 45,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
