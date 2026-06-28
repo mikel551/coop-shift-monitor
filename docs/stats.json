@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-17T00:00:37.580046+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1122399",
-              "date": "2026-05-17",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-17T00:10:33.960300+00:00",
       "total": 3382,
       "users": {
@@ -126415,17 +126390,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-28T00:10:34.146476+00:00",
+      "total": 3106,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153676",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4418,
+    "total_runs": 4419,
     "users": {
       "Mike": {
         "matched": 2081,
         "notified": 180
       },
       "Nancy": {
-        "matched": 5996,
+        "matched": 5997,
         "notified": 780
       }
     }
@@ -126470,10 +126470,10 @@
     "Stocking \ud83d\udce6": 1044,
     "Lifting \ud83d\ude9a": 745,
     "Producer \ud83e\udd66": 364,
-    "Flex \ud83e\udd6b": 202,
+    "Flex \ud83e\udd6b": 201,
     "Produce Processing \ud83e\udd6c": 175,
-    "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 130,
+    "Cleaning \ud83c\udfdd": 129,
     "Meat Processing & Lifting \ud83c\udf56": 73,
     "Inventory \ud83d\udccb": 72,
     "Bathroom \ud83d\udebd": 45,
