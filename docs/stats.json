@@ -126884,6 +126884,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-28T18:10:34.415145+00:00",
+      "total": 3114,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1150438",
+              "date": "2026-06-28",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1151330",
+              "date": "2026-06-29",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -126906,6 +126938,13 @@
         "date": "2026-06-28",
         "start": "15:30",
         "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
+      {
+        "id": "1151330",
+        "date": "2026-06-29",
+        "start": "18:00",
+        "end": "18:00",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -126936,9 +126975,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1064,
-    "Lifting \ud83d\ude9a": 740,
-    "Producer \ud83e\udd66": 372,
+    "Stocking \ud83d\udce6": 1061,
+    "Lifting \ud83d\ude9a": 738,
+    "Producer \ud83e\udd66": 371,
     "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 129,
@@ -126957,8 +126996,8 @@
     "Soup Cleaning": 4,
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 3,
-    "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 2,
+    "Repairs \ud83d\udee0": 2
   },
   "user_config": [
     {
