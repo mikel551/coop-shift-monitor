@@ -1,95 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-17T12:20:34.777101+00:00",
-      "total": 3527,
-      "users": {
-        "Mike": {
-          "matched": 3,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1131986",
-              "date": "2026-05-30",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1136694",
-              "date": "2026-06-07",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1141634",
-              "date": "2026-06-14",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 7,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1136966",
-              "date": "2026-06-07",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1137214",
-              "date": "2026-06-07",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141326",
-              "date": "2026-06-14",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141328",
-              "date": "2026-06-14",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141442",
-              "date": "2026-06-14",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141560",
-              "date": "2026-06-14",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141680",
-              "date": "2026-06-14",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 2
-    },
-    {
       "ts": "2026-05-17T12:30:37.390815+00:00",
       "total": 3526,
       "users": {
@@ -126795,17 +126706,99 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-06-28T12:30:37.819204+00:00",
+      "total": 3178,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1158999",
+              "date": "2026-07-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1167809",
+              "date": "2026-07-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1170383",
+              "date": "2026-07-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 6,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1159041",
+              "date": "2026-07-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1163235",
+              "date": "2026-07-19",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1163461",
+              "date": "2026-07-19",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1163463",
+              "date": "2026-07-19",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167737",
+              "date": "2026-07-26",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167855",
+              "date": "2026-07-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4452,
+    "total_runs": 4453,
     "users": {
       "Mike": {
-        "matched": 2128,
-        "notified": 185
+        "matched": 2131,
+        "notified": 186
       },
       "Nancy": {
-        "matched": 6192,
+        "matched": 6199,
         "notified": 799
       }
     }
@@ -126905,8 +126898,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1069,
-    "Lifting \ud83d\ude9a": 748,
+    "Stocking \ud83d\udce6": 1070,
+    "Lifting \ud83d\ude9a": 747,
     "Producer \ud83e\udd66": 375,
     "Flex \ud83e\udd6b": 205,
     "Produce Processing \ud83e\udd6c": 174,
@@ -126920,16 +126913,16 @@
     "Soup: Food Services \ud83c\udf72": 22,
     "Office \ud83d\udcd7": 11,
     "Checkout \ud83d\udcb3": 10,
-    "Cart Return \ud83d\uded2": 9,
+    "Cart Return \ud83d\uded2": 7,
     "Bread Stocking \ud83c\udf5e": 7,
     "Bulk Lifting \ud83e\uded8": 6,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 3,
-    "Repairs \ud83d\udee0": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Entrance/Greeter \ud83c\udf9f": 2,
+    "Repairs \ud83d\udee0": 2
   },
   "user_config": [
     {
