@@ -126915,6 +126915,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-28T19:10:35.922248+00:00",
+      "total": 3106,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1151324",
+              "date": "2026-06-29",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -126967,7 +126992,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1060,
+    "Stocking \ud83d\udce6": 1059,
     "Lifting \ud83d\ude9a": 738,
     "Producer \ud83e\udd66": 370,
     "Flex \ud83e\udd6b": 191,
@@ -126988,8 +127013,8 @@
     "Soup Cleaning": 4,
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 3,
-    "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 2,
+    "Repairs \ud83d\udee0": 2
   },
   "user_config": [
     {
