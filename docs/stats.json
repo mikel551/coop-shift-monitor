@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-17T18:20:34.870935+00:00",
-      "total": 3447,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-17T18:30:32.928233+00:00",
       "total": 3445,
       "users": {
@@ -126916,10 +126899,35 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-28T18:30:35.359967+00:00",
+      "total": 3110,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1151008",
+              "date": "2026-06-29",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4488,
+    "total_runs": 4489,
     "users": {
       "Mike": {
         "matched": 2149,
@@ -126934,10 +126942,10 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1151330",
+        "id": "1151008",
         "date": "2026-06-29",
-        "start": "18:00",
-        "end": "18:00",
+        "start": "10:30",
+        "end": "10:30",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -126968,13 +126976,13 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1062,
+    "Stocking \ud83d\udce6": 1061,
     "Lifting \ud83d\ude9a": 738,
-    "Producer \ud83e\udd66": 371,
+    "Producer \ud83e\udd66": 370,
     "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 129,
-    "Cleaning \ud83c\udfdd": 128,
+    "Cleaning \ud83c\udfdd": 127,
     "Meat Processing & Lifting \ud83c\udf56": 75,
     "Inventory \ud83d\udccb": 72,
     "Bathroom \ud83d\udebd": 45,
