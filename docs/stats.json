@@ -126900,6 +126900,31 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-28T14:40:37.932262+00:00",
+      "total": 3147,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1170383",
+              "date": "2026-07-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -126917,13 +126942,6 @@
   },
   "available_shifts": {
     "Mike": [
-      {
-        "id": "1167809",
-        "date": "2026-07-26",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
       {
         "id": "1170383",
         "date": "2026-07-30",
@@ -126959,11 +126977,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1068,
+    "Stocking \ud83d\udce6": 1067,
     "Lifting \ud83d\ude9a": 742,
     "Producer \ud83e\udd66": 373,
     "Flex \ud83e\udd6b": 199,
-    "Produce Processing \ud83e\udd6c": 174,
+    "Produce Processing \ud83e\udd6c": 173,
     "Cleaning \ud83c\udfdd": 131,
     "Dairy Lifting \ud83e\udd5b": 130,
     "Meat Processing & Lifting \ud83c\udf56": 75,
@@ -126973,16 +126991,17 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 21,
     "Office \ud83d\udcd7": 10,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
     "Bulk Lifting \ud83e\uded8": 6,
     "Bread Stocking \ud83c\udf5e": 6,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Vitamins \ud83c\udf6c": 5,
-    "Cart Return \ud83d\uded2": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Bins \ud83e\uddfc": 3,
     "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 1,
+    "General Meeting \ud83d\uddf3\ufe0f": 1
   },
   "user_config": [
     {
