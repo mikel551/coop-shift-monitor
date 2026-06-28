@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-17T16:20:33.989623+00:00",
-      "total": 3470,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
-      "ts": "2026-05-17T16:30:31.732881+00:00",
-      "total": 3468,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-17T16:40:27.977645+00:00",
       "total": 3466,
       "users": {
@@ -126933,10 +126899,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-28T16:30:36.977122+00:00",
+      "total": 3130,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4476,
+    "total_runs": 4478,
     "users": {
       "Mike": {
         "matched": 2149,
@@ -126948,17 +126931,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1151126",
-        "date": "2026-06-29",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -126988,7 +126961,7 @@
     "Stocking \ud83d\udce6": 1067,
     "Lifting \ud83d\ude9a": 740,
     "Producer \ud83e\udd66": 371,
-    "Flex \ud83e\udd6b": 197,
+    "Flex \ud83e\udd6b": 195,
     "Produce Processing \ud83e\udd6c": 173,
     "Dairy Lifting \ud83e\udd5b": 131,
     "Cleaning \ud83c\udfdd": 131,
@@ -127001,13 +126974,12 @@
     "Office \ud83d\udcd7": 7,
     "Bulk Lifting \ud83e\uded8": 6,
     "Bread Stocking \ud83c\udf5e": 6,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Bins \ud83e\uddfc": 3,
-    "Repairs \ud83d\udee0": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Repairs \ud83d\udee0": 2
   },
   "user_config": [
     {
