@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-17T23:40:34.190377+00:00",
-      "total": 3412,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1123252",
-              "date": "2026-05-18",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-17T23:50:33.661076+00:00",
       "total": 3411,
       "users": {
@@ -126892,18 +126867,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-28T23:50:37.286616+00:00",
+      "total": 3063,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1160471",
+              "date": "2026-07-14",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4520,
+    "total_runs": 4521,
     "users": {
       "Mike": {
         "matched": 2149,
         "notified": 186
       },
       "Nancy": {
-        "matched": 6263,
-        "notified": 811
+        "matched": 6264,
+        "notified": 812
       }
     }
   },
@@ -126944,7 +126944,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1041,
+    "Stocking \ud83d\udce6": 1042,
     "Lifting \ud83d\ude9a": 734,
     "Producer \ud83e\udd66": 365,
     "Flex \ud83e\udd6b": 187,
@@ -126962,8 +126962,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Bins \ud83e\uddfc": 3,
-    "Cart Return \ud83d\uded2": 2,
     "Office \ud83d\udcd7": 2,
     "Repairs \ud83d\udee0": 1
   },
