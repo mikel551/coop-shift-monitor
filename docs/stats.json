@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T22:10:31.106021+00:00",
-      "total": 3351,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T22:20:32.460173+00:00",
       "total": 3349,
       "users": {
@@ -127249,10 +127232,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-29T22:20:33.398484+00:00",
+      "total": 2848,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4615,
+    "total_runs": 4616,
     "users": {
       "Mike": {
         "matched": 2171,
@@ -127291,10 +127291,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 948,
+    "Stocking \ud83d\udce6": 949,
     "Lifting \ud83d\ude9a": 657,
     "Producer \ud83e\udd66": 353,
-    "Flex \ud83e\udd6b": 180,
+    "Flex \ud83e\udd6b": 179,
     "Produce Processing \ud83e\udd6c": 163,
     "Cleaning \ud83c\udfdd": 118,
     "Dairy Lifting \ud83e\udd5b": 116,
@@ -127302,7 +127302,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 74,
     "Bathroom \ud83d\udebd": 39,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bread Stocking \ud83c\udf5e": 11,
     "Inventory: Produce \ud83c\udf40": 5,
@@ -127312,7 +127312,8 @@
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
-    "General Meeting \ud83d\uddf3\ufe0f": 1
+    "General Meeting \ud83d\uddf3\ufe0f": 1,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
