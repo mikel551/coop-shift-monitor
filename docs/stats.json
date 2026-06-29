@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T22:40:30.609157+00:00",
-      "total": 3346,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T22:50:33.643235+00:00",
       "total": 3345,
       "users": {
@@ -127265,10 +127248,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-29T22:50:35.926999+00:00",
+      "total": 2842,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153678",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4618,
+    "total_runs": 4619,
     "users": {
       "Mike": {
         "matched": 2171,
@@ -127317,7 +127325,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 946,
+    "Stocking \ud83d\udce6": 945,
     "Lifting \ud83d\ude9a": 657,
     "Producer \ud83e\udd66": 352,
     "Flex \ud83e\udd6b": 177,
@@ -127339,6 +127347,7 @@
     "Repairs \ud83d\udee0": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Entrance/Greeter \ud83c\udf9f": 1,
+    "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
