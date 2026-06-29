@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T00:40:30.427087+00:00",
-      "total": 3396,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T00:50:28.740176+00:00",
       "total": 3395,
       "users": {
@@ -126899,10 +126882,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-29T00:40:40.953036+00:00",
+      "total": 3053,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4526,
+    "total_runs": 4527,
     "users": {
       "Mike": {
         "matched": 2149,
@@ -126941,7 +126941,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 1041,
+    "Stocking \ud83d\udce6": 1040,
     "Lifting \ud83d\ude9a": 735,
     "Producer \ud83e\udd66": 364,
     "Flex \ud83e\udd6b": 184,
@@ -126955,12 +126955,12 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
     "Soup: Food Services \ud83c\udf72": 20,
     "Bread Stocking \ud83c\udf5e": 7,
-    "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 3,
+    "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 1
   },
   "user_config": [
