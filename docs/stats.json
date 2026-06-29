@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T21:10:39.073333+00:00",
-      "total": 3357,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T21:20:38.756269+00:00",
       "total": 3353,
       "users": {
@@ -127249,10 +127232,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-29T21:20:34.836228+00:00",
+      "total": 2854,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4609,
+    "total_runs": 4610,
     "users": {
       "Mike": {
         "matched": 2171,
@@ -127264,17 +127264,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1151336",
-        "date": "2026-06-29",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127301,10 +127291,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 950,
+    "Stocking \ud83d\udce6": 949,
     "Lifting \ud83d\ude9a": 657,
     "Producer \ud83e\udd66": 356,
-    "Flex \ud83e\udd6b": 185,
+    "Flex \ud83e\udd6b": 184,
     "Produce Processing \ud83e\udd6c": 163,
     "Cleaning \ud83c\udfdd": 117,
     "Dairy Lifting \ud83e\udd5b": 117,
@@ -127319,9 +127309,8 @@
     "Bins \ud83e\uddfc": 4,
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
-    "Vitamins \ud83c\udf6c": 4,
+    "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
-    "Checkout \ud83d\udcb3": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
   "user_config": [
