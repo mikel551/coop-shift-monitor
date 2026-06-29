@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T01:50:37.983153+00:00",
-      "total": 3384,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T02:00:39.587317+00:00",
       "total": 3381,
       "users": {
@@ -126900,10 +126883,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-29T02:00:42.618893+00:00",
+      "total": 2916,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4533,
+    "total_runs": 4534,
     "users": {
       "Mike": {
         "matched": 2149,
@@ -126942,7 +126942,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 967,
+    "Stocking \ud83d\udce6": 966,
     "Lifting \ud83d\ude9a": 696,
     "Producer \ud83e\udd66": 354,
     "Flex \ud83e\udd6b": 183,
@@ -126962,7 +126962,6 @@
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Checkout \ud83d\udcb3": 1,
     "Repairs \ud83d\udee0": 1
   },
   "user_config": [
