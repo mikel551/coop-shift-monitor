@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T15:00:57.230893+00:00",
-      "total": 3454,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T15:10:39.750846+00:00",
       "total": 3450,
       "users": {
@@ -127313,10 +127296,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-29T15:10:30.522443+00:00",
+      "total": 2983,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1173037",
+              "date": "2026-08-03",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1173039",
+              "date": "2026-08-03",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4572,
+    "total_runs": 4573,
     "users": {
       "Mike": {
         "matched": 2169,
@@ -127343,15 +127358,6 @@
         "start": "15:30",
         "end": "15:30",
         "type": "Checkout \ud83d\udcb3"
-      }
-    ],
-    "Mike": [
-      {
-        "id": "1175255",
-        "date": "2026-08-07",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
       }
     ]
   },
@@ -127382,7 +127388,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 985,
-    "Lifting \ud83d\ude9a": 681,
+    "Lifting \ud83d\ude9a": 680,
     "Producer \ud83e\udd66": 365,
     "Flex \ud83e\udd6b": 199,
     "Produce Processing \ud83e\udd6c": 167,
@@ -127402,9 +127408,9 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Repairs \ud83d\udee0": 3,
-    "Cart Return \ud83d\uded2": 2
+    "Checkout \ud83d\udcb3": 2,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
