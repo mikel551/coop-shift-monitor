@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T00:20:32.455669+00:00",
-      "total": 3400,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-18T00:30:32.007143+00:00",
-      "total": 3398,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T00:40:30.427087+00:00",
       "total": 3396,
       "users": {
@@ -126916,10 +126882,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-29T00:30:38.536240+00:00",
+      "total": 3055,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4524,
+    "total_runs": 4526,
     "users": {
       "Mike": {
         "matched": 2149,
@@ -126931,17 +126914,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1160471",
-        "date": "2026-07-14",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -126970,7 +126943,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 1041,
     "Lifting \ud83d\ude9a": 735,
-    "Producer \ud83e\udd66": 365,
+    "Producer \ud83e\udd66": 364,
     "Flex \ud83e\udd6b": 184,
     "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 131,
@@ -126988,7 +126961,6 @@
     "Bulk Lifting \ud83e\uded8": 4,
     "Bins \ud83e\uddfc": 3,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 1,
     "Repairs \ud83d\udee0": 1
   },
   "user_config": [
