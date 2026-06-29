@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T15:40:43.891063+00:00",
-      "total": 3431,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T15:50:36.907534+00:00",
       "total": 3430,
       "users": {
@@ -127328,10 +127311,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-29T15:50:32.221939+00:00",
+      "total": 2973,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1154610",
+              "date": "2026-07-05",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4576,
+    "total_runs": 4577,
     "users": {
       "Mike": {
         "matched": 2169,
@@ -127343,7 +127351,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1154610",
+        "date": "2026-07-05",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127370,7 +127388,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 980,
+    "Stocking \ud83d\udce6": 981,
     "Lifting \ud83d\ude9a": 680,
     "Producer \ud83e\udd66": 365,
     "Flex \ud83e\udd6b": 198,
@@ -127392,8 +127410,7 @@
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Repairs \ud83d\udee0": 3,
-    "Checkout \ud83d\udcb3": 2,
-    "General Meeting \ud83d\uddf3\ufe0f": 1
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
