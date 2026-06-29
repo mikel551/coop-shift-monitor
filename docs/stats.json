@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-18T18:40:41.109784+00:00",
-      "total": 3404,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1130680",
-              "date": "2026-05-28",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-18T18:50:41.344159+00:00",
       "total": 3399,
       "users": {
@@ -127265,13 +127240,30 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-06-29T18:50:32.807636+00:00",
+      "total": 2890,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4594,
+    "total_runs": 4595,
     "users": {
       "Mike": {
-        "matched": 2170,
+        "matched": 2171,
         "notified": 190
       },
       "Nancy": {
@@ -127307,10 +127299,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 961,
-    "Lifting \ud83d\ude9a": 667,
+    "Stocking \ud83d\udce6": 962,
+    "Lifting \ud83d\ude9a": 665,
     "Producer \ud83e\udd66": 358,
-    "Flex \ud83e\udd6b": 190,
+    "Flex \ud83e\udd6b": 189,
     "Produce Processing \ud83e\udd6c": 162,
     "Dairy Lifting \ud83e\udd5b": 119,
     "Cleaning \ud83c\udfdd": 117,
@@ -127318,7 +127310,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 75,
     "Bathroom \ud83d\udebd": 39,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
     "Soup: Food Services \ud83c\udf72": 20,
     "Bread Stocking \ud83c\udf5e": 10,
     "Inventory: Produce \ud83c\udf40": 5,
@@ -127329,7 +127321,6 @@
     "Repairs \ud83d\udee0": 3,
     "Health & Beauty \ud83e\uddf4": 1,
     "Cart Return \ud83d\uded2": 1,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
