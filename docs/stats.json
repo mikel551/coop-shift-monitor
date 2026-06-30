@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-19T18:00:39.362010+00:00",
-      "total": 3376,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-19T18:10:40.189402+00:00",
       "total": 3373,
       "users": {
@@ -127508,10 +127491,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T18:10:38.543427+00:00",
+      "total": 2871,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4694,
+    "total_runs": 4695,
     "users": {
       "Mike": {
         "matched": 2205,
@@ -127550,7 +127550,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 952,
+    "Stocking \ud83d\udce6": 950,
     "Lifting \ud83d\ude9a": 665,
     "Producer \ud83e\udd66": 348,
     "Flex \ud83e\udd6b": 178,
@@ -127572,6 +127572,7 @@
     "Repairs \ud83d\udee0": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Office \ud83d\udcd7": 2,
+    "Cart Return \ud83d\uded2": 1,
     "General Meeting \ud83d\uddf3\ufe0f": 1
   },
   "user_config": [
