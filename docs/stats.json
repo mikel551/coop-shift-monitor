@@ -127451,6 +127451,39 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T14:10:32.861287+00:00",
+      "total": 2918,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1176937",
+              "date": "2026-08-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1154406",
+              "date": "2026-07-05",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -127467,6 +127500,15 @@
     }
   },
   "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1154406",
+        "date": "2026-07-05",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ],
     "Mike": [
       {
         "id": "1176937",
@@ -127506,7 +127548,7 @@
     "Stocking \ud83d\udce6": 963,
     "Lifting \ud83d\ude9a": 671,
     "Producer \ud83e\udd66": 354,
-    "Flex \ud83e\udd6b": 182,
+    "Flex \ud83e\udd6b": 183,
     "Produce Processing \ud83e\udd6c": 170,
     "Cleaning \ud83c\udfdd": 119,
     "Dairy Lifting \ud83e\udd5b": 118,
@@ -127522,10 +127564,12 @@
     "Bulk Lifting \ud83e\uded8": 5,
     "Bins \ud83e\uddfc": 4,
     "Soup Cleaning": 4,
-    "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Cart Return \ud83d\uded2": 3,
-    "Repairs \ud83d\udee0": 3
+    "Repairs \ud83d\udee0": 3,
+    "General Meeting \ud83d\uddf3\ufe0f": 2,
+    "Cart Return \ud83d\uded2": 2,
+    "Office \ud83d\udcd7": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
