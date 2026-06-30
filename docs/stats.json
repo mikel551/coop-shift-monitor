@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-19T14:30:40.632529+00:00",
-      "total": 3422,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1128370",
-              "date": "2026-05-25",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-19T14:40:33.157445+00:00",
       "total": 3418,
       "users": {
@@ -127476,17 +127451,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T14:40:38.078452+00:00",
+      "total": 2912,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1176937",
+              "date": "2026-08-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4673,
+    "total_runs": 4674,
     "users": {
       "Mike": {
         "matched": 2205,
         "notified": 194
       },
       "Nancy": {
-        "matched": 6694,
+        "matched": 6695,
         "notified": 864
       }
     }
@@ -127531,7 +127531,7 @@
     "Stocking \ud83d\udce6": 962,
     "Lifting \ud83d\ude9a": 671,
     "Producer \ud83e\udd66": 354,
-    "Flex \ud83e\udd6b": 184,
+    "Flex \ud83e\udd6b": 182,
     "Produce Processing \ud83e\udd6c": 170,
     "Cleaning \ud83c\udfdd": 118,
     "Dairy Lifting \ud83e\udd5b": 118,
@@ -127547,11 +127547,10 @@
     "Bulk Lifting \ud83e\uded8": 5,
     "Bins \ud83e\uddfc": 4,
     "Soup Cleaning": 4,
-    "Checkout \ud83d\udcb3": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
-    "General Meeting \ud83d\uddf3\ufe0f": 2,
     "Office \ud83d\udcd7": 2,
+    "General Meeting \ud83d\uddf3\ufe0f": 1,
     "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
