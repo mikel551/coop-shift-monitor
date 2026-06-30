@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-19T20:20:31.409895+00:00",
-      "total": 3343,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1124452",
-              "date": "2026-05-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-19T20:30:37.248548+00:00",
       "total": 3340,
       "users": {
@@ -127412,13 +127387,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T20:30:34.866867+00:00",
+      "total": 2859,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4708,
+    "total_runs": 4709,
     "users": {
       "Mike": {
-        "matched": 2217,
+        "matched": 2218,
         "notified": 195
       },
       "Nancy": {
@@ -127467,8 +127459,8 @@
     "Bathroom \ud83d\udebd": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 34,
     "Soup: Food Services \ud83c\udf72": 15,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 12,
     "Bread Stocking \ud83c\udf5e": 11,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "Bins \ud83e\uddfc": 4,
