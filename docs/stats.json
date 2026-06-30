@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-19T15:10:33.921510+00:00",
-      "total": 3414,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-19T15:20:38.491121+00:00",
       "total": 3414,
       "users": {
@@ -127500,10 +127483,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T15:20:38.165691+00:00",
+      "total": 2904,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1176937",
+              "date": "2026-08-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4677,
+    "total_runs": 4678,
     "users": {
       "Mike": {
         "matched": 2205,
@@ -127554,7 +127562,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 959,
     "Lifting \ud83d\ude9a": 671,
-    "Producer \ud83e\udd66": 354,
+    "Producer \ud83e\udd66": 353,
     "Flex \ud83e\udd6b": 182,
     "Produce Processing \ud83e\udd6c": 170,
     "Cleaning \ud83c\udfdd": 118,
@@ -127563,7 +127571,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 76,
     "Case Maintenance \ud83e\uddfd": 41,
     "Bathroom \ud83d\udebd": 39,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bread Stocking \ud83c\udf5e": 11,
     "Inventory: Produce \ud83c\udf40": 5,
@@ -127574,7 +127582,8 @@
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
     "Cart Return \ud83d\uded2": 2,
-    "Office \ud83d\udcd7": 2
+    "Office \ud83d\udcd7": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
