@@ -127491,6 +127491,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T17:40:35.212826+00:00",
+      "total": 2875,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -127506,17 +127523,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1153054",
-        "date": "2026-07-02",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127565,8 +127572,7 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Repairs \ud83d\udee0": 3,
     "Office \ud83d\udcd7": 2,
-    "General Meeting \ud83d\uddf3\ufe0f": 1,
-    "Cart Return \ud83d\uded2": 1
+    "General Meeting \ud83d\uddf3\ufe0f": 1
   },
   "user_config": [
     {
