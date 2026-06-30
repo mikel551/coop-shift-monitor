@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-19T19:30:32.339688+00:00",
-      "total": 3361,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1124452",
-              "date": "2026-05-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-19T19:40:36.635716+00:00",
       "total": 3360,
       "users": {
@@ -127452,13 +127427,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T19:40:32.832133+00:00",
+      "total": 2855,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4703,
+    "total_runs": 4704,
     "users": {
       "Mike": {
-        "matched": 2212,
+        "matched": 2213,
         "notified": 195
       },
       "Nancy": {
@@ -127496,7 +127488,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 944,
     "Lifting \ud83d\ude9a": 664,
-    "Producer \ud83e\udd66": 347,
+    "Producer \ud83e\udd66": 346,
     "Flex \ud83e\udd6b": 176,
     "Produce Processing \ud83e\udd6c": 167,
     "Cleaning \ud83c\udfdd": 119,
