@@ -127475,6 +127475,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T17:20:32.210786+00:00",
+      "total": 2879,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1153054",
+              "date": "2026-07-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -127490,7 +127515,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1153054",
+        "date": "2026-07-02",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127521,9 +127556,9 @@
     "Lifting \ud83d\ude9a": 666,
     "Producer \ud83e\udd66": 350,
     "Flex \ud83e\udd6b": 178,
-    "Produce Processing \ud83e\udd6c": 170,
-    "Cleaning \ud83c\udfdd": 118,
-    "Dairy Lifting \ud83e\udd5b": 118,
+    "Produce Processing \ud83e\udd6c": 169,
+    "Cleaning \ud83c\udfdd": 119,
+    "Dairy Lifting \ud83e\udd5b": 117,
     "Inventory \ud83d\udccb": 78,
     "Meat Processing & Lifting \ud83c\udf56": 75,
     "Case Maintenance \ud83e\uddfd": 41,
@@ -127538,7 +127573,8 @@
     "Vitamins \ud83c\udf6c": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Repairs \ud83d\udee0": 3,
-    "Office \ud83d\udcd7": 2
+    "Office \ud83d\udcd7": 2,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
