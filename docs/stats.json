@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-19T14:50:42.293042+00:00",
-      "total": 3416,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-19T15:00:41.841017+00:00",
       "total": 3415,
       "users": {
@@ -127484,10 +127467,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T15:00:42.848261+00:00",
+      "total": 2905,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1176937",
+              "date": "2026-08-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4675,
+    "total_runs": 4676,
     "users": {
       "Mike": {
         "matched": 2205,
@@ -127500,15 +127508,6 @@
     }
   },
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1154740",
-        "date": "2026-07-05",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1176937",
@@ -127545,13 +127544,13 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 961,
+    "Stocking \ud83d\udce6": 960,
     "Lifting \ud83d\ude9a": 671,
     "Producer \ud83e\udd66": 354,
     "Flex \ud83e\udd6b": 182,
     "Produce Processing \ud83e\udd6c": 170,
     "Cleaning \ud83c\udfdd": 118,
-    "Dairy Lifting \ud83e\udd5b": 118,
+    "Dairy Lifting \ud83e\udd5b": 117,
     "Inventory \ud83d\udccb": 79,
     "Meat Processing & Lifting \ud83c\udf56": 76,
     "Case Maintenance \ud83e\uddfd": 41,
@@ -127567,9 +127566,7 @@
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
     "Cart Return \ud83d\uded2": 2,
-    "Office \ud83d\udcd7": 2,
-    "General Meeting \ud83d\uddf3\ufe0f": 1,
-    "Checkout \ud83d\udcb3": 1
+    "Office \ud83d\udcd7": 2
   },
   "user_config": [
     {
