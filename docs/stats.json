@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-19T15:30:33.934657+00:00",
-      "total": 3410,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-19T15:40:36.523230+00:00",
       "total": 3407,
       "users": {
@@ -127516,10 +127499,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T15:40:35.900520+00:00",
+      "total": 2900,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4679,
+    "total_runs": 4680,
     "users": {
       "Mike": {
         "matched": 2205,
@@ -127531,17 +127531,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1176937",
-        "date": "2026-08-10",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127568,17 +127558,17 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 959,
+    "Stocking \ud83d\udce6": 957,
     "Lifting \ud83d\ude9a": 671,
     "Producer \ud83e\udd66": 353,
-    "Flex \ud83e\udd6b": 182,
+    "Flex \ud83e\udd6b": 181,
     "Produce Processing \ud83e\udd6c": 169,
     "Cleaning \ud83c\udfdd": 118,
-    "Dairy Lifting \ud83e\udd5b": 117,
+    "Dairy Lifting \ud83e\udd5b": 118,
     "Inventory \ud83d\udccb": 79,
     "Meat Processing & Lifting \ud83c\udf56": 76,
     "Case Maintenance \ud83e\uddfd": 41,
-    "Bathroom \ud83d\udebd": 39,
+    "Bathroom \ud83d\udebd": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bread Stocking \ud83c\udf5e": 11,
@@ -127587,9 +127577,9 @@
     "Bulk Lifting \ud83e\uded8": 5,
     "Bins \ud83e\uddfc": 4,
     "Soup Cleaning": 4,
-    "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Office \ud83d\udcd7": 2,
     "Checkout \ud83d\udcb3": 1
   },
