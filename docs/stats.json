@@ -127344,6 +127344,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-06-30T02:00:39.231650+00:00",
+      "total": 2825,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154270",
+              "date": "2026-07-05",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -127396,10 +127421,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 945,
-    "Lifting \ud83d\ude9a": 658,
+    "Stocking \ud83d\udce6": 944,
+    "Lifting \ud83d\ude9a": 657,
     "Producer \ud83e\udd66": 348,
-    "Flex \ud83e\udd6b": 176,
+    "Flex \ud83e\udd6b": 175,
     "Produce Processing \ud83e\udd6c": 165,
     "Dairy Lifting \ud83e\udd5b": 115,
     "Cleaning \ud83c\udfdd": 115,
@@ -127416,7 +127441,7 @@
     "Bulk Lifting \ud83e\uded8": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
-    "Cart Return \ud83d\uded2": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
   "user_config": [
