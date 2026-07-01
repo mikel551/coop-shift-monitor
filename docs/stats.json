@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T21:50:29.478766+00:00",
-      "total": 3274,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-20T22:00:35.770859+00:00",
-      "total": 3273,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-20T22:10:33.808763+00:00",
       "total": 3272,
       "users": {
@@ -127568,10 +127534,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-01T22:00:42.366476+00:00",
+      "total": 2832,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4821,
+    "total_runs": 4823,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127612,7 +127595,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 921,
     "Lifting \ud83d\ude9a": 601,
-    "Producer \ud83e\udd66": 346,
+    "Producer \ud83e\udd66": 347,
     "Flex \ud83e\udd6b": 177,
     "Produce Processing \ud83e\udd6c": 165,
     "Dairy Lifting \ud83e\udd5b": 117,
@@ -127626,13 +127609,14 @@
     "Soup: Food Services \ud83c\udf72": 13,
     "Bread Stocking \ud83c\udf5e": 10,
     "Repairs \ud83d\udee0": 6,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "Bins \ud83e\uddfc": 4,
     "Soup Cleaning": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
