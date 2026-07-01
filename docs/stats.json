@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T13:10:38.445606+00:00",
-      "total": 3385,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-20T13:20:37.364535+00:00",
       "total": 3380,
       "users": {
@@ -127409,10 +127392,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-01T13:20:34.720081+00:00",
+      "total": 2925,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4769,
+    "total_runs": 4770,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127451,16 +127451,16 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 950,
+    "Stocking \ud83d\udce6": 949,
     "Lifting \ud83d\ude9a": 620,
     "Producer \ud83e\udd66": 350,
     "Flex \ud83e\udd6b": 186,
     "Produce Processing \ud83e\udd6c": 167,
     "Dairy Lifting \ud83e\udd5b": 121,
     "Cleaning \ud83c\udfdd": 117,
+    "Inventory \ud83d\udccb": 77,
     "Meat Processing & Lifting \ud83c\udf56": 76,
-    "Inventory \ud83d\udccb": 76,
-    "General Meeting \ud83d\uddf3\ufe0f": 72,
+    "General Meeting \ud83d\uddf3\ufe0f": 71,
     "Case Maintenance \ud83e\uddfd": 41,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 39,
     "Bathroom \ud83d\udebd": 38,
@@ -127470,13 +127470,12 @@
     "Repairs \ud83d\udee0": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
-    "Checkout \ud83d\udcb3": 5,
     "Cart Return \ud83d\uded2": 4,
     "Bins \ud83e\uddfc": 4,
     "Soup Cleaning": 4,
+    "Checkout \ud83d\udcb3": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Office \ud83d\udcd7": 3,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Office \ud83d\udcd7": 3
   },
   "user_config": [
     {
