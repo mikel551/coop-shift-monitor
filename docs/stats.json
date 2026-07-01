@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T16:50:44.031266+00:00",
-      "total": 3340,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-20T17:02:33.269572+00:00",
       "total": 3335,
       "users": {
@@ -127464,10 +127447,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-01T17:00:35.363204+00:00",
+      "total": 2872,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4791,
+    "total_runs": 4792,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127506,7 +127506,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 939,
+    "Stocking \ud83d\udce6": 937,
     "Lifting \ud83d\ude9a": 611,
     "Producer \ud83e\udd66": 347,
     "Flex \ud83e\udd6b": 179,
@@ -127529,7 +127529,6 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 2,
     "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
