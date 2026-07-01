@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T17:40:30.778367+00:00",
-      "total": 3325,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-20T17:50:34.905999+00:00",
       "total": 3325,
       "users": {
@@ -127464,10 +127447,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-01T17:50:31.481654+00:00",
+      "total": 2865,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1154730",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4796,
+    "total_runs": 4797,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127479,7 +127487,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1154730",
+        "date": "2026-07-05",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127506,10 +127524,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 934,
-    "Lifting \ud83d\ude9a": 610,
-    "Producer \ud83e\udd66": 347,
-    "Flex \ud83e\udd6b": 177,
+    "Stocking \ud83d\udce6": 933,
+    "Lifting \ud83d\ude9a": 609,
+    "Producer \ud83e\udd66": 346,
+    "Flex \ud83e\udd6b": 178,
     "Produce Processing \ud83e\udd6c": 166,
     "Dairy Lifting \ud83e\udd5b": 117,
     "Cleaning \ud83c\udfdd": 116,
@@ -127529,7 +127547,8 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 2,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
