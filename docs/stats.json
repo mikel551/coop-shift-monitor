@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T20:10:32.646520+00:00",
-      "total": 3296,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-20T20:20:29.035973+00:00",
-      "total": 3296,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-20T20:30:35.995258+00:00",
       "total": 3291,
       "users": {
@@ -127520,10 +127486,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-01T20:20:34.181073+00:00",
+      "total": 2836,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4811,
+    "total_runs": 4813,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127563,7 +127546,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 920,
-    "Lifting \ud83d\ude9a": 601,
+    "Lifting \ud83d\ude9a": 600,
     "Producer \ud83e\udd66": 346,
     "Flex \ud83e\udd6b": 176,
     "Produce Processing \ud83e\udd6c": 166,
@@ -127574,7 +127557,7 @@
     "General Meeting \ud83d\uddf3\ufe0f": 65,
     "Bathroom \ud83d\udebd": 40,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 38,
-    "Case Maintenance \ud83e\uddfd": 38,
+    "Case Maintenance \ud83e\uddfd": 37,
     "Soup: Food Services \ud83c\udf72": 14,
     "Bread Stocking \ud83c\udf5e": 10,
     "Repairs \ud83d\udee0": 6,
@@ -127586,7 +127569,7 @@
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
     "Cart Return \ud83d\uded2": 2,
-    "Checkout \ud83d\udcb3": 1
+    "Checkout \ud83d\udcb3": 2
   },
   "user_config": [
     {
