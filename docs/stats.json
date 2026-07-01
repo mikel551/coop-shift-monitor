@@ -1,79 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T09:00:39.928076+00:00",
-      "total": 3452,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1134622",
-              "date": "2026-06-03",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1143588",
-              "date": "2026-06-17",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1145968",
-              "date": "2026-06-21",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-20T10:00:34.081781+00:00",
-      "total": 3444,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1143588",
-              "date": "2026-06-17",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1145968",
-              "date": "2026-06-21",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-20T11:00:37.401510+00:00",
       "total": 3434,
       "users": {
@@ -127371,17 +127298,57 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-01T10:00:43.123867+00:00",
+      "total": 2972,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1161045",
+              "date": "2026-07-15",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1169809",
+              "date": "2026-07-29",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154606",
+              "date": "2026-07-05",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4754,
+    "total_runs": 4756,
     "users": {
       "Mike": {
-        "matched": 2229,
+        "matched": 2232,
         "notified": 197
       },
       "Nancy": {
-        "matched": 6704,
+        "matched": 6706,
         "notified": 867
       }
     }
@@ -127440,7 +127407,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 949,
-    "Lifting \ud83d\ude9a": 628,
+    "Lifting \ud83d\ude9a": 626,
     "Producer \ud83e\udd66": 353,
     "Flex \ud83e\udd6b": 186,
     "Produce Processing \ud83e\udd6c": 167,
@@ -127452,11 +127419,11 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 42,
     "Case Maintenance \ud83e\uddfd": 41,
     "Bathroom \ud83d\udebd": 39,
-    "Checkout \ud83d\udcb3": 22,
+    "Checkout \ud83d\udcb3": 20,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bread Stocking \ud83c\udf5e": 12,
     "Cart Return \ud83d\uded2": 10,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 8,
     "Repairs \ud83d\udee0": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
@@ -127464,7 +127431,7 @@
     "Soup Cleaning": 4,
     "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Entrance/Greeter \ud83c\udf9f": 3
+    "Entrance/Greeter \ud83c\udf9f": 2
   },
   "user_config": [
     {
