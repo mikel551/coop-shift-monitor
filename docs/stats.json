@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T00:20:35.259923+00:00",
-      "total": 3311,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-20T00:30:30.448394+00:00",
-      "total": 3307,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-20T00:40:35.218134+00:00",
       "total": 3305,
       "users": {
@@ -127380,10 +127346,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-01T00:30:37.135295+00:00",
+      "total": 2809,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4732,
+    "total_runs": 4734,
     "users": {
       "Mike": {
         "matched": 2221,
@@ -127423,11 +127406,11 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 931,
-    "Lifting \ud83d\ude9a": 665,
+    "Lifting \ud83d\ude9a": 651,
     "Producer \ud83e\udd66": 348,
     "Flex \ud83e\udd6b": 171,
     "Produce Processing \ud83e\udd6c": 164,
-    "Dairy Lifting \ud83e\udd5b": 117,
+    "Dairy Lifting \ud83e\udd5b": 116,
     "Cleaning \ud83c\udfdd": 115,
     "Inventory \ud83d\udccb": 77,
     "Meat Processing & Lifting \ud83c\udf56": 72,
@@ -127439,8 +127422,8 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "Bins \ud83e\uddfc": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Soup Cleaning": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Repairs \ud83d\udee0": 3,
     "Office \ud83d\udcd7": 1
