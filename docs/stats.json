@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-20T22:40:30.473901+00:00",
-      "total": 3270,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-20T22:50:31.306725+00:00",
       "total": 3270,
       "users": {
@@ -127568,10 +127551,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-01T22:50:32.403817+00:00",
+      "total": 2822,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4826,
+    "total_runs": 4827,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127629,9 +127629,9 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "Soup Cleaning": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Bins \ud83e\uddfc": 3,
     "Vitamins \ud83c\udf6c": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Cart Return \ud83d\uded2": 1,
     "Office \ud83d\udcd7": 1
   },
