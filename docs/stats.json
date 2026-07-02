@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T00:20:34.118292+00:00",
-      "total": 3263,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-21T00:30:36.119956+00:00",
       "total": 3262,
       "users": {
@@ -127631,10 +127614,35 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-02T00:30:33.890936+00:00",
+      "total": 2817,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153678",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4836,
+    "total_runs": 4837,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127704,9 +127712,9 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Cart Return \ud83d\uded2": 1,
     "Office \ud83d\udcd7": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Bins \ud83e\uddfc": 1
   },
   "user_config": [
