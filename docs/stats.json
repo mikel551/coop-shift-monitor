@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T23:00:31.583379+00:00",
-      "total": 3266,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-21T23:10:35.980869+00:00",
       "total": 3262,
       "users": {
@@ -127711,10 +127694,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T23:00:41.743985+00:00",
+      "total": 2792,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4932,
+    "total_runs": 4933,
     "users": {
       "Mike": {
         "matched": 2260,
@@ -127726,17 +127726,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1163117",
-        "date": "2026-07-19",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127763,9 +127753,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 906,
+    "Stocking \ud83d\udce6": 907,
     "Lifting \ud83d\ude9a": 600,
-    "Producer \ud83e\udd66": 335,
+    "Producer \ud83e\udd66": 334,
     "Flex \ud83e\udd6b": 178,
     "Produce Processing \ud83e\udd6c": 168,
     "Dairy Lifting \ud83e\udd5b": 119,
@@ -127785,10 +127775,9 @@
     "Office \ud83d\udcd7": 4,
     "Cart Return \ud83d\uded2": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
-    "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1,
     "Sort & Collate \ud83d\uddc2": 1
   },
