@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T15:40:35.356968+00:00",
-      "total": 3335,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1137828",
-              "date": "2026-06-08",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-21T15:50:32.789674+00:00",
       "total": 3332,
       "users": {
@@ -127681,17 +127656,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T15:50:38.399108+00:00",
+      "total": 2879,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4888,
+    "total_runs": 4889,
     "users": {
       "Mike": {
         "matched": 2259,
         "notified": 199
       },
       "Nancy": {
-        "matched": 6730,
+        "matched": 6731,
         "notified": 874
       }
     }
@@ -127723,16 +127715,16 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 936,
+    "Stocking \ud83d\udce6": 935,
     "Lifting \ud83d\ude9a": 605,
     "Producer \ud83e\udd66": 346,
-    "Flex \ud83e\udd6b": 188,
+    "Flex \ud83e\udd6b": 187,
     "Produce Processing \ud83e\udd6c": 169,
     "Dairy Lifting \ud83e\udd5b": 121,
     "Cleaning \ud83c\udfdd": 113,
     "Meat Processing & Lifting \ud83c\udf56": 78,
     "Inventory \ud83d\udccb": 71,
-    "General Meeting \ud83d\uddf3\ufe0f": 61,
+    "General Meeting \ud83d\uddf3\ufe0f": 60,
     "Bathroom \ud83d\udebd": 44,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
     "Case Maintenance \ud83e\uddfd": 36,
