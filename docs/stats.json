@@ -1,46 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T09:00:35.574049+00:00",
-      "total": 3443,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1134008",
-              "date": "2026-06-02",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1144176",
-              "date": "2026-06-18",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1132638",
-              "date": "2026-05-31",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-21T10:00:42.884272+00:00",
       "total": 3434,
       "users": {
@@ -127735,23 +127695,77 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T09:00:43.169358+00:00",
+      "total": 2996,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1161625",
+              "date": "2026-07-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1170387",
+              "date": "2026-07-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1155179",
+              "date": "2026-07-06",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167735",
+              "date": "2026-07-26",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4858,
+    "total_runs": 4859,
     "users": {
       "Mike": {
-        "matched": 2242,
+        "matched": 2244,
         "notified": 199
       },
       "Nancy": {
-        "matched": 6714,
+        "matched": 6715,
         "notified": 871
       }
     }
   },
   "available_shifts": {
     "Nancy": [
+      {
+        "id": "1155179",
+        "date": "2026-07-06",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      },
       {
         "id": "1167735",
         "date": "2026-07-26",
@@ -127803,7 +127817,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 946,
+    "Stocking \ud83d\udce6": 949,
     "Lifting \ud83d\ude9a": 623,
     "Producer \ud83e\udd66": 353,
     "Flex \ud83e\udd6b": 192,
@@ -127814,17 +127828,17 @@
     "Inventory \ud83d\udccb": 74,
     "General Meeting \ud83d\uddf3\ufe0f": 64,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 48,
-    "Bathroom \ud83d\udebd": 43,
+    "Bathroom \ud83d\udebd": 44,
     "Case Maintenance \ud83e\uddfd": 37,
-    "Checkout \ud83d\udcb3": 29,
-    "Soup: Food Services \ud83c\udf72": 20,
-    "Cart Return \ud83d\uded2": 11,
+    "Checkout \ud83d\udcb3": 35,
+    "Soup: Food Services \ud83c\udf72": 21,
+    "Cart Return \ud83d\uded2": 14,
+    "Office \ud83d\udcd7": 11,
     "Bread Stocking \ud83c\udf5e": 11,
-    "Office \ud83d\udcd7": 10,
     "Repairs \ud83d\udee0": 6,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
