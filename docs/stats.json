@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T02:50:37.754715+00:00",
-      "total": 3253,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-21T03:00:35.051421+00:00",
       "total": 3253,
       "users": {
@@ -127743,10 +127726,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T03:00:37.923906+00:00",
+      "total": 2806,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153678",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4851,
+    "total_runs": 4852,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127795,10 +127803,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 914,
+    "Stocking \ud83d\udce6": 913,
     "Lifting \ud83d\ude9a": 600,
-    "Producer \ud83e\udd66": 346,
-    "Flex \ud83e\udd6b": 173,
+    "Producer \ud83e\udd66": 345,
+    "Flex \ud83e\udd6b": 172,
     "Produce Processing \ud83e\udd6c": 165,
     "Dairy Lifting \ud83e\udd5b": 115,
     "Cleaning \ud83c\udfdd": 111,
@@ -127813,10 +127821,11 @@
     "Repairs \ud83d\udee0": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 5,
-    "Cart Return \ud83d\uded2": 4,
     "Soup Cleaning": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1,
     "Bins \ud83e\uddfc": 1
   },
