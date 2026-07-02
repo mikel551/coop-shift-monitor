@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T22:40:37.735031+00:00",
-      "total": 3267,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-21T22:50:31.269541+00:00",
-      "total": 3268,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-21T23:00:31.583379+00:00",
       "total": 3266,
       "users": {
@@ -127720,10 +127686,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T22:50:39.897862+00:00",
+      "total": 2794,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1163117",
+              "date": "2026-07-19",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4930,
+    "total_runs": 4932,
     "users": {
       "Mike": {
         "matched": 2260,
@@ -127772,7 +127763,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 907,
+    "Stocking \ud83d\udce6": 906,
     "Lifting \ud83d\ude9a": 600,
     "Producer \ud83e\udd66": 335,
     "Flex \ud83e\udd6b": 178,
@@ -127797,6 +127788,7 @@
     "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Vouchers \ud83e\uddfe": 1,
     "Sort & Collate \ud83d\uddc2": 1
   },
