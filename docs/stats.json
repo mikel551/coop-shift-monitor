@@ -127695,6 +127695,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T22:40:33.270029+00:00",
+      "total": 2794,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1163117",
+              "date": "2026-07-19",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
