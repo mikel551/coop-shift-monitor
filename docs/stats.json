@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T14:50:30.956329+00:00",
-      "total": 3350,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1137828",
-              "date": "2026-06-08",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-21T15:00:37.343413+00:00",
       "total": 3352,
       "users": {
@@ -127704,18 +127679,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T14:50:44.202691+00:00",
+      "total": 2897,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4883,
+    "total_runs": 4884,
     "users": {
       "Mike": {
         "matched": 2259,
         "notified": 199
       },
       "Nancy": {
-        "matched": 6725,
-        "notified": 873
+        "matched": 6726,
+        "notified": 874
       }
     }
   },
@@ -127746,8 +127738,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 937,
-    "Lifting \ud83d\ude9a": 607,
+    "Stocking \ud83d\udce6": 936,
+    "Lifting \ud83d\ude9a": 606,
     "Producer \ud83e\udd66": 346,
     "Flex \ud83e\udd6b": 189,
     "Produce Processing \ud83e\udd6c": 170,
@@ -127756,8 +127748,8 @@
     "Meat Processing & Lifting \ud83c\udf56": 78,
     "Inventory \ud83d\udccb": 74,
     "General Meeting \ud83d\uddf3\ufe0f": 63,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Bathroom \ud83d\udebd": 44,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Food Services \ud83c\udf72": 17,
     "Office \ud83d\udcd7": 13,
@@ -127769,8 +127761,8 @@
     "Soup Cleaning": 4,
     "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Checkout \ud83d\udcb3": 3,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 2,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "Vouchers \ud83e\uddfe": 1,
     "Sort & Collate \ud83d\uddc2": 1
