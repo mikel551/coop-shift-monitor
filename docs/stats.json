@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-21T02:20:36.841040+00:00",
-      "total": 3255,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
-      "ts": "2026-05-21T02:30:29.956923+00:00",
-      "total": 3253,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-21T02:40:35.645400+00:00",
       "total": 3254,
       "users": {
@@ -127719,10 +127685,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-02T02:30:37.487570+00:00",
+      "total": 2809,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1153678",
+              "date": "2026-07-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4848,
+    "total_runs": 4850,
     "users": {
       "Mike": {
         "matched": 2234,
@@ -127772,7 +127763,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 916,
-    "Lifting \ud83d\ude9a": 599,
+    "Lifting \ud83d\ude9a": 600,
     "Producer \ud83e\udd66": 346,
     "Flex \ud83e\udd6b": 173,
     "Produce Processing \ud83e\udd6c": 165,
@@ -127792,7 +127783,7 @@
     "Soup Cleaning": 4,
     "Cart Return \ud83d\uded2": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Office \ud83d\udcd7": 1,
     "Bins \ud83e\uddfc": 1
   },
