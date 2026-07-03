@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-22T16:50:31.952952+00:00",
-      "total": 3320,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-22T17:00:38.733686+00:00",
-      "total": 3317,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-22T17:10:31.795846+00:00",
       "total": 3315,
       "users": {
@@ -128098,10 +128064,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-03T17:00:44.217278+00:00",
+      "total": 2858,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 4999,
+    "total_runs": 5001,
     "users": {
       "Mike": {
         "matched": 2288,
@@ -128113,17 +128096,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1154692",
-        "date": "2026-07-05",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128151,14 +128124,14 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 926,
-    "Lifting \ud83d\ude9a": 607,
+    "Lifting \ud83d\ude9a": 606,
     "Producer \ud83e\udd66": 332,
     "Flex \ud83e\udd6b": 190,
     "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 122,
     "Cleaning \ud83c\udfdd": 110,
     "Meat Processing & Lifting \ud83c\udf56": 80,
-    "Inventory \ud83d\udccb": 69,
+    "Inventory \ud83d\udccb": 68,
     "General Meeting \ud83d\uddf3\ufe0f": 51,
     "Bathroom \ud83d\udebd": 43,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
