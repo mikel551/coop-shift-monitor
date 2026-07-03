@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-22T13:10:36.843530+00:00",
-      "total": 3384,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1126768",
-              "date": "2026-05-24",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-22T13:20:31.947143+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-22T13:30:35.369988+00:00",
       "total": 3379,
       "users": {
@@ -127960,18 +127918,50 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-03T13:20:40.049687+00:00",
+      "total": 2899,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1162239",
+              "date": "2026-07-17",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1171001",
+              "date": "2026-07-31",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4977,
+    "total_runs": 4979,
     "users": {
       "Mike": {
         "matched": 2288,
         "notified": 202
       },
       "Nancy": {
-        "matched": 6735,
-        "notified": 876
+        "matched": 6736,
+        "notified": 877
       }
     }
   },
@@ -128022,7 +128012,7 @@
     "Stocking \ud83d\udce6": 934,
     "Lifting \ud83d\ude9a": 611,
     "Producer \ud83e\udd66": 335,
-    "Flex \ud83e\udd6b": 195,
+    "Flex \ud83e\udd6b": 196,
     "Produce Processing \ud83e\udd6c": 176,
     "Dairy Lifting \ud83e\udd5b": 122,
     "Cleaning \ud83c\udfdd": 110,
@@ -128036,7 +128026,7 @@
     "Bread Stocking \ud83c\udf5e": 11,
     "Cart Return \ud83d\uded2": 9,
     "Office \ud83d\udcd7": 9,
-    "Checkout \ud83d\udcb3": 9,
+    "Checkout \ud83d\udcb3": 7,
     "Bulk Lifting \ud83e\uded8": 6,
     "Repairs \ud83d\udee0": 6,
     "Inventory: Produce \ud83c\udf40": 5,
