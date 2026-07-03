@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-22T14:00:37.183854+00:00",
-      "total": 3370,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-22T14:10:37.088013+00:00",
       "total": 3367,
       "users": {
@@ -128027,10 +128010,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-03T14:10:40.383303+00:00",
+      "total": 2890,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1162239",
+              "date": "2026-07-17",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1171001",
+              "date": "2026-07-31",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 4982,
+    "total_runs": 4983,
     "users": {
       "Mike": {
         "matched": 2288,
@@ -128086,10 +128101,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 932,
+    "Stocking \ud83d\udce6": 931,
     "Lifting \ud83d\ude9a": 611,
-    "Producer \ud83e\udd66": 335,
-    "Flex \ud83e\udd6b": 193,
+    "Producer \ud83e\udd66": 336,
+    "Flex \ud83e\udd6b": 194,
     "Produce Processing \ud83e\udd6c": 176,
     "Dairy Lifting \ud83e\udd5b": 122,
     "Cleaning \ud83c\udfdd": 110,
@@ -128103,13 +128118,13 @@
     "Bread Stocking \ud83c\udf5e": 11,
     "Cart Return \ud83d\uded2": 9,
     "Office \ud83d\udcd7": 9,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
     "Bulk Lifting \ud83e\uded8": 6,
     "Repairs \ud83d\udee0": 6,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Soup Cleaning": 4,
-    "Checkout \ud83d\udcb3": 4,
     "Vitamins \ud83c\udf6c": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Bins \ud83e\uddfc": 2,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "Vouchers \ud83e\uddfe": 1,
