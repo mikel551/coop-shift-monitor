@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-22T22:50:32.404512+00:00",
-      "total": 3267,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-22T23:00:42.503371+00:00",
       "total": 3265,
       "users": {
@@ -128066,10 +128049,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-03T23:00:41.596988+00:00",
+      "total": 2820,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5035,
+    "total_runs": 5036,
     "users": {
       "Mike": {
         "matched": 2295,
@@ -128081,17 +128081,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1154270",
-        "date": "2026-07-05",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128139,9 +128129,10 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Cart Return \ud83d\uded2": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Bins \ud83e\uddfc": 2,
+    "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
