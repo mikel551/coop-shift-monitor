@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-23T01:50:28.918235+00:00",
-      "total": 3227,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-23T02:00:32.478837+00:00",
-      "total": 3225,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-23T02:10:34.196286+00:00",
       "total": 3225,
       "users": {
@@ -128074,10 +128040,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-04T02:00:40.199250+00:00",
+      "total": 2796,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154742",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5053,
+    "total_runs": 5055,
     "users": {
       "Mike": {
         "matched": 2295,
@@ -128126,7 +128117,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 903,
+    "Stocking \ud83d\udce6": 902,
     "Lifting \ud83d\ude9a": 599,
     "Producer \ud83e\udd66": 329,
     "Flex \ud83e\udd6b": 174,
@@ -128147,10 +128138,9 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Soup Cleaning": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
-    "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
