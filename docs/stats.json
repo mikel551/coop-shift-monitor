@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-23T15:40:27.843824+00:00",
-      "total": 3342,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-23T15:50:31.481249+00:00",
       "total": 3343,
       "users": {
@@ -128385,10 +128368,49 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-04T15:40:40.288321+00:00",
+      "total": 2906,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154270",
+              "date": "2026-07-05",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1162855",
+              "date": "2026-07-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1171615",
+              "date": "2026-08-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5096,
+    "total_runs": 5097,
     "users": {
       "Mike": {
         "matched": 2340,
@@ -128451,10 +128473,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 942,
+    "Stocking \ud83d\udce6": 941,
     "Lifting \ud83d\ude9a": 620,
-    "Producer \ud83e\udd66": 336,
-    "Flex \ud83e\udd6b": 190,
+    "Producer \ud83e\udd66": 337,
+    "Flex \ud83e\udd6b": 189,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 125,
     "Cleaning \ud83c\udfdd": 113,
