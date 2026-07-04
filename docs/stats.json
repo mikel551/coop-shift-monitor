@@ -128049,6 +128049,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-04T01:50:32.401283+00:00",
+      "total": 2799,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1154742",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -128064,7 +128089,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1154742",
+        "date": "2026-07-05",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128092,9 +128127,9 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 903,
-    "Lifting \ud83d\ude9a": 600,
+    "Lifting \ud83d\ude9a": 599,
     "Producer \ud83e\udd66": 329,
-    "Flex \ud83e\udd6b": 175,
+    "Flex \ud83e\udd6b": 174,
     "Produce Processing \ud83e\udd6c": 172,
     "Dairy Lifting \ud83e\udd5b": 121,
     "Cleaning \ud83c\udfdd": 109,
@@ -128111,11 +128146,11 @@
     "Repairs \ud83d\udee0": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Soup Cleaning": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
     "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
