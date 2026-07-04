@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-23T15:30:32.703589+00:00",
-      "total": 3344,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-23T15:40:27.843824+00:00",
       "total": 3342,
       "users": {
@@ -128363,10 +128346,49 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-04T15:30:47.613269+00:00",
+      "total": 2907,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1154270",
+              "date": "2026-07-05",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1162855",
+              "date": "2026-07-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1171615",
+              "date": "2026-08-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5095,
+    "total_runs": 5096,
     "users": {
       "Mike": {
         "matched": 2340,
@@ -128380,6 +128402,13 @@
   },
   "available_shifts": {
     "Mike": [
+      {
+        "id": "1154270",
+        "date": "2026-07-05",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Cart Return \ud83d\uded2"
+      },
       {
         "id": "1162855",
         "date": "2026-07-18",
@@ -128440,13 +128469,12 @@
     "Office \ud83d\udcd7": 9,
     "Bulk Lifting \ud83e\uded8": 6,
     "Repairs \ud83d\udee0": 6,
+    "Cart Return \ud83d\uded2": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 4,
-    "Cart Return \ud83d\uded2": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
