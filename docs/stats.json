@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-23T13:50:37.426363+00:00",
-      "total": 3364,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-23T14:00:32.072006+00:00",
-      "total": 3361,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-23T14:10:33.216746+00:00",
       "total": 3360,
       "users": {
@@ -128197,10 +128163,49 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-04T14:00:41.838307+00:00",
+      "total": 2927,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1154696",
+              "date": "2026-07-05",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1162855",
+              "date": "2026-07-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1171615",
+              "date": "2026-08-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5085,
+    "total_runs": 5087,
     "users": {
       "Mike": {
         "matched": 2340,
@@ -128263,7 +128268,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 950,
+    "Stocking \ud83d\udce6": 949,
     "Lifting \ud83d\ude9a": 620,
     "Producer \ud83e\udd66": 339,
     "Flex \ud83e\udd6b": 192,
