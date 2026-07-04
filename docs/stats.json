@@ -128554,6 +128554,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-04T18:20:55.530605+00:00",
+      "total": 2891,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -128569,17 +128586,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1171615",
-        "date": "2026-08-01",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128606,7 +128613,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 931,
+    "Stocking \ud83d\udce6": 932,
     "Lifting \ud83d\ude9a": 618,
     "Producer \ud83e\udd66": 340,
     "Flex \ud83e\udd6b": 187,
@@ -128627,9 +128634,10 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Cart Return \ud83d\uded2": 2,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
