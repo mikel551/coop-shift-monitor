@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-23T14:40:33.920792+00:00",
-      "total": 3357,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-23T14:50:37.708186+00:00",
       "total": 3356,
       "users": {
@@ -128260,10 +128243,49 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-04T14:40:43.859257+00:00",
+      "total": 2919,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1158437",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1162855",
+              "date": "2026-07-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1171615",
+              "date": "2026-08-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5090,
+    "total_runs": 5091,
     "users": {
       "Mike": {
         "matched": 2340,
@@ -128326,10 +128348,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 948,
+    "Stocking \ud83d\udce6": 944,
     "Lifting \ud83d\ude9a": 620,
     "Producer \ud83e\udd66": 338,
-    "Flex \ud83e\udd6b": 191,
+    "Flex \ud83e\udd6b": 190,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 125,
     "Cleaning \ud83c\udfdd": 113,
@@ -128337,7 +128359,7 @@
     "Inventory \ud83d\udccb": 68,
     "General Meeting \ud83d\uddf3\ufe0f": 49,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 46,
-    "Bathroom \ud83d\udebd": 42,
+    "Bathroom \ud83d\udebd": 41,
     "Case Maintenance \ud83e\uddfd": 34,
     "Soup: Food Services \ud83c\udf72": 27,
     "Bread Stocking \ud83c\udf5e": 14,
