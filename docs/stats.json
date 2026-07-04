@@ -128202,6 +128202,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-04T14:10:35.358294+00:00",
+      "total": 2926,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1158437",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1162855",
+              "date": "2026-07-18",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1171615",
+              "date": "2026-08-01",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -128220,8 +128259,8 @@
   "available_shifts": {
     "Mike": [
       {
-        "id": "1154696",
-        "date": "2026-07-05",
+        "id": "1158437",
+        "date": "2026-07-11",
         "start": "18:00",
         "end": "18:00",
         "type": "Cart Return \ud83d\uded2"
@@ -128268,9 +128307,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 949,
+    "Stocking \ud83d\udce6": 948,
     "Lifting \ud83d\ude9a": 620,
-    "Producer \ud83e\udd66": 339,
+    "Producer \ud83e\udd66": 338,
     "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 177,
     "Dairy Lifting \ud83e\udd5b": 125,
@@ -128291,7 +128330,7 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
   },
