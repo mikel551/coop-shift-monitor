@@ -127380,6 +127380,60 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-05T14:10:40.610013+00:00",
+      "total": 2941,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1163417",
+              "date": "2026-07-19",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1172177",
+              "date": "2026-08-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1155505",
+              "date": "2026-07-06",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167627",
+              "date": "2026-07-26",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167853",
+              "date": "2026-07-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 3
     }
   ],
   "previous_period": {
@@ -127398,17 +127452,10 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1155289",
+        "id": "1155505",
         "date": "2026-07-06",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1163125",
-        "date": "2026-07-19",
-        "start": "10:30",
-        "end": "10:30",
+        "start": "18:00",
+        "end": "18:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -127423,13 +127470,6 @@
         "date": "2026-07-26",
         "start": "18:00",
         "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1171885",
-        "date": "2026-08-02",
-        "start": "10:30",
-        "end": "10:30",
         "type": "Checkout \ud83d\udcb3"
       }
     ],
@@ -127477,13 +127517,13 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 971,
-    "Lifting \ud83d\ude9a": 618,
+    "Lifting \ud83d\ude9a": 615,
     "Producer \ud83e\udd66": 345,
-    "Flex \ud83e\udd6b": 191,
+    "Flex \ud83e\udd6b": 192,
     "Produce Processing \ud83e\udd6c": 174,
     "Dairy Lifting \ud83e\udd5b": 122,
     "Cleaning \ud83c\udfdd": 115,
-    "Meat Processing & Lifting \ud83c\udf56": 81,
+    "Meat Processing & Lifting \ud83c\udf56": 80,
     "Inventory \ud83d\udccb": 65,
     "General Meeting \ud83d\uddf3\ufe0f": 42,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 40,
@@ -127494,11 +127534,11 @@
     "Office \ud83d\udcd7": 13,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 13,
     "Cart Return \ud83d\uded2": 10,
-    "Checkout \ud83d\udcb3": 8,
     "Repairs \ud83d\udee0": 7,
     "Bulk Lifting \ud83e\uded8": 6,
     "Vitamins \ud83c\udf6c": 5,
     "Inventory: Produce \ud83c\udf40": 5,
+    "Checkout \ud83d\udcb3": 5,
     "Soup Cleaning": 4,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
