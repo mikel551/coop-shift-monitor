@@ -2,8 +2,9 @@
   "notified": {
     "Nancy": [
       "1167625",
-      "1171885",
       "1167853",
+      "1155407",
+      "1171885",
       "1167627"
     ],
     "Mike": [
@@ -12,67 +13,6 @@
     ]
   },
   "stats": [
-    {
-      "ts": "2026-05-24T13:30:35.896915+00:00",
-      "total": 3330,
-      "users": {
-        "Mike": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1137168",
-              "date": "2026-06-07",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1141174",
-              "date": "2026-06-14",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1146038",
-              "date": "2026-06-21",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1141676",
-              "date": "2026-06-14",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141678",
-              "date": "2026-06-14",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1145732",
-              "date": "2026-06-21",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-05-24T13:40:33.132549+00:00",
       "total": 3324,
@@ -127320,17 +127260,85 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-05T13:30:47.998773+00:00",
+      "total": 2954,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1163417",
+              "date": "2026-07-19",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1172177",
+              "date": "2026-08-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 5,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1155407",
+              "date": "2026-07-06",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167625",
+              "date": "2026-07-26",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167627",
+              "date": "2026-07-26",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1167853",
+              "date": "2026-07-26",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1171885",
+              "date": "2026-08-02",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5186,
+    "total_runs": 5187,
     "users": {
       "Mike": {
-        "matched": 2424,
+        "matched": 2427,
         "notified": 213
       },
       "Nancy": {
-        "matched": 7113,
+        "matched": 7116,
         "notified": 916
       }
     }
