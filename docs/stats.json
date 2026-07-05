@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-24T00:50:29.261880+00:00",
-      "total": 3233,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-24T01:00:30.530040+00:00",
       "total": 3235,
       "users": {
@@ -128618,10 +128601,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-05T00:50:44.990607+00:00",
+      "total": 2862,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5150,
+    "total_runs": 5151,
     "users": {
       "Mike": {
         "matched": 2341,
@@ -128633,17 +128633,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1163347",
-        "date": "2026-07-19",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128693,7 +128683,6 @@
     "Soup Cleaning": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
