@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-24T16:50:33.265525+00:00",
-      "total": 3282,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-24T17:00:40.662363+00:00",
       "total": 3279,
       "users": {
@@ -127652,10 +127635,50 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-05T16:50:48.903951+00:00",
+      "total": 2896,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1163417",
+              "date": "2026-07-19",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1172177",
+              "date": "2026-08-02",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1155183",
+              "date": "2026-07-06",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5206,
+    "total_runs": 5207,
     "users": {
       "Mike": {
         "matched": 2450,
@@ -127668,6 +127691,15 @@
     }
   },
   "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1155183",
+        "date": "2026-07-06",
+        "start": "10:30",
+        "end": "10:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ],
     "Mike": [
       {
         "id": "1163417",
@@ -127697,7 +127729,7 @@
       "scheduled_shifts": [
         {
           "date": "Monday July 6",
-          "start_time": "10:30am",
+          "start_time": "8:00am",
           "description": "Checkout \ud83d\udcb3"
         },
         {
@@ -127735,6 +127767,7 @@
     "Vitamins \ud83c\udf6c": 4,
     "Soup Cleaning": 4,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
