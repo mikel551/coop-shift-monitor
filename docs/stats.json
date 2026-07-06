@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-25T18:00:34.242493+00:00",
-      "total": 3334,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1146732",
-              "date": "2026-06-22",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-25T18:10:28.936263+00:00",
       "total": 3326,
       "users": {
@@ -127963,17 +127938,34 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-06T18:00:51.902757+00:00",
+      "total": 2816,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5317,
+    "total_runs": 5318,
     "users": {
       "Mike": {
         "matched": 2500,
         "notified": 219
       },
       "Nancy": {
-        "matched": 7469,
+        "matched": 7470,
         "notified": 961
       }
     }
@@ -128000,18 +127992,18 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 947,
+    "Stocking \ud83d\udce6": 946,
     "Lifting \ud83d\ude9a": 592,
-    "Producer \ud83e\udd66": 335,
+    "Producer \ud83e\udd66": 334,
     "Flex \ud83e\udd6b": 180,
     "Produce Processing \ud83e\udd6c": 158,
     "Dairy Lifting \ud83e\udd5b": 120,
     "Cleaning \ud83c\udfdd": 115,
-    "Meat Processing & Lifting \ud83c\udf56": 77,
+    "Meat Processing & Lifting \ud83c\udf56": 78,
     "Inventory \ud83d\udccb": 76,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 42,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Bathroom \ud83d\udebd": 34,
+    "Bathroom \ud83d\udebd": 33,
     "General Meeting \ud83d\uddf3\ufe0f": 28,
     "Soup: Food Services \ud83c\udf72": 20,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 14,
