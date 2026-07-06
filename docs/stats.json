@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-25T21:30:33.436268+00:00",
-      "total": 3295,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1128838",
-              "date": "2026-05-25",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1141558",
-              "date": "2026-06-14",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-25T21:40:28.049975+00:00",
       "total": 3292,
       "users": {
@@ -127947,18 +127915,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-06T21:30:55.193280+00:00",
+      "total": 2767,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5338,
+    "total_runs": 5339,
     "users": {
       "Mike": {
         "matched": 2500,
         "notified": 219
       },
       "Nancy": {
-        "matched": 7473,
-        "notified": 962
+        "matched": 7475,
+        "notified": 963
       }
     }
   },
@@ -127987,7 +127972,7 @@
     "Stocking \ud83d\udce6": 926,
     "Lifting \ud83d\ude9a": 587,
     "Producer \ud83e\udd66": 328,
-    "Flex \ud83e\udd6b": 174,
+    "Flex \ud83e\udd6b": 173,
     "Produce Processing \ud83e\udd6c": 158,
     "Dairy Lifting \ud83e\udd5b": 116,
     "Cleaning \ud83c\udfdd": 114,
