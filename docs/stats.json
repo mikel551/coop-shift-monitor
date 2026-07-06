@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-25T01:40:30.535129+00:00",
-      "total": 3231,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-25T01:50:29.669109+00:00",
       "total": 3229,
       "users": {
@@ -128153,10 +128136,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-06T01:40:42.769976+00:00",
+      "total": 2809,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168481",
+              "date": "2026-07-27",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5259,
+    "total_runs": 5260,
     "users": {
       "Mike": {
         "matched": 2463,
@@ -128215,8 +128223,8 @@
     "Meat Processing & Lifting \ud83c\udf56": 79,
     "Inventory \ud83d\udccb": 63,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
-    "General Meeting \ud83d\uddf3\ufe0f": 36,
     "Bathroom \ud83d\udebd": 35,
+    "General Meeting \ud83d\uddf3\ufe0f": 35,
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Food Services \ud83c\udf72": 15,
     "Bread Stocking \ud83c\udf5e": 13,
