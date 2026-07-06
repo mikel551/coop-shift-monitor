@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-25T02:40:31.538957+00:00",
-      "total": 3220,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-25T02:50:30.406888+00:00",
       "total": 3220,
       "users": {
@@ -128201,10 +128184,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-06T02:40:46.251520+00:00",
+      "total": 2802,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168481",
+              "date": "2026-07-27",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5265,
+    "total_runs": 5266,
     "users": {
       "Mike": {
         "matched": 2463,
@@ -128253,9 +128261,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 935,
-    "Lifting \ud83d\ude9a": 601,
-    "Producer \ud83e\udd66": 337,
+    "Stocking \ud83d\udce6": 936,
+    "Lifting \ud83d\ude9a": 600,
+    "Producer \ud83e\udd66": 336,
     "Flex \ud83e\udd6b": 175,
     "Produce Processing \ud83e\udd6c": 168,
     "Dairy Lifting \ud83e\udd5b": 123,
@@ -128263,8 +128271,8 @@
     "Meat Processing & Lifting \ud83c\udf56": 79,
     "Inventory \ud83d\udccb": 63,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
-    "Bathroom \ud83d\udebd": 35,
     "General Meeting \ud83d\uddf3\ufe0f": 35,
+    "Bathroom \ud83d\udebd": 34,
     "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Food Services \ud83c\udf72": 15,
     "Bread Stocking \ud83c\udf5e": 14,
@@ -128275,10 +128283,10 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 2,
-    "Office \ud83d\udcd7": 2,
     "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1,
-    "Vouchers \ud83e\uddfe": 1
+    "Vouchers \ud83e\uddfe": 1,
+    "Office \ud83d\udcd7": 1
   },
   "user_config": [
     {
