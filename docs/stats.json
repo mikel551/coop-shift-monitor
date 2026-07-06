@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-25T00:00:36.525600+00:00",
-      "total": 3250,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1129446",
-              "date": "2026-05-26",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1128360",
-              "date": "2026-05-25",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-25T00:10:26.333497+00:00",
       "total": 3246,
       "users": {
@@ -128169,18 +128136,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-06T00:00:55.864900+00:00",
+      "total": 2837,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5249,
+    "total_runs": 5250,
     "users": {
       "Mike": {
-        "matched": 2461,
+        "matched": 2462,
         "notified": 216
       },
       "Nancy": {
-        "matched": 7130,
-        "notified": 925
+        "matched": 7131,
+        "notified": 926
       }
     }
   },
@@ -128211,8 +128195,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 943,
-    "Lifting \ud83d\ude9a": 605,
+    "Stocking \ud83d\udce6": 941,
+    "Lifting \ud83d\ude9a": 604,
     "Producer \ud83e\udd66": 339,
     "Flex \ud83e\udd6b": 184,
     "Produce Processing \ud83e\udd6c": 169,
@@ -128226,7 +128210,7 @@
     "Case Maintenance \ud83e\uddfd": 34,
     "Soup: Food Services \ud83c\udf72": 18,
     "Bread Stocking \ud83c\udf5e": 14,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 8,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
     "Bulk Lifting \ud83e\uded8": 6,
     "Repairs \ud83d\udee0": 6,
     "Office \ud83d\udcd7": 5,
