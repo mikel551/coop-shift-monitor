@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-25T14:20:29.949689+00:00",
-      "total": 3371,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-25T14:30:31.783745+00:00",
       "total": 3368,
       "users": {
@@ -127955,10 +127938,35 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-06T14:21:16.488445+00:00",
+      "total": 2884,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1179733",
+              "date": "2026-08-16",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5295,
+    "total_runs": 5296,
     "users": {
       "Mike": {
         "matched": 2500,
@@ -128007,16 +128015,16 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 962,
-    "Lifting \ud83d\ude9a": 597,
+    "Stocking \ud83d\udce6": 961,
+    "Lifting \ud83d\ude9a": 599,
     "Producer \ud83e\udd66": 340,
-    "Flex \ud83e\udd6b": 189,
+    "Flex \ud83e\udd6b": 188,
     "Produce Processing \ud83e\udd6c": 169,
     "Dairy Lifting \ud83e\udd5b": 120,
-    "Cleaning \ud83c\udfdd": 116,
+    "Cleaning \ud83c\udfdd": 115,
     "Meat Processing & Lifting \ud83c\udf56": 78,
     "Inventory \ud83d\udccb": 76,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 45,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
     "Case Maintenance \ud83e\uddfd": 36,
     "Bathroom \ud83d\udebd": 34,
     "General Meeting \ud83d\uddf3\ufe0f": 34,
@@ -128030,6 +128038,7 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1,
     "Office \ud83d\udcd7": 1
   },
