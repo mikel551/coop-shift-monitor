@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-25T20:50:30.817449+00:00",
-      "total": 3292,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-25T21:00:36.166365+00:00",
       "total": 3292,
       "users": {
@@ -127971,10 +127954,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-06T20:50:44.961362+00:00",
+      "total": 2778,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5334,
+    "total_runs": 5335,
     "users": {
       "Mike": {
         "matched": 2500,
@@ -127986,17 +127986,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1184173",
-        "date": "2026-08-10",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128018,13 +128008,13 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 931,
-    "Lifting \ud83d\ude9a": 590,
+    "Stocking \ud83d\udce6": 930,
+    "Lifting \ud83d\ude9a": 589,
     "Producer \ud83e\udd66": 329,
-    "Flex \ud83e\udd6b": 176,
+    "Flex \ud83e\udd6b": 177,
     "Produce Processing \ud83e\udd6c": 158,
     "Dairy Lifting \ud83e\udd5b": 117,
-    "Cleaning \ud83c\udfdd": 115,
+    "Cleaning \ud83c\udfdd": 114,
     "Meat Processing & Lifting \ud83c\udf56": 78,
     "Inventory \ud83d\udccb": 77,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
@@ -128040,7 +128030,6 @@
     "Soup Cleaning": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Office \ud83d\udcd7": 1
   },
   "user_config": [
