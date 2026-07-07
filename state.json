@@ -1,7 +1,9 @@
 {
   "notified": {
     "Nancy": [],
-    "Mike": []
+    "Mike": [
+      "1156629"
+    ]
   },
   "stats": [
     {
@@ -128206,6 +128208,31 @@
           "matched": 0,
           "notified": 0,
           "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T12:40:49.333379+00:00",
+      "total": 2835,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1156629",
+              "date": "2026-07-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
         },
         "Nancy": {
           "matched": 0,
