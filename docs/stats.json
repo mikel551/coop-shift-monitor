@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-26T02:10:34.841494+00:00",
-      "total": 3227,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-26T02:20:28.649328+00:00",
       "total": 3229,
       "users": {
@@ -127916,10 +127899,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T02:10:47.536303+00:00",
+      "total": 2697,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1156055",
+              "date": "2026-07-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5366,
+    "total_runs": 5367,
     "users": {
       "Mike": {
         "matched": 2500,
@@ -127963,10 +127971,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 910,
-    "Lifting \ud83d\ude9a": 583,
+    "Stocking \ud83d\udce6": 908,
+    "Lifting \ud83d\ude9a": 582,
     "Producer \ud83e\udd66": 320,
-    "Flex \ud83e\udd6b": 166,
+    "Flex \ud83e\udd6b": 165,
     "Produce Processing \ud83e\udd6c": 156,
     "Dairy Lifting \ud83e\udd5b": 114,
     "Cleaning \ud83c\udfdd": 110,
@@ -127977,8 +127985,8 @@
     "Bathroom \ud83d\udebd": 32,
     "General Meeting \ud83d\uddf3\ufe0f": 23,
     "Soup: Food Services \ud83c\udf72": 14,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 10,
     "Bread Stocking \ud83c\udf5e": 10,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
     "Repairs \ud83d\udee0": 7,
     "Bulk Lifting \ud83e\uded8": 6,
     "Inventory: Produce \ud83c\udf40": 5,
