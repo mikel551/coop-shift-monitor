@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-26T20:50:32.637599+00:00",
-      "total": 3182,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-26T21:00:31.739927+00:00",
       "total": 3178,
       "users": {
@@ -128338,10 +128321,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T20:50:48.670625+00:00",
+      "total": 2713,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5427,
+    "total_runs": 5428,
     "users": {
       "Mike": {
         "matched": 2507,
@@ -128375,7 +128375,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 930,
+    "Stocking \ud83d\udce6": 928,
     "Lifting \ud83d\ude9a": 587,
     "Producer \ud83e\udd66": 331,
     "Flex \ud83e\udd6b": 163,
@@ -128385,18 +128385,19 @@
     "Inventory \ud83d\udccb": 78,
     "Meat Processing & Lifting \ud83c\udf56": 51,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Bathroom \ud83d\udebd": 34,
     "General Meeting \ud83d\uddf3\ufe0f": 19,
-    "Soup: Food Services \ud83c\udf72": 18,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 9,
+    "Soup: Food Services \ud83c\udf72": 17,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 8,
     "Bread Stocking \ud83c\udf5e": 8,
     "Repairs \ud83d\udee0": 7,
     "Bulk Lifting \ud83e\uded8": 6,
-    "Office \ud83d\udcd7": 6,
+    "Office \ud83d\udcd7": 5,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Bins \ud83e\uddfc": 2
+    "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
