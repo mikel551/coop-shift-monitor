@@ -128142,6 +128142,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T12:00:59.167478+00:00",
+      "total": 2841,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -128157,17 +128174,7 @@
       }
     }
   },
-  "available_shifts": {
-    "Mike": [
-      {
-        "id": "1164867",
-        "date": "2026-07-21",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128189,7 +128196,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 944,
+    "Stocking \ud83d\udce6": 943,
     "Lifting \ud83d\ude9a": 601,
     "Producer \ud83e\udd66": 337,
     "Flex \ud83e\udd6b": 173,
@@ -128210,10 +128217,10 @@
     "Bulk Lifting \ud83e\uded8": 6,
     "Office \ud83d\udcd7": 6,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Cart Return \ud83d\uded2": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Soup Cleaning": 2,
     "Entrance/Greeter \ud83c\udf9f": 2,
+    "Cart Return \ud83d\uded2": 2,
     "Bins \ud83e\uddfc": 2
   },
   "user_config": [
