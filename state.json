@@ -1,41 +1,14 @@
 {
   "notified": {
-    "Nancy": [],
-    "Mike": []
+    "Nancy": [
+      "1163339"
+    ],
+    "Mike": [
+      "1173639",
+      "1164867"
+    ]
   },
   "stats": [
-    {
-      "ts": "2026-05-26T05:00:38.167934+00:00",
-      "total": 3420,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 2,
-          "shifts": [
-            {
-              "id": "1138596",
-              "date": "2026-06-09",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1147502",
-              "date": "2026-06-23",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-05-26T06:00:39.139328+00:00",
       "total": 3412,
@@ -127928,14 +127901,54 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T05:00:58.725621+00:00",
+      "total": 2865,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1164867",
+              "date": "2026-07-21",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1173639",
+              "date": "2026-08-04",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1163339",
+              "date": "2026-07-19",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5373,
+    "total_runs": 5374,
     "users": {
       "Mike": {
-        "matched": 2500,
-        "notified": 219
+        "matched": 2502,
+        "notified": 221
       },
       "Nancy": {
         "matched": 7479,
