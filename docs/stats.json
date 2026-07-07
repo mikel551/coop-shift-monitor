@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-26T16:20:31.736073+00:00",
-      "total": 3252,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-26T16:30:41.141069+00:00",
       "total": 3250,
       "users": {
@@ -128290,10 +128273,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T16:20:55.601344+00:00",
+      "total": 2762,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5400,
+    "total_runs": 5401,
     "users": {
       "Mike": {
         "matched": 2507,
@@ -128329,9 +128329,9 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 942,
     "Lifting \ud83d\ude9a": 595,
-    "Producer \ud83e\udd66": 335,
+    "Producer \ud83e\udd66": 333,
     "Flex \ud83e\udd6b": 168,
-    "Produce Processing \ud83e\udd6c": 161,
+    "Produce Processing \ud83e\udd6c": 160,
     "Dairy Lifting \ud83e\udd5b": 115,
     "Cleaning \ud83c\udfdd": 114,
     "Inventory \ud83d\udccb": 79,
@@ -128349,6 +128349,7 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Soup Cleaning": 1
   },
   "user_config": [
