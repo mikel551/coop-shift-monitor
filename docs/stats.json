@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-26T21:20:33.951247+00:00",
-      "total": 3178,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-26T21:30:40.405412+00:00",
       "total": 3174,
       "users": {
@@ -128338,10 +128321,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T21:20:43.534308+00:00",
+      "total": 2706,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1158437",
+              "date": "2026-07-11",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5430,
+    "total_runs": 5431,
     "users": {
       "Mike": {
         "matched": 2507,
@@ -128353,7 +128361,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1158437",
+        "date": "2026-07-11",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128375,10 +128393,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 926,
-    "Lifting \ud83d\ude9a": 587,
+    "Stocking \ud83d\udce6": 925,
+    "Lifting \ud83d\ude9a": 585,
     "Producer \ud83e\udd66": 331,
-    "Flex \ud83e\udd6b": 163,
+    "Flex \ud83e\udd6b": 164,
     "Produce Processing \ud83e\udd6c": 159,
     "Cleaning \ud83c\udfdd": 113,
     "Dairy Lifting \ud83e\udd5b": 112,
@@ -128393,10 +128411,12 @@
     "Bread Stocking \ud83c\udf5e": 8,
     "Repairs \ud83d\udee0": 7,
     "Bulk Lifting \ud83e\uded8": 6,
-    "Office \ud83d\udcd7": 5,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Bins \ud83e\uddfc": 2
+    "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
