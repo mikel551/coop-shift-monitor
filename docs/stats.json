@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-26T15:10:29.287883+00:00",
-      "total": 3268,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-26T15:20:35.865110+00:00",
       "total": 3265,
       "users": {
@@ -128267,10 +128250,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-07T15:10:48.545283+00:00",
+      "total": 2771,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1159163",
+              "date": "2026-07-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1176937",
+              "date": "2026-08-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5393,
+    "total_runs": 5394,
     "users": {
       "Mike": {
         "matched": 2507,
@@ -128284,6 +128299,13 @@
   },
   "available_shifts": {
     "Mike": [
+      {
+        "id": "1159163",
+        "date": "2026-07-08",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      },
       {
         "id": "1176937",
         "date": "2026-08-10",
@@ -128314,8 +128336,8 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 944,
-    "Lifting \ud83d\ude9a": 598,
+    "Stocking \ud83d\udce6": 943,
+    "Lifting \ud83d\ude9a": 597,
     "Producer \ud83e\udd66": 336,
     "Flex \ud83e\udd6b": 167,
     "Produce Processing \ud83e\udd6c": 161,
@@ -128335,9 +128357,9 @@
     "Office \ud83d\udcd7": 6,
     "Inventory: Produce \ud83c\udf40": 5,
     "Vitamins \ud83c\udf6c": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Bins \ud83e\uddfc": 2,
-    "Soup Cleaning": 1,
-    "Cart Return \ud83d\uded2": 1
+    "Soup Cleaning": 1
   },
   "user_config": [
     {
