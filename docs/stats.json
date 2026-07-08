@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T13:10:38.051083+00:00",
-      "total": 3322,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T13:20:34.657206+00:00",
       "total": 3321,
       "users": {
@@ -128363,10 +128346,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T13:10:56.878388+00:00",
+      "total": 2724,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5485,
+    "total_runs": 5486,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128401,7 +128401,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 933,
-    "Lifting \ud83d\ude9a": 589,
+    "Lifting \ud83d\ude9a": 588,
     "Producer \ud83e\udd66": 334,
     "Flex \ud83e\udd6b": 170,
     "Produce Processing \ud83e\udd6c": 157,
@@ -128423,8 +128423,7 @@
     "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Cart Return \ud83d\uded2": 2,
-    "Bins \ud83e\uddfc": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1
+    "Bins \ud83e\uddfc": 2
   },
   "user_config": [
     {
