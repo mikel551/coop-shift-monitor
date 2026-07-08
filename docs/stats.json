@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T15:40:37.942211+00:00",
-      "total": 3266,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T15:50:34.152901+00:00",
       "total": 3263,
       "users": {
@@ -128363,10 +128346,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T15:40:59.111336+00:00",
+      "total": 2701,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5500,
+    "total_runs": 5501,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128400,25 +128400,25 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 927,
-    "Lifting \ud83d\ude9a": 588,
+    "Stocking \ud83d\udce6": 926,
+    "Lifting \ud83d\ude9a": 586,
     "Producer \ud83e\udd66": 334,
-    "Flex \ud83e\udd6b": 170,
+    "Flex \ud83e\udd6b": 169,
     "Produce Processing \ud83e\udd6c": 155,
     "Dairy Lifting \ud83e\udd5b": 115,
     "Cleaning \ud83c\udfdd": 113,
     "Inventory \ud83d\udccb": 77,
     "Meat Processing & Lifting \ud83c\udf56": 52,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 45,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Bathroom \ud83d\udebd": 32,
+    "Bathroom \ud83d\udebd": 33,
     "Soup: Food Services \ud83c\udf72": 14,
     "Bread Stocking \ud83c\udf5e": 9,
     "Repairs \ud83d\udee0": 8,
     "General Meeting \ud83d\uddf3\ufe0f": 7,
     "Bulk Lifting \ud83e\uded8": 5,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
     "Bins \ud83e\uddfc": 2
