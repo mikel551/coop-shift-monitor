@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T22:40:38.251373+00:00",
-      "total": 3159,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T22:50:40.312050+00:00",
       "total": 3160,
       "users": {
@@ -128521,10 +128504,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T22:40:56.060326+00:00",
+      "total": 2630,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157207",
+              "date": "2026-07-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1168647",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5542,
+    "total_runs": 5543,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128577,16 +128592,16 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 914,
     "Lifting \ud83d\ude9a": 572,
-    "Producer \ud83e\udd66": 331,
+    "Producer \ud83e\udd66": 329,
     "Flex \ud83e\udd6b": 159,
-    "Produce Processing \ud83e\udd6c": 152,
+    "Produce Processing \ud83e\udd6c": 151,
     "Dairy Lifting \ud83e\udd5b": 113,
-    "Cleaning \ud83c\udfdd": 110,
+    "Cleaning \ud83c\udfdd": 109,
     "Inventory \ud83d\udccb": 76,
     "Meat Processing & Lifting \ud83c\udf56": 52,
     "Case Maintenance \ud83e\uddfd": 38,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
-    "Bathroom \ud83d\udebd": 31,
+    "Bathroom \ud83d\udebd": 32,
     "Soup: Food Services \ud83c\udf72": 10,
     "Repairs \ud83d\udee0": 8,
     "Bread Stocking \ud83c\udf5e": 7,
@@ -128596,7 +128611,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
-    "Bins \ud83e\uddfc": 2
+    "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
