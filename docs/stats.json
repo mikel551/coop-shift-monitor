@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T23:30:33.011998+00:00",
-      "total": 3167,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T23:40:29.105806+00:00",
       "total": 3167,
       "users": {
@@ -128582,10 +128565,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T23:31:02.254622+00:00",
+      "total": 2629,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157207",
+              "date": "2026-07-09",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5547,
+    "total_runs": 5548,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128634,8 +128642,8 @@
     "Producer \ud83e\udd66": 329,
     "Flex \ud83e\udd6b": 158,
     "Produce Processing \ud83e\udd6c": 151,
-    "Dairy Lifting \ud83e\udd5b": 113,
-    "Cleaning \ud83c\udfdd": 109,
+    "Dairy Lifting \ud83e\udd5b": 114,
+    "Cleaning \ud83c\udfdd": 110,
     "Inventory \ud83d\udccb": 76,
     "Meat Processing & Lifting \ud83c\udf56": 51,
     "Case Maintenance \ud83e\uddfd": 38,
@@ -128648,9 +128656,11 @@
     "General Meeting \ud83d\uddf3\ufe0f": 5,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
+    "Cart Return \ud83d\uded2": 3,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 2,
-    "Bins \ud83e\uddfc": 2
+    "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
   "user_config": [
     {
