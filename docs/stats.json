@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T22:10:30.290363+00:00",
-      "total": 3154,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T22:20:29.118876+00:00",
       "total": 3156,
       "users": {
@@ -128490,10 +128473,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T22:11:02.840200+00:00",
+      "total": 2631,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168647",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5539,
+    "total_runs": 5540,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128537,11 +128545,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 915,
+    "Stocking \ud83d\udce6": 914,
     "Lifting \ud83d\ude9a": 572,
     "Producer \ud83e\udd66": 332,
-    "Flex \ud83e\udd6b": 158,
-    "Produce Processing \ud83e\udd6c": 151,
+    "Flex \ud83e\udd6b": 157,
+    "Produce Processing \ud83e\udd6c": 152,
     "Dairy Lifting \ud83e\udd5b": 113,
     "Cleaning \ud83c\udfdd": 109,
     "Inventory \ud83d\udccb": 76,
@@ -128556,8 +128564,8 @@
     "General Meeting \ud83d\uddf3\ufe0f": 5,
     "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 2,
     "Bins \ud83e\uddfc": 2,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
