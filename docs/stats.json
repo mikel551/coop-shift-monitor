@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T11:20:30.455930+00:00",
-      "total": 3348,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1139178",
-              "date": "2026-06-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T11:30:35.566074+00:00",
       "total": 3347,
       "users": {
@@ -128371,13 +128346,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T11:20:54.769200+00:00",
+      "total": 2766,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1172939",
+              "date": "2026-08-03",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5474,
+    "total_runs": 5475,
     "users": {
       "Mike": {
-        "matched": 2521,
+        "matched": 2522,
         "notified": 224
       },
       "Nancy": {
@@ -128388,13 +128388,6 @@
   },
   "available_shifts": {
     "Nancy": [
-      {
-        "id": "1159919",
-        "date": "2026-07-13",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      },
       {
         "id": "1172939",
         "date": "2026-08-03",
@@ -128425,7 +128418,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 935,
+    "Stocking \ud83d\udce6": 936,
     "Lifting \ud83d\ude9a": 596,
     "Producer \ud83e\udd66": 336,
     "Flex \ud83e\udd6b": 174,
