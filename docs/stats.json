@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T21:10:39.747676+00:00",
-      "total": 3160,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T21:20:35.630224+00:00",
       "total": 3159,
       "users": {
@@ -128442,10 +128425,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T21:10:53.414609+00:00",
+      "total": 2636,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168647",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5533,
+    "total_runs": 5534,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128459,13 +128467,6 @@
   },
   "available_shifts": {
     "Mike": [
-      {
-        "id": "1157209",
-        "date": "2026-07-09",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Cart Return \ud83d\uded2"
-      },
       {
         "id": "1168647",
         "date": "2026-07-27",
@@ -128496,7 +128497,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 920,
+    "Stocking \ud83d\udce6": 918,
     "Lifting \ud83d\ude9a": 573,
     "Producer \ud83e\udd66": 332,
     "Flex \ud83e\udd6b": 158,
@@ -128506,19 +128507,19 @@
     "Inventory \ud83d\udccb": 76,
     "Meat Processing & Lifting \ud83c\udf56": 52,
     "Case Maintenance \ud83e\uddfd": 38,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 35,
     "Bathroom \ud83d\udebd": 31,
     "Soup: Food Services \ud83c\udf72": 10,
     "Repairs \ud83d\udee0": 8,
     "Bread Stocking \ud83c\udf5e": 7,
     "Bulk Lifting \ud83e\uded8": 5,
     "General Meeting \ud83d\uddf3\ufe0f": 5,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
-    "Cart Return \ud83d\uded2": 2,
-    "Bins \ud83e\uddfc": 2
+    "Bins \ud83e\uddfc": 2,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
+    "Cart Return \ud83d\uded2": 1
   },
   "user_config": [
     {
