@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T14:20:41.700441+00:00",
-      "total": 3309,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T14:30:35.812798+00:00",
       "total": 3301,
       "users": {
@@ -128363,10 +128346,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T14:20:48.033710+00:00",
+      "total": 2712,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5492,
+    "total_runs": 5493,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128400,11 +128400,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 929,
-    "Lifting \ud83d\ude9a": 588,
+    "Stocking \ud83d\udce6": 930,
+    "Lifting \ud83d\ude9a": 589,
     "Producer \ud83e\udd66": 335,
-    "Flex \ud83e\udd6b": 170,
-    "Produce Processing \ud83e\udd6c": 156,
+    "Flex \ud83e\udd6b": 169,
+    "Produce Processing \ud83e\udd6c": 155,
     "Dairy Lifting \ud83e\udd5b": 115,
     "Cleaning \ud83c\udfdd": 113,
     "Inventory \ud83d\udccb": 78,
@@ -128414,16 +128414,14 @@
     "Bathroom \ud83d\udebd": 32,
     "Soup: Food Services \ud83c\udf72": 15,
     "Bread Stocking \ud83c\udf5e": 9,
+    "Repairs \ud83d\udee0": 8,
     "General Meeting \ud83d\uddf3\ufe0f": 7,
-    "Repairs \ud83d\udee0": 7,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Bulk Lifting \ud83e\uded8": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Bins \ud83e\uddfc": 2,
-    "Cart Return \ud83d\uded2": 1,
-    "Checkout \ud83d\udcb3": 1
+    "Bins \ud83e\uddfc": 2
   },
   "user_config": [
     {
