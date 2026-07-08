@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T12:11:06.337441+00:00",
-      "total": 3335,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1142238",
-              "date": "2026-06-15",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-27T12:20:44.852502+00:00",
-      "total": 3338,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-27T12:30:34.779839+00:00",
       "total": 3336,
       "users": {
@@ -128388,32 +128346,39 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T12:20:56.590469+00:00",
+      "total": 2740,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5479,
+    "total_runs": 5481,
     "users": {
       "Mike": {
         "matched": 2525,
         "notified": 224
       },
       "Nancy": {
-        "matched": 7482,
+        "matched": 7483,
         "notified": 966
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1172939",
-        "date": "2026-08-03",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128438,21 +128403,21 @@
     "Stocking \ud83d\udce6": 933,
     "Lifting \ud83d\ude9a": 591,
     "Producer \ud83e\udd66": 334,
-    "Flex \ud83e\udd6b": 175,
+    "Flex \ud83e\udd6b": 172,
     "Produce Processing \ud83e\udd6c": 159,
     "Dairy Lifting \ud83e\udd5b": 115,
     "Cleaning \ud83c\udfdd": 113,
     "Inventory \ud83d\udccb": 78,
     "Meat Processing & Lifting \ud83c\udf56": 52,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 47,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 46,
     "Case Maintenance \ud83e\uddfd": 38,
     "Bathroom \ud83d\udebd": 32,
     "Soup: Food Services \ud83c\udf72": 15,
     "Bread Stocking \ud83c\udf5e": 10,
-    "Checkout \ud83d\udcb3": 9,
+    "Checkout \ud83d\udcb3": 8,
     "General Meeting \ud83d\uddf3\ufe0f": 7,
     "Repairs \ud83d\udee0": 7,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 6,
     "Cart Return \ud83d\uded2": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "Inventory: Produce \ud83c\udf40": 4,
