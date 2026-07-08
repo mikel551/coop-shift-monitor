@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T18:40:40.880138+00:00",
-      "total": 3184,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1133302",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T18:50:30.878245+00:00",
       "total": 3182,
       "users": {
@@ -128371,18 +128346,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T18:40:51.894528+00:00",
+      "total": 2665,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168647",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5518,
+    "total_runs": 5519,
     "users": {
       "Mike": {
         "matched": 2525,
         "notified": 224
       },
       "Nancy": {
-        "matched": 7484,
-        "notified": 967
+        "matched": 7485,
+        "notified": 968
       }
     }
   },
@@ -128418,11 +128418,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 920,
-    "Lifting \ud83d\ude9a": 581,
+    "Stocking \ud83d\udce6": 919,
+    "Lifting \ud83d\ude9a": 580,
     "Producer \ud83e\udd66": 334,
     "Flex \ud83e\udd6b": 163,
-    "Produce Processing \ud83e\udd6c": 155,
+    "Produce Processing \ud83e\udd6c": 153,
     "Dairy Lifting \ud83e\udd5b": 114,
     "Cleaning \ud83c\udfdd": 111,
     "Inventory \ud83d\udccb": 76,
