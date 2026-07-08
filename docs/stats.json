@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T02:30:34.156390+00:00",
-      "total": 3129,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-27T02:40:29.851840+00:00",
       "total": 3125,
       "users": {
@@ -128370,10 +128353,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T02:30:46.806803+00:00",
+      "total": 2641,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5461,
+    "total_runs": 5462,
     "users": {
       "Mike": {
         "matched": 2508,
@@ -128427,7 +128427,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
-    "Bins \ud83e\uddfc": 2
+    "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1
   },
   "user_config": [
     {
