@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T20:30:38.802230+00:00",
-      "total": 3164,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1132630",
-              "date": "2026-05-31",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T20:40:31.467451+00:00",
       "total": 3162,
       "users": {
@@ -128427,17 +128402,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T20:30:57.152278+00:00",
+      "total": 2649,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168647",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5529,
+    "total_runs": 5530,
     "users": {
       "Mike": {
         "matched": 2525,
         "notified": 224
       },
       "Nancy": {
-        "matched": 7488,
+        "matched": 7489,
         "notified": 970
       }
     }
@@ -128474,11 +128474,11 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 919,
+    "Stocking \ud83d\udce6": 920,
     "Lifting \ud83d\ude9a": 574,
     "Producer \ud83e\udd66": 333,
     "Flex \ud83e\udd6b": 158,
-    "Produce Processing \ud83e\udd6c": 152,
+    "Produce Processing \ud83e\udd6c": 151,
     "Dairy Lifting \ud83e\udd5b": 113,
     "Cleaning \ud83c\udfdd": 109,
     "Inventory \ud83d\udccb": 76,
@@ -128489,9 +128489,9 @@
     "Soup: Food Services \ud83c\udf72": 11,
     "Repairs \ud83d\udee0": 8,
     "Bread Stocking \ud83c\udf5e": 7,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "General Meeting \ud83d\uddf3\ufe0f": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
