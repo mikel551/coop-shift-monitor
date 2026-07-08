@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T11:10:31.681503+00:00",
-      "total": 3350,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1139178",
-              "date": "2026-06-10",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T11:20:30.455930+00:00",
       "total": 3348,
       "users": {
@@ -128364,13 +128339,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T11:10:48.564464+00:00",
+      "total": 2765,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1159919",
+              "date": "2026-07-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1172939",
+              "date": "2026-08-03",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5473,
+    "total_runs": 5474,
     "users": {
       "Mike": {
-        "matched": 2520,
+        "matched": 2521,
         "notified": 224
       },
       "Nancy": {
@@ -128381,6 +128388,13 @@
   },
   "available_shifts": {
     "Nancy": [
+      {
+        "id": "1159919",
+        "date": "2026-07-13",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      },
       {
         "id": "1172939",
         "date": "2026-08-03",
@@ -128431,11 +128445,11 @@
     "Cart Return \ud83d\uded2": 6,
     "Bulk Lifting \ud83e\uded8": 5,
     "Office \ud83d\udcd7": 5,
-    "Entrance/Greeter \ud83c\udf9f": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Vitamins \ud83c\udf6c": 3,
-    "Bins \ud83e\uddfc": 2
+    "Bins \ud83e\uddfc": 2,
+    "Entrance/Greeter \ud83c\udf9f": 2
   },
   "user_config": [
     {
