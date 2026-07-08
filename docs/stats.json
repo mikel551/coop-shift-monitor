@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T18:20:37.128778+00:00",
-      "total": 3186,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T18:30:34.746173+00:00",
       "total": 3185,
       "users": {
@@ -128355,10 +128338,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T18:20:55.733298+00:00",
+      "total": 2670,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1168647",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5516,
+    "total_runs": 5517,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128370,7 +128378,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1168647",
+        "date": "2026-07-27",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -128394,7 +128412,7 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 919,
     "Lifting \ud83d\ude9a": 582,
-    "Producer \ud83e\udd66": 333,
+    "Producer \ud83e\udd66": 334,
     "Flex \ud83e\udd6b": 163,
     "Produce Processing \ud83e\udd6c": 155,
     "Dairy Lifting \ud83e\udd5b": 114,
@@ -128407,13 +128425,14 @@
     "Soup: Food Services \ud83c\udf72": 13,
     "Repairs \ud83d\udee0": 8,
     "Bread Stocking \ud83c\udf5e": 7,
-    "General Meeting \ud83d\uddf3\ufe0f": 6,
     "Bulk Lifting \ud83e\uded8": 5,
+    "General Meeting \ud83d\uddf3\ufe0f": 5,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
     "Bins \ud83e\uddfc": 2,
     "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
   "user_config": [
