@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-27T21:50:29.991977+00:00",
-      "total": 3158,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-27T22:00:48.438764+00:00",
       "total": 3154,
       "users": {
@@ -128474,10 +128457,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-08T21:50:52.968502+00:00",
+      "total": 2632,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168647",
+              "date": "2026-07-27",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5537,
+    "total_runs": 5538,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128541,9 +128549,9 @@
     "Vitamins \ud83c\udf6c": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
+    "Cart Return \ud83d\uded2": 2,
     "Bins \ud83e\uddfc": 2,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
-    "Cart Return \ud83d\uded2": 1
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1
   },
   "user_config": [
     {
