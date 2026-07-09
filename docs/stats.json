@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T21:20:35.073730+00:00",
-      "total": 3188,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133300",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-28T21:30:38.895238+00:00",
-      "total": 3183,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-28T21:40:33.390209+00:00",
       "total": 3184,
       "users": {
@@ -128498,17 +128456,42 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T21:30:51.610795+00:00",
+      "total": 2603,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157819",
+              "date": "2026-07-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5638,
+    "total_runs": 5640,
     "users": {
       "Mike": {
         "matched": 2558,
         "notified": 226
       },
       "Nancy": {
-        "matched": 7511,
+        "matched": 7512,
         "notified": 974
       }
     }
@@ -128545,7 +128528,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 900,
+    "Stocking \ud83d\udce6": 901,
     "Lifting \ud83d\ude9a": 569,
     "Producer \ud83e\udd66": 323,
     "Flex \ud83e\udd6b": 162,
@@ -128566,6 +128549,7 @@
     "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
+    "Entrance/Greeter \ud83c\udf9f": 1,
     "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1,
     "Vouchers \ud83e\uddfe": 1
