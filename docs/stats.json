@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T18:40:33.859996+00:00",
-      "total": 3214,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-28T18:50:37.298442+00:00",
       "total": 3210,
       "users": {
@@ -128489,10 +128472,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T18:40:45.609778+00:00",
+      "total": 2640,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5622,
+    "total_runs": 5623,
     "users": {
       "Mike": {
         "matched": 2558,
@@ -128545,9 +128545,10 @@
     "Bulk Lifting \ud83e\uded8": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 4,
+    "Checkout \ud83d\udcb3": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 1,
+    "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1,
     "Vouchers \ud83e\uddfe": 1
   },
