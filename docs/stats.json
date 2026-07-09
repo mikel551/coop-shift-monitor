@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T23:50:35.769238+00:00",
-      "total": 3195,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-29T00:00:33.868845+00:00",
       "total": 3194,
       "users": {
@@ -128537,10 +128520,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T23:50:46.906501+00:00",
+      "total": 2467,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5653,
+    "total_runs": 5654,
     "users": {
       "Mike": {
         "matched": 2559,
@@ -128574,13 +128574,13 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 836,
+    "Stocking \ud83d\udce6": 832,
     "Lifting \ud83d\ude9a": 520,
     "Producer \ud83e\udd66": 314,
     "Flex \ud83e\udd6b": 162,
     "Produce Processing \ud83e\udd6c": 143,
     "Dairy Lifting \ud83e\udd5b": 118,
-    "Cleaning \ud83c\udfdd": 99,
+    "Cleaning \ud83c\udfdd": 98,
     "Inventory \ud83d\udccb": 70,
     "Meat Processing & Lifting \ud83c\udf56": 50,
     "Case Maintenance \ud83e\uddfd": 37,
@@ -128589,12 +128589,13 @@
     "Soup: Food Services \ud83c\udf72": 15,
     "Repairs \ud83d\udee0": 10,
     "Bread Stocking \ud83c\udf5e": 8,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Office \ud83d\udcd7": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Health & Beauty \ud83e\uddf4": 1,
     "Vouchers \ud83e\uddfe": 1
   },
