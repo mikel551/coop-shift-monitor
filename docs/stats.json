@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T15:00:42.079642+00:00",
-      "total": 3243,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-28T15:10:42.182003+00:00",
       "total": 3242,
       "users": {
@@ -128481,10 +128464,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T15:00:48.831071+00:00",
+      "total": 2685,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5600,
+    "total_runs": 5601,
     "users": {
       "Mike": {
         "matched": 2558,
@@ -128518,14 +128518,14 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 924,
-    "Lifting \ud83d\ude9a": 581,
+    "Stocking \ud83d\udce6": 922,
+    "Lifting \ud83d\ude9a": 580,
     "Producer \ud83e\udd66": 332,
     "Flex \ud83e\udd6b": 170,
     "Produce Processing \ud83e\udd6c": 150,
     "Dairy Lifting \ud83e\udd5b": 118,
     "Cleaning \ud83c\udfdd": 105,
-    "Inventory \ud83d\udccb": 75,
+    "Inventory \ud83d\udccb": 76,
     "Meat Processing & Lifting \ud83c\udf56": 53,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 41,
     "Case Maintenance \ud83e\uddfd": 38,
@@ -128534,14 +128534,13 @@
     "Repairs \ud83d\udee0": 10,
     "Office \ud83d\udcd7": 10,
     "Bread Stocking \ud83c\udf5e": 7,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Bulk Lifting \ud83e\uded8": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "General Meeting \ud83d\uddf3\ufe0f": 3,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
     "Health & Beauty \ud83e\uddf4": 1,
-    "Cart Return \ud83d\uded2": 1,
     "Entrance/Greeter \ud83c\udf9f": 1,
     "Vouchers \ud83e\uddfe": 1
   },
