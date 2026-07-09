@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T03:00:39.847301+00:00",
-      "total": 3136,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-28T04:00:41.929147+00:00",
       "total": 3235,
       "users": {
@@ -128646,10 +128629,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T03:00:51.941929+00:00",
+      "total": 2592,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5568,
+    "total_runs": 5569,
     "users": {
       "Mike": {
         "matched": 2525,
@@ -128683,13 +128683,13 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 905,
+    "Stocking \ud83d\udce6": 904,
     "Lifting \ud83d\ude9a": 563,
     "Producer \ud83e\udd66": 329,
     "Flex \ud83e\udd6b": 152,
     "Produce Processing \ud83e\udd6c": 150,
     "Dairy Lifting \ud83e\udd5b": 114,
-    "Cleaning \ud83c\udfdd": 109,
+    "Cleaning \ud83c\udfdd": 105,
     "Inventory \ud83d\udccb": 76,
     "Meat Processing & Lifting \ud83c\udf56": 51,
     "Case Maintenance \ud83e\uddfd": 38,
@@ -128703,8 +128703,7 @@
     "General Meeting \ud83d\uddf3\ufe0f": 3,
     "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 2,
-    "Bins \ud83e\uddfc": 2,
-    "Cart Return \ud83d\uded2": 1
+    "Bins \ud83e\uddfc": 2
   },
   "user_config": [
     {
