@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T13:30:38.318109+00:00",
-      "total": 3254,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1159163",
-              "date": "2026-07-08",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-28T13:40:37.305076+00:00",
       "total": 3250,
       "users": {
@@ -128521,13 +128496,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T13:30:44.843321+00:00",
+      "total": 2711,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5591,
+    "total_runs": 5592,
     "users": {
       "Mike": {
-        "matched": 2553,
+        "matched": 2554,
         "notified": 226
       },
       "Nancy": {
@@ -128567,7 +128559,7 @@
     "Cleaning \ud83c\udfdd": 107,
     "Inventory \ud83d\udccb": 74,
     "Meat Processing & Lifting \ud83c\udf56": 52,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 43,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 44,
     "Case Maintenance \ud83e\uddfd": 38,
     "Bathroom \ud83d\udebd": 35,
     "Soup: Food Services \ud83c\udf72": 18,
@@ -128575,9 +128567,9 @@
     "Repairs \ud83d\udee0": 10,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
     "Bread Stocking \ud83c\udf5e": 7,
-    "Checkout \ud83d\udcb3": 5,
     "Bulk Lifting \ud83e\uded8": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Checkout \ud83d\udcb3": 4,
     "Cart Return \ud83d\uded2": 3,
     "General Meeting \ud83d\uddf3\ufe0f": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
