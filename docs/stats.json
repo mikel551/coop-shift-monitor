@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T22:00:32.305546+00:00",
-      "total": 3180,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-28T22:10:31.397369+00:00",
       "total": 3180,
       "users": {
@@ -128497,10 +128480,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T22:00:47.861012+00:00",
+      "total": 2600,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1157819",
+              "date": "2026-07-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5642,
+    "total_runs": 5643,
     "users": {
       "Mike": {
         "matched": 2558,
@@ -128546,8 +128554,8 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 902,
     "Lifting \ud83d\ude9a": 569,
-    "Producer \ud83e\udd66": 322,
-    "Flex \ud83e\udd6b": 161,
+    "Producer \ud83e\udd66": 320,
+    "Flex \ud83e\udd6b": 162,
     "Produce Processing \ud83e\udd6c": 146,
     "Dairy Lifting \ud83e\udd5b": 118,
     "Cleaning \ud83c\udfdd": 104,
@@ -128561,11 +128569,10 @@
     "Bread Stocking \ud83c\udf5e": 7,
     "Bulk Lifting \ud83e\uded8": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Office \ud83d\udcd7": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
-    "Office \ud83d\udcd7": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
-    "Entrance/Greeter \ud83c\udf9f": 1,
     "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1,
     "Vouchers \ud83e\uddfe": 1
