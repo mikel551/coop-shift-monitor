@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-28T13:20:39.584628+00:00",
-      "total": 3261,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1159163",
-              "date": "2026-07-08",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-28T13:30:38.318109+00:00",
       "total": 3254,
       "users": {
@@ -128529,13 +128504,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-09T13:23:09.383755+00:00",
+      "total": 2711,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5590,
+    "total_runs": 5591,
     "users": {
       "Mike": {
-        "matched": 2552,
+        "matched": 2553,
         "notified": 226
       },
       "Nancy": {
@@ -128566,9 +128558,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 929,
+    "Stocking \ud83d\udce6": 928,
     "Lifting \ud83d\ude9a": 581,
-    "Producer \ud83e\udd66": 336,
+    "Producer \ud83e\udd66": 335,
     "Flex \ud83e\udd6b": 168,
     "Produce Processing \ud83e\udd6c": 151,
     "Dairy Lifting \ud83e\udd5b": 118,
@@ -128586,11 +128578,11 @@
     "Checkout \ud83d\udcb3": 5,
     "Bulk Lifting \ud83e\uded8": 4,
     "Inventory: Produce \ud83c\udf40": 4,
+    "Cart Return \ud83d\uded2": 3,
     "General Meeting \ud83d\uddf3\ufe0f": 3,
     "Entrance/Greeter \ud83c\udf9f": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
-    "Cart Return \ud83d\uded2": 2,
     "Health & Beauty \ud83e\uddf4": 1,
     "Vouchers \ud83e\uddfe": 1
   },
