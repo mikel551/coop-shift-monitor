@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-29T00:50:28.941703+00:00",
-      "total": 3181,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1132150",
-              "date": "2026-05-31",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-29T01:00:37.876498+00:00",
       "total": 3179,
       "users": {
@@ -128537,18 +128512,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-10T00:50:38.927857+00:00",
+      "total": 2419,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5659,
+    "total_runs": 5660,
     "users": {
       "Mike": {
         "matched": 2559,
         "notified": 227
       },
       "Nancy": {
-        "matched": 7512,
-        "notified": 974
+        "matched": 7513,
+        "notified": 975
       }
     }
   },
@@ -128574,12 +128566,12 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 808,
+    "Stocking \ud83d\udce6": 807,
     "Lifting \ud83d\ude9a": 512,
     "Producer \ud83e\udd66": 311,
     "Flex \ud83e\udd6b": 161,
     "Produce Processing \ud83e\udd6c": 141,
-    "Dairy Lifting \ud83e\udd5b": 118,
+    "Dairy Lifting \ud83e\udd5b": 117,
     "Cleaning \ud83c\udfdd": 96,
     "Inventory \ud83d\udccb": 70,
     "Meat Processing & Lifting \ud83c\udf56": 50,
@@ -128592,7 +128584,7 @@
     "Bulk Lifting \ud83e\uded8": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 3,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Bins \ud83e\uddfc": 2,
     "Health & Beauty \ud83e\uddf4": 1,
