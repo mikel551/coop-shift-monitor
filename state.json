@@ -1,46 +1,12 @@
 {
   "notified": {
-    "Nancy": [
-      "1168351"
-    ],
+    "Nancy": [],
     "Mike": [
       "1175259",
       "1166631"
     ]
   },
   "stats": [
-    {
-      "ts": "2026-05-29T12:10:38.343313+00:00",
-      "total": 3359,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1140390",
-              "date": "2026-06-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1149294",
-              "date": "2026-06-26",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-05-29T12:20:32.104001+00:00",
       "total": 3357,
@@ -128675,13 +128641,45 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-10T12:20:35.121667+00:00",
+      "total": 2554,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1166631",
+              "date": "2026-07-24",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1175259",
+              "date": "2026-08-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5687,
+    "total_runs": 5688,
     "users": {
       "Mike": {
-        "matched": 2585,
+        "matched": 2587,
         "notified": 229
       },
       "Nancy": {
