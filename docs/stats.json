@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-29T23:40:30.023350+00:00",
-      "total": 3224,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1131984",
-              "date": "2026-05-30",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-29T23:50:28.000274+00:00",
       "total": 3229,
       "users": {
@@ -128244,13 +128219,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-10T23:40:35.238346+00:00",
+      "total": 2429,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5756,
+    "total_runs": 5757,
     "users": {
       "Mike": {
-        "matched": 2634,
+        "matched": 2635,
         "notified": 230
       },
       "Nancy": {
@@ -128284,11 +128276,11 @@
     "Stocking \ud83d\udce6": 802,
     "Lifting \ud83d\ude9a": 513,
     "Producer \ud83e\udd66": 310,
-    "Flex \ud83e\udd6b": 164,
+    "Flex \ud83e\udd6b": 163,
     "Produce Processing \ud83e\udd6c": 145,
     "Dairy Lifting \ud83e\udd5b": 118,
     "Cleaning \ud83c\udfdd": 97,
-    "Inventory \ud83d\udccb": 67,
+    "Inventory \ud83d\udccb": 66,
     "Meat Processing & Lifting \ud83c\udf56": 53,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 35,
     "Bathroom \ud83d\udebd": 35,
@@ -128301,8 +128293,8 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Bins \ud83e\uddfc": 2,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
