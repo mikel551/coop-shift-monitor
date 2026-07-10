@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-29T16:10:38.624961+00:00",
-      "total": 3295,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1140390",
-              "date": "2026-06-12",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-29T16:20:38.770398+00:00",
       "total": 3290,
       "users": {
@@ -128442,13 +128417,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-10T16:20:34.876025+00:00",
+      "total": 2490,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5711,
+    "total_runs": 5712,
     "users": {
       "Mike": {
-        "matched": 2620,
+        "matched": 2621,
         "notified": 229
       },
       "Nancy": {
@@ -128479,19 +128471,19 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 822,
+    "Stocking \ud83d\udce6": 821,
     "Lifting \ud83d\ude9a": 523,
     "Producer \ud83e\udd66": 314,
     "Flex \ud83e\udd6b": 171,
     "Produce Processing \ud83e\udd6c": 146,
-    "Dairy Lifting \ud83e\udd5b": 120,
+    "Dairy Lifting \ud83e\udd5b": 119,
     "Cleaning \ud83c\udfdd": 98,
     "Inventory \ud83d\udccb": 69,
     "Meat Processing & Lifting \ud83c\udf56": 53,
     "Bathroom \ud83d\udebd": 37,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 37,
     "Case Maintenance \ud83e\uddfd": 35,
-    "Soup: Food Services \ud83c\udf72": 19,
+    "Soup: Food Services \ud83c\udf72": 18,
     "Repairs \ud83d\udee0": 10,
     "Bread Stocking \ud83c\udf5e": 9,
     "Office \ud83d\udcd7": 8,
@@ -128501,7 +128493,6 @@
     "Vitamins \ud83c\udf6c": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
