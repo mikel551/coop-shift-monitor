@@ -128597,6 +128597,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-10T13:20:34.592045+00:00",
+      "total": 2534,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1175259",
+              "date": "2026-08-07",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -128644,7 +128669,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 834,
+    "Stocking \ud83d\udce6": 831,
     "Lifting \ud83d\ude9a": 529,
     "Producer \ud83e\udd66": 317,
     "Flex \ud83e\udd6b": 179,
@@ -128657,8 +128682,8 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 36,
     "Case Maintenance \ud83e\uddfd": 34,
     "Soup: Food Services \ud83c\udf72": 20,
+    "Office \ud83d\udcd7": 10,
     "Repairs \ud83d\udee0": 10,
-    "Office \ud83d\udcd7": 9,
     "Bread Stocking \ud83c\udf5e": 9,
     "Bulk Lifting \ud83e\uded8": 5,
     "Checkout \ud83d\udcb3": 5,
