@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-30T19:50:34.331312+00:00",
-      "total": 3304,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
-      "ts": "2026-05-30T20:00:39.026359+00:00",
-      "total": 3304,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-30T20:10:29.335455+00:00",
       "total": 3302,
       "users": {
@@ -127464,10 +127430,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-11T20:00:48.378286+00:00",
+      "total": 2476,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5837,
+    "total_runs": 5839,
     "users": {
       "Mike": {
         "matched": 2758,
@@ -127501,7 +127484,7 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 819,
+    "Stocking \ud83d\udce6": 818,
     "Lifting \ud83d\ude9a": 526,
     "Producer \ud83e\udd66": 317,
     "Flex \ud83e\udd6b": 171,
@@ -127516,12 +127499,12 @@
     "Soup: Food Services \ud83c\udf72": 17,
     "Repairs \ud83d\udee0": 10,
     "Bread Stocking \ud83c\udf5e": 8,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Bulk Lifting \ud83e\uded8": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
-    "Office \ud83d\udcd7": 2,
+    "Office \ud83d\udcd7": 3,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
   },
