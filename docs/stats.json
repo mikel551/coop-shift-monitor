@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-30T19:40:28.280948+00:00",
-      "total": 3306,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1132384",
-              "date": "2026-05-31",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-30T19:50:34.331312+00:00",
       "total": 3304,
       "users": {
@@ -127455,39 +127430,39 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-07-11T19:40:42.214355+00:00",
+      "total": 2480,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 2
     }
   ],
   "previous_period": {
-    "total_runs": 5836,
+    "total_runs": 5837,
     "users": {
       "Mike": {
         "matched": 2758,
         "notified": 236
       },
       "Nancy": {
-        "matched": 7610,
-        "notified": 1002
+        "matched": 7611,
+        "notified": 1003
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1158703",
-        "date": "2026-07-12",
-        "start": "10:30",
-        "end": "10:30",
-        "type": "Checkout \ud83d\udcb3"
-      },
-      {
-        "id": "1159035",
-        "date": "2026-07-12",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127529,8 +127504,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
-    "Checkout \ud83d\udcb3": 2,
-    "Office \ud83d\udcd7": 2,
+    "Office \ud83d\udcd7": 3,
     "Bins \ud83e\uddfc": 2,
     "Cart Return \ud83d\uded2": 1,
     "Vouchers \ud83e\uddfe": 1
