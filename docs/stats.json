@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-30T13:40:34.481954+00:00",
-      "total": 3378,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1141034",
-              "date": "2026-06-13",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1145438",
-              "date": "2026-06-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-30T13:50:36.402861+00:00",
       "total": 3379,
       "users": {
@@ -127755,13 +127723,38 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-11T13:50:38.401401+00:00",
+      "total": 2531,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1175781",
+              "date": "2026-08-08",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5800,
+    "total_runs": 5801,
     "users": {
       "Mike": {
-        "matched": 2722,
+        "matched": 2724,
         "notified": 236
       },
       "Nancy": {
@@ -127802,10 +127795,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 836,
+    "Stocking \ud83d\udce6": 835,
     "Lifting \ud83d\ude9a": 527,
     "Producer \ud83e\udd66": 321,
-    "Flex \ud83e\udd6b": 178,
+    "Flex \ud83e\udd6b": 176,
     "Produce Processing \ud83e\udd6c": 151,
     "Dairy Lifting \ud83e\udd5b": 123,
     "Cleaning \ud83c\udfdd": 100,
@@ -127818,8 +127811,8 @@
     "Repairs \ud83d\udee0": 10,
     "Bread Stocking \ud83c\udf5e": 9,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 8,
-    "Office \ud83d\udcd7": 7,
     "Cart Return \ud83d\uded2": 6,
+    "Office \ud83d\udcd7": 6,
     "Bulk Lifting \ud83e\uded8": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
