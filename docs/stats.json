@@ -127493,6 +127493,45 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-11T23:50:36.212058+00:00",
+      "total": 2455,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1158605",
+              "date": "2026-07-12",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1158699",
+              "date": "2026-07-12",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1158703",
+              "date": "2026-07-12",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -127511,10 +127550,10 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1158699",
+        "id": "1158605",
         "date": "2026-07-12",
-        "start": "10:30",
-        "end": "10:30",
+        "start": "08:00",
+        "end": "08:00",
         "type": "Checkout \ud83d\udcb3"
       },
       {
@@ -127525,10 +127564,10 @@
         "type": "Checkout \ud83d\udcb3"
       },
       {
-        "id": "1158929",
+        "id": "1158699",
         "date": "2026-07-12",
-        "start": "15:30",
-        "end": "15:30",
+        "start": "10:30",
+        "end": "10:30",
         "type": "Checkout \ud83d\udcb3"
       }
     ]
@@ -127555,7 +127594,7 @@
   },
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 809,
-    "Lifting \ud83d\ude9a": 524,
+    "Lifting \ud83d\ude9a": 523,
     "Producer \ud83e\udd66": 315,
     "Flex \ud83e\udd6b": 167,
     "Produce Processing \ud83e\udd6c": 151,
@@ -127575,10 +127614,10 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Office \ud83d\udcd7": 2,
     "Bins \ud83e\uddfc": 2,
     "Cart Return \ud83d\uded2": 1,
     "Entrance/Greeter \ud83c\udf9f": 1,
-    "Office \ud83d\udcd7": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
