@@ -1,51 +1,11 @@
 {
   "notified": {
     "Nancy": [
-      "1158925",
       "1158929"
     ],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-30T22:30:35.132805+00:00",
-      "total": 3303,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1132158",
-              "date": "2026-05-31",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1132634",
-              "date": "2026-05-31",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1132642",
-              "date": "2026-05-31",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 1
-    },
     {
       "ts": "2026-05-30T22:40:28.503340+00:00",
       "total": 3304,
@@ -127486,18 +127446,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-11T22:30:50.345868+00:00",
+      "total": 2456,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1158929",
+              "date": "2026-07-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5853,
+    "total_runs": 5854,
     "users": {
       "Mike": {
         "matched": 2759,
         "notified": 237
       },
       "Nancy": {
-        "matched": 7621,
-        "notified": 1007
+        "matched": 7624,
+        "notified": 1008
       }
     }
   }
