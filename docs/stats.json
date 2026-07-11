@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-30T18:20:35.069369+00:00",
-      "total": 3319,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1132254",
-              "date": "2026-05-31",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-30T18:30:40.039104+00:00",
       "total": 3317,
       "users": {
@@ -127418,22 +127393,57 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-11T18:30:43.863869+00:00",
+      "total": 2485,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1158923",
+              "date": "2026-07-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5828,
+    "total_runs": 5829,
     "users": {
       "Mike": {
         "matched": 2758,
         "notified": 236
       },
       "Nancy": {
-        "matched": 7608,
+        "matched": 7609,
         "notified": 1001
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1158923",
+        "date": "2026-07-12",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127455,9 +127465,9 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 826,
+    "Stocking \ud83d\udce6": 825,
     "Lifting \ud83d\ude9a": 525,
-    "Producer \ud83e\udd66": 318,
+    "Producer \ud83e\udd66": 316,
     "Flex \ud83e\udd6b": 172,
     "Produce Processing \ud83e\udd6c": 151,
     "Dairy Lifting \ud83e\udd5b": 122,
@@ -127477,7 +127487,7 @@
     "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 2,
-    "Cart Return \ud83d\uded2": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
