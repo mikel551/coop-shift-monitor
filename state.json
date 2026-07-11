@@ -1,53 +1,11 @@
 {
   "notified": {
     "Nancy": [
-      "1158923"
+      "1163981"
     ],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-30T18:30:40.039104+00:00",
-      "total": 3317,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
-      "ts": "2026-05-30T18:40:29.281200+00:00",
-      "total": 3315,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1132264",
-              "date": "2026-05-31",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-05-30T18:50:34.915801+00:00",
       "total": 3311,
@@ -127424,18 +127382,43 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-11T18:40:35.525214+00:00",
+      "total": 2482,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1163981",
+              "date": "2026-07-20",
+              "start": "10:30",
+              "end": "10:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5829,
+    "total_runs": 5831,
     "users": {
       "Mike": {
         "matched": 2758,
         "notified": 236
       },
       "Nancy": {
-        "matched": 7609,
-        "notified": 1001
+        "matched": 7610,
+        "notified": 1002
       }
     }
   }
