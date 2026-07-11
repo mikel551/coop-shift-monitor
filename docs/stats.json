@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-30T16:10:30.188674+00:00",
-      "total": 3337,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1141034",
-              "date": "2026-06-13",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
       "ts": "2026-05-30T16:20:28.614582+00:00",
       "total": 3333,
       "users": {
@@ -127534,13 +127509,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-11T16:10:39.268685+00:00",
+      "total": 2508,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5815,
+    "total_runs": 5816,
     "users": {
       "Mike": {
-        "matched": 2749,
+        "matched": 2750,
         "notified": 236
       },
       "Nancy": {
@@ -127592,7 +127584,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
-    "Cart Return \ud83d\uded2": 4,
+    "Cart Return \ud83d\uded2": 3,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
   },
