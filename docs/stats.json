@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-30T21:00:41.113323+00:00",
-      "total": 3299,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-30T21:10:28.321961+00:00",
-      "total": 3298,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-30T21:20:34.628222+00:00",
       "total": 3297,
       "users": {
@@ -127503,10 +127469,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-11T21:10:41.511462+00:00",
+      "total": 2467,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5844,
+    "total_runs": 5846,
     "users": {
       "Mike": {
         "matched": 2758,
@@ -127540,10 +127523,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 816,
+    "Stocking \ud83d\udce6": 817,
     "Lifting \ud83d\ude9a": 522,
-    "Producer \ud83e\udd66": 318,
-    "Flex \ud83e\udd6b": 169,
+    "Producer \ud83e\udd66": 317,
+    "Flex \ud83e\udd6b": 167,
     "Produce Processing \ud83e\udd6c": 151,
     "Dairy Lifting \ud83e\udd5b": 121,
     "Cleaning \ud83c\udfdd": 97,
@@ -127560,9 +127543,9 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
+    "Checkout \ud83d\udcb3": 2,
     "Bins \ud83e\uddfc": 2,
     "Office \ud83d\udcd7": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
