@@ -127494,6 +127494,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-11T22:10:38.117531+00:00",
+      "total": 2457,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 2,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1158925",
+              "date": "2026-07-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1158929",
+              "date": "2026-07-12",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -127512,7 +127544,7 @@
   "available_shifts": {
     "Nancy": [
       {
-        "id": "1158921",
+        "id": "1158925",
         "date": "2026-07-12",
         "start": "15:30",
         "end": "15:30",
@@ -127570,6 +127602,7 @@
     "Checkout \ud83d\udcb3": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Office \ud83d\udcd7": 1,
     "Vouchers \ud83e\uddfe": 1
   },
