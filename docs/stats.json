@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-30T15:10:33.001028+00:00",
-      "total": 3356,
-      "users": {
-        "Mike": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1141034",
-              "date": "2026-06-13",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            },
-            {
-              "id": "1145438",
-              "date": "2026-06-20",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-30T15:20:35.005177+00:00",
       "total": 3356,
       "users": {
@@ -127652,13 +127620,30 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-11T15:20:33.029605+00:00",
+      "total": 2518,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5809,
+    "total_runs": 5810,
     "users": {
       "Mike": {
-        "matched": 2740,
+        "matched": 2742,
         "notified": 236
       },
       "Nancy": {
@@ -127692,7 +127677,7 @@
     "Stocking \ud83d\udce6": 833,
     "Lifting \ud83d\ude9a": 526,
     "Producer \ud83e\udd66": 321,
-    "Flex \ud83e\udd6b": 173,
+    "Flex \ud83e\udd6b": 172,
     "Produce Processing \ud83e\udd6c": 151,
     "Dairy Lifting \ud83e\udd5b": 123,
     "Cleaning \ud83c\udfdd": 100,
@@ -127712,7 +127697,6 @@
     "Vitamins \ud83c\udf6c": 4,
     "Cart Return \ud83d\uded2": 4,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
