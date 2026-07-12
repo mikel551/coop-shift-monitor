@@ -1,45 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-31T14:10:39.690430+00:00",
-      "total": 3411,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1150340",
-              "date": "2026-06-28",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1150458",
-              "date": "2026-06-28",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1150578",
-              "date": "2026-06-28",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-31T14:20:30.668678+00:00",
       "total": 3412,
       "users": {
@@ -125726,17 +125687,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-12T14:10:45.669068+00:00",
+      "total": 2500,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5907,
+    "total_runs": 5908,
     "users": {
       "Mike": {
         "matched": 2809,
         "notified": 240
       },
       "Nancy": {
-        "matched": 8014,
+        "matched": 8017,
         "notified": 1044
       }
     }
@@ -125763,10 +125741,10 @@
     }
   },
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 842,
+    "Stocking \ud83d\udce6": 841,
     "Lifting \ud83d\ude9a": 523,
     "Producer \ud83e\udd66": 330,
-    "Flex \ud83e\udd6b": 170,
+    "Flex \ud83e\udd6b": 169,
     "Produce Processing \ud83e\udd6c": 147,
     "Dairy Lifting \ud83e\udd5b": 120,
     "Cleaning \ud83c\udfdd": 100,
@@ -125780,9 +125758,9 @@
     "Bread Stocking \ud83c\udf5e": 9,
     "Bulk Lifting \ud83e\uded8": 6,
     "Office \ud83d\udcd7": 6,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 5,
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Vitamins \ud83c\udf6c": 4,
     "Bins \ud83e\uddfc": 2,
     "Checkout \ud83d\udcb3": 1,
