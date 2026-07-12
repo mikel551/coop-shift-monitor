@@ -1,107 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-31T14:50:37.423927+00:00",
-      "total": 3403,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133384",
-              "date": "2026-06-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 3,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1150340",
-              "date": "2026-06-28",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1150458",
-              "date": "2026-06-28",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1150578",
-              "date": "2026-06-28",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-31T15:00:33.210587+00:00",
-      "total": 3403,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133384",
-              "date": "2026-06-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 4,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1133188",
-              "date": "2026-06-01",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1150340",
-              "date": "2026-06-28",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1150458",
-              "date": "2026-06-28",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1150578",
-              "date": "2026-06-28",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-31T15:10:39.471987+00:00",
       "total": 3400,
       "users": {
@@ -125647,38 +125546,42 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-12T15:00:44.135464+00:00",
+      "total": 2497,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5911,
+    "total_runs": 5913,
     "users": {
       "Mike": {
-        "matched": 2811,
+        "matched": 2813,
         "notified": 242
       },
       "Nancy": {
-        "matched": 8026,
-        "notified": 1044
+        "matched": 8033,
+        "notified": 1045
       }
     }
   },
   "available_shifts": {},
-  "member_status": {
-    "Mike": {
-      "member_status": "Active",
-      "scheduled_shifts": null,
-      "credit_bank": "0",
-      "cancel_tickets": 1
-    },
-    "Nancy": {
-      "member_status": "Active",
-      "scheduled_shifts": null,
-      "credit_bank": "0",
-      "cancel_tickets": 1
-    }
-  },
+  "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 842,
+    "Stocking \ud83d\udce6": 841,
     "Lifting \ud83d\ude9a": 523,
     "Producer \ud83e\udd66": 329,
     "Flex \ud83e\udd6b": 168,
@@ -125699,7 +125602,7 @@
     "Soup Cleaning": 4,
     "Inventory: Produce \ud83c\udf40": 4,
     "Vitamins \ud83c\udf6c": 4,
-    "Checkout \ud83d\udcb3": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
   },
@@ -125755,6 +125658,9 @@
         },
         {
           "day": "Sunday"
+        },
+        {
+          "day": "Friday"
         }
       ]
     }
