@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-31T02:40:31.116886+00:00",
-      "total": 3286,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-31T02:50:30.474117+00:00",
-      "total": 3284,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-31T03:00:35.539169+00:00",
       "total": 3284,
       "users": {
@@ -127508,10 +127474,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-12T02:50:37.917665+00:00",
+      "total": 2434,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1158999",
+              "date": "2026-07-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5878,
+    "total_runs": 5880,
     "users": {
       "Mike": {
         "matched": 2759,
@@ -127523,7 +127514,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1158999",
+        "date": "2026-07-12",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {
     "Mike": {
       "member_status": "Active",
@@ -127566,6 +127567,7 @@
     "Inventory: Produce \ud83c\udf40": 4,
     "Office \ud83d\udcd7": 2,
     "Bins \ud83e\uddfc": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Vouchers \ud83e\uddfe": 1,
     "Checkout \ud83d\udcb3": 1
