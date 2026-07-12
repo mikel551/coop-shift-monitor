@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-05-31T23:40:31.463671+00:00",
-      "total": 3311,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1133404",
-              "date": "2026-06-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-05-31T23:50:32.913914+00:00",
       "total": 3327,
       "users": {
@@ -125091,27 +125066,44 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-12T23:40:35.215146+00:00",
+      "total": 2420,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5964,
+    "total_runs": 5965,
     "users": {
       "Mike": {
         "matched": 2828,
         "notified": 243
       },
       "Nancy": {
-        "matched": 8096,
-        "notified": 1052
+        "matched": 8097,
+        "notified": 1053
       }
     }
   },
   "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 808,
+    "Stocking \ud83d\udce6": 807,
     "Lifting \ud83d\ude9a": 522,
-    "Producer \ud83e\udd66": 327,
+    "Producer \ud83e\udd66": 326,
     "Flex \ud83e\udd6b": 161,
     "Produce Processing \ud83e\udd6c": 145,
     "Dairy Lifting \ud83e\udd5b": 111,
@@ -125131,6 +125123,7 @@
     "Cart Return \ud83d\uded2": 2,
     "Bins \ud83e\uddfc": 2,
     "Office \ud83d\udcd7": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Vouchers \ud83e\uddfe": 1
   },
