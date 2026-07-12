@@ -1,61 +1,9 @@
 {
   "notified": {
-    "Nancy": [
-      "1159715"
-    ],
+    "Nancy": [],
     "Mike": []
   },
   "stats": [
-    {
-      "ts": "2026-05-31T21:40:34.485744+00:00",
-      "total": 3331,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133302",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-05-31T21:50:31.324502+00:00",
-      "total": 3328,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1133302",
-              "date": "2026-06-01",
-              "start": "15:30",
-              "end": "15:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
     {
       "ts": "2026-05-31T22:00:31.456563+00:00",
       "total": 3328,
@@ -125154,17 +125102,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-12T21:50:35.685592+00:00",
+      "total": 2433,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 5952,
+    "total_runs": 5954,
     "users": {
       "Mike": {
         "matched": 2828,
         "notified": 243
       },
       "Nancy": {
-        "matched": 8090,
+        "matched": 8092,
         "notified": 1051
       }
     }
