@@ -124669,6 +124669,67 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-07-13T12:20:33.099071+00:00",
+      "total": 2525,
+      "users": {
+        "Mike": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1176935",
+              "date": "2026-08-10",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1183673",
+              "date": "2026-08-23",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1183677",
+              "date": "2026-08-23",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 3,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1168473",
+              "date": "2026-07-27",
+              "start": "13:00",
+              "end": "13:00",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1173031",
+              "date": "2026-08-03",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            },
+            {
+              "id": "1173139",
+              "date": "2026-08-03",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -124735,7 +124796,7 @@
   "member_status": {},
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 837,
-    "Lifting \ud83d\ude9a": 524,
+    "Lifting \ud83d\ude9a": 525,
     "Producer \ud83e\udd66": 339,
     "Flex \ud83e\udd6b": 175,
     "Produce Processing \ud83e\udd6c": 147,
@@ -124752,10 +124813,10 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 8,
     "Office \ud83d\udcd7": 8,
     "Cart Return \ud83d\uded2": 7,
-    "Checkout \ud83d\udcb3": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 4,
     "Soup Cleaning": 4,
+    "Checkout \ud83d\udcb3": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
