@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-01T14:40:45.172186+00:00",
-      "total": 3421,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1146728",
-              "date": "2026-06-22",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-01T14:50:44.860214+00:00",
       "total": 3419,
       "users": {
@@ -124385,17 +124360,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-13T14:50:33.903897+00:00",
+      "total": 2476,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6013,
+    "total_runs": 6014,
     "users": {
       "Mike": {
         "matched": 2897,
         "notified": 248
       },
       "Nancy": {
-        "matched": 8416,
+        "matched": 8417,
         "notified": 1088
       }
     }
@@ -124403,10 +124395,10 @@
   "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 826,
+    "Stocking \ud83d\udce6": 825,
     "Lifting \ud83d\ude9a": 522,
     "Producer \ud83e\udd66": 337,
-    "Flex \ud83e\udd6b": 164,
+    "Flex \ud83e\udd6b": 165,
     "Produce Processing \ud83e\udd6c": 147,
     "Dairy Lifting \ud83e\udd5b": 105,
     "Cleaning \ud83c\udfdd": 97,
@@ -124418,13 +124410,14 @@
     "Soup: Food Services \ud83c\udf72": 16,
     "Repairs \ud83d\udee0": 13,
     "Bread Stocking \ud83c\udf5e": 10,
-    "Office \ud83d\udcd7": 5,
     "Bulk Lifting \ud83e\uded8": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Soup Cleaning": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
+    "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
