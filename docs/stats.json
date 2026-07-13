@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-01T17:00:44.114644+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-01T17:10:48.807544+00:00",
       "total": 3383,
       "users": {
@@ -124321,10 +124304,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-13T17:10:41.733474+00:00",
+      "total": 2436,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1159823",
+              "date": "2026-07-13",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6027,
+    "total_runs": 6028,
     "users": {
       "Mike": {
         "matched": 2897,
@@ -124336,10 +124344,20 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1159823",
+        "date": "2026-07-13",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 816,
+    "Stocking \ud83d\udce6": 815,
     "Lifting \ud83d\ude9a": 517,
     "Producer \ud83e\udd66": 334,
     "Flex \ud83e\udd6b": 156,
@@ -124361,6 +124379,7 @@
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 2,
     "Bins \ud83e\uddfc": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1,
     "Vouchers \ud83e\uddfe": 1
   },
