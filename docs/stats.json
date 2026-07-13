@@ -1,48 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-01T20:50:38.347581+00:00",
-      "total": 3329,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-06-01T21:00:44.876206+00:00",
-      "total": 3328,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1133424",
-              "date": "2026-06-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-01T21:10:39.968234+00:00",
       "total": 3327,
       "users": {
@@ -124344,18 +124302,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-13T21:00:48.012362+00:00",
+      "total": 2393,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6050,
+    "total_runs": 6052,
     "users": {
       "Mike": {
         "matched": 2897,
         "notified": 248
       },
       "Nancy": {
-        "matched": 8430,
-        "notified": 1090
+        "matched": 8431,
+        "notified": 1091
       }
     }
   },
@@ -124373,7 +124348,7 @@
     "Meat Processing & Lifting \ud83c\udf56": 51,
     "Case Maintenance \ud83e\uddfd": 32,
     "Bathroom \ud83d\udebd": 31,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 25,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 24,
     "Soup: Food Services \ud83c\udf72": 14,
     "Repairs \ud83d\udee0": 13,
     "Bread Stocking \ud83c\udf5e": 9,
