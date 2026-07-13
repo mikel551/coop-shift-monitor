@@ -1,31 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-01T15:20:45.649097+00:00",
-      "total": 3408,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1146728",
-              "date": "2026-06-22",
-              "start": "13:00",
-              "end": "13:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-01T15:30:50.940061+00:00",
       "total": 3408,
       "users": {
@@ -124361,40 +124336,47 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-13T15:30:43.158888+00:00",
+      "total": 2458,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 6017,
+    "total_runs": 6018,
     "users": {
       "Mike": {
         "matched": 2897,
         "notified": 248
       },
       "Nancy": {
-        "matched": 8420,
+        "matched": 8421,
         "notified": 1088
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1163227",
-        "date": "2026-07-19",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 823,
+    "Stocking \ud83d\udce6": 820,
     "Lifting \ud83d\ude9a": 521,
-    "Producer \ud83e\udd66": 337,
-    "Flex \ud83e\udd6b": 162,
-    "Produce Processing \ud83e\udd6c": 147,
-    "Dairy Lifting \ud83e\udd5b": 106,
+    "Producer \ud83e\udd66": 335,
+    "Flex \ud83e\udd6b": 161,
+    "Produce Processing \ud83e\udd6c": 146,
+    "Dairy Lifting \ud83e\udd5b": 104,
     "Cleaning \ud83c\udfdd": 97,
     "Inventory \ud83d\udccb": 63,
     "Meat Processing & Lifting \ud83c\udf56": 51,
@@ -124411,7 +124393,6 @@
     "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 3,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
