@@ -1,39 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-01T04:00:34.548379+00:00",
-      "total": 3439,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1158575",
-              "date": "2026-07-12",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1158691",
-              "date": "2026-07-12",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-01T05:00:35.869894+00:00",
       "total": 3544,
       "users": {
@@ -125043,46 +125010,98 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-13T04:00:40.543920+00:00",
+      "total": 2473,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 2,
+          "shifts": [
+            {
+              "id": "1183673",
+              "date": "2026-08-23",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1183677",
+              "date": "2026-08-23",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5985,
+    "total_runs": 5986,
     "users": {
       "Mike": {
-        "matched": 2828,
-        "notified": 243
+        "matched": 2829,
+        "notified": 244
       },
       "Nancy": {
-        "matched": 8104,
-        "notified": 1056
+        "matched": 8105,
+        "notified": 1057
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1183677",
+        "date": "2026-08-23",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Cart Return \ud83d\uded2"
+      },
+      {
+        "id": "1183673",
+        "date": "2026-08-23",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 793,
-    "Lifting \ud83d\ude9a": 518,
-    "Producer \ud83e\udd66": 324,
-    "Flex \ud83e\udd6b": 153,
-    "Produce Processing \ud83e\udd6c": 144,
+    "Stocking \ud83d\udce6": 834,
+    "Lifting \ud83d\ude9a": 525,
+    "Producer \ud83e\udd66": 339,
+    "Flex \ud83e\udd6b": 156,
+    "Produce Processing \ud83e\udd6c": 147,
     "Dairy Lifting \ud83e\udd5b": 105,
-    "Cleaning \ud83c\udfdd": 96,
-    "Inventory \ud83d\udccb": 54,
-    "Meat Processing & Lifting \ud83c\udf56": 49,
-    "Bathroom \ud83d\udebd": 31,
-    "Case Maintenance \ud83e\uddfd": 29,
+    "Cleaning \ud83c\udfdd": 99,
+    "Inventory \ud83d\udccb": 66,
+    "Meat Processing & Lifting \ud83c\udf56": 51,
+    "Bathroom \ud83d\udebd": 33,
+    "Case Maintenance \ud83e\uddfd": 33,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 22,
+    "Repairs \ud83d\udee0": 14,
     "Soup: Food Services \ud83c\udf72": 11,
-    "Repairs \ud83d\udee0": 11,
-    "Bread Stocking \ud83c\udf5e": 9,
-    "Bulk Lifting \ud83e\uded8": 5,
+    "Bread Stocking \ud83c\udf5e": 10,
+    "Inventory: Produce \ud83c\udf40": 5,
+    "Bulk Lifting \ud83e\uded8": 4,
     "Soup Cleaning": 4,
-    "Inventory: Produce \ud83c\udf40": 4,
+    "Office \ud83d\udcd7": 4,
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 2,
-    "Office \ud83d\udcd7": 2,
-    "Vouchers \ud83e\uddfe": 1
+    "Cart Return \ud83d\uded2": 2,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Vouchers \ud83e\uddfe": 1,
+    "Entrance/Greeter \ud83c\udf9f": 1
   },
   "user_config": [
     {
