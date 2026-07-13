@@ -124304,6 +124304,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-13T16:40:33.210188+00:00",
+      "total": 2438,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -124319,23 +124336,13 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1162055",
-        "date": "2026-07-17",
-        "start": "13:00",
-        "end": "13:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 817,
-    "Lifting \ud83d\ude9a": 518,
+    "Stocking \ud83d\udce6": 816,
+    "Lifting \ud83d\ude9a": 517,
     "Producer \ud83e\udd66": 334,
-    "Flex \ud83e\udd6b": 158,
+    "Flex \ud83e\udd6b": 157,
     "Produce Processing \ud83e\udd6c": 145,
     "Dairy Lifting \ud83e\udd5b": 104,
     "Cleaning \ud83c\udfdd": 96,
@@ -124350,11 +124357,11 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 4,
     "Soup Cleaning": 4,
-    "Vitamins \ud83c\udf6c": 3,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
-    "Checkout \ud83d\udcb3": 2,
+    "Vitamins \ud83c\udf6c": 3,
     "Office \ud83d\udcd7": 2,
     "Bins \ud83e\uddfc": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
