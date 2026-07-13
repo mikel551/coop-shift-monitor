@@ -1,56 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-01T02:20:32.910972+00:00",
-      "total": 3311,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1136730",
-              "date": "2026-06-07",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-06-01T02:30:30.837659+00:00",
-      "total": 3307,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1136730",
-              "date": "2026-06-07",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-01T02:40:35.634503+00:00",
       "total": 3307,
       "users": {
@@ -125076,17 +125026,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-13T02:30:47.785682+00:00",
+      "total": 2378,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 5980,
+    "total_runs": 5982,
     "users": {
       "Mike": {
         "matched": 2828,
         "notified": 243
       },
       "Nancy": {
-        "matched": 8102,
+        "matched": 8104,
         "notified": 1056
       }
     }
@@ -125099,14 +125066,14 @@
     "Producer \ud83e\udd66": 324,
     "Flex \ud83e\udd6b": 156,
     "Produce Processing \ud83e\udd6c": 144,
-    "Dairy Lifting \ud83e\udd5b": 107,
+    "Dairy Lifting \ud83e\udd5b": 105,
     "Cleaning \ud83c\udfdd": 96,
     "Inventory \ud83d\udccb": 55,
     "Meat Processing & Lifting \ud83c\udf56": 49,
     "Bathroom \ud83d\udebd": 31,
     "Case Maintenance \ud83e\uddfd": 29,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 23,
-    "Soup: Food Services \ud83c\udf72": 12,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 22,
+    "Soup: Food Services \ud83c\udf72": 11,
     "Repairs \ud83d\udee0": 11,
     "Bread Stocking \ud83c\udf5e": 9,
     "Bulk Lifting \ud83e\uded8": 5,
