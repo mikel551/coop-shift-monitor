@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-02T20:10:41.765413+00:00",
-      "total": 3360,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-02T20:20:45.274509+00:00",
       "total": 3359,
       "users": {
@@ -124226,10 +124209,27 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-14T20:20:36.583861+00:00",
+      "total": 2393,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6150,
+    "total_runs": 6151,
     "users": {
       "Mike": {
         "matched": 2924,
@@ -124265,7 +124265,6 @@
     "Office \ud83d\udcd7": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Bins \ud83e\uddfc": 2,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
