@@ -1,56 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-02T02:20:35.385200+00:00",
-      "total": 3292,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 1,
-          "shifts": [
-            {
-              "id": "1144176",
-              "date": "2026-06-18",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-06-02T02:30:36.904490+00:00",
-      "total": 3290,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1144176",
-              "date": "2026-06-18",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-02T02:40:38.453831+00:00",
       "total": 3291,
       "users": {
@@ -124314,14 +124264,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-14T02:30:38.224862+00:00",
+      "total": 2347,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6083,
+    "total_runs": 6085,
     "users": {
       "Mike": {
-        "matched": 2899,
-        "notified": 249
+        "matched": 2901,
+        "notified": 250
       },
       "Nancy": {
         "matched": 8438,
@@ -124339,7 +124306,7 @@
     "Produce Processing \ud83e\udd6c": 143,
     "Dairy Lifting \ud83e\udd5b": 102,
     "Cleaning \ud83c\udfdd": 95,
-    "Inventory \ud83d\udccb": 61,
+    "Inventory \ud83d\udccb": 60,
     "Meat Processing & Lifting \ud83c\udf56": 51,
     "Case Maintenance \ud83e\uddfd": 32,
     "Bathroom \ud83d\udebd": 31,
