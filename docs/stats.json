@@ -1,38 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-02T14:40:43.565355+00:00",
-      "total": 3410,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 2,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1150094",
-              "date": "2026-06-28",
-              "start": "08:00",
-              "end": "08:00",
-              "type": "Checkout \ud83d\udcb3"
-            },
-            {
-              "id": "1154408",
-              "date": "2026-07-05",
-              "start": "10:30",
-              "end": "10:30",
-              "type": "Checkout \ud83d\udcb3"
-            }
-          ]
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-02T14:50:35.498168+00:00",
       "total": 3403,
       "users": {
@@ -124249,17 +124217,34 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-14T14:50:35.273057+00:00",
+      "total": 2455,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6117,
+    "total_runs": 6118,
     "users": {
       "Mike": {
         "matched": 2922,
         "notified": 252
       },
       "Nancy": {
-        "matched": 8475,
+        "matched": 8477,
         "notified": 1099
       }
     }
@@ -124267,29 +124252,29 @@
   "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 809,
-    "Lifting \ud83d\ude9a": 518,
+    "Stocking \ud83d\udce6": 806,
+    "Lifting \ud83d\ude9a": 516,
     "Producer \ud83e\udd66": 345,
-    "Flex \ud83e\udd6b": 157,
+    "Flex \ud83e\udd6b": 155,
     "Produce Processing \ud83e\udd6c": 149,
-    "Dairy Lifting \ud83e\udd5b": 108,
+    "Dairy Lifting \ud83e\udd5b": 107,
     "Cleaning \ud83c\udfdd": 96,
     "Inventory \ud83d\udccb": 65,
     "Meat Processing & Lifting \ud83c\udf56": 54,
     "Case Maintenance \ud83e\uddfd": 36,
     "Bathroom \ud83d\udebd": 30,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 29,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 28,
     "Repairs \ud83d\udee0": 13,
     "Soup: Food Services \ud83c\udf72": 11,
     "Bread Stocking \ud83c\udf5e": 10,
     "Bulk Lifting \ud83e\uded8": 5,
     "Inventory: Produce \ud83c\udf40": 5,
     "Office \ud83d\udcd7": 5,
+    "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
     "Soup Cleaning": 4,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
+    "Checkout \ud83d\udcb3": 3,
     "Vitamins \ud83c\udf6c": 3,
     "Cart Return \ud83d\uded2": 2,
-    "Checkout \ud83d\udcb3": 2,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
   },
