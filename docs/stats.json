@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-02T01:20:37.501400+00:00",
-      "total": 3304,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-06-02T01:30:38.082344+00:00",
-      "total": 3303,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-02T01:40:34.181929+00:00",
       "total": 3300,
       "users": {
@@ -124306,10 +124272,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-14T01:30:38.739967+00:00",
+      "total": 2353,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1164867",
+              "date": "2026-07-21",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6077,
+    "total_runs": 6079,
     "users": {
       "Mike": {
         "matched": 2899,
@@ -124339,7 +124330,7 @@
     "Producer \ud83e\udd66": 331,
     "Flex \ud83e\udd6b": 143,
     "Produce Processing \ud83e\udd6c": 143,
-    "Dairy Lifting \ud83e\udd5b": 103,
+    "Dairy Lifting \ud83e\udd5b": 102,
     "Cleaning \ud83c\udfdd": 95,
     "Inventory \ud83d\udccb": 61,
     "Meat Processing & Lifting \ud83c\udf56": 51,
@@ -124352,11 +124343,10 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Bulk Lifting \ud83e\uded8": 4,
     "Soup Cleaning": 4,
-    "Office \ud83d\udcd7": 2,
     "Bins \ud83e\uddfc": 2,
     "Vitamins \ud83c\udf6c": 2,
-    "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Cart Return \ud83d\uded2": 1,
+    "Office \ud83d\udcd7": 1,
     "Vouchers \ud83e\uddfe": 1
   },
   "user_config": [
