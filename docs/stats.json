@@ -124225,6 +124225,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-14T15:20:34.402441+00:00",
+      "total": 2445,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -124240,20 +124257,10 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1164315",
-        "date": "2026-07-20",
-        "start": "18:00",
-        "end": "18:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 805,
+    "Stocking \ud83d\udce6": 804,
     "Lifting \ud83d\ude9a": 513,
     "Producer \ud83e\udd66": 344,
     "Flex \ud83e\udd6b": 157,
@@ -124274,7 +124281,6 @@
     "Soup Cleaning": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Vitamins \ud83c\udf6c": 3,
-    "Checkout \ud83d\udcb3": 2,
     "Bins \ud83e\uddfc": 2,
     "Vouchers \ud83e\uddfe": 1
   },
