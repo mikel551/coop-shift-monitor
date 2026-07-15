@@ -1,56 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-03T22:20:40.124359+00:00",
-      "total": 3380,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1138598",
-              "date": "2026-06-09",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-06-03T22:30:32.031026+00:00",
-      "total": 3380,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1138598",
-              "date": "2026-06-09",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-03T22:40:35.221574+00:00",
       "total": 3382,
       "users": {
@@ -124499,13 +124449,38 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T22:30:35.298201+00:00",
+      "total": 2331,
+      "users": {
+        "Mike": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1161623",
+              "date": "2026-07-16",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6267,
+    "total_runs": 6269,
     "users": {
       "Mike": {
-        "matched": 2945,
+        "matched": 2947,
         "notified": 258
       },
       "Nancy": {
@@ -124514,11 +124489,21 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Mike": [
+      {
+        "id": "1161623",
+        "date": "2026-07-16",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Cart Return \ud83d\uded2"
+      }
+    ]
+  },
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 754,
-    "Lifting \ud83d\ude9a": 497,
+    "Stocking \ud83d\udce6": 753,
+    "Lifting \ud83d\ude9a": 496,
     "Producer \ud83e\udd66": 338,
     "Produce Processing \ud83e\udd6c": 144,
     "Flex \ud83e\udd6b": 138,
@@ -124536,9 +124521,9 @@
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 2,
+    "Cart Return \ud83d\uded2": 2,
     "Bins \ud83e\uddfc": 2,
     "Vitamins \ud83c\udf6c": 2,
-    "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
