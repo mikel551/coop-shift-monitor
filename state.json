@@ -8,56 +8,6 @@
   },
   "stats": [
     {
-      "ts": "2026-06-03T11:00:48.771925+00:00",
-      "total": 3473,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1152466",
-              "date": "2026-07-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 1
-    },
-    {
-      "ts": "2026-06-03T11:10:33.274444+00:00",
-      "total": 3469,
-      "users": {
-        "Mike": {
-          "matched": 1,
-          "notified": 0,
-          "shifts": [
-            {
-              "id": "1152466",
-              "date": "2026-07-01",
-              "start": "18:00",
-              "end": "18:00",
-              "type": "Cart Return \ud83d\uded2"
-            }
-          ]
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-03T11:20:37.690568+00:00",
       "total": 3467,
       "users": {
@@ -124302,13 +124252,45 @@
         }
       },
       "pruned": 2
+    },
+    {
+      "ts": "2026-07-15T11:10:38.748661+00:00",
+      "total": 2479,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1174693",
+              "date": "2026-08-06",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1177999",
+              "date": "2026-08-12",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6199,
+    "total_runs": 6201,
     "users": {
       "Mike": {
-        "matched": 2937,
+        "matched": 2939,
         "notified": 256
       },
       "Nancy": {
