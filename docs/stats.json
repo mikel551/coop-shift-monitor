@@ -124498,6 +124498,23 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T20:00:41.156205+00:00",
+      "total": 2346,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
@@ -124513,21 +124530,11 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1176565",
-        "date": "2026-08-10",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 761,
-    "Lifting \ud83d\ude9a": 502,
+    "Stocking \ud83d\udce6": 759,
+    "Lifting \ud83d\ude9a": 501,
     "Producer \ud83e\udd66": 340,
     "Produce Processing \ud83e\udd6c": 146,
     "Flex \ud83e\udd6b": 137,
@@ -124548,6 +124555,7 @@
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 3,
     "Bins \ud83e\uddfc": 2,
     "Vitamins \ud83c\udf6c": 2,
+    "Office \ud83d\udcd7": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
