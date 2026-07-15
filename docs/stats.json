@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-03T18:30:44.448046+00:00",
-      "total": 3372,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-03T18:40:42.864898+00:00",
       "total": 3372,
       "users": {
@@ -124451,10 +124434,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T18:40:36.451396+00:00",
+      "total": 2360,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1176565",
+              "date": "2026-08-10",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6244,
+    "total_runs": 6245,
     "users": {
       "Mike": {
         "matched": 2943,
@@ -124479,11 +124487,11 @@
   },
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 764,
+    "Stocking \ud83d\udce6": 763,
     "Lifting \ud83d\ude9a": 503,
     "Producer \ud83e\udd66": 341,
     "Produce Processing \ud83e\udd6c": 147,
-    "Flex \ud83e\udd6b": 140,
+    "Flex \ud83e\udd6b": 139,
     "Dairy Lifting \ud83e\udd5b": 109,
     "Cleaning \ud83c\udfdd": 94,
     "Inventory \ud83d\udccb": 61,
@@ -124495,10 +124503,10 @@
     "Soup: Food Services \ud83c\udf72": 13,
     "Bread Stocking \ud83c\udf5e": 10,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Bins \ud83e\uddfc": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Health & Beauty \ud83e\uddf4": 1
