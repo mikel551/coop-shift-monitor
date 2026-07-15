@@ -124339,6 +124339,31 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T16:40:34.430573+00:00",
+      "total": 2390,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1174897",
+              "date": "2026-08-07",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
@@ -124376,7 +124401,7 @@
     "Cleaning \ud83c\udfdd": 96,
     "Inventory \ud83d\udccb": 61,
     "Meat Processing & Lifting \ud83c\udf56": 51,
-    "Case Maintenance \ud83e\uddfd": 36,
+    "Case Maintenance \ud83e\uddfd": 35,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 30,
     "Bathroom \ud83d\udebd": 30,
     "Repairs \ud83d\udee0": 15,
@@ -124384,9 +124409,9 @@
     "Bread Stocking \ud83c\udf5e": 10,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Checkout \ud83d\udcb3": 4,
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
+    "Checkout \ud83d\udcb3": 3,
     "Bins \ud83e\uddfc": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Health & Beauty \ud83e\uddf4": 1
