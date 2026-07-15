@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-03T15:10:44.932716+00:00",
-      "total": 3415,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-03T15:20:41.045090+00:00",
       "total": 3416,
       "users": {
@@ -124331,10 +124314,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T15:10:46.475011+00:00",
+      "total": 2408,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6224,
+    "total_runs": 6225,
     "users": {
       "Mike": {
         "matched": 2943,
@@ -124351,15 +124351,15 @@
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 777,
     "Lifting \ud83d\ude9a": 503,
-    "Producer \ud83e\udd66": 346,
+    "Producer \ud83e\udd66": 345,
     "Produce Processing \ud83e\udd6c": 149,
     "Flex \ud83e\udd6b": 147,
     "Dairy Lifting \ud83e\udd5b": 109,
     "Cleaning \ud83c\udfdd": 97,
-    "Inventory \ud83d\udccb": 62,
+    "Inventory \ud83d\udccb": 61,
     "Meat Processing & Lifting \ud83c\udf56": 52,
     "Case Maintenance \ud83e\uddfd": 36,
-    "Soup: Guest Services- Outdoor \u270d\ufe0f": 31,
+    "Soup: Guest Services- Outdoor \u270d\ufe0f": 30,
     "Bathroom \ud83d\udebd": 30,
     "Repairs \ud83d\udee0": 15,
     "Soup: Food Services \ud83c\udf72": 14,
@@ -124370,8 +124370,8 @@
     "Checkout \ud83d\udcb3": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Bins \ud83e\uddfc": 2,
-    "Cart Return \ud83d\uded2": 2,
     "Vitamins \ud83c\udf6c": 2,
+    "Cart Return \ud83d\uded2": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
   "user_config": [
