@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-03T14:40:35.622295+00:00",
-      "total": 3425,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-03T14:50:39.827938+00:00",
       "total": 3422,
       "users": {
@@ -124339,10 +124322,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T14:40:49.405406+00:00",
+      "total": 2418,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6221,
+    "total_runs": 6222,
     "users": {
       "Mike": {
         "matched": 2942,
@@ -124357,18 +124357,18 @@
   "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 781,
-    "Lifting \ud83d\ude9a": 506,
+    "Stocking \ud83d\udce6": 780,
+    "Lifting \ud83d\ude9a": 505,
     "Producer \ud83e\udd66": 345,
     "Produce Processing \ud83e\udd6c": 149,
-    "Flex \ud83e\udd6b": 145,
-    "Dairy Lifting \ud83e\udd5b": 110,
+    "Flex \ud83e\udd6b": 146,
+    "Dairy Lifting \ud83e\udd5b": 111,
     "Cleaning \ud83c\udfdd": 97,
     "Inventory \ud83d\udccb": 62,
     "Meat Processing & Lifting \ud83c\udf56": 52,
     "Case Maintenance \ud83e\uddfd": 36,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 32,
-    "Bathroom \ud83d\udebd": 32,
+    "Bathroom \ud83d\udebd": 31,
     "Repairs \ud83d\udee0": 15,
     "Soup: Food Services \ud83c\udf72": 14,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 10,
@@ -124376,9 +124376,9 @@
     "Inventory: Produce \ud83c\udf40": 5,
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
-    "Cart Return \ud83d\uded2": 3,
+    "Checkout \ud83d\udcb3": 3,
     "Bins \ud83e\uddfc": 2,
-    "Checkout \ud83d\udcb3": 2,
+    "Cart Return \ud83d\uded2": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Health & Beauty \ud83e\uddf4": 1
   },
