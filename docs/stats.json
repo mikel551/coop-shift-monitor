@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-03T17:20:35.643186+00:00",
-      "total": 3382,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-03T17:30:35.407623+00:00",
       "total": 3381,
       "users": {
@@ -124371,10 +124354,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T17:20:39.825237+00:00",
+      "total": 2378,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 6237,
+    "total_runs": 6238,
     "users": {
       "Mike": {
         "matched": 2943,
@@ -124386,20 +124386,10 @@
       }
     }
   },
-  "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1174897",
-        "date": "2026-08-07",
-        "start": "08:00",
-        "end": "08:00",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ]
-  },
+  "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 770,
+    "Stocking \ud83d\udce6": 769,
     "Lifting \ud83d\ude9a": 503,
     "Producer \ud83e\udd66": 344,
     "Produce Processing \ud83e\udd6c": 149,
@@ -124408,7 +124398,7 @@
     "Cleaning \ud83c\udfdd": 95,
     "Inventory \ud83d\udccb": 61,
     "Meat Processing & Lifting \ud83c\udf56": 50,
-    "Case Maintenance \ud83e\uddfd": 35,
+    "Case Maintenance \ud83e\uddfd": 34,
     "Bathroom \ud83d\udebd": 30,
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 27,
     "Repairs \ud83d\udee0": 15,
@@ -124418,7 +124408,7 @@
     "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 4,
-    "Checkout \ud83d\udcb3": 3,
+    "Checkout \ud83d\udcb3": 2,
     "Bins \ud83e\uddfc": 2,
     "Vitamins \ud83c\udf6c": 2,
     "Cart Return \ud83d\uded2": 1,
