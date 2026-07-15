@@ -1,40 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-03T16:20:36.791051+00:00",
-      "total": 3399,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
-      "ts": "2026-06-03T16:30:40.820390+00:00",
-      "total": 3393,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-03T16:40:38.306847+00:00",
       "total": 3387,
       "users": {
@@ -124348,10 +124314,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-15T16:30:42.288651+00:00",
+      "total": 2392,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1174897",
+              "date": "2026-08-07",
+              "start": "08:00",
+              "end": "08:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6231,
+    "total_runs": 6233,
     "users": {
       "Mike": {
         "matched": 2943,
@@ -124363,7 +124354,17 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1174897",
+        "date": "2026-08-07",
+        "start": "08:00",
+        "end": "08:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {},
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 772,
@@ -124383,8 +124384,8 @@
     "Bread Stocking \ud83c\udf5e": 10,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
     "Inventory: Produce \ud83c\udf40": 5,
-    "Soup Cleaning": 4,
     "Checkout \ud83d\udcb3": 4,
+    "Soup Cleaning": 4,
     "Bulk Lifting \ud83e\uded8": 4,
     "Bins \ud83e\uddfc": 2,
     "Vitamins \ud83c\udf6c": 2,
