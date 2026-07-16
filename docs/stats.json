@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-04T15:50:42.906349+00:00",
-      "total": 3453,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-04T16:00:41.608137+00:00",
       "total": 3448,
       "users": {
@@ -124891,10 +124874,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-16T16:00:35.037032+00:00",
+      "total": 2386,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1162271",
+              "date": "2026-07-17",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6332,
+    "total_runs": 6333,
     "users": {
       "Mike": {
         "matched": 2968,
@@ -124906,12 +124914,22 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1162271",
+        "date": "2026-07-17",
+        "start": "18:00",
+        "end": "18:00",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 767,
+    "Stocking \ud83d\udce6": 765,
     "Lifting \ud83d\ude9a": 507,
-    "Producer \ud83e\udd66": 338,
+    "Producer \ud83e\udd66": 336,
     "Flex \ud83e\udd6b": 150,
     "Produce Processing \ud83e\udd6c": 144,
     "Dairy Lifting \ud83e\udd5b": 114,
@@ -124930,8 +124948,8 @@
     "Bulk Lifting \ud83e\uded8": 4,
     "Office \ud83d\udcd7": 4,
     "Bins \ud83e\uddfc": 3,
-    "Checkout \ud83d\udcb3": 1,
     "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
