@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-04T00:50:30.908911+00:00",
-      "total": 3372,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-04T01:00:38.727943+00:00",
       "total": 3372,
       "users": {
@@ -124450,10 +124433,27 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-16T00:50:34.166703+00:00",
+      "total": 2319,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6282,
+    "total_runs": 6283,
     "users": {
       "Mike": {
         "matched": 2952,
@@ -124468,7 +124468,7 @@
   "available_shifts": {},
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 750,
+    "Stocking \ud83d\udce6": 749,
     "Lifting \ud83d\ude9a": 495,
     "Producer \ud83e\udd66": 337,
     "Produce Processing \ud83e\udd6c": 144,
@@ -124488,6 +124488,7 @@
     "Bulk Lifting \ud83e\uded8": 4,
     "Bins \ud83e\uddfc": 2,
     "Cart Return \ud83d\uded2": 1,
+    "Checkout \ud83d\udcb3": 1,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 1,
     "Vitamins \ud83c\udf6c": 1,
     "Health & Beauty \ud83e\uddf4": 1
