@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-04T12:00:36.516439+00:00",
-      "total": 3512,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-04T12:10:37.765757+00:00",
       "total": 3510,
       "users": {
@@ -124626,10 +124609,42 @@
         }
       },
       "pruned": 1
+    },
+    {
+      "ts": "2026-07-16T12:00:44.820995+00:00",
+      "total": 2447,
+      "users": {
+        "Mike": {
+          "matched": 2,
+          "notified": 0,
+          "shifts": [
+            {
+              "id": "1170385",
+              "date": "2026-07-30",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            },
+            {
+              "id": "1178527",
+              "date": "2026-08-13",
+              "start": "18:00",
+              "end": "18:00",
+              "type": "Cart Return \ud83d\uded2"
+            }
+          ]
+        },
+        "Nancy": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        }
+      },
+      "pruned": 1
     }
   ],
   "previous_period": {
-    "total_runs": 6309,
+    "total_runs": 6310,
     "users": {
       "Mike": {
         "matched": 2968,
@@ -124642,15 +124657,6 @@
     }
   },
   "available_shifts": {
-    "Nancy": [
-      {
-        "id": "1162163",
-        "date": "2026-07-17",
-        "start": "15:30",
-        "end": "15:30",
-        "type": "Checkout \ud83d\udcb3"
-      }
-    ],
     "Mike": [
       {
         "id": "1170385",
@@ -124671,7 +124677,7 @@
   "member_status": {},
   "shift_type_counts": {
     "Stocking \ud83d\udce6": 775,
-    "Lifting \ud83d\ude9a": 517,
+    "Lifting \ud83d\ude9a": 515,
     "Producer \ud83e\udd66": 340,
     "Flex \ud83e\udd6b": 154,
     "Produce Processing \ud83e\udd6c": 148,
@@ -124684,7 +124690,7 @@
     "Soup: Guest Services- Outdoor \u270d\ufe0f": 33,
     "Soup: Food Services \ud83c\udf72": 21,
     "Repairs \ud83d\udee0": 15,
-    "Checkout \ud83d\udcb3": 11,
+    "Checkout \ud83d\udcb3": 10,
     "Bread Stocking \ud83c\udf5e": 9,
     "Cart Return \ud83d\uded2": 7,
     "Food Processing \ud83e\uddc0\ud83c\udf7f": 7,
