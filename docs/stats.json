@@ -1,23 +1,6 @@
 {
   "stats": [
     {
-      "ts": "2026-06-04T15:00:50.999182+00:00",
-      "total": 3463,
-      "users": {
-        "Mike": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        },
-        "Nancy": {
-          "matched": 0,
-          "notified": 0,
-          "shifts": []
-        }
-      },
-      "pruned": 0
-    },
-    {
       "ts": "2026-06-04T15:10:39.251599+00:00",
       "total": 3463,
       "users": {
@@ -124875,10 +124858,35 @@
         }
       },
       "pruned": 0
+    },
+    {
+      "ts": "2026-07-16T15:10:32.751028+00:00",
+      "total": 2396,
+      "users": {
+        "Mike": {
+          "matched": 0,
+          "notified": 0,
+          "shifts": []
+        },
+        "Nancy": {
+          "matched": 1,
+          "notified": 1,
+          "shifts": [
+            {
+              "id": "1162165",
+              "date": "2026-07-17",
+              "start": "15:30",
+              "end": "15:30",
+              "type": "Checkout \ud83d\udcb3"
+            }
+          ]
+        }
+      },
+      "pruned": 0
     }
   ],
   "previous_period": {
-    "total_runs": 6327,
+    "total_runs": 6328,
     "users": {
       "Mike": {
         "matched": 2968,
@@ -124890,15 +124898,25 @@
       }
     }
   },
-  "available_shifts": {},
+  "available_shifts": {
+    "Nancy": [
+      {
+        "id": "1162165",
+        "date": "2026-07-17",
+        "start": "15:30",
+        "end": "15:30",
+        "type": "Checkout \ud83d\udcb3"
+      }
+    ]
+  },
   "member_status": {},
   "shift_type_counts": {
-    "Stocking \ud83d\udce6": 768,
+    "Stocking \ud83d\udce6": 767,
     "Lifting \ud83d\ude9a": 508,
     "Producer \ud83e\udd66": 338,
     "Flex \ud83e\udd6b": 150,
-    "Produce Processing \ud83e\udd6c": 146,
-    "Dairy Lifting \ud83e\udd5b": 115,
+    "Produce Processing \ud83e\udd6c": 145,
+    "Dairy Lifting \ud83e\udd5b": 114,
     "Cleaning \ud83c\udfdd": 92,
     "Inventory \ud83d\udccb": 60,
     "Meat Processing & Lifting \ud83c\udf56": 49,
@@ -124915,6 +124933,7 @@
     "Office \ud83d\udcd7": 4,
     "Bins \ud83e\uddfc": 3,
     "Cart Return \ud83d\uded2": 2,
+    "Checkout \ud83d\udcb3": 1,
     "Vitamins \ud83c\udf6c": 1,
     "Health & Beauty \ud83e\uddf4": 1
   },
